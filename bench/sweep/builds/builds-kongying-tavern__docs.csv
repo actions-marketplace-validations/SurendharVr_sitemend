@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+kongying-tavern/docs,474b8dcb0ac1ef571585047bb40bb2f5f72fb1d2,build_failed,16.2,,v24.21.0,ELIFECYCLE  Command failed with exit code 1.

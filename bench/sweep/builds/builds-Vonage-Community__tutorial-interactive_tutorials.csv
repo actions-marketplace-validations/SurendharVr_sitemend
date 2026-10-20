@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+Vonage-Community/tutorial-interactive_tutorials,e2eeb27718f4dddc70948f3648213305b67cac9c,build_failed,3.5,,v24.21.0,sh: 1: astro: not found

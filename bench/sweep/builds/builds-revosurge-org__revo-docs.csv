@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+revosurge-org/revo-docs,8109bc812ddc1c825e711f916efd9a4cd9594d29,build_failed,8.8,,v24.21.0,ELIFECYCLE  Command failed with exit code 1.

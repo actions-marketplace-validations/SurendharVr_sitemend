@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+Profiletestai/mindcanvas-brain,723155db17efe5270a50bfb08494d2b048f0342c,build_failed,1.0,,v18.20.8,"For help, run: pnpm help install"

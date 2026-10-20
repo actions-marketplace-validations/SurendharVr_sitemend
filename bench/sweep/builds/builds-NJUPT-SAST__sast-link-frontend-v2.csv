@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+NJUPT-SAST/sast-link-frontend-v2,073a5cda33e23e8a3c4bb24b8e987db30ce086f8,build_failed,1.1,,v24.21.0,"For help, run: pnpm help install"

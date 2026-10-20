@@ -1,0 +1,5008 @@
+{
+ "taken_at": "2026-10-18T14:33:57Z",
+ "queries": [
+  "filename:docusaurus.config"
+ ],
+ "items": [
+  {
+   "repo": "lcxfs1991/blog",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DevOpsHiveHQ/dynamic-devops-roadmap",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "entria/jobs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jhipster/jhipster.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "harryheman/my-js",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "actix/actix-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "clearlydefined/clearlydefined",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "EliFuzz/awesome-system-prompts",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CriticalFlaw/TF2HUD.Editor",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "codee-com/open-catalog",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "apache/cloudstack-www",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "starcoinorg/starcoin-cookbook",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nishuzumi/Web3-Enterprise-level-engineering",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "thedataengineeringbook/thedataengineeringbook",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "opencost/opencost-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Turfjs/turf-www",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "WhiskeySockets/baileys.wiki-site",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "oasisprotocol/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ten-protocol/ten-documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "redis-developer/redis-developer.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rv2036/rvspoc",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "infinitered/ir-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mia-platform/documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tremor-rs/tremor-www",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sabertaz/notes",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "risingwavelabs/risingwave-docs-legacy",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "adreaskar/javascript.gr",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sre-next/corporate-regulations",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Clarifai/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LearningTypeScript/site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "EveryAnalytics/web-analytics-handbook",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "denulemos/DevDojo",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "SysKitTeam/docs-spdockit",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Websoft9/doc.websoft9.com",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "appt-org/appt-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "farm-fe/farm-fe.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PolkadotStudy/polkadot.study",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "galacticcouncil/hydration-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "clearml/clearml-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "polotno-project/polotno-site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ryfylke-react-as/koding.no",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Wiznet/document_framework",
+   "path": "docusaurus.config.txt",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "SAP/csn-interop-specification",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "gpul-org/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "wix-incubator/wix-docusaurus-poc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "WeiYun0912/Wei-Docusaurus",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "alikehel/activecourses",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pkosiec/website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "HiChen404/MyWikiSite",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "XenitAB/xenitab.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LioranGroupOfficial/Liorandb-V1",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sourcifyeth/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "acm-uic/acm-uic.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "apiato/documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "samelogic/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NetEase/tango-site",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "FriendlyCaptcha/friendly-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ctu-mrs/ctu-mrs.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "WildMeOrg/old_wildme-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "BUGS-NYU/nyu-cs-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "input-output-hk/engineering",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "eclipse-xpanse/xpanse-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "commitdev/companion",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sajclarke/docusaurus-tailwindcss-example",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sdkman/sdkman.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "volumio/volumio-developers-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "geocortex/dev-center",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "openprivacytech/openprivacytech.org",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "leanhackers/leanhackers.club",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "yoanbernabeu/MARP-Template-Library",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pagesource/universal-react-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "givepraise/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rails-inspire-django/hotwire-django-tutorial",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Cotalker/documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "accuknox/KubeArmor-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "anitabi/navi.anitabi.cn",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dbt-msft/dbt-msft-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "GaloyMoney/dev.galoy.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Advik555wastaken/6b6twiki",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "8x8Cloud/public-developer-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AdguardTeam/KnowledgeBaseMail",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "skytable/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pixee/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fdm-monster/fdm-monster-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "macosui/macosui.dev",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "guoshijiang/guoshijiang.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jerryarmstrong/some_rst",
+   "path": "docusaurus.config.rst",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LewisProjects/RedditVideoMakerBot-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "VisualComposer/api-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LingLuoCloudOS/spigotmc-cn",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rivertwilight/febook",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "iflytek/athena_website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aiselp/AutoxDoc",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LeslieLeung/my-awesome-llm",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mistlog/typedraft-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "moto-penangf/documentation",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ImmutableVariable/learnityourself",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "verianaliziokulu/verianaliziokulu-user-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "0xIntuition/published-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "EGO4D/Ego-Exo4D-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rjsf-team/react-jsonschema-form",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "algolia/api-clients-automation",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "grafana/dataplane",
+   "path": "docusaurus/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "StackGuardian/tirith",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "GoogleCloudPlatform/cloud-learning-platform",
+   "path": "documentation/api_docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NVIDIA/TensorRT-Model-Connect",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "testronaut/testronaut",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "thierryc/Glyphs-mcp",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "solid-software/solid_lints",
+   "path": "doc/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "free2z/zuu",
+   "path": "docs/about-free2z/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ic123-xyz/ic123",
+   "path": "docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "kinderhead/Amethyst",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "knorrlabs/ignition-guides",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Redactics/redactics-osedition",
+   "path": "docs/redactics/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "indiebase/indiebase",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dourajs/doura",
+   "path": "doc-sites/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "athar-adv/Jexplorer",
+   "path": "doc-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ProBotOrg/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tereza-org/tereza",
+   "path": "apps/developers/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "graphql-aspnet/graphql-aspnet.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cubelify/cubelify-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Project-Babble/BabbleDocs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bigcapitalhq/blueprintjs-formik",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Computerization/computerization.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NTU-DSAI/NTU-DSAI.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "neodaoist/harmonydictionary",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aidlc-org/ai-sdlc-workflow-harness-manager",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Cytooxien/Realms-Docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sinoui/core",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Seiko-Labs/flume",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Solteq/reactionary",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "MikAoJk/knarreviktoppen",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "yzqzy/wechat-assistant-pro-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tonmetaspace/toncity.space",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "taodong/duotail-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NYU-robot-learning/deep-decision-making-2024",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Nitro-Bolt/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "groupultra/agent-api-sdk-document",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Adry940/suave",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "HerzenStudents-ITxD/lending-skills-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Casual-UI/react",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "epicfaace/rjsf",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "benson1029/go-slang",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aws-samples/sample-ac-central",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "WPVeunia/erxes",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Bassaganas/conference-docs",
+   "path": "static/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "patdevinwilson/velox-rapidsai",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "catesandrew/skills",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Spaghetti-Dojo/tosuto",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pasquelin/media-studio",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vincentvella/basalt",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jonbeckman/cloudflare-puppeteer",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "transaurus/staging-facebook-flow",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nexus-actors/nexus",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Devonlegend/winify",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jperaltac/erpi5",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "edwardzjl/edwardzjl.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "IT3049C/IT3049C.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AtomontageInc/atomontage-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "qlangtech/tis-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "brettpetch/mit-4102",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "real-goatoo/thelia_doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nmc-docs/prisma",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tonai/blog",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "montylang/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Stream-Computing/stc-docuhub",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sandeep-petwal/readmes",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "MiddlewareNewZealand/dashboard-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ivishalgandhi/techdocs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "BotStacks/docusaurus-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sitharaj88/rn-structured-logger",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "claimtec/iaindex",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "conakry32/dev-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "gabehamasaki/hikari-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "JomeTech/actus-documentation",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "justincrosbie/passkeyme-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "the-containerization-guild/the-containerization-guild.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tumbleweed-cdc/tumbleweed-cdc.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "strux-php/strux-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "plexicus/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DaliDalmas/dalicodes-site-2025",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DylanAbz/docusaurus-docker",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PEMWEB-2025/PEMWEB-2025",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AliKhan17dec/humanoid-robotics-book",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sunam007/my-portfolio",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vharney/FYP-FE-DOC",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "snsinahub-org/docupage-multiple",
+   "path": "docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "kevinadriano1/242saurus",
+   "path": "Docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Tetris973/reseo",
+   "path": "docs-website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Murali3007/tetragon",
+   "path": "tetragon-site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tech-wave-swe/tech-wave-swe.github.io",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ethanpaneraa/eme",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mdg-labs/hoserva",
+   "path": "site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "thanhnguyen46/thanhpng.com",
+   "path": "thanhpng-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CloudPSS/MiraScript",
+   "path": "packages/website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "labKnowledge/rlm-repl",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Gurren-Software/Anexis-Server",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CrabStash/crab-stash-frontend-monorepo",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "team360r/CheckBank",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "doubleedesign/animate-into-view",
+   "path": "docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rjsf-team/react-jsonschema-form",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "facebook/docusaurus",
+   "path": "website/versioned_docs/version-3.6.3/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "XIE7654/django-vue3-admin",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "watercrawl/WaterCrawl",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "forsigner/fower",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ComposableFi/composable",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "IvanJosipovic/KubeUI",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "StackGuardian/tirith",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vitaliihonta/zio-temporal",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "GoogleCloudPlatform/cloud-learning-platform",
+   "path": "documentation/api_docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hashgraph/stablecoin-studio",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "csg-tokyo/bluescript",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jd-antelope/s-lint",
+   "path": "lint-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aliyun/alibabacloud-ros-tool-iact3",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ConductionNL/openregister",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "solid-software/solid_lints",
+   "path": "doc/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "free2z/zuu",
+   "path": "docs/about-free2z/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "0xPolygon/kurtosis-pos",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "indiebase/indiebase",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "evanliomain/taninsam",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ZeusLN/zeus-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "trebeljahr/tiao",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cardanoapi/autonomous-agents",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "victorlpgazolli/multiplatform-print",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Seneca-ICTOER/SPO600",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dhis2/wow-frontend",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "qmBase/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "christopherlouet/claude-base",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "saintmalik/blog.saintmalik.me",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NTU-DSAI/NTU-DSAI.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sporeprotocol/spore-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jyfti/jyfti",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jeff-k-zhou/react-bootstrap-table-ng",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Seiko-Labs/flume",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "morfant/dance-tech-lab",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "suiweb/suiweb",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "surfypro/surfy-help",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rainx00/rainx00.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "oppikirjasto/oppikirjasto",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "X-oss-byte/Turso-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Pedrigl/luminescent-team",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "TutoriatLFA/TutoriatLFA",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mshibanami/webp-for-quicklook",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nimflow/nimflow-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "transaurus/staging-react-bootstrap-react-bootstrap",
+   "path": "www/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ConductionNL/buildiq",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Nick2bad4u/eslint-plugin-SDL-2",
+   "path": "docs/docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zmdaodao/oap-velox",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "kunpengcompute/velox",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "lga-zurich/velox-exchange",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "TheCandle/velox",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Devonlegend/winify",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jperaltac/erpi5",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "weikengchen/risc0-fix-typo",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "boanlab/gShare",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "emcifuntik/GameWebRuntime",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "transaurus/staging-prettier-prettier.io",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "OxideR-System/OxideR-Query",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "capGoblin/excalidraw-0a588a880b972f4e2f15e23bc244cce1c1ff2160",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "edwardzjl/edwardzjl.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AtomontageInc/atomontage-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "qlangtech/tis-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "intiface/docs.intiface.com",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Thoralf-M/iota",
+   "path": "docs/site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "real-goatoo/thelia_doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "RobloxTeethyz/Newsletter",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dlamkins/gw2pathing-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "translized/translized-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Starbem/react-native-starsystem-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "BotStacks/docusaurus-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "igorvieira/soloweb",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "robbiebmorris/comp0016-MI34-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vyckey/vyckey-computer-notes",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "validator-labs/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "abdulwahidchohan/Hackathon-Book-Documnetation",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dum3ng/game-site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aliaksandrsurma/cv-as-a-project-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "claimtec/iaindex",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ECFMG/axc",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DeepPhe/dphe-db-pipeline",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AliKhan17dec/humanoid-robotics-book",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sunam007/my-portfolio",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vharney/FYP-FE-DOC",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "shinjiesk/plasticity-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Rachit1313/docusaurus-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "BojanKV/ikob_wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rampadc/rjsf-carbon",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "winc1980/sobiz",
+   "path": "docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "abereghici/skills",
+   "path": "sources/pnpm/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hardfist/modern-web-tools",
+   "path": "apps/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Abdullah-Ikhlaq/Humanoid-AI-Robotics-Book",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "VGMil-dev/FragmentsV2",
+   "path": "documentation/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nmc-docs/git-scripts",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rushairer/go-pipeline-homepage",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Minnnn1308/ChatVN",
+   "path": "backend/vnpay-main/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "JonKirkpatrick/initial-conditions",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "paragao/docusaurus",
+   "path": "website/versioned_docs/version-3.10.1/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "wdk-docs/docusaurus-docs",
+   "path": "versioned_docs/version-3.0.0-alpha.0/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "lebalz/events-app",
+   "path": "docusaurus.config.localized.json",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "urarhuhu/translated-facebook-docusaurus-preview",
+   "path": "website/i18n/zh-hant/docusaurus-plugin-content-docs/version-3.2.1/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rjsf-team/react-jsonschema-form",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "facebook/docusaurus",
+   "path": "website/versioned_docs/version-3.6.3/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "XIE7654/django-vue3-admin",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "watercrawl/WaterCrawl",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "forsigner/fower",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ComposableFi/composable",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "IvanJosipovic/KubeUI",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vitaliihonta/zio-temporal",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hashgraph/stablecoin-studio",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "csg-tokyo/bluescript",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jd-antelope/s-lint",
+   "path": "lint-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aliyun/alibabacloud-ros-tool-iact3",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ConductionNL/openregister",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "solid-software/solid_lints",
+   "path": "doc/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "0xPolygon/kurtosis-pos",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "indiebase/indiebase",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "evanliomain/taninsam",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ZeusLN/zeus-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cormas/cormas-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "trebeljahr/tiao",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cardanoapi/autonomous-agents",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "victorlpgazolli/multiplatform-print",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Seneca-ICTOER/SPO600",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dhis2/wow-frontend",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "qmBase/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "christopherlouet/claude-base",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "saintmalik/blog.saintmalik.me",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sporeprotocol/spore-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jyfti/jyfti",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jeff-k-zhou/react-bootstrap-table-ng",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Seiko-Labs/flume",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "morfant/dance-tech-lab",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "suiweb/suiweb",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "surfypro/surfy-help",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rainx00/rainx00.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "oppikirjasto/oppikirjasto",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "X-oss-byte/Turso-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Pedrigl/luminescent-team",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "TutoriatLFA/TutoriatLFA",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mshibanami/webp-for-quicklook",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nimflow/nimflow-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "broken-bytes/iona-lang",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hash3liZer/cheatsheets",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "transaurus/staging-react-bootstrap-react-bootstrap",
+   "path": "www/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ConductionNL/buildiq",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "navantsuresh/usa",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Nick2bad4u/eslint-plugin-SDL-2",
+   "path": "docs/docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Devonlegend/winify",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jperaltac/erpi5",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "weikengchen/risc0-fix-typo",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "boanlab/gShare",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "emcifuntik/GameWebRuntime",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "transaurus/staging-prettier-prettier.io",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "OxideR-System/OxideR-Query",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AyushKhamar/Frontend-Assignment",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jyfan-n/excalidraw",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "capGoblin/excalidraw-0a588a880b972f4e2f15e23bc244cce1c1ff2160",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "edwardzjl/edwardzjl.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jeetsuthar/InstallerArmory",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "yongqi8899/docu",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "karan0207/TechDocs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "xxqfamous/build",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Hubee-Unifesp/alexandrita-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "s-santillan/cinematacms-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "phpythonode/linktalk-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Heedix/knowledge-library",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "schnurjs/schnur-web",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "FukjemiCZ/doc.petrfuk.cz",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Samywamy10/homelab-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "huiruo/block-chain-backup",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "theonewhowritesthedocs/lwms-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ezhumalaisanjay/Squad-HR-Docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "logkn/ewm-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aitha16/funweb",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "snsinahub-org/docupage-multiple",
+   "path": "docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Tetris973/reseo",
+   "path": "docs-website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rampadc/rjsf-carbon",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "next-gen-dev/inframe",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cinagroup/cinacoin-test",
+   "path": "apps/docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PrashantSaikia/Car-Analysis-and-Research",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "marmicode/pragmatic-angular-testing",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "G-Electra-Web/gelectra-backend",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "MrAdisson/klee-cli",
+   "path": "docs/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "labKnowledge/rlm-repl",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mehdinathani/physical-ai-textbook",
+   "path": "frontend/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bhavesh20-mb/Rust-Proglang-one-of-m-most-follwed-repo-2.0-bhavesh-",
+   "path": "developers.diem.com/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "alyconr/Rapid-OS",
+   "path": "website/.docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "armstrongl/example-docusaurus-multi-instance-versioning",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "iflastandards/platform",
+   "path": "standards/LRM/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "arise-ai-security/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "42A7C5/supportwell",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fangorn-network/websites",
+   "path": "docs.fangorn.network/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Lu15R/Documentacion_Doc",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "shivpratikhande/agent",
+   "path": "ShortGPT/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "enterprisium/Shorts",
+   "path": "ShortGPT/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "M4skEl/docusaurus-project",
+   "path": "documentation/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "paragao/docusaurus",
+   "path": "website/versioned_docs/version-3.6.3/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cnmuhammadimran/AgentSyncProfessionalServices",
+   "path": "docs-original-backup/docusaurus/.docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "igautomation/ASPSPublished",
+   "path": "docs-original-backup/docusaurus/.docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "wdk-docs/docusaurus-docs",
+   "path": "versioned_docs/version-3.0.0-alpha.0/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "farm-fe/farm",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "naver/egjs-flicking",
+   "path": "packages/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "facebook/fboss",
+   "path": "fboss/agent/wiki/static_docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "northpolesec/santa",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DialmasterOrg/Youtarr",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "doug-martin/nestjs-query",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "noname0310/babylon-mmd",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "maltsev/htmlnano",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PRO-Robotech/in-cloud-docs",
+   "path": "documentation/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "csg-tokyo/bluescript",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "chenasraf/simple-scaffold",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "status-im/nimbus-site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ToolJet/ActionRail",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zhouzi/graphql-codegen-factories",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "wso2/fhir-server",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "headline-design/pipeline-ui",
+   "path": "design-site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mlnomadpy/nmn",
+   "path": "website/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "leroychan/twilio-flex-conversations-adapters",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cormas/cormas-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jhnnsrs/rath",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Excalibra/cybersecurity-interview-questions",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "calimero-network/calimero-network.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "abes-esr/projet2024",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "TrueBankai416/BankaiTechDocs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jayokunle/getblitz",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fepack/image",
+   "path": "websites/documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "iijlab/wai-middleware-validation",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fpsqdb/dnd-layout",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "orcfax/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "stakpak/guku-devx-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "UPB-RustWorkshop/ipw-embedded.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "navantsuresh/usa",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AyushKhamar/Frontend-Assignment",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jyfan-n/excalidraw",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AtomontageInc/atomontage-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "qlangtech/tis-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "intiface/docs.intiface.com",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Thoralf-M/iota",
+   "path": "docs/site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "RobloxTeethyz/Newsletter",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dlamkins/gw2pathing-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "translized/translized-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Starbem/react-native-starsystem-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "igorvieira/soloweb",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "robbiebmorris/comp0016-MI34-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vyckey/vyckey-computer-notes",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "validator-labs/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "abdulwahidchohan/Hackathon-Book-Documnetation",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dum3ng/game-site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aliaksandrsurma/cv-as-a-project-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "claimtec/iaindex",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ECFMG/axc",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DeepPhe/dphe-db-pipeline",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sunam007/my-portfolio",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vharney/FYP-FE-DOC",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "shinjiesk/plasticity-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Rachit1313/docusaurus-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "BojanKV/ikob_wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jeetsuthar/InstallerArmory",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "yongqi8899/docu",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "karan0207/TechDocs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "xxqfamous/build",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Hubee-Unifesp/alexandrita-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "s-santillan/cinematacms-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "phpythonode/linktalk-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Heedix/knowledge-library",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "schnurjs/schnur-web",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "FukjemiCZ/doc.petrfuk.cz",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Samywamy10/homelab-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "huiruo/block-chain-backup",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "theonewhowritesthedocs/lwms-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ezhumalaisanjay/Squad-HR-Docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "logkn/ewm-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aitha16/funweb",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "snsinahub-org/docupage-multiple",
+   "path": "docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Tetris973/reseo",
+   "path": "docs-website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rampadc/rjsf-carbon",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "next-gen-dev/inframe",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cinagroup/cinacoin-test",
+   "path": "apps/docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PrashantSaikia/Car-Analysis-and-Research",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "marmicode/pragmatic-angular-testing",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "G-Electra-Web/gelectra-backend",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "MrAdisson/klee-cli",
+   "path": "docs/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "labKnowledge/rlm-repl",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mehdinathani/physical-ai-textbook",
+   "path": "frontend/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bhavesh20-mb/Rust-Proglang-one-of-m-most-follwed-repo-2.0-bhavesh-",
+   "path": "developers.diem.com/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "alyconr/Rapid-OS",
+   "path": "website/.docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "armstrongl/example-docusaurus-multi-instance-versioning",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "iflastandards/platform",
+   "path": "standards/LRM/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "noony-serverless/type-builder",
+   "path": "packages/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "arise-ai-security/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "42A7C5/supportwell",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fangorn-network/websites",
+   "path": "docs.fangorn.network/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Lu15R/Documentacion_Doc",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "shivpratikhande/agent",
+   "path": "ShortGPT/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "enterprisium/Shorts",
+   "path": "ShortGPT/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "M4skEl/docusaurus-project",
+   "path": "documentation/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "insinfo/xlsx_editor",
+   "path": "referencias/grid-master/packages/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "paragao/docusaurus",
+   "path": "website/versioned_docs/version-3.6.3/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cnmuhammadimran/AgentSyncProfessionalServices",
+   "path": "docs-original-backup/docusaurus/.docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "igautomation/ASPSPublished",
+   "path": "docs-original-backup/docusaurus/.docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "naver/egjs-flicking",
+   "path": "packages/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "facebook/fboss",
+   "path": "fboss/agent/wiki/static_docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "northpolesec/santa",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DialmasterOrg/Youtarr",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "doug-martin/nestjs-query",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "noname0310/babylon-mmd",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rondo-labs/threader-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Fintan-contents/dev-react-cs-document",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "astroport-fi/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Pan-Canadian-Genome-Library/pan-canadian-genome-library.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "marcellino-ornelas/templates",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "refract-cms/refract-cms",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sawarame/sawarame.github.com",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "isaac-chung/isaac-chung.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "surfypro/surfy-help",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "markharrison/lab-github-copilot",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Sports-Club-Management-Platform/microsite",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "junwai7159/junwai7159.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mowglifrenchtouch/mowgli-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "broken-bytes/iona-lang",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hash3liZer/cheatsheets",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Jojosephstar/opbnb-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "btchide/btchide-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bcit-tlu/open-data",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ReiiNoki/reiinoki.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aprewitt/hevids-standard",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "UniversalDot/udot-wiki",
+   "path": "wiki/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "petrsysel/CodeQuest",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aws-samples/sample-innovation-patterns",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ksawery29/isolated-js",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "OxideR-System/OxideR-Query",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "QuantmindSSI/hermes-agent",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "leesy3891/delegate_agent",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "spring-wcb/HermesAgent",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CNBJHh/HermesAgent",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bayan064/hermes",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ykoh42/async-hermes-agent",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CSCC01/team_08-project",
+   "path": "sd-site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "josedab/hrv-dashboard",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "contract-to-cash/core",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "capGoblin/excalidraw-0a588a880b972f4e2f15e23bc244cce1c1ff2160",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AyushKhamar/Frontend-Assignment",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jyfan-n/excalidraw",
+   "path": "dev-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "merlinepedra/MEDUSA",
+   "path": "www/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "genshen/blog-site",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "SignPresenter/SignPresenterSupport",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "twirphp/twirphp.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "thoughtstile/docusaurus-single-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "waleyGithub/waleyGithub.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "brahyam/gateway-web",
+   "path": "docs-blog/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sepa79/PocketHive",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aliaksandrsurma/cv-as-a-project-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "makeusabrew/ptest",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "IsleStats/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "telepat-io/rilo",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "stump-wtf/docusaurus-template",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ezhumalaisanjay/Squad-HR-Docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "logkn/ewm-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aitha16/funweb",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "franky-malone/cursed-seas",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "yunks128/NASA-WaterView",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Johnsonbros/aisync-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Jing-Gu/kilimanjaro",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Lingerssss/MyNote",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "JimiXxxS/my-docusaurus-duoduoCN",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Anypogers/JSIDocs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "JordiNodeJS/docu",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "engedmundo/aulas-docussaurus",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jimdrury/storybook-addon-badges-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "drjoeycadieux/techtack-technologies-documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ldan12/420-W50-SF",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tinatsina/fetchd_docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tchapo9/pfsense-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "uniyalabhishek/noob-docs",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Reguzzoni/PipelineUITemplate",
+   "path": "design-site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "transaurus/staging-PostHog-posthog-docusaurus",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fjcv2020/goose-web",
+   "path": "documentation/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dev-german/agente-kmp",
+   "path": "fm35/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "thorbert-anson-shi/242saurus",
+   "path": "Docusaurus/docusaurus.config.ts.save",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Casta-mere/DPdoc",
+   "path": "DPdoc/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "EnvyWare/Documentation",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "evix-trade/evix",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "carneirofc/qttaskmanager",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "5G-MAG/Website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "alyconr/Rapid-OS",
+   "path": "website/.docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "GitMurf/doc-test-2",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ClaudiaOviedoGovantes/VetClinic",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pappanick/op3c-docusaurus",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "noony-serverless/type-builder",
+   "path": "packages/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "eagleisbatman/farmerchat-sdk",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Huterenok/Soraphok",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "skilly-academy/courses",
+   "path": "courses-skilly/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LovlyPig/ZKP-Benchmark",
+   "path": "depends/icicle/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "skythebro/TG-Modding-Wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sDenizOzturk/binak-react-components",
+   "path": "binak-react-components-docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Shuaibali0786/ai_physical_book",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "slofp/aiscript-doc-ts",
+   "path": "AiScriptDocs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "phantom9999/fbthrift_reading",
+   "path": "fbthrift-2024.01.15.00/thrift/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "insinfo/xlsx_editor",
+   "path": "referencias/grid-master/packages/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "w7-mgfcode/doCCAD_pre",
+   "path": "docs/primary-inputs/11_RAW_ARCHIVE/original-material/outputs/05_poc/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "maltsev/htmlnano",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "chenasraf/simple-scaffold",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Phalcode/gamevault-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "status-im/nimbus-site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ToolJet/ActionRail",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zhouzi/graphql-codegen-factories",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "wso2/fhir-server",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "headline-design/pipeline-ui",
+   "path": "design-site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mlnomadpy/nmn",
+   "path": "website/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "leroychan/twilio-flex-conversations-adapters",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jhnnsrs/rath",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Excalibra/cybersecurity-interview-questions",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "calimero-network/calimero-network.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "abes-esr/projet2024",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "TrueBankai416/BankaiTechDocs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jayokunle/getblitz",
+   "path": "apps/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fepack/image",
+   "path": "websites/documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "apache/curator-site",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "react-native-google-signin/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jbhinky/Neuro-Coding-Architecture",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "iijlab/wai-middleware-validation",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "kimpenn/aegle",
+   "path": "aegle-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fpsqdb/dnd-layout",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "orcfax/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "stakpak/guku-devx-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "UPB-RustWorkshop/ipw-embedded.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rondo-labs/threader-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Fintan-contents/dev-react-cs-document",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "astroport-fi/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "trackmage/documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Pan-Canadian-Genome-Library/pan-canadian-genome-library.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "refract-cms/refract-cms",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tcarvi-engenheiro-eduardo-leal/projeto-de-iluminacao",
+   "path": "tutorial/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "isaac-chung/isaac-chung.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "markharrison/lab-github-copilot",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Sports-Club-Management-Platform/microsite",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "junwai7159/junwai7159.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mowglifrenchtouch/mowgli-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "btchide/btchide-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bcit-tlu/open-data",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ReiiNoki/reiinoki.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aprewitt/hevids-standard",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mirjunaid26/mirjunaid26.github.io_archive",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "deliton/zelda-api-docs",
+   "path": ".docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "UniversalDot/udot-wiki",
+   "path": "wiki/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "petrsysel/CodeQuest",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "cuihairu/alpha",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aws-samples/sample-innovation-patterns",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ksawery29/isolated-js",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "HeeJu-K/NomboloCamera-rnvc",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ykoh42/async-hermes-agent",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CSCC01/team_08-project",
+   "path": "sd-site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "josedab/hrv-dashboard",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "contract-to-cash/core",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "genshen/blog-site",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "SignPresenter/SignPresenterSupport",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "thoughtstile/docusaurus-single-doc",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "waleyGithub/waleyGithub.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "lemeow125/Notes",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "brahyam/gateway-web",
+   "path": "docs-blog/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sepa79/PocketHive",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "makeusabrew/ptest",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "IsleStats/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "eunbae0/dev-store",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "franky-malone/cursed-seas",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "yunks128/NASA-WaterView",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Johnsonbros/aisync-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Jing-Gu/kilimanjaro",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Lingerssss/MyNote",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "JimiXxxS/my-docusaurus-duoduoCN",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Anypogers/JSIDocs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "JordiNodeJS/docu",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "engedmundo/aulas-docussaurus",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jimdrury/storybook-addon-badges-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "drjoeycadieux/techtack-technologies-documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ldan12/420-W50-SF",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tinatsina/fetchd_docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tchapo9/pfsense-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DevAdmin-Riu/boss-dashboard-guide",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dhimanharish007/learn-with-harish",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mas4ji/fazriandev",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "snohio/littlegreenbarn",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ryan-mai/6ix-esolang",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "VectorInstitute/cyclops-webpage",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "uniyalabhishek/noob-docs",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "transaurus/staging-PostHog-posthog-docusaurus",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "phanvuminhtrung/technical-interview-handbook",
+   "path": "apps/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "xpayeg/docs",
+   "path": "XPay-Docs-new/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jeminpro/learn",
+   "path": "web/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fjcv2020/goose-web",
+   "path": "documentation/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ylancer-project/lang-chain",
+   "path": "docs/core_docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dev-german/agente-kmp",
+   "path": "fm35/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "T0mLam/2025-FMCWRadar",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Abhaysoft-inc/thatlytics",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "thorbert-anson-shi/242saurus",
+   "path": "Docusaurus/docusaurus.config.ts.save",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Casta-mere/DPdoc",
+   "path": "DPdoc/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PRISM-artifact/PRISM",
+   "path": "analyzer/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "EnvyWare/Documentation",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "evix-trade/evix",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "carneirofc/qttaskmanager",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "facebook/docusaurus",
+   "path": "website/versioned_docs/version-3.10.2/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ever-co/ever-traduora",
+   "path": "docs-website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bhouston/behave-graph",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "StephaneCouturier/Katalog",
+   "path": "docs_src/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "The-AI-Alliance/gofannon",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "finos/architecture-as-code",
+   "path": "shared/src/docify/template-bundles/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "goldfinch-eng/mono",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Dynatrace/ace-box",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Phalcode/gamevault-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "1gravity/Kotlin-Bloc",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "the-codegen-project/cli",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "grafana/aws-workshop",
+   "path": "site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "highfivve/moli-ad-tag",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "magma/magma-documentation",
+   "path": "docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "100askTeam/RTOS-Docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mindfiredigital/document-editor",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rtl-buddy/rtl_buddy",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "KashifKhn/haft",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AgrDataSci/documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "enumura1/py-sql-cleaner",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "judlup/express_architecture",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "guidepup/guidepup.dev",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NubeIO/rubix-ce-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "webspatial/webspatial-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "stratos-sh/stratos",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "riccardoperra/ngx-reactive-loading",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "VictusCode/CreateVictusApp",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mcst-hosting/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "osmarmora05/juanito_shoes_docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AgentEnder/markdown-factory",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vorausrobotik/vdoc",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CurseForgeCommunity/curseforgecommunity.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "servable-core/documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pptfz/pptfz.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mbalcerzak/the-warsaw-project",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "venkatarajeshjakka/docusaurus-blog-rv",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "smatechnologies/ibm-i-agent-1801-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "HeliosLang/website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "harekrishnarai/kestrel",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "preonus-projects/preonus-projects.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "StafLoker/selfhosted-linux-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Productdb/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ep-infosec/incubator-seatunnel-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ERRORLY/bintoo-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nsc-de/JsTools",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "imed-ghomari/roadmap-to-janna",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "medicalopenworld/IncuNest-Docs",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "RichardZhu123/Meadows2",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Institut-fur-Allgemeinmedizin-TUM/virtual-patient-system",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "poteto0/go-nba-sdk",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "qkrdkwl9090/nexus-ui",
+   "path": "guide/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "XBeg9/neo4ts",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "otaku-tekkurai/pdfme",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "kevin-lee/sbt-docusaur-docs",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jason71708/jablog",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "l4dsr/l4dsr-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "iselt/PentestNotes",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "minh352623/documents",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nalmeth/opengarlic.site",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vini-md/my-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "schemistrylab/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "czas-na-wypad-org/czas-na-wypad-org.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "danielwang/aemo-gel-site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "GuateGeeks/equipos-educativos",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zencrepes/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jangyicheng/SE-ROLLGUI",
+   "path": "docs_roll/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "yunks128/SIT-FUSE-site",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Techave-Dev/docs.mautiket.com",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jianan1104/guerrilla-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Mavia111/My_First_AI_Book",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ResearchCollective/Documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "divya-mohan0209/rancher-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "maymeow/ceh",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "minkukjo/til-1",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NolanBeaujault/cortest-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Daniyal-Sarwar/Physical-AI-Humanoid-Robotics-Textbook",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "amazanzan/streetcred-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DevomB/Poker-Calculations-Website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "headless-adminapp/headless-adminapp.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AprilNEA/note",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Reguzzoni/PipelineUITemplate",
+   "path": "design-site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "raphaelmarshall/Tech-Interview-Handbook",
+   "path": "apps/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "space-cadet/spin-network-app",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "saralafleur/aws-healthcare-use-cases",
+   "path": "p0-portal/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "5G-MAG/Website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "GitMurf/doc-test-2",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ClaudiaOviedoGovantes/VetClinic",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pappanick/op3c-docusaurus",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "saadahmedacademy/Hackathon-TexBook-Generartion",
+   "path": "ros2-textbook/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "eagleisbatman/farmerchat-sdk",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Huterenok/Soraphok",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "skilly-academy/courses",
+   "path": "courses-skilly/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nathanvale/entain-next-to-go",
+   "path": "packages/docs/docusaurus.config.cjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "prism2024/PRISM_analyzer",
+   "path": "analyzer/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LovlyPig/ZKP-Benchmark",
+   "path": "depends/icicle/docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "skythebro/TG-Modding-Wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sDenizOzturk/binak-react-components",
+   "path": "binak-react-components-docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "slofp/aiscript-doc-ts",
+   "path": "AiScriptDocs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "phantom9999/fbthrift_reading",
+   "path": "fbthrift-2024.01.15.00/thrift/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "epic-lab-gwu/aria-glasses",
+   "path": "ARIA-CODEBASE/projectaria_tools/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "facebook/docusaurus",
+   "path": "website/versioned_docs/version-3.10.2/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ever-co/ever-traduora",
+   "path": "docs-website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bhouston/behave-graph",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "javascriptdata/scikit.js",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "StephaneCouturier/Katalog",
+   "path": "docs_src/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "finos/architecture-as-code",
+   "path": "shared/src/docify/template-bundles/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "goldfinch-eng/mono",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "1gravity/Kotlin-Bloc",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "grafana/aws-workshop",
+   "path": "site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "highfivve/moli-ad-tag",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "100askTeam/RTOS-Docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mindfiredigital/document-editor",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rtl-buddy/rtl_buddy",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "KashifKhn/haft",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AgrDataSci/documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "enumura1/py-sql-cleaner",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dstarner/oauth-gated-docusaurus",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "judlup/express_architecture",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "guidepup/guidepup.dev",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NubeIO/rubix-ce-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bgoonz/Documentation-site-react",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "webspatial/webspatial-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "lukasjhan/Verifiable-Digital-Credentials",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "riccardoperra/ngx-reactive-loading",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "VictusCode/CreateVictusApp",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mcst-hosting/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "osmarmora05/juanito_shoes_docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rrebase/dognote-help",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Juniors017/docux-blog",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "SkepticMystic/BC-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vora-bei/cdn-static-database",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "CurseForgeCommunity/curseforgecommunity.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pptfz/pptfz.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mbalcerzak/the-warsaw-project",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "smatechnologies/ibm-i-agent-1801-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "HeliosLang/website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "harekrishnarai/kestrel",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "preonus-projects/preonus-projects.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Productdb/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ep-infosec/33_apache_incubator-seatunnel-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ep-infosec/incubator-seatunnel-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ERRORLY/bintoo-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Rahiche/easya-react-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nsc-de/JsTools",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hadronous/ic-angular",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "imed-ghomari/roadmap-to-janna",
+   "path": "my-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "medicalopenworld/IncuNest-Docs",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "RichardZhu123/Meadows2",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Institut-fur-Allgemeinmedizin-TUM/virtual-patient-system",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "poteto0/go-nba-sdk",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "qkrdkwl9090/nexus-ui",
+   "path": "guide/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "XBeg9/neo4ts",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "otaku-tekkurai/pdfme",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "kevin-lee/sbt-docusaur-docs",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "l4dsr/l4dsr-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "iselt/PentestNotes",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "schemistrylab/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "czas-na-wypad-org/czas-na-wypad-org.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "danielwang/aemo-gel-site",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "GuateGeeks/equipos-educativos",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "daxxac/mba-notes",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "errai34/rubin-broker-wiki",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fabriceHategekimana/siloe_app",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hyperdata-solusindo/hyperedu-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ThaylaalyahT/Masaleiro",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "masaleiro/docusaurus-ghpages",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PepeElToro41/ui-labs-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "smalo-emobility/smalo-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AlexandrBukhtatyy/ReFormer",
+   "path": "projects/reformer-doc/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dictamesh/dictamesh",
+   "path": "docs-portal/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "phanvuminhtrung/technical-interview-handbook",
+   "path": "apps/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "raphaelmarshall/Tech-Interview-Handbook",
+   "path": "apps/website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "terrytaylorbonn/427_my-docs-site",
+   "path": "docusaurus.config copy.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "InteliGameLab/auloes-phaser-2025",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mf33r/metalmax",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "docQodly/docs",
+   "path": "docusaurus.config_start.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Nick2bad4u/eslint-plugin-copilot",
+   "path": "docs/docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Nick2bad4u/stylelint-plugin-css-performance-budget",
+   "path": "docs/docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "doc4d/docQodlyPro",
+   "path": "docusaurus.config_start.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zcubbs/spring-cloud-demo",
+   "path": "_docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "princy5/project--nexus",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ganondorofu/komeniki_storage",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "gvarnavi/self-hosting-wl-notebooks",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sumantadotai/CourseSupportBot",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pavelvladimir/goit-pycore-hw-03",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aldair-meneses/wp-playground",
+   "path": "packages/docs/site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Sam220903/MembresiasREDMIS_Website",
+   "path": "docs-src/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "siberbot88/personal-academic-manager",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Honey-Suckle-Bush-Corp/Halis-AI",
+   "path": "rasa/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jovyan-ai/documentation",
+   "path": "jovyan-doc/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AlFalahTaieb/aws",
+   "path": ".docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "prncss-xyz/constellar",
+   "path": "packages/docs/website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "lhui/springboot-handbook",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "skalena/sandbox-fazenda-mg",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "arvind3/merchandising-core-concepts-for-grocery-business",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Risclover/dev-blog",
+   "path": ".history/docusaurus.config_20230618170914.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "HASNAIN-X-AHMED/Hacktakon_PhysicalAI_And_HumanoidAI_Robotics",
+   "path": "my-website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "muskantikkiwalit27-jpg/Flow-Meter",
+   "path": "FlowMeter/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "shihabdider/flashmap-production",
+   "path": "website/docusaurus.config.json",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "supremainc/biostar2-docs",
+   "path": "docusaurus.config.localized.json",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "facebook/docusaurus",
+   "path": "website/versioned_docs/version-3.10.2/api/docusaurus.config.js.mdx",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "robocurve/inspect-robots",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bhouston/behave-graph",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "javascriptdata/scikit.js",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "finos/architecture-as-code",
+   "path": "shared/src/docify/template-bundles/docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Real1tyy/Prisma-Calendar",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vero-labs-ai/vero-eval",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "1gravity/Kotlin-Bloc",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "datalayer/jupyter-manager",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "chansoo-kr/Roblox-Supabase",
+   "path": "pages/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jindalujjwal0720/file-express-router",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mindfiredigital/document-editor",
+   "path": "documentation/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dstarner/oauth-gated-docusaurus",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "bgoonz/Documentation-site-react",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "lukasjhan/Verifiable-Digital-Credentials",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "LottieFiles/lottie-styler",
+   "path": "apps/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "StatusCakeDev/portal",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "rrebase/dognote-help",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Juniors017/docux-blog",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "SkepticMystic/BC-wiki",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jcleira/encinitas-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "vora-bei/cdn-static-database",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "tcarvi-engenheiro-eduardo-leal/projeto-de-engenharia-estrutural",
+   "path": "tutorial/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "YouniQiao/developer_hos",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mbalcerzak/the-warsaw-project",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "harekrishnarai/kestrel",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "preonus-projects/preonus-projects.github.io",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "opensquare-network/docs-subsquare",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "epicodus/lhtp",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Smartidly-Org/smarthostly-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ep-infosec/33_apache_incubator-seatunnel-website",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ERRORLY/bintoo-website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Rahiche/easya-react-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Sneakers-PAM/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "haxnation/blog",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dekafinance/deka-blog",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "nsc-de/JsTools",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hadronous/ic-angular",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "joey2217/cpp-notes",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "poteto0/go-nba-sdk",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mantinhas/marblerun-lease",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PokeGenesis/PokemonSDK",
+   "path": "docs/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "XBeg9/neo4ts",
+   "path": "packages/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zencrepes/docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Mostly-Good-Metrics/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Quantus-Network/docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "VVsxmja/vvsxmja.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "theam/aifindr-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "IIT-SoftBots/alterego_documentation",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jangyicheng/SE-ROLLGUI",
+   "path": "docs_roll/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "minkukjo/til-1",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "NolanBeaujault/cortest-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Daniyal-Sarwar/Physical-AI-Humanoid-Robotics-Textbook",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "amazanzan/streetcred-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "DevomB/Poker-Calculations-Website",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "headless-adminapp/headless-adminapp.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AprilNEA/note",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "daxxac/mba-notes",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "errai34/rubin-broker-wiki",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "fabriceHategekimana/siloe_app",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "hyperdata-solusindo/hyperedu-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ThaylaalyahT/Masaleiro",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "masaleiro/docusaurus-ghpages",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "PepeElToro41/ui-labs-docs",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "smalo-emobility/smalo-docs",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "futahei/docusaurus-blog",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "davypaulino/davypaulino.github.io",
+   "path": "docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "17g01acs028/HELB_MANUAL",
+   "path": "docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AlexandrBukhtatyy/ReFormer",
+   "path": "projects/reformer-doc/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "dictamesh/dictamesh",
+   "path": "docs-portal/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "raamcosta/compose-destinations-docs",
+   "path": "docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "InteliGameLab/auloes-phaser-2025",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mf33r/metalmax",
+   "path": "docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "docQodly/docs",
+   "path": "docusaurus.config_start.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Nick2bad4u/eslint-plugin-copilot",
+   "path": "docs/docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Nick2bad4u/stylelint-plugin-css-performance-budget",
+   "path": "docs/docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "doc4d/docQodlyPro",
+   "path": "docusaurus.config_start.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zcubbs/spring-cloud-demo",
+   "path": "_docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "princy5/project--nexus",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "ganondorofu/komeniki_storage",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "gvarnavi/self-hosting-wl-notebooks",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sumantadotai/CourseSupportBot",
+   "path": "website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "pavelvladimir/goit-pycore-hw-03",
+   "path": "website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "aldair-meneses/wp-playground",
+   "path": "packages/docs/site/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Sam220903/MembresiasREDMIS_Website",
+   "path": "docs-src/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "siberbot88/personal-academic-manager",
+   "path": "docs-site/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Honey-Suckle-Bush-Corp/Halis-AI",
+   "path": "rasa/docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "jovyan-ai/documentation",
+   "path": "jovyan-doc/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "AlFalahTaieb/aws",
+   "path": ".docusaurus/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "prncss-xyz/constellar",
+   "path": "packages/docs/website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sejmjul/STH-2025",
+   "path": "publishing/docusaurus/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "lhui/springboot-handbook",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "skalena/sandbox-fazenda-mg",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "arvind3/merchandising-core-concepts-for-grocery-business",
+   "path": ".docusaurus/docusaurus.config.mjs",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "Risclover/dev-blog",
+   "path": ".history/docusaurus.config_20230618170914.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "sam21401/Wedding-Planner-Frontend",
+   "path": "my-docs/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "zakeGit/DataRapor",
+   "path": "website/_docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "HASNAIN-X-AHMED/Hacktakon_PhysicalAI_And_HumanoidAI_Robotics",
+   "path": "my-website/docusaurus.config.ts",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "mvbuhl02/CMS-Laravel-CentroRecreativoPlay",
+   "path": "public/PhotoSwipe-master/demo-docs-website/docusaurus.config.js",
+   "query": "filename:docusaurus.config"
+  },
+  {
+   "repo": "shihabdider/flashmap-production",
+   "path": "website/docusaurus.config.json",
+   "query": "filename:docusaurus.config"
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+Sergo706/auth-H3Client,4fe60ce00ccaf93c36b701c06aaa1ae654d2af87,build_failed,26.7,,v24.21.0,DTS dist/ApiTokensResponse-BIRhwLtE.d.ts 2.56 KB

@@ -1,0 +1,5008 @@
+{
+ "taken_at": "2026-10-18T14:35:25Z",
+ "queries": [
+  "filename:astro.config"
+ ],
+ "items": [
+  {
+   "repo": "HubSpot/youmightnotneedjquery",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "santoshyadavdev/angular-snippets",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "will-stone/plastic",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "xuya227939/blog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "phuoccss/astro-tanstack",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "louisescher/spectre",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tcdw/koi",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "miantiao-me/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "UXCorpRangel/portafolio-ana",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bholmesdev/simple-sync-engine",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tim-hub/techtim-astro-bento-portfolio",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "emish89/italiapersonalfinance",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "significa/foundations",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mazipan/mazipan.space",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NebraskaJS/nebraskajs.com",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ycjcl868/blog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AminoffZ/catonaut",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dreyfus92/astro-portfolio",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Calvin-LL/CalcGPT.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nodejs-design-patterns-book/nodejsdesignpatterns.com",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kevinzunigacuellar/astro-firebase",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SigureMo/nyakku.moe",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "importantimport/gumori",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "indiana-university/rivet-icons",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "armandsalle/my-site",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "asmartbear/asb-skills",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "evilmartians/rails-tutorial",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "unified-field-theory-org/unifiedfieldtheory.cn",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shlinkio/shlink.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "OpenMaine/maineballot",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "torontojs/blog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "volarjs/docs",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maartenba/maartenba.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "auguwu/floofy.dev",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Die-KoMa/die-koma.org",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cloud-gov/pages-site-gantry",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "m4rocks/paquet",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ufocoder/25d-renderer",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "OliverSpeir/astro-decap-ssg-netlify-identity",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "milzamsz/astro-emdash-sqlite-r2-starter",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "area44/SYWYKE",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "felixicaza/codepen-concept",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "matoous/wiki",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Snow0406/hyuki.dev",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JohnieXu/johniexu.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wtmgdgmadrid/wtmgdgmadrid.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "xanthous-tech/hono-astro-rr7-template",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "VapourX-ScaleLab/VapourX-ScaleLab.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "felixicaza/estelibuses",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ShellWen/shellwens-things",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HiDeoo/starlight-head-generator",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "xanderazuaje/venezuela-2024",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lilnasy/astro-websockets-demo",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cysnies/Xingluo",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "drowsyindra/drowsyindra.github.io",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Wachamuli/portfolio",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SeryiBaran/seryibaran.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "data-engine-thinking/samples",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nx-academy/nx-academy.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NABI-SNU/homepage_v0",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "amarder/amarder.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "formwerkjs/formwerk.dev",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "RodrigoTomeES/markitdown-browser",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "alexanderniebuhr/astro-cloudflare-template",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nicknisi/nicknisi.com",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "miclle/semantic-element",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yllhwa/yllhwa.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "daht-x/sagitta",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "adrian-ub/adrianub.dev",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wry-red/site",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "acdh-oeaw/voice-website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "loliblogs/Refined",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maxpetretta/maxpetretta.com",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nicholasray/nray.dev",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lirantal/no-secrets-env-vars-website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kobe-koto/Coriander",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "C1XTZ/csp-logs",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HackiitUGR/hackiit-website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "monthlyps/monthlyps.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "algorandfoundation/algokit-tutorials",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nnct-jo-ken/jo-ken.info",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "frictionlessdata/datapackage-fiscal",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "KeqingMoe/plti",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nemutas/fs-sketch",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "moonmeister/moonmeister.net",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "barrenechea/barrenechea-website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "baalajimaestro/personal-website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "purduehackers/blog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "r4ai/r4ai.dev",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Jisu-Woniu/blog-astro",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "netlify/nextjs-sentinel",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Vadim-Khristenko/Tedu_Notes",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HiDeoo/astro-glob-loader-config-generator",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "usamazansari/landing-pages",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "stylify/web",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jonathanbell/jonathanbell.github.io",
+   "path": "astro.config.js",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hakancelikdev/hakancelikdev.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sanman1k98/www",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ut-code/utcode.net",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "GoWorkshopConference/2025",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nf-core/website",
+   "path": "sites/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ubie-oss/ubie-vitals-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sylvinus/agent-vm",
+   "path": "www/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wellwind/claude-code-from-source-zh-tw",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dmmulroy/overseer",
+   "path": "repos/alchemy/examples/hetzner-website-astro/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "eludris/eludris",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ssanjua/ssanjua.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "albertocavalcante/bz",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "louiss0/forastro",
+   "path": "apps/blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "simonswiss/tailwind-v4-vite",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jonasfroeller/astro.image.lightbox",
+   "path": "example/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JimcostDev/lims-qc-ui",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "russelleast/Capability-Language",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "szymon-szym/tony-lego-astro",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ZERMORE/tongwblog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "myles/whaydayoftheweek-com",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ormwish/catonaut",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "abelcha/repo-status",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mingderwang/x-web-ext",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Mic-360/tabineko",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bmoir23/marekting-page",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "philipschm1tt/rhode-medizin",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Abban-Fahim/abban-fahim.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "juansanar/juansanar-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "webllope/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rootEnginear/rootEnginear.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "silverfantacy/zo-old-backup",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Lycan-Xx/border-feed",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "germanbustamante/germanbustamante.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Kabbya04/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "emir002/justicefusion-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "C-limited/My-Fuwari-Blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "delusion-al/web_deliver",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nengyong-liang/nengyong-liang.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CGIAR-Climate-Data-Hub/use-cases",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "fiiles/moony-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Dawson-web/myBlog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "djalmajr/djalmajr.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NalinPlad/echs.space",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NormalUhr/NormalUhr.github.io",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "smallflyingpig/ai-conference-overview",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "standardbeagle/lci-cpp",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "elicore/mdfu",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "qazuor/hospeda",
+   "path": "apps/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Christians-Concerned-for-the-Community/website-cccgainesville-org",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PranjalNishad/HyperLink",
+   "path": "FRONTEND/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "abdallahmalima/trustours",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "theapplegates/Cloudflare",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DevItaliya22/simple-sync-engine",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "talhabalaj/personal_website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "MysticalWizard/mystwiz.net",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "savonije/tonlamper.nl",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tarikkirgin/tarikkirgin.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AdityaGupta0/photography-portfolio",
+   "path": "astro.config.mts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "abosch19/svelte-fast-marquee-docs",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "itemx/shinengumi-utawaku",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "imjb87/astro-algolia-react-hooks",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "arthurschonbach/personal-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Kavehrafie/lingua-forte",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HazAT/sentry-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "aditiya36/tugas3",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "vcmauro/backstage-catalog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dimitaryord/func-easy",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "isd-sgcu/firstdate2026-frontend",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CtrI-Alt-Del/gaia-portal",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Moisesdavid2109/Cimientos-del-sabor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cgaravitoq/arusa-landing-prototype",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "esteban2604/aviationtebi",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jamesqquick/astro-course-demo-test",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "MUNICIPALIST/pulse-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rx-twitter/rx-twitter-dashboard",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Kybbot/ptrk-mini-app",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Saul1hdz/NovaTareas",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kcin1107/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "neoavant2024-netizen/ota-hp",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bombap/lamnguyen-im",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "leoata/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "a092299775350722-beep/BREAD",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "uit-ayeaye/keewadun-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HarukaDev31/astro_landing_probusiness",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Moisessantos45/server-ssr-astro-node",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "damiandevux-coder/aria-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "beyondbeliefstudio/beyondbeliefprintshop",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "juzttheek/Tourvir",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "davicoo/DWCSTUFF",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ironi-pl/ironi.pl",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Custompedia/portfolio-radyt",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sSolal/elu4-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "FireGhost00/salary-splitter-mvp",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "felixdmv/cornasol-web-rebuild",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "EffortlessMetrics/still",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "LilianBoulard/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "micaelr95/micaelr95.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "murat-sever/murat-sever.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Ehesp/vercel-api-route-subdir",
+   "path": "app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lazarcloud/google-docs-blog-quickstart",
+   "path": "app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pjmarz/ATLAS-V",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Gabriel-Freitas-S/CGPDI.StudyLab",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rodionsibov/upgraded-octo-pancake",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "igaozp/gstar",
+   "path": "apps/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nf-core/website",
+   "path": "sites/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NikolayS/PgQue",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "the3ash/astro-chiri",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ubie-oss/ubie-vitals-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sylvinus/agent-vm",
+   "path": "www/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wellwind/claude-code-from-source-zh-tw",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dmmulroy/overseer",
+   "path": "repos/alchemy/examples/hetzner-website-astro/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "eludris/eludris",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rdvo/flary",
+   "path": "apps/cloud/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sethuaung/Web-Check",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "platzhersh/openehr-explorer",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "asimov-protocol/asimov.directory",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "louiss0/forastro",
+   "path": "apps/blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JimcostDev/lims-qc-ui",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rxliuli/pixra",
+   "path": "packages/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ZERMORE/tongwblog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "myles/whaydayoftheweek-com",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bharathvaj-ganesan/bharathvaj.com",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pkellner/pkellner-keystatic",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "philipschm1tt/rhode-medizin",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Abban-Fahim/abban-fahim.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "juansanar/juansanar-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rootEnginear/rootEnginear.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Lycan-Xx/border-feed",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "germanbustamante/germanbustamante.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Kabbya04/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "emir002/justicefusion-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Lorenzo-DM/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lucienimmink/talk-list",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nengyong-liang/nengyong-liang.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CGIAR-Climate-Data-Hub/use-cases",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "fiiles/moony-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Dawson-web/myBlog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "djalmajr/djalmajr.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NalinPlad/echs.space",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "skoghoern/profile",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "vygr-labs/noted-desktop-app",
+   "path": "app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "smallflyingpig/ai-conference-overview",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "standardbeagle/lci-cpp",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wizardhead/wizardhead.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Christians-Concerned-for-the-Community/website-cccgainesville-org",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "milinddethe15/milinddethe15.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PranjalNishad/HyperLink",
+   "path": "FRONTEND/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "talhabalaj/personal_website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IFinstitute/if-ken.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Yezi99999/Yezi99999.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sheldonkwok/wclogs",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DeylerAF/astro-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "abosch19/svelte-fast-marquee-docs",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NoistNT/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "MToyokura/translations",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rx-twitter/rx-twitter-dashboard",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Kybbot/ptrk-mini-app",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Saul1hdz/NovaTareas",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kcin1107/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "neoavant2024-netizen/ota-hp",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bombap/lamnguyen-im",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "leoata/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "a092299775350722-beep/BREAD",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "uit-ayeaye/keewadun-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HarukaDev31/astro_landing_probusiness",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Moisessantos45/server-ssr-astro-node",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "damiandevux-coder/aria-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "beyondbeliefstudio/beyondbeliefprintshop",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "juzttheek/Tourvir",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "davicoo/DWCSTUFF",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ironi-pl/ironi.pl",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Custompedia/portfolio-radyt",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sSolal/elu4-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "FireGhost00/salary-splitter-mvp",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "felixdmv/cornasol-web-rebuild",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "EffortlessMetrics/still",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "LilianBoulard/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "micaelr95/micaelr95.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "murat-sever/murat-sever.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "noricha-vr/pxlite",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Leado123/electromagnetophytome",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bejamas/astro-dato-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Drunk-mooon/Drunk-mooon.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TheVisitor-coding/matlo_fleurs",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Ehesp/vercel-api-route-subdir",
+   "path": "app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lazarcloud/google-docs-blog-quickstart",
+   "path": "app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pjmarz/ATLAS-V",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Gabriel-Freitas-S/CGPDI.StudyLab",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "gjeffrey/Tim",
+   "path": "Examples/astro-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "LauraCastrillonMp/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dogpatch626/templates",
+   "path": "templates/ssr/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Abstract-Data/abstract-data-doc-theme",
+   "path": "apps/playground/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "historiabdevil/historiabdevil.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "WINOFFRG/WINOFFRG",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "xHugo21/xhugo21.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AurinExperience/AurinWebsite",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pofl/hochzeit",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "atakanbasmaci/truck-page",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "astro-sanctuary/sanctuary",
+   "path": "templates/core-graphql/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "MikeNewXYZ/sveltia-cms-auth-hono",
+   "path": "sandbox/astro-cloudflare/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Debjit126/Valentine",
+   "path": "apps-valentine-showcase-main/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mangaio/manga-website",
+   "path": "mangahook-api-main/mangahook-api-main/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jtlapenna/bright-gift",
+   "path": "_workflow-documents/archive/automation-systems/content-automation-export/reference/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cloudgury/wizcloudai-blog",
+   "path": ".github/workflows/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "GMOD/jbrowse-components",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maelgangloff/domain-watchdog",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bcms/starters",
+   "path": "astro/simple-blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dream-horizon-org/odin",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "harrisoncramer/harrisoncramer.me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tdrayson/wp-wireframe",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kalwabed/kalwabed.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "masak1yu/winxmerge",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jnahian/reader.md",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "WebsecLabs/sql-injection-knowledge-base",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Evonofy/MysticalReviews",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zetareticula/zeta-reticula",
+   "path": "api/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "imol-community/imol-community.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "schmooky/pylinka",
+   "path": "apps/site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "latinrev/astro-browser-extension-template",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AtharvaMahamuni/toytools",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AugurProject/augur-reboot-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "satyvm/satyam.cv",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yukiya2077/yukiya2077.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "themindfuldev/cintia-personal-site",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ezappala/ellie-site",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "susansilver/ttrpg-space-v3.0",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Smart-Ace-Designs/astro-testimonials-grid-section",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "christopherarter/arter-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kavicastelo/astro-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "perch-sensing/website-v3",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "awcot/astro-alpinewind",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "minhnh94/tsukie-v4",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mikndotdev/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Dr-Phi/minimalist-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "fabriziosalmi/ai-hallucination-research",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "chill-cats/stemalab-landing-page",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DiegoGarciaVega/PortfolioDGV",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tunnckoCore/astro4-wiggle-v2",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ascribed-dev/ascribe",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ghoti143/praxio",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shivangpandya/shivangpandya.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bcervantesalvarez/Deprecated-Quarto-Based-Website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TeddyHuang-00/VCTI",
+   "path": "apps/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "elliotdavies/elliotdavies.co.uk",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mseele/sve-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "colabottles/toddl",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "EconicDev/encarnacionservice",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "chenchihwang/chenchihwang.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Evintkoo/Evintkoo.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PGSCOM/cine",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jhroemer/jhroemer.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "alexis-thomas/DigitalIdentity",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ojoanalogo/alfon.so",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "triangulodev/triangulo",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ramdola-github/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sarvex/popular-parsec",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mrohith29/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "devcustrom/your-way",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ixilminiussi/lunchbox",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maximillian1508/web-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hmmatus/personal-portfolio-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Orion-Research-Labs/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "joeattardi/joeattardi-com-old",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "GeorgeContreras241/Portafolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "care-team-edushastra/edushastra.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ericdai5/globaldesign",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rishi-raj-jain/digital-garden",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "filipposmertzanakis/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hash-line/bugsport-docs",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zol22/RosiPeruvianBufffet",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zestones/yacms-client-autem",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cyonusg/AudiotecaBahai",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dumplingszw/dumplingszw.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cattho/fitness-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "natedunn/i-have-lots-to-say",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "YonatanEscalona/soluciones-integrales-angol",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "localseo365/hospitax",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ltthang88/ltthang88.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ego-debug/ewayautorepair",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "juanferfranco/interactivos2-2025-20",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hyceate/astro-hyceate",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "voyager1302/atn",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lambiengcode/lambiengcode.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AhmadBitarV/audiophile-commerce-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IsSmallPigPig/New_Blog_Astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tamimitchell/elementalsugar-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dardilar/astrobuild.tips",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Jibbscript/jibbscript.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rangaNP/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bobwise/teachtools",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Kaderimon/astro-convex-better-auth",
+   "path": "examples/anonymous/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rodionsibov/upgraded-octo-pancake",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "igaozp/gstar",
+   "path": "apps/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "backup-my/hxragi.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Waynexlink/kendomon-motors",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Abstract-Data/abstract-data-doc-theme",
+   "path": "apps/playground/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "historiabdevil/historiabdevil.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "WINOFFRG/WINOFFRG",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pofl/hochzeit",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "VinodKumarKP/my_portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Vladilena-Milize1/Vladilena-Milize1.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "MikeNewXYZ/sveltia-cms-auth-hono",
+   "path": "sandbox/astro-cloudflare/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Debjit126/Valentine",
+   "path": "apps-valentine-showcase-main/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jtlapenna/bright-gift",
+   "path": "_workflow-documents/archive/automation-systems/content-automation-export/reference/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "GMOD/jbrowse-components",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maelgangloff/domain-watchdog",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bcms/starters",
+   "path": "astro/simple-blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dream-horizon-org/odin",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "harrisoncramer/harrisoncramer.me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tdrayson/wp-wireframe",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kalwabed/kalwabed.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "masak1yu/winxmerge",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jnahian/reader.md",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zetareticula/zeta-reticula",
+   "path": "api/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "imol-community/imol-community.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "schmooky/pylinka",
+   "path": "apps/site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "latinrev/astro-browser-extension-template",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AtharvaMahamuni/toytools",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AugurProject/augur-reboot-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "anirudha/opensearch-agentops-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "themindfuldev/cintia-personal-site",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "KessokuTeaTime/website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "apurva0510/apurva0510.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Smart-Ace-Designs/astro-testimonials-grid-section",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "perch-sensing/website-v3",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wattnet/wattnet.eu",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "minhnh94/tsukie-v4",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mikndotdev/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Dr-Phi/minimalist-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "fabriziosalmi/ai-hallucination-research",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "chill-cats/stemalab-landing-page",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DiegoGarciaVega/PortfolioDGV",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tunnckoCore/astro4-wiggle-v2",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AmaseCocoa/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ShangChien/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "treefarmstudio/astro-examples",
+   "path": "copy-code-button/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ascribed-dev/ascribe",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Zenos27/project-concord-uk",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sneg55/irsforge",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nexus-substrate/repo-health-report",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hostinger/hostinger-templates",
+   "path": "templates/todays-menu/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ghoti143/praxio",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shivangpandya/shivangpandya.github.io",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bcervantesalvarez/Deprecated-Quarto-Based-Website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TeddyHuang-00/VCTI",
+   "path": "apps/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "drewpereli/onehandpiano",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "chenchihwang/chenchihwang.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PGSCOM/cine",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jhroemer/jhroemer.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "alexis-thomas/DigitalIdentity",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ojoanalogo/alfon.so",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "triangulodev/triangulo",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "keiserman/text-formatter",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mrohith29/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "devcustrom/your-way",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ixilminiussi/lunchbox",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hantsaniala/hantsaniala.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "alkmei/alkmei.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maximillian1508/web-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hmmatus/personal-portfolio-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Orion-Research-Labs/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "joeattardi/joeattardi-com-old",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "GeorgeContreras241/Portafolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CyberSG-Zero/astro-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Zavim/zavier-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "localseo365/hospitax",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ltthang88/ltthang88.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ego-debug/ewayautorepair",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "juanferfranco/interactivos2-2025-20",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hyceate/astro-hyceate",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "voyager1302/atn",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lambiengcode/lambiengcode.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AhmadBitarV/audiophile-commerce-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IsSmallPigPig/New_Blog_Astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tamimitchell/elementalsugar-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dardilar/astrobuild.tips",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Jibbscript/jibbscript.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zuperwebdeveloper/Facelift",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NeoPrint3D/astro-aio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kalyanchilamkuri/File-Compressor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "carbon-tracker-initiative/ag-verification-dashboard",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ayush-rdev/ayushwrites",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "vinayak-00001/kriyansh-steel",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kroue/brew-berry-cafe",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "arthrod/benchmarks-law",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mukhtharcm/astro-tw-sample",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "thnhtus/language-learning-landing-page",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ianhi/anki-defs",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Loloming/Portafolio",
+   "path": "client/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CoKeFish/agent-bazaar",
+   "path": "packages/landing/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "amitesh0303/starter-kits",
+   "path": "astro-recipe-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dwellermann/wellermann.de",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sidv1905/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Vonage-Community/tutorial-interactive_tutorials",
+   "path": "tutorials/video-node-client-observability/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Cachaza/runnest",
+   "path": "apps/landing/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AksaRose/Bloggy",
+   "path": "mechanical-mass/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ricdodong/sfbc3",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "stevenalp207/LESCOT-WEB",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "igormarcelmoreira/Portifolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Sithumli/sithumli-nanayakkara-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "EvokerKing/vexscorepro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jademola/jimiademola",
+   "path": "apps/photos/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IEvangelist/astro-jint",
+   "path": "tests/conformance/fixtures/core-session-config/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "beingofexistence13/dx-frontend",
+   "path": "core/astro/packages/integrations/markdoc/test/fixtures/content-collections/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "RafidMuhymin/astro-imagetools",
+   "path": "demo/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maxswinkels/busybar-apps",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tabler/tabler-flags",
+   "path": "preview/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HiDeoo/starlight-package-managers",
+   "path": "docs/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mahimairaja/tts",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "xberg-io/sceptre",
+   "path": "docs-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zeikar/repozine",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "qoollo/bob-management",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "YanivGabay/cs-lectures-by-yaniv-gabay",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rodneylab/narcissus",
+   "path": "demos/narcissus-astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "oriolmontcreus/armify-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "aiidateam/aiida-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bringbackourneighbours/bringbackourneighbours",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kitschpatrol/astro-feed-kit",
+   "path": "playground/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "theticketfairy/tf-website-builder-plugins",
+   "path": "wix/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "htlin222/lin-hsiehting",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "GinWU05/wegroup-members",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "trueberryless-org/starlight-changelog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "elkmod/shopware-astro-starter",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DragonBallerZ/dragon-ide",
+   "path": "opencode/packages/posts/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DikaArdnt/hisoka-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mattbatman/biblical",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "okanagraham/connexdigital",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JayaKrishnaNamburu/travel",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "apurva0510/apurva0510.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "iamhenry/suphenry",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zuige66/astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "spsi-gh/Portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "johnhkchen/ezstack",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "limwa/workshop-ci-cd-sinf-2024",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lukasulc/eko-ciscenje",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NullPunkt-Labs/quantum-saccharose-engine",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "afuh/afuh.dev",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nicolascuadram/crawlers",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yuki000311/ridaisai_traning",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Johann-Goncalves-Pereira/zaap2",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "markMoreto/markmoreto.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "davisgcii/davisgcii.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "p3lv/p3lv.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sillvva/matt-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hardikhari96/haripatel.dev",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "alkmei/alkmei.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kamalraj21/contentcraft",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bmpickford/bmpickford",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Zavim/zavier-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tiananc/cyberland.blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Evillada/Enrines-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jersonmr/pisto-docs",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "skyrpex/nativelink-benchmarks",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mateoodlc/ponshot",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shuseiono/munology",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "confire-dev/mono",
+   "path": "docs-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rangaNP/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bobwise/teachtools",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zuperwebdeveloper/Facelift",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NeoPrint3D/astro-aio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kalyanchilamkuri/File-Compressor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "carbon-tracker-initiative/ag-verification-dashboard",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ayush-rdev/ayushwrites",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "vinayak-00001/kriyansh-steel",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kroue/brew-berry-cafe",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "arthrod/benchmarks-law",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mukhtharcm/astro-tw-sample",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "thnhtus/language-learning-landing-page",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sdorra/astro-cc.dev",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hanelalo/ai-in-china",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "camilocero01/parche-banda-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "camilocero01/parche-banda-app",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "siinn1706/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "adamwhitlock1/sandbox-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sSwiergosz/astro-test",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TheEmilz/epixiom-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kevinmontanodev/Sistema_Citas_Medicas",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AntonioMotaDev/papelareforma-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "codejagaban/astro-directus-cms",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "felipetruman/security-links",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zhu-chen/zhu-chen.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "RazorSDU/JHR.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ianhi/anki-defs",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DulioShortener/Shortener",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Loloming/Portafolio",
+   "path": "client/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "amitesh0303/starter-kits",
+   "path": "astro-recipe-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shamyl/shamyl.github.io",
+   "path": "shamyl-v2/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dwellermann/wellermann.de",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sidv1905/blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lanabananal/lana",
+   "path": "connectup/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Vonage-Community/tutorial-interactive_tutorials",
+   "path": "tutorials/video-node-client-observability/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Cachaza/runnest",
+   "path": "apps/landing/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AksaRose/Bloggy",
+   "path": "mechanical-mass/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ricdodong/sfbc3",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "EvokerKing/vexscorepro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "happyhaha/solar-series",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "matscats/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JesusJK/Enrutamiento",
+   "path": "practica-componentes/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "benice2all4all/local-biz-sites-platform",
+   "path": "sites/active/demo-garage-doors/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PascalAmah/30days-Build-Challenge",
+   "path": "Day15/cloud9-astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IEvangelist/astro-jint",
+   "path": "tests/conformance/fixtures/core-session-config/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "trycompai/evie",
+   "path": ".repos/alchemy/packages/alchemy/test/AWS/Website/fixtures/astro-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "B4rz99/fidy-ai",
+   "path": ".repos/alchemy/packages/alchemy/test/AWS/Website/fixtures/astro-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rae-hill/homelab",
+   "path": "repos/astro/packages/astro/test/fixtures/component-library/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Azure/static-web-apps-cli",
+   "path": "e2e/samples/app/astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "maxswinkels/busybar-apps",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tabler/tabler-flags",
+   "path": "preview/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "t0saki/AstroPages-Bilingual",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HiDeoo/starlight-package-managers",
+   "path": "docs/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lopushok9/Agent-Layer",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "superegodev/superego",
+   "path": "packages/apps/website/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hny-codes/lobby-archive",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bluedusk/xisland",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kitschpatrol/astro-feed-kit",
+   "path": "playground/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Metakip/metakip",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "eMUQI/QuotaFrame",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "htlin222/lin-hsiehting",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "biko2/insights-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mcp-tool-shop-org/audiobooker",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "b-ionut-r/copilot-dev-day",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nakorncode/workshop",
+   "path": "html-css/shop.co/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DragonBallerZ/dragon-ide",
+   "path": "opencode/packages/posts/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "itsweliton/weliton.me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DikaArdnt/hisoka-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mattbatman/biblical",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Armster15/armaan.cc",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "okanagraham/connexdigital",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "flutteruniv/blog",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yurikong/astro-resume-minimalist",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JayaKrishnaNamburu/travel",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "syjoe02/syjoe02.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Heidi-Negrete/negrete.dev",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dariuskia/dariuskia.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "granth7/notes",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "oriolmontcreus/liquideath",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "oriolmontcreus/marketron",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JoahanCarlo/dante-astro-theme",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "therealemery/dante-astro-theme",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PBMISRA95/portfolio-minimal",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NullPunkt-Labs/quantum-saccharose-engine",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "OreonCZ/OreonCZ.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "faultypointer/past-personal-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rasult22/waqfcapital.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "aolaru/findsera.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dr3dr3/andre-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rubenitx/yt-transcriber-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "L1lith/Lilis-Game-Engine",
+   "path": "demos/pixi-rudimentary/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "faucamp/litebridge",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "homeputers/ebal-v2",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "portabletext/astro-portabletext",
+   "path": "demo/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shawnklewis/SyntheticPen",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tabler/tabler-payments",
+   "path": "preview/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zelavis/zelavis",
+   "path": "website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nicolascuadram/crawlers",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Johann-Goncalves-Pereira/zaap2",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "joaopferreira19/whoami",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Telos-Genomics/telos_genomics_landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pacomonroy/AppixV2",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sebhdz/cannalweb",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "agniv-the-marker/sebastian-ohlig",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PoliclinicoLaTrinidad/Policlinico-La-Trinidad",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cin4ed/printarte-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PederRustad/Cloudfare_website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "0akd/absolutrafrontendastro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "codereyinish/my-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "connordavidfitzgerald/energyclub",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sugiura-yuta/room701",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kamiljk/25Q2_astro_nano",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Liikemies-glitch/goodsideweb-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "skew202/will-ai-replace-me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AM1407/Space-telemetry-project",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dvy246/HomeProjectHub",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "saugatmalla/astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "netanelgilad/luna",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SSWConsulting/SSW.Website.Global",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "isuvo/ixuvo.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tdmichaelis/kodaboda",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dvydll/ciberseguridad-ifct03_12_34",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zqy1231/zqy1231.github.io",
+   "path": "travel-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "efureev/astro-granularity",
+   "path": "examples/ssr/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sashimikun/opencode",
+   "path": "packages/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kwaka1208/astro-courier",
+   "path": "astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CharanMunur/merry",
+   "path": "client/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jcorona48/pruebaReclutamientoFrontEnd",
+   "path": "task-2/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "denes-sebestyen/cv",
+   "path": "astro-cv/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "BorghiIgnacio81/Estok_2",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "reeldeal-xyz/reeldeal",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hatemabsi/found_with_me",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lanabananal/lana",
+   "path": "connectup/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JeanVydes/vyde-interfaces",
+   "path": "apps/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yaakaito/workers-static-assets-example",
+   "path": "astro-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Jorel29/jorel29.github.io",
+   "path": "astro-build/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "einstenrodriguesdev/drax-plugin",
+   "path": "templates/blog-surface/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jeremykamber/strata-memory",
+   "path": "landing_page/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Chuksezeh/Chukkysavvy-tech",
+   "path": "flowbite-react-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rithikasilva/rithikasilva.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "matscats/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pnave95/rickynaveblog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "edo979/practice",
+   "path": "parallaxScrolling/practice1/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "MezaFox/SevillaRemodelingLLC",
+   "path": "NEW Theme/astroship-main/astroship-main/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "modfolio/modfolio-ls",
+   "path": "apps/landing/astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CamiiUribeee/DesarrolloWEB",
+   "path": "Dise\u00f1o1/design1/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "YYC-Cube/YYC3-Knowledge-Base",
+   "path": "YYC3-B/Core-files/ui/templates/astro-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lumiet/wos-academic-session",
+   "path": "astro-test/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "civictechdc/congressional-tech",
+   "path": "apps/site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zerodeploy-dev/zeroback",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "eMUQI/QuotaFrame",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Coutons/courseswyn-astro",
+   "path": "astro.config.prod.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "biko2/insights-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nick-cjyx9/astro-theme-hiro",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Pardesco/4d-polytope-viewer",
+   "path": "knowledge-base/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "gskril/eth-gas-alerts",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CyanMatter/harmonic-deferents",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ShawnGeorge03/cloud-icons",
+   "path": "www/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "2u841r/starlight-theme-mdbook",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SurajG20/Portfolio-Website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "linaaaqi/astro-obsidian",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "YoniTne/Voltaire99",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bandantonio/bandantonio.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AbdAsh/abdash.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mj3622/mj3622.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "judaicadh/earlymodernworkshop",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "drc288/cv",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Lilyly9/Lilyly9.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "okikio/skf-examination-platform",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HuanXin-Chen/old-blog2",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "anishshobithpscollege/gdsc-website-v2",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AZANIR/Gapta",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "steamnoid/ai-sdlc-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lisoboss/tlog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jorgealtamar/jorgealtamar.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cemdq/cemdq.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tabler/tabler-payments",
+   "path": "preview/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "m-ox/portfolio",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kylekthompson/kkt.dev",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "santiment/santiment.net",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AndreaOsma/AndreaOsma",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hardikhari96/haripatel.dev",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "GastonHorvat/AutomationAI",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jersonmr/pisto-docs",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "skyrpex/nativelink-benchmarks",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mateoodlc/ponshot",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shuseiono/munology",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "flira/portfolio-frontend",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yushanwebdev/yushanweb.dev",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "joseph-kingofdreams/elwin-documentary",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "anderson-ntlabs/neural_thinker",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "confire-dev/mono",
+   "path": "docs-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AM1407/Space-telemetry-project",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dvy246/HomeProjectHub",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "saugatmalla/astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "netanelgilad/luna",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SSWConsulting/SSW.Website.Global",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "isuvo/ixuvo.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tdmichaelis/kodaboda",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dvydll/ciberseguridad-ifct03_12_34",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CCHS-Computer-Science-Honors-Society/cshs-new-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "micjevans/infinity-mercenaries",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bmstylish/peiyuanma.com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "russmckendrick/ssl-toolkit-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IvanSS22030/UAPA-Empleos",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "perci-aceron/jhaydz-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Callm3thebreeze/klia-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "tal-moskovich-imagenai/test-ip",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "felix-berlin/introduce-zod",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "johnajacob/astro-coolify",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HiDeoo/astro-6-node-ssr-prerender-404",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "elwynlwm-wq/worldcup-2026",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TrevorPLam/trevorplam",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Byroncl/portafolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nilfred/julie-and-nilsfredrik-wedding",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cfullerton/astro-content-layer",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "PlanetCom-Creative/wally-vac",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bkusuma/astro-with-visual-editor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mxpln/examples",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "taoguangc/netlify-visual-editor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SPRNGSMMR/astro-with-netlify-visual-editor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "opadasaleh/ZEUS",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "aura-stack-ts/auth",
+   "path": "apps/astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "salvaft/astro-sft",
+   "path": "demos/head/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "southwellmedia/create-velocity-astro",
+   "path": "templates/i18n/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kwaka1208/astro-courier",
+   "path": "astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jcorona48/pruebaReclutamientoFrontEnd",
+   "path": "task-2/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "denes-sebestyen/cv",
+   "path": "astro-cv/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rgcodexd/ShunyaPortfolio",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JeanVydes/vyde-interfaces",
+   "path": "apps/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yaakaito/workers-static-assets-example",
+   "path": "astro-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "A2-ai/dvs2-docs",
+   "path": "starlight/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "einstenrodriguesdev/drax-plugin",
+   "path": "templates/blog-surface/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jeremykamber/strata-memory",
+   "path": "landing_page/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Serviceware/portal-widget-sdk",
+   "path": "examples/astro-static-card/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Chuksezeh/Chukkysavvy-tech",
+   "path": "flowbite-react-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "chiu20060726/chiu20060726.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pnave95/rickynaveblog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HydraBor/sunset-town",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Bwc9876/astro-remote-fonts-example",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Kcyle/skin-analysis-app",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "pfcoder/zaytun",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "edo979/practice",
+   "path": "parallaxScrolling/practice1/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AlejandroLealGonzalez/Portafolio",
+   "path": "pokemon-paginacion-estatica/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CamiiUribeee/DesarrolloWEB",
+   "path": "Dise\u00f1o1/design1/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HelgeSte/astro-udemy-course",
+   "path": "astro-personal-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "YYC-Cube/YYC3-Knowledge-Base",
+   "path": "YYC3-B/Core-files/ui/templates/astro-app/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Shaiharyaar/scalable-web-app",
+   "path": "part9.Astro/part9.5/todo-ui/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "arbiterForge/codeArbiter",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "civictechdc/congressional-tech",
+   "path": "apps/site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zerodeploy-dev/zeroback",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "boastack/verino",
+   "path": "apps/www/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Pratyay360/dynamic-upi-qr",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nick-cjyx9/astro-theme-hiro",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Pardesco/4d-polytope-viewer",
+   "path": "knowledge-base/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "CyanMatter/harmonic-deferents",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dergigi/learn-fips",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "csarnataro/ilvoltodellaltro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "LoveDoLove/LoveDoLove",
+   "path": "portfolio-website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "explaura/blog",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "poli-page/sdk-java",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "LilTrublMakr/Diadem",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mxn2020/overstay",
+   "path": "blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "patrickserrano/pyrokai",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nstranquist/nicos-catalog",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mdsreq-fga-unb/REQ-2025.2-T01-Softex",
+   "path": "docs-astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ImRLopezAG/nike-landing",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nigall86/starter-template-astro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Belivl/Belivl.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "matthewtapps/matthewtapps.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Trkiller02/minimalist-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Viraaj-A/tshr.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "l-lomr/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "machr/astro-landing-page",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wkolo9/MyFunds",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kentonscott/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "MikeAthie/TheHub",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wiput1999/wiput-me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "saveside/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sanahujadev/sanahuja-dev-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hernan-solis/PortfolioHS",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "djsph001/thought-partners",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Gilabs-Studio/gilabs-company-profile",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sadikuernest00-prog/astro-platform-starter-b9185",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bitbetterde/cliqshot-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Robomous/RoadMaker",
+   "path": "docs-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bkusuma/astro-with-visual-editor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mxpln/examples",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "taoguangc/netlify-visual-editor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SPRNGSMMR/astro-with-netlify-visual-editor",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "opadasaleh/ZEUS",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Concord-Voice/concordvoice-com",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "HamiltonPDev/hps-ai-hub",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ghubo/astro-cloudflare-compile-repro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NathanWoltermann-ui/greenfield-acres-realty",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "snowmead/snowmead",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "willspiering/retro-gaming-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rkino4120/liangworks",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nidger/renewables",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Mrerg7/bwax-me-v1",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ItsPrateekBansal/personal-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "burtcrismore/burt-crismore",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nuthatch-org/nuthatch-frontend",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "leandrosousa007/clinica-odontologica-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Demurest33/correconhistoria",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "magiccyril/digital-garden",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JoshyTheDev/fluffydev.me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "eric-ayes/eric-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "subscapularis/Homage-index",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "leihuang23/ai-engineering-brief-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dev-ankit-kumar/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mendelhecht03/shlomo-hecht-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Blueforzl/HanshanBlog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sledyuk/bogdan-space",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "woufeder/BD",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yuborama/ambiental-eco-green",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hotnAny/lilical",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wz4yq28pdz-lgtm/argota-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lucianoaguirreee/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Chrystian-Calderon/Clone-GYM24",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "atfleming/80fcreative",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Monolith-BCI/Monolith",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Ancitik/ancitik.work",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "matej-kotrba/gwent-sound",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "RogierdeRuijter/por-villa-turbo",
+   "path": "apps/second/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TClark1011/workspace-env",
+   "path": "packages/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Dev916/mech-crate",
+   "path": "site/apps/site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Arrow-Ghost/ShadowAdj",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zvasilev/mailtemi-web-new",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "b4dScript/b4dscript.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mikesegeren/beetlejuice-hackathon",
+   "path": "apps/shell/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "StamenchoBog/block-of-energy",
+   "path": "app/frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kyeshmz/credits",
+   "path": "apps/credits-wiki/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IconicXDivyansh/kbd-supply",
+   "path": "apps/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kevinjin0420/kevinjin0420.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "vdgame/cms",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "vdgame/cms-1",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "enzozon/landa-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NAPH130/naph130-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hoangte2006/hoangte-portfolio",
+   "path": ".history/astro.config_20260710230406.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "DrFday/DrFday.ir",
+   "path": "blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Dexmang/stitch-on-this",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "samejima-ai/ai-tetsugaku",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "h-mascot/setupclaw-clone",
+   "path": "blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "h-mascot/openclaw-agency",
+   "path": "blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AlejandroLealGonzalez/Portafolio",
+   "path": "pokemon-paginacion-estatica/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ferjosem362/astro",
+   "path": "packages/astro/e2e/fixtures/namespaced-component/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "shujuuu/astro",
+   "path": "packages/astro/e2e/fixtures/namespaced-component/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ShawnGeorge03/cloud-icons",
+   "path": "www/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "2u841r/starlight-theme-mdbook",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "SurajG20/Portfolio-Website",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "linaaaqi/astro-obsidian",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "YoniTne/Voltaire99",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "deepaksahani3231-cmyk/radynox-draivra",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bandantonio/bandantonio.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AbdAsh/abdash.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mj3622/mj3622.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "judaicadh/earlymodernworkshop",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "drc288/cv",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Lilyly9/Lilyly9.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "okikio/skf-examination-platform",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "anishshobithpscollege/gdsc-website-v2",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AZANIR/Gapta",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "steamnoid/ai-sdlc-landing",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lisoboss/tlog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jorgealtamar/jorgealtamar.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "cemdq/cemdq.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dergigi/learn-fips",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "csarnataro/ilvoltodellaltro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Davi-s-Brain/biblioteca_crud",
+   "path": "web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "LoveDoLove/LoveDoLove",
+   "path": "portfolio-website/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "explaura/blog",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "poli-page/sdk-java",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "LilTrublMakr/Diadem",
+   "path": "docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mxn2020/overstay",
+   "path": "blog/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "patrickserrano/pyrokai",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nstranquist/nicos-catalog",
+   "path": "site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mdsreq-fga-unb/REQ-2025.2-T01-Softex",
+   "path": "docs-astro/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ImRLopezAG/nike-landing",
+   "path": "astro.config.ts",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Belivl/Belivl.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "matthewtapps/matthewtapps.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Trkiller02/minimalist-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Viraaj-A/tshr.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "l-lomr/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wkolo9/MyFunds",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kentonscott/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wiput1999/wiput-me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "saveside/website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sanahujadev/sanahuja-dev-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hernan-solis/PortfolioHS",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "djsph001/thought-partners",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Gilabs-Studio/gilabs-company-profile",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sadikuernest00-prog/astro-platform-starter-b9185",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "bitbetterde/cliqshot-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "javisin22/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "paulycn/loftdesign",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Robomous/RoadMaker",
+   "path": "docs-site/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ghubo/astro-cloudflare-compile-repro",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NathanWoltermann-ui/greenfield-acres-realty",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "snowmead/snowmead",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "rkino4120/liangworks",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nidger/renewables",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Mrerg7/bwax-me-v1",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ItsPrateekBansal/personal-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "burtcrismore/burt-crismore",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "nuthatch-org/nuthatch-frontend",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "leandrosousa007/clinica-odontologica-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Demurest33/correconhistoria",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "magiccyril/digital-garden",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "JoshyTheDev/fluffydev.me",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "eric-ayes/eric-portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "subscapularis/Homage-index",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "leihuang23/ai-engineering-brief-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "dev-ankit-kumar/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mendelhecht03/shlomo-hecht-website",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sledyuk/bogdan-space",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "woufeder/BD",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "yuborama/ambiental-eco-green",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hotnAny/lilical",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "wz4yq28pdz-lgtm/argota-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "lucianoaguirreee/portfolio",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "atfleming/80fcreative",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Monolith-BCI/Monolith",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Ancitik/ancitik.work",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "matej-kotrba/gwent-sound",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "selimdev00/lyra",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zhuchentong/astro-tutorial",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "jperezaracil/estadistica-interactiva",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Nightwings24/deployiitp",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "AddisonReyes/teamlogistics",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mdevitoii/mdevitoii.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "sanyzrn/NafasZistPharmed",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TuMyXx93/TumiFact",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "ViajesVeleta/viajes-veleta-web",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "RogierdeRuijter/por-villa-turbo",
+   "path": "apps/second/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "TClark1011/workspace-env",
+   "path": "packages/docs/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "Arrow-Ghost/ShadowAdj",
+   "path": "frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "zvasilev/mailtemi-web-new",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "b4dScript/b4dscript.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "mikesegeren/beetlejuice-hackathon",
+   "path": "apps/shell/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "StamenchoBog/block-of-energy",
+   "path": "app/frontend/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kyeshmz/credits",
+   "path": "apps/credits-wiki/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "IconicXDivyansh/kbd-supply",
+   "path": "apps/web/astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "kevinjin0420/kevinjin0420.github.io",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "vdgame/cms",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "enzozon/landa-site",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "NAPH130/naph130-blog",
+   "path": "astro.config.mjs",
+   "query": "filename:astro.config"
+  },
+  {
+   "repo": "hoangte2006/hoangte-portfolio",
+   "path": ".history/astro.config_20260710230406.mjs",
+   "query": "filename:astro.config"
+  }
+ ]
+}

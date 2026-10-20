@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+Toumy24/Toumy24-Blog,cba2816f19c72f2a2aad35576676ab1fc4fec25a,build_failed,2.2,,v24.21.0,sh: 1: hugo: not found

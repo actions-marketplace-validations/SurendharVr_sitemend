@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+ConductionNL/openregister,3cd482493a6d55866687e80eba05e12b89acf680,build_failed,85.7,,v22.23.3,sh: 1: docusaurus: not found

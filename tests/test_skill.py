@@ -844,6 +844,34 @@ class TestSchemaReferences(unittest.TestCase):
         self.assertTrue(self._required(known))
 
 
+class TestBracketHosts(Base):
+    """REGRESSION #51: a URL whose host starts with "[" but is not a valid IPv6 literal
+    made urlsplit raise, and the whole audit stopped. The replay benchmark hit it on
+    electron/website, typescript-eslint and react-navigation, all in minified JS/CSS."""
+
+    def test_resolve_href_does_not_raise(self):
+        for href in ("http://[", "https://[::1", "//[x", "http://[x/page"):
+            with self.subTest(href=href):
+                self.assertEqual(S.resolve_href("/", href), ("invalid", href))
+
+    def test_audit_survives_a_bracket_host_anywhere(self):
+        bad = "https://[x/page"
+        for name, head, body, files in (
+                ("css", '<link rel="stylesheet" href="/style.css">', "", {"style.css": "a{background:url(http://[x)}"}),
+                ("link", "", '<a href="{0}">x</a>'.format(bad), {}),
+                ("hreflang", '<link rel="alternate" hreflang="de" href="{0}">'.format(bad), "", {}),
+                ("canonical", '<link rel="canonical" href="{0}">'.format(bad), "", {}),
+                ("sitemap", "", "", {"sitemap.xml": '<urlset><url><loc>{0}</loc></url></urlset>'.format(bad),
+                                     "robots.txt": "User-agent: *\nSitemap: https://[x/sitemap.xml\n"})):
+            with self.subTest(source=name):
+                fx = Fixture()
+                self.addCleanup(fx.cleanup)
+                fx.write("index.html", page_html(head_extra=head, body="<h1>H</h1><p>" + body + "word " * 300 + "</p>"))
+                for rel, text in files.items():
+                    fx.write(rel, text)
+                self.assertIsInstance(fx.ids(), list)
+
+
 class TestSchemaClaims(unittest.TestCase):
     REVIEW = {"@type": "LocalBusiness", "name": "X", "address": "Some Street",
               "review": [{"@type": "Review",
@@ -881,6 +909,27 @@ class TestSchemaClaims(unittest.TestCase):
 
     def test_initial_only_tokens_are_ignored(self):
         self.assertFalse(self._review_by("Varsha B.", "Varsha said it was lovely. Some Street"))
+
+    def _rating(self, page_text, elsewhere=""):
+        product = {"@type": "Product", "name": "Widget",
+                   "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.7",
+                                       "reviewCount": "86413"}}
+        page = {"url": "/", "jsonld": [product], "jsonld_errors": [],
+                "claim_text": S.claim_norm(page_text), "visible_text": page_text.casefold()}
+        site = page_text + " " + elsewhere
+        f, _ = schema_check.check_page(page, S.claim_norm(site),
+                                       site_numbers=schema_check.numbers(site.casefold()))
+        return [x for x in f if x["id"] == "S5-SCHEMA-UNSUPPORTED-CLAIM"]
+
+    def test_a_rating_is_not_corroborated_by_stray_digits(self):
+        """REGRESSION found by the seeded recall run (2026-10-17): ratingValue "4.7" was
+        split into "4" and "7", which every site contains, so a rating the site never
+        shows passed as corroborated."""
+        self.assertTrue(self._rating("Widget docs.", "Version 4 ships in 7 days. Step 47."))
+
+    def test_a_rating_the_site_shows_is_corroborated(self):
+        self.assertEqual(self._rating("Rated 4.7 by 86413 customers."), [])
+        self.assertEqual(self._rating("Widget docs.", "Our widget is rated 4.7 from 86413 reviews."), [])
 
     def test_visible_review_not_flagged(self):
         self.assertEqual(self._check("Jane Doe said: Great service. Some Street"), [])
@@ -3231,6 +3280,493 @@ class TestGithubAction(unittest.TestCase):
         self.assertEqual(self._run_step([{"rule": "S1-BROKEN-LINK", "url": "/",
                                           "reason": "Page lands Monday"}]),
                          ["code=0", "result=pass"])
+
+
+class TestReplay(unittest.TestCase):
+    """bench/replay/replay.py builds a repository's real commits and runs the gate on each
+    consecutive pair. Two throwaway git repositories stand in for real sites, so no
+    network is needed. A failed build must never read as a pass or a fail."""
+
+    ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+    SCRIPT = os.path.join(ROOT, "bench", "replay", "replay.py")
+    BUILD = ("import os, shutil, sys\n"
+             "if os.path.exists('src/FAIL'):\n    sys.exit('build failed')\n"
+             "shutil.copytree('src', 'out')\n")
+
+    @classmethod
+    def setUpClass(cls):
+        if not os.path.isfile(cls.SCRIPT):
+            raise unittest.SkipTest("bench/ is not shipped in the sdist")
+        if not shutil.which("git"):
+            raise unittest.SkipTest("git not available")
+        cls.tmp = tempfile.mkdtemp(prefix="sitemend-replay-")
+        page = lambda link="", words=300: page_html(body="<h1>H</h1><p>" + link + "word " * words + "</p>")
+        # Cutoff 2026-02-01: the last commit of each is after it and must never be built.
+        cls.a = cls._repo("a", [
+            ("2026-01-01", {"build.py": cls.BUILD, "src/index.html": page()}),
+            ("2026-01-02", {"src/index.html": page(words=310)}),
+            ("2026-01-03", {"src/index.html": page('<a href="/gone/">x</a> ')}),
+            ("2026-01-04", {"src/FAIL": "x"}),
+            ("2026-01-05", {"src/FAIL": None}),
+            ("2026-03-01", {"src/index.html": page(words=320)}),
+        ])
+        cls.b = cls._repo("b", [
+            ("2026-01-01", {"build.py": cls.BUILD, "src/index.html": page()}),
+            ("2026-01-02", {"src/index.html": page(words=310)}),
+            ("2026-03-01", {"src/index.html": page(words=320)}),
+        ])
+
+    @classmethod
+    def tearDownClass(cls):
+        shutil.rmtree(cls.tmp, True)
+
+    @classmethod
+    def _repo(cls, name, steps):
+        path = os.path.join(cls.tmp, "src-" + name)
+        os.makedirs(path)
+
+        def git(*args, date="2026-01-01"):
+            stamp = date + "T12:00:00+00:00"
+            subprocess.run(["git"] + list(args), cwd=path, check=True, capture_output=True,
+                           env=dict(os.environ, GIT_AUTHOR_DATE=stamp, GIT_COMMITTER_DATE=stamp,
+                                    GIT_AUTHOR_NAME="t", GIT_AUTHOR_EMAIL="t@example.test",
+                                    GIT_COMMITTER_NAME="t", GIT_COMMITTER_EMAIL="t@example.test"))
+        git("init", "-q", "-b", "main")
+        git("config", "commit.gpgsign", "false")
+        shas = []
+        for date, files in steps:
+            for rel, content in files.items():
+                full = os.path.join(path, rel)
+                if content is None:
+                    os.remove(full)
+                    continue
+                os.makedirs(os.path.dirname(full) or path, exist_ok=True)
+                with open(full, "w", encoding="utf-8", newline="\n") as fh:
+                    fh.write(content)
+            git("add", "-A")
+            git("commit", "-q", "-m", date, date=date)
+            shas.append(subprocess.run(["git", "rev-parse", "HEAD"], cwd=path, check=True,
+                                       capture_output=True, text=True).stdout.strip())
+        return path, shas
+
+    def _run(self, entries, *flags):
+        """Run the harness on a fresh config; return (results rows, out dir, run dir)."""
+        d = tempfile.mkdtemp(prefix="run-", dir=self.tmp)
+        cfg = os.path.join(d, "repos.json")
+        with open(cfg, "w", encoding="utf-8") as fh:
+            json.dump([dict(e, ref_cutoff="2026-02-01T00:00:00Z", site_dir="out", node_version="24",
+                            build_command='"{0}" build.py'.format(sys.executable)) for e in entries], fh)
+        return self._again(d, *flags)
+
+    def _again(self, d, *flags):
+        out, results = os.path.join(d, "out"), os.path.join(d, "results.csv")
+        r = subprocess.run([sys.executable, self.SCRIPT, "--config", os.path.join(d, "repos.json"),
+                            "--work", os.path.join(d, "work"), "--out", out, "--results", results,
+                            "--scripts", sitemend.HERE] + list(flags),
+                           capture_output=True, text=True, encoding="utf-8", errors="replace")
+        self.assertEqual(r.returncode, 0, r.stdout[-2000:] + r.stderr[-2000:])
+        import csv
+        with open(results, encoding="utf-8", newline="") as fh:
+            return list(csv.DictReader(fh)), out, d
+
+    def test_consecutive_commits_are_compared_and_failed_builds_skipped(self):
+        a, sa = self.a
+        rows, out, d = self._run([{"repo": "t/a", "url": a, "commits": 4}])
+        ra = rows
+        self.assertEqual([(r["base_sha"], r["head_sha"]) for r in ra],
+                         list(zip(sa[:4], sa[1:5])))
+        self.assertEqual([r["gate_result"] for r in ra],
+                         ["pass", "fail", "skipped_build_failed", "skipped_build_failed"])
+        self.assertNotIn(sa[5], {r["head_sha"] for r in rows}, "a commit after the cutoff was built")
+        with open(os.path.join(d, ra[1]["new_findings_json_path"]), encoding="utf-8") as fh:
+            self.assertEqual([f["id"] for f in json.load(fh)["regressions"]], ["S1-BROKEN-LINK"])
+        self.assertEqual(ra[2]["new_findings_json_path"], "")
+        self.assertTrue(float(ra[0]["build_seconds"]) >= 0 and float(ra[0]["audit_seconds"]) > 0)
+        import csv
+        with open(os.path.join(d, "builds.csv"), encoding="utf-8", newline="") as fh:
+            builds = list(csv.DictReader(fh))
+        self.assertEqual([(b["sha"], b["status"]) for b in builds],
+                         list(zip(sa[:5], ["ok", "ok", "ok", "build_failed", "ok"])))
+        self.assertEqual(builds[3]["error"], "build failed")
+        self.assertEqual(builds[0]["error"], "")
+
+        # A re-run reuses every build and audit and writes the same results.
+        marker = os.path.join(out, "t__a", sa[0], "build.json")
+        before = os.path.getmtime(marker)
+        again, _, _ = self._again(d)
+        self.assertEqual(os.path.getmtime(marker), before)
+        self.assertEqual(again, rows)
+
+    def test_pilot_runs_two_repositories_at_twenty_commits(self):
+        """commits: 0 would compare nothing. The pilot asks for 20, and b has only two
+        commits before the cutoff, so each repository gets exactly one comparison."""
+        b, sb = self.b
+        rows, _, _ = self._run([{"repo": "t/x", "url": b, "commits": 0},
+                                {"repo": "t/y", "url": b, "commits": 0},
+                                {"repo": "t/z", "url": b, "commits": 0}], "--pilot")
+        self.assertEqual([(r["repo"], r["head_sha"], r["gate_result"]) for r in rows],
+                         [("t/x", sb[1], "pass"), ("t/y", sb[1], "pass")])
+
+    def test_list_prints_the_selection_for_a_ci_matrix(self):
+        """The replay workflow runs one job per repository from this list."""
+        cfg = os.path.join(tempfile.mkdtemp(prefix="run-", dir=self.tmp), "repos.json")
+        with open(cfg, "w", encoding="utf-8") as fh:
+            json.dump([{"repo": n, "node_version": 24} for n in ("o/a", "o/b", "o/c")], fh)
+
+        def listed(*flags):
+            r = subprocess.run([sys.executable, self.SCRIPT, "--config", cfg, "--list"] + list(flags),
+                               capture_output=True, text=True, check=True)
+            return json.loads(r.stdout)
+        self.assertEqual(listed("--pilot"), [{"repo": "o/a", "slug": "o__a", "node_version": "24"},
+                                             {"repo": "o/b", "slug": "o__b", "node_version": "24"}])
+        self.assertEqual([e["repo"] for e in listed("--pilot", "--only", "o/c")], ["o/c"])
+        self.assertEqual(len(listed()), 3)
+
+
+class TestEvidenceLedger(unittest.TestCase):
+    """bench/verify_helper.py pre-fills one ledger row per blocking finding and shows the
+    evidence; a person writes every verdict. bench/summarize.py turns the ledger and the
+    replay's results into bench/summary.md, keeping per-commit frequency and per-finding
+    precision apart."""
+
+    BENCH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "bench")
+    HEAD, BASE, OTHER = "h" * 40, "b" * 40, "c" * 40
+
+    def setUp(self):
+        if not os.path.isfile(os.path.join(self.BENCH, "summarize.py")):
+            raise unittest.SkipTest("bench/ is not shipped in the sdist")
+        self.d = tempfile.mkdtemp(prefix="sitemend-ledger-")
+        self.addCleanup(shutil.rmtree, self.d, True)
+
+    def _write(self, rel, text):
+        full = os.path.join(self.d, rel)
+        os.makedirs(os.path.dirname(full), exist_ok=True)
+        with open(full, "w", encoding="utf-8", newline="") as fh:
+            fh.write(text if isinstance(text, str) else json.dumps(text))
+        return full
+
+    def _csv(self, rel, header, rows):
+        return self._write(rel, "\n".join([",".join(header)] + [",".join(r) for r in rows]) + "\n")
+
+    def _run(self, script, *args):
+        r = subprocess.run([sys.executable, os.path.join(self.BENCH, script)] + list(args),
+                           capture_output=True, text=True, encoding="utf-8", errors="replace",
+                           env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+        self.assertEqual(r.returncode, 0, r.stdout[-2000:] + r.stderr[-2000:])
+        return r.stdout
+
+    def _ledger(self, path):
+        import csv
+        with open(path, encoding="utf-8", newline="") as fh:
+            return list(csv.DictReader(fh))
+
+    RESULTS = ["repo", "base_sha", "head_sha", "build_seconds", "audit_seconds", "gate_result",
+               "new_findings_json_path"]
+
+    def _replay(self):
+        """One failing comparison whose head made /drafts/a/ noindex, one passing one."""
+        page = lambda noindex: {"url": "/drafts/a/", "title": "Draft", "noindex": noindex,
+                                "robots_meta": "noindex" if noindex else None, "canonical": "/drafts/a/"}
+        for sha, noindex in ((self.BASE, False), (self.HEAD, True)):
+            self._write("out/o__r/{0}/crawl.json".format(sha),
+                        {"pages": [page(noindex)], "robots": {"found": True}, "sitemap": {"found": True}})
+        self._write("out/o__r/{0}/verify.json".format(self.HEAD), {"regressions": [
+            {"id": "S1-NOT-INDEXABLE", "severity": "critical", "pages": ["/drafts/a/"],
+             "evidence": '<meta name="robots" content="noindex">', "message": "Page is noindex"}]})
+        return self._csv("results.csv", self.RESULTS, [
+            ["o/r", self.BASE, self.HEAD, "10", "5", "fail", "out/o__r/{0}/verify.json".format(self.HEAD)],
+            ["o/r", self.OTHER, self.BASE, "10", "5", "pass", "out/o__r/{0}/verify.json".format(self.BASE)]])
+
+    def test_helper_prefills_rows_and_shows_evidence_but_never_a_verdict(self):
+        results, ledger = self._replay(), os.path.join(self.d, "ledger.csv")
+        out = self._run("verify_helper.py", "--results", results, "--ledger", ledger)
+        rows = self._ledger(ledger)
+        self.assertEqual([(r["repo"], r["head_sha"], r["rule_id"], r["severity"], r["url"], r["verdict"])
+                          for r in rows], [("o/r", self.HEAD, "S1-NOT-INDEXABLE", "critical", "/drafts/a/", "")])
+        self.assertIn('content="noindex"', rows[0]["evidence_excerpt"])
+        self.assertIn("noindex: False -> True", out)
+        self.assertIn("https://github.com/o/r/compare/{0}...{1}".format(self.BASE, self.HEAD), out)
+
+        # A second run adds nothing, and keeps a verdict a person wrote.
+        import csv
+        rows[0].update(verdict="true_regression", verified_by="B", verification_method="curl")
+        with open(ledger, "w", encoding="utf-8", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=list(rows[0]), lineterminator="\n")
+            w.writeheader()
+            w.writerows(rows)
+        out = self._run("verify_helper.py", "--results", results, "--ledger", ledger)
+        self.assertEqual([r["verdict"] for r in self._ledger(ledger)], ["true_regression"])
+        self.assertNotIn("noindex: False -> True", out)
+
+    def test_one_row_per_blocking_finding_not_per_rule_and_page(self):
+        """REGRESSION found by the 1.7.0 pilot: seven broken language links on one new
+        electron/website page became one ledger row, so precision, counted per finding,
+        would have counted one finding where the gate blocked on seven."""
+        results, ledger = self._replay(), os.path.join(self.d, "ledger.csv")
+        self._write("out/o__r/{0}/verify.json".format(self.HEAD), {"regressions": [
+            {"id": "S1-BROKEN-LINK", "severity": "high", "pages": ["/drafts/a/"],
+             "evidence": 'href="/de/x" -> /de/x', "message": "broken"},
+            {"id": "S1-BROKEN-LINK", "severity": "high", "pages": ["/drafts/a/"],
+             "evidence": 'href="/fr/x" -> /fr/x', "message": "broken"}]})
+        self._run("verify_helper.py", "--results", results, "--ledger", ledger)
+        self._run("verify_helper.py", "--results", results, "--ledger", ledger)
+        self.assertEqual(sorted(r["evidence_excerpt"] for r in self._ledger(ledger)),
+                         ['href="/de/x" -> /de/x', 'href="/fr/x" -> /fr/x'])
+
+    def test_summary_keeps_frequency_per_commit_and_precision_per_finding(self):
+        c1, c2, c3, c4 = ("1" * 40, "2" * 40, "3" * 40, "4" * 40)
+        results = self._csv("results.csv", self.RESULTS, [
+            ["o/r", self.BASE, c1, "10", "4", "fail", "x"],
+            ["o/r", c1, c2, "20", "6", "fail", "x"],
+            ["o/r", c2, c3, "30", "8", "pass", "x"],
+            ["o/r", c3, c4, "40", "", "skipped_audit_failed", ""]])
+        builds = self._csv("builds.csv", ["repo", "sha", "status", "build_seconds", "audit_seconds",
+                                          "node", "error"], [
+            ["o/r", self.BASE, "ok", "10", "4", "v24", ""], ["o/r", c1, "ok", "10", "4", "v24", ""],
+            ["o/r", c2, "ok", "20", "6", "v24", ""], ["o/r", c3, "ok", "30", "8", "v24", ""],
+            ["o/r", c4, "audit_failed", "40", "1", "v24", "ValueError: Invalid IPv6 URL"]])
+        ledger = self._csv("ledger.csv", ["repo", "head_sha", "rule_id", "severity", "url",
+                                          "evidence_excerpt", "verdict", "verified_by",
+                                          "verification_method", "notes"], [
+            ["o/r", c1, "S1-NOT-INDEXABLE", "critical", "/a/", "e", "true_regression", "B", "curl", ""],
+            ["o/r", c1, "S1-BROKEN-LINK", "high", "/a/", "e", "unclear", "B", "curl", ""],
+            ["o/r", c2, "S1-BROKEN-LINK", "high", "/b/", "e", "false_positive", "B", "curl", ""]])
+        out = os.path.join(self.d, "summary.md")
+        self._run("summarize.py", "--results", results, "--builds", builds, "--ledger", ledger, "--out", out)
+        with open(out, encoding="utf-8") as fh:
+            md = fh.read()
+        # Two commits failed the gate, but only one introduced a verified regression.
+        self.assertIn("| o/r | 3 | 2 | 1 | 1 |", md)
+        self.assertIn("**Frequency: 1 of 3 commits compared (33.3%)**", md)
+        # Unclear counts against precision, as pre-registered.
+        self.assertIn("**Precision: 1 of 3 blocking findings with a verdict (33.3%)**", md)
+        self.assertIn("| S1-BROKEN-LINK | 2 | 0 | 1 | 0 | 1 | 0 | 0.0% |", md)
+        self.assertIn("| S1-NOT-INDEXABLE | 1 | 1 | 0 | 0 | 0 | 0 | 100.0% |", md)
+        self.assertIn("inconclusive: 3 verdicts, 20 needed", md)
+        self.assertIn("| o/r | 1 | 0 | ValueError: Invalid IPv6 URL |", md)
+        self.assertIn("| Build | 4 | 15.0 | 30.0 |", md)
+        self.assertIn("| Audit | 4 | 5.0 | 8.0 |", md)
+
+
+class TestSeededRecall(unittest.TestCase):
+    """bench/seeded/seeded.py builds a repository once, applies each known regression to a
+    copy of the built output and checks the gate catches it: recall needs ground truth,
+    which replay cannot give. An unmutated copy must pass, or the harness is the problem."""
+
+    SCRIPT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "bench", "seeded", "seeded.py")
+    HOST = "https://docs.acme-widgets.com"
+
+    def setUp(self):
+        if not os.path.isfile(self.SCRIPT):
+            raise unittest.SkipTest("bench/ is not shipped in the sdist")
+        if not shutil.which("git"):
+            raise unittest.SkipTest("git not available")
+        self.d = tempfile.mkdtemp(prefix="sitemend-seeded-")
+        self.addCleanup(shutil.rmtree, self.d, True)
+
+    def _site_repo(self):
+        """A clean four-page site every mutation applies to: absolute canonicals, a sitemap
+        robots.txt names, unique titles, and every page linking to every other."""
+        src = os.path.join(self.d, "src-site")
+        pages = {"/": "index.html", "/a.html": "a.html", "/b.html": "b.html", "/c.html": "c.html"}
+        nav = " ".join('<a href="{0}">{1}</a>'.format(u, f) for u, f in pages.items())
+        files = {"build.py": TestReplay.BUILD,
+                 "src/robots.txt": "User-agent: *\nAllow: /\nSitemap: {0}/sitemap.xml\n".format(self.HOST),
+                 "src/sitemap.xml": '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                                    + "".join("<url><loc>{0}{1}</loc></url>".format(self.HOST, u) for u in pages)
+                                    + "</urlset>",
+                 # An error page that sorts before every content page: never a target.
+                 "src/404.html": page_html(title="Page Not Found On The Widget Handbook Site",
+                                           body="<h1>Not found</h1><p>" + "gone " * 300 + "</p>"),
+                 # Two pages that already share a title, sorting before the content pages:
+                 # the page given a copied title must not be one of them, or the mutation
+                 # swaps one duplicate pair for another instead of adding one (#60).
+                 "src/0a.html": page_html(title="An Older Widget Page With A Shared Title",
+                                          body="<h1>Old A</h1><p>" + "older " * 300 + "</p>"),
+                 "src/0b.html": page_html(title="An Older Widget Page With A Shared Title",
+                                          body="<h1>Old B</h1><p>" + "elder " * 300 + "</p>")}
+        for i, (u, f) in enumerate(pages.items()):
+            files["src/" + f] = page_html(
+                title="Widget Handbook Chapter Number {0} Overview".format(i),
+                desc="Chapter {0} of the widget handbook, covering setup, tuning and the care of "
+                     "widgets in production.".format(i),
+                head_extra='<link rel="canonical" href="{0}{1}">'.format(self.HOST, u),
+                body="<h1>Chapter {0}</h1><p>{1} ".format(i, nav) + "widget " * 300 + "</p>")
+        os.makedirs(src)
+        env = dict(os.environ, GIT_AUTHOR_DATE="2026-01-01T12:00:00+00:00",
+                   GIT_COMMITTER_DATE="2026-01-01T12:00:00+00:00", GIT_AUTHOR_NAME="t",
+                   GIT_AUTHOR_EMAIL="t@example.test", GIT_COMMITTER_NAME="t", GIT_COMMITTER_EMAIL="t@example.test")
+        for rel, text in files.items():
+            full = os.path.join(src, rel)
+            os.makedirs(os.path.dirname(full), exist_ok=True)
+            with open(full, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write(text)
+        for args in (["init", "-q", "-b", "main"], ["config", "commit.gpgsign", "false"],
+                     ["add", "-A"], ["commit", "-q", "-m", "site"]):
+            subprocess.run(["git"] + args, cwd=src, check=True, capture_output=True, env=env)
+        return src
+
+    def test_every_mutation_is_caught_and_the_unmutated_control_passes(self):
+        import csv
+        cfg = os.path.join(self.d, "repos.json")
+        with open(cfg, "w", encoding="utf-8") as fh:
+            site = {"url": self._site_repo(), "ref_cutoff": "2026-02-01T00:00:00Z", "commits": 50,
+                    "site_dir": "out", "node_version": "24"}
+            json.dump([dict(site, repo="t/site", build_command='"{0}" build.py'.format(sys.executable)),
+                       dict(site, repo="t/broken",
+                            build_command='"{0}" -c "import sys; sys.exit(1)"'.format(sys.executable))], fh)
+        results = os.path.join(self.d, "results.csv")
+        r = subprocess.run([sys.executable, self.SCRIPT, "--config", cfg, "--work", os.path.join(self.d, "work"),
+                            "--out", os.path.join(self.d, "out"), "--results", results,
+                            "--scripts", sitemend.HERE], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+        self.assertEqual(r.returncode, 0, r.stdout[-3000:] + r.stderr[-3000:])
+        with open(results, encoding="utf-8", newline="") as fh:
+            all_rows = list(csv.DictReader(fh))
+        # A build that fails is a build failure, never a sitemend tool failure.
+        self.assertEqual({x["fired"] for x in all_rows if x["repo"] == "t/broken" and x["mutation"] != "control"},
+                         {"build_failed"})
+        rows = {x["mutation"]: x for x in all_rows if x["repo"] == "t/site"}
+        self.assertNotIn("/404.html", {x["target"] for x in rows.values()})
+        self.assertEqual(rows.pop("control")["gate_failed"], "n")
+        self.assertEqual(len(rows), 10)
+        missed = {m: (x["expected_rule"], x["fired"], x["target"]) for m, x in rows.items() if x["fired"] != "y"}
+        self.assertEqual(missed, {})
+        # The medium one fires but, by design, does not fail the gate.
+        self.assertEqual({m for m, x in rows.items() if x["gate_failed"] == "n"}, {"canonical-removed"})
+        with open(os.path.join(self.d, "recall.md"), encoding="utf-8") as fh:
+            md = fh.read()
+        self.assertIn("**Recall, critical and high mutation types: 8 of 8 (100.0%)**", md)
+        self.assertIn("Build failures, not counted in recall: t/broken.", md)
+        self.assertNotIn("Tool failures (sitemend", md)
+
+
+def _bench_module(*parts):
+    """Load a bench/ script as a module; None when bench/ is absent (the sdist)."""
+    import importlib.util
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "bench", *parts)
+    if not os.path.isfile(path):
+        return None
+    spec = importlib.util.spec_from_file_location(parts[-1][:-3], path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+class TestSampling(unittest.TestCase):
+    """bench/sample/sample.py draws the replay sample by Addendum 5's rules, so that anyone
+    can rerun it from the saved frame and get the same repositories."""
+
+    def setUp(self):
+        self.S = _bench_module("sample", "sample.py")
+        if self.S is None:
+            raise unittest.SkipTest("bench/ is not shipped in the sdist")
+
+    def test_frame_keeps_each_repositorys_shallowest_matching_config(self):
+        items = [{"repo": "o/a", "path": "docs/docusaurus.config.js"},
+                 {"repo": "o/a", "path": "docusaurus.config.ts"},
+                 {"repo": "o/b", "path": "x/docusaurus.config.backup.js"},
+                 {"repo": "o/c", "path": "site/docusaurus.config.mts"}]
+        pattern = self.S.STACKS[0][2]
+        self.assertEqual(self.S.reduce_frame(items, pattern),
+                         {"o/a": "docusaurus.config.ts", "o/c": "site/docusaurus.config.mts"})
+
+    def test_draw_order_is_the_published_seed(self):
+        import random
+        repos = ["c/z", "a/x", "b/y", "d/w"]
+        expected = sorted(repos)
+        random.Random(20261017).shuffle(expected)
+        self.assertEqual(self.S.SEED, 20261017)
+        self.assertEqual(self.S.draw_order(repos), expected)
+        self.assertEqual(self.S.draw_order(list(reversed(repos))), expected)
+
+    def test_vitepress_site_folder_holds_dot_vitepress(self):
+        self.assertEqual(self.S.site_dir("vitepress", "docs/.vitepress/config.ts"), "docs")
+        self.assertEqual(self.S.site_dir("vitepress", ".vitepress/config.ts"), "")
+        self.assertEqual(self.S.site_dir("astro", "site/astro.config.mjs"), "site")
+
+    def test_eligibility_reasons(self):
+        ok = {"private": False, "fork": False, "archived": False, "homepage": "https://example.org"}
+        self.assertIsNone(self.S.eligibility(ok, 75, "o/r"))
+        self.assertIn("commits", self.S.eligibility(ok, 74, "o/r"))
+        self.assertEqual(self.S.eligibility(dict(ok, fork=True), 99, "o/r"), "fork")
+        self.assertEqual(self.S.eligibility(dict(ok, archived=True), 99, "o/r"), "archived")
+        self.assertIn("used in this plan", self.S.eligibility(ok, 99, "Electron/Website"))
+        self.assertIn("docusaurus.io", self.S.eligibility(dict(ok, homepage="https://www.docusaurus.io/"), 99, "o/r"))
+
+    def _rule(self, files, root_pkg=None, site_pkg=None, d="", yarnrc=None, cfg="", nvmrc=None, stack="docusaurus"):
+        site_pkg = {"scripts": {"build": "x"}} if site_pkg is None else site_pkg
+        return self.S.build_rule(stack, d, files, root_pkg, yarnrc, site_pkg, cfg, nvmrc, "build")
+
+    def test_build_rule_pins_pnpm_by_lockfile_unless_the_repo_pins_it(self):
+        (cmd, out, node), _ = self._rule({"pnpm-lock.yaml": "9.0"}, d="site", nvmrc="v22.3.0")
+        self.assertEqual(cmd, "corepack pnpm@9.15.9 install --frozen-lockfile && "
+                              "(cd site && corepack pnpm@9.15.9 run build)")
+        self.assertEqual((out, node), ("site/build", "22"))
+        (cmd, _, node), _ = self._rule({"pnpm-lock.yaml": "9.0"},
+                                       root_pkg={"packageManager": "pnpm@10.1.0", "engines": {"node": ">=20"}})
+        # Addendum 6: an engines floor (">=20") is not the Node version used.
+        self.assertEqual((cmd, node), ("pnpm install --frozen-lockfile && pnpm run build", "24"))
+
+    def test_build_rule_for_yarn_and_npm(self):
+        self.assertTrue(self._rule({"yarn.lock": ""})[0][0].startswith("corepack yarn@1.22.22 install --frozen-lockfile"))
+        rule, _ = self._rule({"yarn.lock": ""}, yarnrc="yarnPath: .yarn/releases/yarn-4.1.0.cjs\n")
+        self.assertTrue(rule[0].startswith("node .yarn/releases/yarn-4.1.0.cjs install --immutable"))
+        self.assertIn("neither packageManager nor yarnPath", self._rule({"yarn.lock": ""}, yarnrc="nodeLinker: pnp\n")[1])
+        (cmd, _, node), _ = self._rule({"package-lock.json": ""}, d="docs",
+                                       root_pkg={"scripts": {"build": "turbo build"}}, nvmrc="lts/*")
+        self.assertEqual(cmd, "npm ci && ((cd docs && npm run build) || (npm run build && (cd docs && npm run build)))")
+        self.assertEqual(node, "24")
+
+    def test_an_output_with_no_pages_is_not_built(self):
+        """Addendum 7: first10forward/f10f-spa built, but its output held no HTML pages."""
+        self.assertTrue(self.S.built({"status": "ok", "error": ""}))
+        self.assertTrue(self.S.built({"status": "audit_failed", "error": "ValueError: Invalid IPv6 URL"}))
+        self.assertFalse(self.S.built({"status": "audit_failed", "error": "ERROR: crawled 0 pages from /x/public"}))
+        self.assertFalse(self.S.built({"status": "build_failed", "error": "exit 1"}))
+
+    def test_build_rule_refuses_what_it_cannot_build_mechanically(self):
+        self.assertIn("no lockfile", self._rule({})[1])
+        self.assertIn("no package.json build script", self._rule({"package-lock.json": ""}, site_pkg={})[1])
+        self.assertIn("output: 'export'", self._rule({"package-lock.json": ""}, stack="nextjs", cfg="module.exports = {}")[1])
+        rule, why = self._rule({"package-lock.json": ""}, stack="nextjs", cfg='export default { output: "export" }')
+        self.assertIsNone(why)
+
+
+class TestSweepReport(unittest.TestCase):
+    """bench/sweep/report.py flags crashes, slow audits and site-wide high findings for a
+    person to review; it decides nothing."""
+
+    def test_flags(self):
+        report = _bench_module("sweep", "report.py")
+        if report is None:
+            raise unittest.SkipTest("bench/ is not shipped in the sdist")
+        d = tempfile.mkdtemp(prefix="sitemend-sweep-")
+        self.addCleanup(shutil.rmtree, d, True)
+        site = os.path.join(d, "out", "o__a", "s1")
+        os.makedirs(site)
+        pages = ["/p{0}".format(i) for i in range(10)]
+        with open(os.path.join(site, "findings.json"), "w") as fh:
+            json.dump({"findings": [{"id": "S1-X", "severity": "high", "pages": pages},
+                                    {"id": "S3-Y", "severity": "medium", "pages": pages}]}, fh)
+        with open(os.path.join(site, "crawl.json"), "w") as fh:
+            json.dump({"meta": {"page_count": 10}}, fh)
+        builds = os.path.join(d, "builds.csv")
+        with open(builds, "w", encoding="utf-8", newline="") as fh:
+            fh.write("repo,sha,status,build_seconds,audit_seconds,node,error\n"
+                     "o/a,s1,ok,10,700,v24,\n"
+                     "o/b,s2,audit_failed,10,5,v24,ValueError: Invalid IPv6 URL\n"
+                     "o/c,s3,build_failed,10,,v24,exit 1\n")
+        r = subprocess.run([sys.executable, os.path.join(os.path.dirname(report.__file__), "report.py"),
+                            "--builds", builds, "--audits", d, "--out", d], capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        with open(os.path.join(d, "sweep.md"), encoding="utf-8") as fh:
+            md = fh.read()
+        self.assertIn("**3 repositories: 2 built, 1 did not; of those built, 0 had no HTML pages and "
+                      "sitemend could not audit 1.**", md)
+        self.assertIn("| o/a | slow (700 s); site-wide S1-X (10 of 10 pages) |", md)
+        self.assertIn("| o/b | crash | ValueError: Invalid IPv6 URL |", md)
+        self.assertNotIn("S3-Y", md)
 
 
 if __name__ == "__main__":

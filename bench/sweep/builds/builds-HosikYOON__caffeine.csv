@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+HosikYOON/caffeine,088875fa9c9fb9e1c83886d64d917373be5f3b91,build_failed,0.6,,v24.21.0,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_03_58_627Z-debug-0.log

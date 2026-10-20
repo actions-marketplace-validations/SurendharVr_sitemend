@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+AgrDataSci/documentation,cce53be9ac7d3bb2173b9c323137c76e2c37062e,build_failed,66.7,,v24.21.0,Node version: v24.21.0

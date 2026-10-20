@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+ConductionNL/buildiq,3775e680ce8f08029cea8b9ce8d9aa98adf94f6b,build_failed,1.8,,v22.23.3,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_02_16_209Z-debug-0.log

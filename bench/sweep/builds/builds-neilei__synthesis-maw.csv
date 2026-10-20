@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+neilei/synthesis-maw,d8caae3bae52454b1579fd70da6593703184c8c8,build_failed,29.8,,v24.21.0,ELIFECYCLE  Command failed with exit code 2.

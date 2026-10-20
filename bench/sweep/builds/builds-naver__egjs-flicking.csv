@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+naver/egjs-flicking,158610f0897ac84ce570d9cc4c4fc9587a664bc6,build_failed,14.5,,v24.21.0,ELIFECYCLE  Command failed with exit code 1.

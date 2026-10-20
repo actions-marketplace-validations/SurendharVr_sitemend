@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+hugo-fixit/FixIt,45edd4f4f1aec3ac0fd34909d23c8215325df84c,build_failed,9.8,,v24.21.0,[ELIFECYCLE] Command failed with exit code 1.

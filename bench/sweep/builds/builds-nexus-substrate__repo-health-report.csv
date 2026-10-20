@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+nexus-substrate/repo-health-report,971cf9eaa9e765234b27bf76111840f73c5c585d,build_failed,3.1,,v24.21.0,sh: 1: astro: not found

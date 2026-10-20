@@ -1,0 +1,92 @@
+repo,status,build_seconds,audit_seconds,pages,critical,high,medium,low,flags,error
+5G-MAG/Website,ok,62.2,19.5,333,2,96,229,561,,
+AgrDataSci/documentation,build_failed,66.7,,0,0,0,0,0,,Node version: v24.21.0
+AzenAnn/DSA-Mastery,build_failed,125.2,,0,0,0,0,0,,build complete in 120.25s.
+BEKO2210/My_Dash,build_failed,47.0,,0,0,0,0,0,,ƒ  (Dynamic)  server-rendered on demand
+CGIAR-Climate-Data-Hub/use-cases,ok,8.9,1.3,10,0,18,19,21,site-wide S1-BROKEN-LINK (10 of 10 pages); site-wide S2-ORPHAN (9 of 10 pages); site-wide S2-UNREACHABLE (9 of 10 pages),
+CaoMeiYouRen/caomei-auth,build_failed,96.6,,0,0,0,0,0,,└  ✨ Build complete!
+ConductionNL/buildiq,build_failed,1.8,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_02_16_209Z-debug-0.log
+ConductionNL/openregister,build_failed,85.7,,0,0,0,0,0,,sh: 1: docusaurus: not found
+Custompedia/portfolio-radyt,ok,6.0,0.8,1,0,0,8,53,,
+Die-KoMa/die-koma.org,build_failed,1.1,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_02_51_940Z-debug-0.log
+EOPF-Explorer/landing-page,ok,49.6,11.8,29,0,28,61,52,,
+Evintkoo/Evintkoo.github.io,ok,5.5,1.4,28,0,0,7,38,,
+HarounMinhas/harounminhas.github.io,build_failed,83.6,,0,0,0,0,0,,sh: 1: next: not found
+HokutoFes26/HokutoFes26.github.io,build_failed,48.5,,0,0,0,0,0,,○ https://hokutofes26.github.io/sitemap-0.xml
+HolyBearTW/holybear.tw,ok,64.8,5.1,48,0,39,153,78,,
+HosikYOON/caffeine,build_failed,0.6,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_03_58_627Z-debug-0.log
+Institut-fur-Allgemeinmedizin-TUM/virtual-patient-system,build_failed,0.6,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_00_07_390Z-debug-0.log
+LilTrublMakr/Diadem,build_failed,1.8,,0,0,0,0,0,,"To fix this issue, install the required Node version."
+MSOR03/SIPREH,build_failed,1.3,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_03_02_113Z-debug-0.log
+MadeByRed/chronic-haven,build_failed,29.4,,0,0,0,0,0,,ƒ  (Dynamic)  server-rendered on demand
+MightyTMZ/periscope,build_failed,88.3,,0,0,0,0,0,,"WARN   Local package.json exists, but node_modules missing, did you mean to install?"
+Mintimate/DocVitePressOMR,ok,17.8,5.2,64,3,98,192,141,,
+N41LL1W/busontime,build_failed,29.4,,0,0,0,0,0,,[Error: Failed to collect page data for /rota/[slug]] { type: 'Error' }
+NJUPT-SAST/sast-link-frontend-v2,build_failed,1.1,,0,0,0,0,0,,"For help, run: pnpm help install"
+ProBotOrg/docs,ok,251.8,15.3,280,0,61,561,155,,
+Profiletestai/mindcanvas-brain,build_failed,1.0,,0,0,0,0,0,,"For help, run: pnpm help install"
+Project-Babble/BabbleDocs,ok,67.9,2.8,61,0,7,155,83,,
+Sergo706/auth-H3Client,build_failed,26.7,,0,0,0,0,0,,DTS dist/ApiTokensResponse-BIRhwLtE.d.ts 2.56 KB
+StricaHQ/tx-studio,ok,160.9,21.2,6,1,11,14,4,,
+Ta1al/ta1al.github.io,build_failed,3.5,,0,0,0,0,0,,Node.js v24.21.0
+Toumy24/Toumy24-Blog,build_failed,2.2,,0,0,0,0,0,,sh: 1: hugo: not found
+TrueBankai416/BankaiTechDocs,build_failed,4.1,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_01_18_297Z-debug-0.log
+Visnalize/.com,build_failed,17.8,,0,0,0,0,0,,ELIFECYCLE  Command failed with exit code 1.
+Vonage-Community/tutorial-interactive_tutorials,build_failed,3.5,,0,0,0,0,0,,sh: 1: astro: not found
+Waynexlink/kendomon-motors,ok,797.0,4.5,117,116,235,322,129,site-wide S1-CANONICAL-OFFSITE (115 of 117 pages); site-wide S1-HOST-MISMATCH (116 of 117 pages),
+WebsecLabs/sql-injection-knowledge-base,ok,13.7,12.2,119,119,216,137,107,site-wide S1-BROKEN-LINK (119 of 119 pages); site-wide S1-CANONICAL-BROKEN (119 of 119 pages); site-wide S2-ORPHAN (118 of 119 pages); site-wide S2-UNREACHABLE (118 of 119 pages),
+YouniQiao/developer_hos,build_failed,491.1,,0,0,0,0,0,,Aborted (core dumped)
+Zero-Kq/Pages,build_failed,2.4,,0,0,0,0,0,,}
+anchore/oss-docs,build_failed,4.8,,0,0,0,0,0,,sh: 1: .tool/hugo: not found
+anoop-1/atlantis-reimagined1,build_failed,1.2,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_03_53_144Z-debug-0.log
+atfleming/80fcreative,ok,17.5,0.8,13,1,6,155,211,site-wide S1-BROKEN-LINK (13 of 13 pages),
+chanzuckerberg/idetik,build_failed,17.2,,0,0,0,0,0,,created dist/index.d.ts in 213ms
+clice-io/docs,ok,41.5,26.4,109,0,16,129,17,,
+cloud-gov/pages-site-gantry,build_failed,22.1,,0,0,0,0,0,,Verify $EDITOR_APP_URL and $PAYLOAD_API_KEY are set in the environment.
+ctu-mrs/ctu-mrs.github.io,ok,52.3,11.8,380,0,472,644,218,,
+dnum-mi/vue-dsfr,build_failed,16.6,,0,0,0,0,0,,$ tsc -p tsconfig.meta.json
+fdm-monster/fdm-monster-docs,ok,36.8,4.0,70,0,61,91,67,,
+finos/architecture-as-code,build_failed,219.3,,0,0,0,0,0,,✔ done
+first10forward/f10f-spa,audit_failed,70.7,0.3,0,0,0,0,0,no pages,ERROR: crawled 0 pages from /home/runner/work/sitemend/sitemend/bench/replay/work/first10forward__f10f-spa/public (no HTML pages found). Nothing to audit.
+gary-archer/oauth.blog,build_failed,54.3,,0,0,0,0,0,,●  (SSG)     prerendered as static HTML (uses getStaticProps)
+hefung/hefung.github.io,build_failed,1.3,,0,0,0,0,0,,"For help, run: pnpm help install"
+himanjal/basic_hugo,build_failed,1.6,,0,0,0,0,0,,sh: 1: hugo: not found
+holidayworking/core,build_failed,5.2,,0,0,0,0,0,,[ELIFECYCLE] Command failed with exit code 127.
+hugo-fixit/FixIt,build_failed,9.8,,0,0,0,0,0,,[ELIFECYCLE] Command failed with exit code 1.
+itemx/shinengumi-utawaku,ok,8.9,25.8,1579,0,1562,2254,1595,site-wide S2-ORPHAN (1571 of 1579 pages); site-wide S2-UNREACHABLE (1571 of 1579 pages),
+jayokunle/getblitz,ok,22.9,0.9,9,0,4,9,5,,
+karaklefos/vscode-intro,build_failed,1.3,,0,0,0,0,0,,"For help, run: pnpm help install"
+kode-monki/btc-hugo,build_failed,4.4,,0,0,0,0,0,,sh: 1: hugo: not found
+kongying-tavern/docs,build_failed,16.2,,0,0,0,0,0,,ELIFECYCLE  Command failed with exit code 1.
+livingdocsIO/documentation,build_failed,2.8,,0,0,0,0,0,,./bin/build.sh: 20: hugo: not found
+loliblogs/Refined,build_failed,27.5,,0,0,0,0,0,,[ELIFECYCLE] Command failed with exit code 1.
+mehulshekhada96/shreeji-jwellery,build_failed,103.6,,0,0,0,0,0,,ƒ  (Dynamic)  server-rendered on demand
+naver/egjs-flicking,build_failed,14.5,,0,0,0,0,0,,ELIFECYCLE  Command failed with exit code 1.
+neilei/synthesis-maw,build_failed,29.8,,0,0,0,0,0,,ELIFECYCLE  Command failed with exit code 2.
+neonpixels-studio/neonpixels,ok,9.1,0.4,3,0,3,5,3,,
+nexus-substrate/repo-health-report,build_failed,3.1,,0,0,0,0,0,,sh: 1: astro: not found
+oasisprotocol/docs,build_failed,47.4,,0,0,0,0,0,,info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+ojoanalogo/alfon.so,ok,22.1,0.4,4,0,2,15,11,,
+openevnt/evnt,build_failed,2.5,,0,0,0,0,0,,"* 3 dependencies were removed: schema-dts@^1.1.5, zod@^4.3.6, googleapis@^171.4.0"
+peaceiris/hugo-theme-iris,build_failed,24.7,,0,0,0,0,0,,/bin/sh: 2: hugo: not found
+philipschm1tt/rhode-medizin,ok,54.8,0.5,4,0,6,10,5,,
+rdvo/flary,ok,41.6,8.5,31,29,32,16,7,site-wide S1-BROKEN-LINK (31 of 31 pages); site-wide S1-CANONICAL-BROKEN (29 of 31 pages); site-wide S2-ORPHAN (28 of 31 pages); site-wide S2-UNREACHABLE (28 of 31 pages),
+revosurge-org/revo-docs,build_failed,8.8,,0,0,0,0,0,,ELIFECYCLE  Command failed with exit code 1.
+sabertaz/notes,ok,73.2,115.5,1147,1147,5356,1692,521,site-wide S1-BROKEN-LINK (1147 of 1147 pages); site-wide S1-CANONICAL-BROKEN (1147 of 1147 pages); site-wide S1-HREFLANG-BROKEN (1147 of 1147 pages); site-wide S1-SITEMAP-ORPHAN (1146 of 1147 pages); site-wide S2-ORPHAN (1146 of 1147 pages); site-wide S2-UNREACHABLE (1146 of 1147 pages),
+sadikuernest00-prog/astro-platform-starter-b9185,build_failed,1.5,,0,0,0,0,0,,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_00_05_700Z-debug-0.log
+sandbaseai/sandbase-docs,ok,150.7,1840.9,2491,2487,12611,3125,1188,slow (1841 s); site-wide S1-BROKEN-LINK (2491 of 2491 pages); site-wide S1-CANONICAL-BROKEN (2487 of 2491 pages); site-wide S1-HREFLANG-BROKEN (2491 of 2491 pages); site-wide S1-SITEMAP-ORPHAN (2487 of 2491 pages); site-wide S2-ORPHAN (2432 of 2491 pages); site-wide S2-UNREACHABLE (2485 of 2491 pages),
+shreyanshio/BrainyAi,ok,19.8,0.5,3,0,0,6,3,,
+ss04pp1-dotcom/Bug-Fixertv2,ok,59.9,0.8,36,1,0,1,1,,
+surfypro/surfy-help,ok,97.4,7.8,814,814,1629,1254,7,site-wide S2-H1-MISSING (812 of 814 pages); site-wide S2-ORPHAN (813 of 814 pages); site-wide S2-UNREACHABLE (813 of 814 pages); site-wide S3-DESC-MISSING (814 of 814 pages); site-wide S3-TITLE-MISSING (812 of 814 pages); site-wide S3-VIEWPORT-MISSING (812 of 814 pages),
+tabler/tabler-payments,ok,8.0,2.1,1,0,2,2,2,,
+teamhlx/executive-dashboard,ok,29.7,0.5,4,0,1,6,4,,
+the-codegen-project/cli,build_failed,92.4,,0,0,0,0,0,,sh: 1: ./website/node_modules/.bin/typedoc: not found
+the3ash/astro-chiri,ok,19.4,0.4,8,0,4,17,8,,
+thomasglc/docBtsSio,ok,22.3,11.4,60,0,13,101,49,,
+throw-if-null/coral,ok,29.1,8.2,18,0,2,32,8,,
+trebeljahr/tiao,ok,109.7,1.4,40,0,5,44,40,,
+vibedeckx/vibedeckx,ok,31.7,5.1,4,0,1,5,4,,
+vorausrobotik/vdoc,build_failed,26.5,,0,0,0,0,0,,sh: 1: docusaurus: not found
+wattnet/wattnet.eu,ok,17.2,0.9,8,0,2,10,13,,
+wen-hsiu-hsu/the-blog,build_failed,14.8,,0,0,0,0,0,,at file:///home/runner/work/sitemend/sitemend/bench/replay/work/wen-hsiu-hsu__the-blog/node_modules/rollup/dist/es/shared/node-entry.js:22967:40
+zhcndoc/hono,ok,31.1,10.7,115,0,10,278,39,,

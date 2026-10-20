@@ -129,3 +129,295 @@ Applied to the full run's results as written, with the outcome at the top of the
 - Date: 2026-10-17
 - Merged before any replay run on real data (commit SHA of the merge):
   `5899d56a42f71ffdf8fad901913f2e5e2c8b6b50` (#48)
+
+## Addendum 1: tool failures (2026-10-17, before the full run)
+
+The Ubuntu pilot (GitHub Actions run 39007242130; data in `bench/replay/pilot/`) built all
+21 replayed commits of electron/website, but sitemend 1.6.0 crashed auditing every one of
+them (issue #51: `resolve_href` raises "Invalid IPv6 URL" on a URL with `[` in the host,
+found in the site's CSS/JS bundles). vuejs/docs built and audited all 21 commits.
+
+Decided by B before any full-run data exists:
+
+- sitemend 1.6.0 stays frozen. The crash is not fixed until the Task 8 report is published.
+- electron/website stays in the sample.
+- A commit whose audit fails is recorded as `audit_failed`, and both comparisons that touch
+  it as `skipped_audit_failed`. Like failed builds, they count toward neither frequency
+  nor precision.
+- The report counts them as **tool failures**: per repository, the number of commits
+  sitemend could not audit and why, stated next to the results as a reliability finding,
+  not left out.
+
+Decided by (B): SurendharVr. Date: 2026-10-17.
+
+## Addendum 2: build-command fixes (2026-10-17, before the full run)
+
+The first seeded run (GitHub Actions run 39019105380) found that three of the pre-registered
+build commands fail on the Ubuntu runner at the cutoff commit: ionic-team/ionic-docs (a
+generated sidebar category was empty because the command skipped the project's markdown
+generation), trpc/trpc (Node ran out of heap) and unocss/unocss (the docs import a workspace
+package that has to be built first). Section 2 said a repository that fails its build is
+replaced. Instead, decided by B before any full-run data exists:
+
+- The repository list, N, the cutoff and the thresholds do not change.
+- Only `build_command` (and `site_dir` if needed) may change, to follow the project's own
+  build at the cutoff commit: its `package.json` scripts, `netlify.toml` and task runner.
+- A build may not need a secret. Content a project fetches live at build time is replaced
+  by its committed data or by a fixed stub, the same for every commit, so a difference
+  between base and head comes from the commit.
+- Each fix is verified by building the cutoff commit on the Ubuntu runner before the full
+  run, and is recorded below with its source. Nothing changes once full-run data exists;
+  a repository that still cannot be built is replaced as section 2 says.
+
+| Repository | Was | Now | Source |
+|---|---|---|---|
+| ionic-team/ionic-docs | `npm ci && npm run build:production` | `npm ci && node scripts/cli.mjs && echo [] > src/components/page/reference/ReleaseNotes/release-notes.json && npm run build:preview` | `prebuild` runs `generate-markdown`. Of its three scripts, `cli.mjs` uses committed data; `native.mjs` fetches plugin READMEs at `@latest` and `release-notes.mjs` needs a `GITHUB_TOKEN` and live releases, so they are not run, and the gitignored `release-notes.json` is an empty list for every commit. `build:preview` is what `npm run build` runs without `VERCEL_ENV` (English only). |
+| trpc/trpc | `pnpm install --frozen-lockfile && pnpm --dir www build` | `export NODE_OPTIONS=--max-old-space-size=8192 && pnpm install --frozen-lockfile && pnpm build-www` | The root `build-www` script (`turbo --filter www build`) builds the workspace packages the site depends on; the default heap ran out at about 4 GB. |
+| unocss/unocss | `pnpm install --frozen-lockfile && pnpm --dir docs build` | `export NODE_OPTIONS=--max_old_space_size=4096 && pnpm install --frozen-lockfile && pnpm run build && pnpm --dir docs build` | `netlify.toml` runs `pnpm run deploy` (`nr build && npm -C docs run build && …`) with that `NODE_OPTIONS`; the playground and interactive builds are not part of the docs site. |
+
+Verified on Ubuntu (GitHub Actions run 39020679625, branch `fix/build-commands`):
+unocss/unocss built and was audited with the new command. ionic-team/ionic-docs still
+failed: its next empty sidebar category ("Plugins") comes from `native.mjs`, which fetches
+plugin READMEs at `@latest`, live content this addendum rules out. trpc/trpc built its
+packages but failed type-checking a docs sample, although trpc's own Vercel deployment of
+the same commit succeeded. Both are replaced, as section 2 says; see Addendum 3.
+
+Decided by (B): SurendharVr. Date: 2026-10-17.
+
+## Addendum 3: re-freeze on 1.7.0 and two replacements (2026-10-17, before the full run)
+
+**Why.** Two problems found before any full-run data, both on 1.6.0:
+
+- **#51:** sitemend 1.6.0 crashed auditing electron/website (Addendum 1), and then three
+  of the replacement candidates below: typescript-eslint, react-navigation and
+  pulsar-site. Tool failures would have been a large part of the result.
+- **Rating tokens:** the seeded recall run found that `S5-SCHEMA-UNSUPPORTED-CLAIM`
+  corroborated a rating of "4.7" from the digits "4" and "7", which every site contains.
+
+B lifted the 1.6.0 freeze to fix both (#57), released as 1.7.0.
+
+**1. Frozen version (supersedes section 1).**
+
+- Package: `sitemend==1.7.0`
+- Tag: `v1.7.0`
+- Commit: `a64e05de358deece65a8065a65c5c65a34450490`
+
+`FROZEN` in `bench/replay/replay.py` and both benchmark workflows pin it. No rule,
+threshold or severity changes until the Task 8 report is published; a bug found from here
+on is logged and gets an issue.
+
+**2. Data from 1.6.0 is superseded.** The pilot (`bench/replay/pilot/`) and both seeded runs
+used 1.6.0. They stay in the repository as the record of how these problems were found, but
+the measurement uses only data produced with 1.7.0. The pilot and the seeded test are re-run
+on 1.7.0 before the full run.
+
+**3. The rating mutation is reported apart.** The rating rule was fixed after the seeded
+test showed this mutation being missed, so its result on 1.7.0 is not independent evidence.
+`rating-unsupported` is still run and reported, but it is left out of the pooled
+critical-and-high recall that section 4's threshold applies to.
+
+**4. Replacements for ionic-team/ionic-docs and trpc/trpc** (Addendum 2).
+
+The pick rule was fixed before any candidate was built:
+
+1. **Same stack** as the repositories replaced: both were Docusaurus.
+2. **Section 2's criteria:** at least 75 default-branch commits in the 12 months before
+   the cutoff, and not a tuning site or a repository already in the list.
+3. **Addendum 2's rules:** the project's own build, run as-is, with no secret and no live
+   content (no stubs).
+4. **Order:** most commits in the window first. The first two that build on the Ubuntu
+   runner at the cutoff commit are taken.
+
+The candidate pool is nine Docusaurus repositories Claude identified on 2026-10-17. Builds
+ran in GitHub Actions run 39021656493 (branch `tmp/replacement-candidates`).
+
+| # | Candidate | Commits in window | Outcome |
+|---|---|---|---|
+| 1 | datahub-project/datahub | 3458 | Excluded before building: its setup script (`vercel-setup.sh`) runs only on Amazon Linux (`yum`) |
+| 2 | facebook/flow | 2244 | Build failed: the site needs the `flow` binary (`spawn flow ENOENT`) |
+| 3 | temporalio/documentation | 1247 | Excluded before building: `prebuild` clones a live repository |
+| 4 | **facebook/relay** | 1014 | **Built. Taken** |
+| 5 | **typescript-eslint/typescript-eslint** | 681 | **Built. Taken** (its 1.6.0 audit crashed on #51) |
+| 6 | webdriverio/webdriverio | 550 | Excluded before building: its docs generator downloads live content |
+| 7 | apache/pulsar-site | 417 | Built; not needed (1.6.0 audit crashed on #51) |
+| 8 | react-navigation/react-navigation.github.io | 390 | Built; not needed (1.6.0 audit crashed on #51) |
+| 9 | ionic-team/capacitor-docs | 82 | Built; not needed |
+
+In `bench/replay/repos.json`, relay takes ionic-docs' place (3rd) and typescript-eslint
+takes trpc's (4th), so the seeded test's first five are electron/website, vuejs/docs,
+facebook/relay, typescript-eslint and unocss/unocss.
+
+| Repository | Build command | Site dir |
+|---|---|---|
+| facebook/relay | `yarn --cwd website install --frozen-lockfile && yarn --cwd website build` | `website/build` |
+| typescript-eslint/typescript-eslint | `pnpm install --frozen-lockfile && pnpm exec nx build website` (its `netlify.toml`) | `packages/website/build` |
+
+**5. Unchanged:** N (50), the cutoff (2026-10-01), the thresholds, the decision rules,
+Addendum 1 (tool failures) and Addendum 2's rules, with unocss/unocss's fixed command.
+
+Approved by (B): SurendharVr. Date: 2026-10-17.
+
+## Addendum 5: a reproducible sample (2026-10-17, before any data from it)
+
+**Why.** The repositories in section 2 and Addendum 3 were chosen by Claude from memory:
+well-known open-source docs sites, checked against the criteria but not drawn by any rule.
+That makes the sample unrepeatable and tilted toward mature, heavily maintained projects,
+and seven of its eleven build commands were never built before the full run (two then
+failed on every commit). The full run (GitHub Actions run 39032774435) was cancelled before
+it finished, and none of its data is used. This addendum replaces section 2's repository
+list, Addendum 3's replacements and the N of section 3 with a procedure anyone can rerun.
+
+**Unchanged:** the frozen version (sitemend 1.7.0, Addendum 3), the cutoff
+(2026-10-01T00:00:00Z), the thresholds and decision rules (sections 4 and 5), tool
+failures (Addendum 1), no secrets and no live content at build time (Addendum 2), and the
+rating mutation reported apart (Addendum 3).
+
+**1. Size.** 3 repositories for each of the 5 supported stacks, 15 in all, and the last
+**N = 40** first-parent commits of each before the cutoff: 600 comparisons from about 615
+builds. At the frequency threshold that is about 6 qualifying commits. The seeded recall
+test uses all 15.
+
+**2. Frame.** For each stack, one GitHub code search, run once and saved with its date
+to `bench/sample/frame-<stack>.json` (every result, before any filtering), after this
+addendum is signed and merged:
+
+| Stack | Query |
+|---|---|
+| Docusaurus | `filename:docusaurus.config` |
+| Astro/Starlight | `filename:astro.config` |
+| VitePress | `filename:config path:.vitepress` |
+| Hugo | `filename:hugo.toml` and `filename:hugo.yaml` (combined) |
+| Next.js static export | `output export filename:next.config` |
+
+Results are reduced to unique repositories, keeping each repository's shallowest
+matching file (ties: alphabetical) as its site config. GitHub returns at most 1,000
+results per query; that cap is a limitation of the frame, stated in the report.
+
+**3. Draw.** Each stack's repositories are sorted by `owner/name`, then shuffled with
+Python's `random.Random(20261017).shuffle`, one fresh generator per stack in the order
+of the table above. The shuffled order is saved to `bench/sample/order-<stack>.json`.
+
+**4. Eligibility,** checked in draw order. Every repository looked at is recorded in
+`bench/sample/draw.csv` with its outcome and reason. A repository is eligible when all hold:
+
+- public, not a fork, not archived;
+- at least 75 commits on the default branch in the 12 months before the cutoff;
+- its site config is present at the last commit before the cutoff (for Next.js, that file
+  sets `output: 'export'`; for Hugo, the site folder has a `package.json` with a `build`
+  script, since the runner has no Hugo binary);
+- not excluded: the source repositories of the 23 tuning sites (the 20 in
+  `docs/benchmark-2026-10.md` and the three in the 1.5.2 CHANGELOG), any repository whose
+  GitHub homepage is on one of those hosts, and every repository this plan has used so far,
+  since the 1.7.0 fixes were found on some of them (listed below).
+
+**5. Build command, by rule.** Site folder `D` = the folder holding the site config.
+
+- **Package manager:** the root `packageManager` field. Otherwise the root lockfile:
+  `pnpm-lock.yaml` → pnpm, pinned by `lockfileVersion` (9.x → pnpm 9, 6.x → pnpm 8,
+  5.x → pnpm 7); `yarn.lock` → yarn (Berry if `.yarnrc.yml` exists, else classic 1);
+  `package-lock.json` → npm. No lockfile → ineligible.
+- **Install,** at the repository root, frozen: `pnpm install --frozen-lockfile`,
+  `yarn install --immutable` or `--frozen-lockfile`, or `npm ci`.
+- **Build:** `D`'s own `build` script. If that build fails, one fallback: the root `build`
+  script, then `D`'s `build` script.
+- **Output:** the stack's default under `D`: `build/` (Docusaurus), `dist/` (Astro),
+  `.vitepress/dist/` (VitePress), `public/` (Hugo), `out/` (Next.js).
+- **Node:** `.nvmrc` or `.node-version` major, else the `engines.node` minimum major,
+  else 24.
+
+**6. Build check.** In draw order, each eligible repository is built once at its cutoff
+commit on the Ubuntu runner with the command from rule 5. The first 3 per stack that build
+are the sample. Candidates can be checked in parallel, but they are taken strictly in draw
+order. A repository whose build fails, or whose output folder is missing, is recorded and
+skipped. No command is edited by hand. The resulting `bench/replay/repos.json` and
+`draw.csv` are committed before the full run.
+
+**Excluded, beyond the tuning sites** (used in this plan before this addendum):
+electron/website, vuejs/docs, ionic-team/ionic-docs, trpc/trpc, unocss/unocss,
+vitest-dev/vitest, cloudflare/cloudflare-docs, drizzle-team/drizzle-orm-docs,
+webpro-nl/knip, open-telemetry/opentelemetry.io, nodejs/nodejs.org, facebook/relay,
+typescript-eslint/typescript-eslint, facebook/flow, apache/pulsar-site,
+react-navigation/react-navigation.github.io, ionic-team/capacitor-docs,
+datahub-project/datahub, temporalio/documentation, webdriverio/webdriverio.
+
+**Source repositories of the tuning sites:** withastro/astro.build, biomejs/website,
+withastro/docs, facebook/docusaurus, gohugoio/hugoDocs, jestjs/jest, vercel/next.js,
+microsoft/playwright, pnpm/pnpm.io, prettier/prettier, reactjs/react.dev,
+facebook/react-native-website, reduxjs/redux, withastro/starlight, sveltejs/svelte.dev,
+tailwindlabs/tailwindcss.com, tauri-apps/tauri-docs, vercel/turborepo, shadcn-ui/ui,
+vitejs/vite, plus any repository whose GitHub homepage host is one of the 23 hosts.
+
+**Limitations to state in the report:** the frame is what GitHub code search returns
+(capped, ranked by GitHub), so it is a reproducible sample of public repositories that
+search can find, not of all sites; it is mostly docs and project sites, because those are
+what is public; and the build rule is mechanical, so a project whose real deploy needs
+more than its own `build` script is skipped rather than fixed.
+
+**Robustness sweep (not pre-registered).** Separately from the measurement, the next 20
+eligible repositories per stack in the same draw order, after the 15 taken for the sample,
+are built once at their cutoff commit and audited once (100 repositories, no history and
+no comparisons). It looks for crashes, extreme runtimes and findings that look like false
+positives, so the next #51 is found before users find it. Its results are not part of any
+threshold or decision rule, and its repositories never overlap the sample. What it finds is
+logged as issues; while 1.7.0 is frozen nothing is fixed, unless B lifts the freeze in a
+further addendum. Its report is published as an unregistered check, apart from Task 8's.
+
+Approved by (B): SurendharVr. Date: 2026-10-18.
+
+## Addendum 6: the Node version rule (2026-10-18, before any measurement on the new sample)
+
+The first build check of Addendum 5's 40 candidates (GitHub Actions run 39143564805) showed
+that rule 5's Node choice failed builds for an environment reason, not because of the
+commit. Four of the six Docusaurus failures (Juniors017/docux-blog, ProBotOrg/docs,
+YouniQiao/developer_hos, AgrDataSci/documentation) stopped with "You are using Node.js
+v18, Requirement: Node.js >=20": the rule took the minimum from `engines.node` (`>=18`),
+a floor these projects no longer meet and their own deploys do not use. Left in place, the
+rule would bias the sample against sites with a stale `engines` floor.
+
+Decided by B before any replay or seeded data exists on the new sample:
+
+- Rule 5's Node line becomes: the `.nvmrc` or `.node-version` major, else 24.
+  `engines.node` is not used.
+- The draw is regenerated from the saved frame and the cached API answers: the same order
+  and the same eligibility outcomes, with only `node_version` (and the commands, which do
+  not depend on it) recomputed.
+- The build check is re-run on all 40 candidates under the corrected rule, so the rule
+  applies to every candidate alike. The first check is kept on record as superseded.
+- Where a stack still has fewer than 3 that build, rule 6 continues as written: the next
+  candidates in draw order are checked until 3 build.
+- Hugo is unchanged. The runner has no Hugo binary, so a Hugo site whose `build` script
+  calls `hugo` fails its check, as Addendum 5's limitations say (4 of the 6 Hugo failures
+  in the first check).
+
+Decided by (B): SurendharVr. Date: 2026-10-18.
+
+## Addendum 7: an output with no pages (2026-10-18, before any measurement on the new sample)
+
+In the build check, first10forward/f10f-spa (Hugo, draw rank 1371) built, but its output
+folder (`public/`) held no HTML pages, so sitemend audited nothing ("crawled 0 pages").
+Rule 6 skips a candidate whose output folder is missing; it did not say what to do with
+one that exists but is empty. Left as taken, every one of its replay commits would be a
+tool failure and Hugo would rest on two sites.
+
+Decided by B before any replay or seeded data exists on the new sample: a build whose
+output holds no HTML pages counts as a missing output folder, so the candidate is
+skipped. Applied to every candidate; f10f-spa is the only one it affects. The next Hugo
+candidate in draw order that built, layer5io/docs (rank 1378), is taken. A site that has
+pages but that sitemend cannot audit still counts as built, and is a tool failure
+(Addendum 1).
+
+Decided by (B): SurendharVr. Date: 2026-10-18.
+
+## Addendum 8: an audit that does not finish (2026-10-19, after the full run, before any verdict)
+
+In the full replay (GitHub Actions run 39183739377), sitemend took about 2.5 hours to audit
+each commit of layer5io/exoscale-academy (issue #71: a quadratic regex in `crawl.py`), so
+the job reached its time limit after 2 of its 41 commits. Its one comparison (f166bb7 →
+1343199) was reconstructed from the uploaded audits with the frozen `verify.py`; it passes.
+
+Decided by B: the 39 commits sitemend did not audit (one stopped mid-audit, 38 never
+reached) are **tool failures** under Addendum 1, the same family as a crash. They count
+toward neither frequency nor precision and are reported per repository with the reason.
+The repository is not re-run, which would take about four days of runner time.
+
+Decided by (B): SurendharVr. Date: 2026-10-19.

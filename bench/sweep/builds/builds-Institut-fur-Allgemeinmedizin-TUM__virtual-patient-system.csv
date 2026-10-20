@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+Institut-fur-Allgemeinmedizin-TUM/virtual-patient-system,875cb66b3af85c144beb4a1eb85b8f502027a3a4,build_failed,0.6,,v24.21.0,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_00_07_390Z-debug-0.log

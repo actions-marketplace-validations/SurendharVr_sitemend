@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+sadikuernest00-prog/astro-platform-starter-b9185,e9b44e7449a7064f0bf40ed3073590366c3dbbbc,build_failed,1.5,,v24.21.0,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_00_05_700Z-debug-0.log

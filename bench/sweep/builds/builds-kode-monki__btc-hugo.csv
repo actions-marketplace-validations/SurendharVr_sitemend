@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+kode-monki/btc-hugo,54602f7306be115bcc1a087c91a84d3fab45aea4,build_failed,4.4,,v24.21.0,sh: 1: hugo: not found

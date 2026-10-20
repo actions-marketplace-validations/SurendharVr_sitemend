@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+wen-hsiu-hsu/the-blog,5f7d5b403a4ebb39e808565db64830c685bc0b2c,build_failed,14.8,,v24.21.0,at file:///home/runner/work/sitemend/sitemend/bench/replay/work/wen-hsiu-hsu__the-blog/node_modules/rollup/dist/es/shared/node-entry.js:22967:40

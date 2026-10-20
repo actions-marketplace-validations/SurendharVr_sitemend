@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+LilTrublMakr/Diadem,1221c12b576b8a45682c07ebab405187d24b8300,build_failed,1.8,,v24.21.0,"To fix this issue, install the required Node version."

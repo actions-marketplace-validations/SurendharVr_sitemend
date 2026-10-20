@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+holidayworking/core,7dbe2b4b388e09a7ba061e39dc53e9fa88d3134c,build_failed,5.2,,v24.21.0,[ELIFECYCLE] Command failed with exit code 127.

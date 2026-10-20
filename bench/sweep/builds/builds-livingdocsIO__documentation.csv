@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+livingdocsIO/documentation,195d1d08e023951aa95bf8582ceedae1be97c949,build_failed,2.8,,v24.21.0,./bin/build.sh: 20: hugo: not found

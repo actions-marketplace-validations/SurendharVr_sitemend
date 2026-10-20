@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+karaklefos/vscode-intro,d38fdab64cf32edaa5228405a5a5b205534c17f9,build_failed,1.3,,v24.21.0,"For help, run: pnpm help install"

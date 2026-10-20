@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+himanjal/basic_hugo,2e0d4bec40cc3869087625969fffdeed41d8eb78,build_failed,1.6,,v24.21.0,sh: 1: hugo: not found

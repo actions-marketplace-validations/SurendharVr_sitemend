@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+loliblogs/Refined,12846ff95dd60c136351fc459f473ae70316d819,build_failed,27.5,,v24.21.0,[ELIFECYCLE] Command failed with exit code 1.

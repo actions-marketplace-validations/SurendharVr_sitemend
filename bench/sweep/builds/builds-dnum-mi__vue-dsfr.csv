@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+dnum-mi/vue-dsfr,7b720bc7c79551655d4ce5134d83bb58e7c0629d,build_failed,16.6,,v24.21.0,$ tsc -p tsconfig.meta.json

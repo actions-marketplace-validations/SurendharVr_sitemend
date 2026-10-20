@@ -1,0 +1,58 @@
+stack,rank,repo,build_check
+docusaurus,6,Juniors017/docux-blog,taken
+docusaurus,31,DevAdmin-Riu/boss-dashboard-guide,taken
+docusaurus,33,YouniQiao/developer_hos,build failed
+docusaurus,40,AgrDataSci/documentation,build failed
+docusaurus,41,jhipster/jhipster.github.io,taken
+docusaurus,44,finos/architecture-as-code,build failed
+docusaurus,56,ProBotOrg/docs,"built, not needed"
+docusaurus,63,ctu-mrs/ctu-mrs.github.io,"built, not needed"
+docusaurus,64,Institut-fur-Allgemeinmedizin-TUM/virtual-patient-system,not checked
+astro,3,LilTrublMakr/Diadem,build failed
+astro,26,dergigi/learn-fips,taken
+astro,49,sadikuernest00-prog/astro-platform-starter-b9185,build failed
+astro,72,mj3622/mj3622.github.io,taken
+astro,94,GoWorkshopConference/2025,taken
+astro,107,CGIAR-Climate-Data-Hub/use-cases,"built, not needed"
+astro,116,nexus-substrate/repo-health-report,build failed
+astro,117,philipschm1tt/rhode-medizin,"built, not needed"
+astro,126,loliblogs/Refined,not checked
+vitepress,10,Sergo706/auth-H3Client,build failed
+vitepress,16,taoli-tools/taoli-tools-docs,taken
+vitepress,31,wen-hsiu-hsu/the-blog,build failed
+vitepress,42,vuejs-translations/docs-zh-cn,taken
+vitepress,72,chanzuckerberg/idetik,build failed
+vitepress,107,fishxcode/fishxcode,taken
+vitepress,131,revosurge-org/revo-docs,build failed
+vitepress,135,dnum-mi/vue-dsfr,build failed
+vitepress,189,AzenAnn/DSA-Mastery,not checked
+hugo,181,anchore/oss-docs,build failed
+hugo,188,holidayworking/core,build failed
+hugo,551,benbjohnson/litestream.io,taken
+hugo,610,layer5io/exoscale-academy,taken
+hugo,816,peaceiris/hugo-theme-iris,build failed
+hugo,858,Toumy24/Toumy24-Blog,build failed
+hugo,1146,Ta1al/ta1al.github.io,build failed
+hugo,1166,himanjal/basic_hugo,build failed
+hugo,1192,Zero-Kq/Pages,build failed
+hugo,1258,kode-monki/btc-hugo,build failed
+hugo,1371,first10forward/f10f-spa,no pages
+hugo,1378,layer5io/docs,taken
+hugo,1460,livingdocsIO/documentation,build failed
+hugo,1533,hugo-fixit/FixIt,build failed
+nextjs,17,mehulshekhada96/shreeji-jwellery,build failed
+nextjs,33,rgcsekaraa/brows3,taken
+nextjs,73,gary-archer/oauth.blog,build failed
+nextjs,147,HokutoFes26/HokutoFes26.github.io,build failed
+nextjs,158,neilei/synthesis-maw,build failed
+nextjs,181,CertisBio-RC/certis_agroute_app,taken
+nextjs,246,HarounMinhas/harounminhas.github.io,build failed
+nextjs,249,BEKO2210/My_Dash,build failed
+nextjs,283,TeoConference/TEOConf-FE,taken
+nextjs,285,Profiletestai/mindcanvas-brain,build failed
+nextjs,295,vibedeckx/vibedeckx,"built, not needed"
+nextjs,332,ss04pp1-dotcom/Bug-Fixertv2,"built, not needed"
+nextjs,342,shreyanshio/BrainyAi,"built, not needed"
+nextjs,356,MadeByRed/chronic-haven,build failed
+nextjs,366,MSOR03/SIPREH,build failed
+nextjs,374,karaklefos/vscode-intro,build failed

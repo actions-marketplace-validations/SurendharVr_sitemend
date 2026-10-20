@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+TrueBankai416/BankaiTechDocs,5dfc69bb80f58221c971bebc391d4c3ec2264887,build_failed,4.1,,v22.23.3,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_01_18_297Z-debug-0.log

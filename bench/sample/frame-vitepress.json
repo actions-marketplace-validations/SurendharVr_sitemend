@@ -1,0 +1,5008 @@
+{
+ "taken_at": "2026-10-18T14:36:50Z",
+ "queries": [
+  "filename:config path:.vitepress"
+ ],
+ "items": [
+  {
+   "repo": "colinlet/PHP-Interview-QA",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xuanli199/weekly",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-zh-cn",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chengpeiquan/learning-vue3",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hpcc-systems/hpcc-js-wasm",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "knex/documentation",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rx-ts/vue",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "windicss/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "edm00se/awesome-board-games",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-fa",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "uni-helper/uni-use",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CaoMeiYouRen/caomei-auth",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zotero-chinese/wiki",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yun-cun-li/PixWit",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "2BAB/KOGE",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "myissue-studio/vue-website-page-builder",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "clark-cui/vitepress-blog-zaun",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "camera-2018/hdu-cs-wiki",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "stackblitz/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "joyehuang/minimind-notes",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Carseason/routerdog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vite-pwa/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dnum-mi/vue-dsfr",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "maml-dev/maml.dev",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "openkursar-flynn/build-ai-agent-platform",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dovecot/documentation",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hapijs/hapi.dev",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wfjsw/VP-StableDiffusionBook",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "slidevjs/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vitejs/docs-ja",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "weserv/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cloydlau/webgl-fluid",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "onekiloparsec/aa-js",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GlobeMC/crashmc.com",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "slidevjs/docs-cn",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "thunderbiscuit/opcodeexplained.com",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "RAJ8664/Prep",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "laravel/jetstream-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "iconify/website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nwind/llm-finetune",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kriasoft/ws-kit",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "aliyun-sls/sls-doc",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NativeScript/docs-v8",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jackiey99/awesome-online-courses",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "imaliang/cms-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Jesse205/FlashAndroidDevicesGuidelines",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-ko",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gdmuna/na-dev-manual",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-pt",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "leafletEx/leafletjsExample",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Tyh2001/vitepress-template",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-ar",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CrazyMrYan/blog",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "BetterDiscord/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "stone-zeng/stone-zeng.site",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yibo365/agent-camp",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "miyuesc/MomAndBabyForChina",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lingxyz/standard",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "laplacetw/vitepress-theme-trigger",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CY-Christin/CY-Christin-Blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Corona-Studio/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "emosp/home",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "developer-plus/interview",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "shopware/developer-portal",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NativeScript/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "importantimport/urara-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "minima-js/minimajs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "1006008051/vitepress-demoblock",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Tyh2001/storybook",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TangSengDaoDao/TangSengDaoDaoDocs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lonewolfyx/awesome-alfred-skyblue",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "isLinXu/claude-code-book",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "OmniSocKit/Open-Wecom-Skills",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "suilang/fe-buried",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "luhaifeng666/bunpou",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Carseason/mfun-homepage",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ixm-one/ixm",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "viarotel/viarotel.github.io",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sunkint/splendor-ui",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JaimeTorrealba/three-scatter",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "VideoTogether/website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Salesforce-Security-Benchmark/docs-site",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wangrongding/fedtop",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Lanfei/playable.js",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TYUT-YSYX-studio/Pre-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Estrella-Explore/YangJY-AcadMisconduct",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "travel-guide-tw/travel-guide-tw.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bpm-crafters/bpm-crafters",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-it",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xiaohuohumax/resources",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "botuniverse/homepage",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "runrig-coop/the-runrig-plan",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kailong321200875/vue-element-plus-admin-doc",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "scruffaluff/bootware",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "coolclaws/openclaw-book",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "egardner/ericgardner.info",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-zh-hk",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zqianem/vitepress-python-editor",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yassilah/vue-directus",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-ja",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "windicss/docs-cn",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kongying-tavern/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hoochanlon/my-book-wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ITStudioOUC/ITStudio-Wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "logica0419/coding-kubernetes",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jekip/naive-ui-admin-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Xutaotaotao/Xutaotaotao.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "elva-labs/braincells",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "luoyue712/api-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "liyuan-rey/frag4tech",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HolyBearTW/holybear.tw",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "slidevjs/docs-vn",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PickAID/CrychicDoc",
+   "path": ".vitepress/config/project-config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JanboMikan/h-life",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "m-xlsea/ruoyi-plus-soybean-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bigsu/API-Docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "stafiprotocol/developer",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fastjs-team/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "thomasglc/docBtsSio",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "taoli-tools/taoli-tools-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hatefrad/product-engineer",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "OrbiterStellarTrek/NapcatAdapterDocs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zula1994/zula1994.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fomvasss/laravel-lte3-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "joao-arthur/funis-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "binbatlab/neo-developer",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AlessioScarfone/accessibility-notes",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "EOPF-Explorer/landing-page",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "enhavo/enhavo-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Tian0225/ai-beginner-evolution",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "type-editor/type",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nodoubt0322/blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rirh/rirh",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "oeyoews/neotw-tiddlers",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Evolutionary-Algorithms-On-Click/user_docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "max-ionov/molor-web",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TempOrg4Mourn/pit.cangjie.help",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DrewPackages/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "iXORTech/vitepress-theme-arch",
+   "path": ".vitepress/theme/assets/themeConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gdvalderrama/gdvalderrama.github.io",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "activisthandbook/activisthandbook",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "shenxiang11/vp-blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "OpenAlbion/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rmg007/questerix-help-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PyGo-Labs/pygo-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Pennebaker/craft-searchwithelastic-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "liaoyinglong/how-it-works",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "faithinyous/docs-vite",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cynkra/blockr-site-vitepress",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lucas5g/dpmg-vagas",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "neonpixels-studio/neonpixels",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "marcolarosa/marcolarosa.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Vincibean/my-dayz-guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wbccb/llm-study",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chenqi1992/chenqi_blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AliubYiero/AliubYiero.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "inviti8/oroboros_site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "stratumfoundry/velvet-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "epoch-lab/ecode",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TCU-DC/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hzicd/vitepress_songg",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "polaris-esy/knowledge-base",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xinyiweizhen/knowledge-vitepress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "victorcomando/emergencia-brasil-game-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CLight-Site/doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "qianmo2233/kamitsubaki_city",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vikbert/frageai",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yjw8459/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CodeTreatise/Build-Deploy-The-React-App",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Fisherd99/Fisherd99.github.io",
+   "path": ".vitepress/generated/nav-config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Cola5173/blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Dalecuc/byeback",
+   "path": ".vitepress/theme/assets/themeConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "machinacanis/machinacanis.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Njengah/autowp-mcp-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Code-After-S-x/documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "songpeng154/norm-axios-press",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "okstop8888/vdisk5-help",
+   "path": ".vitepress/vitepress-pdf.config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Sunday9787/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DeltaEvo/notes",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "belay-dotnet/belay-dotnet.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ekatmoz88-alt/territory-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "node-cron/node-cron-site",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "KosRud/KosRud.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CodingClubBordeaux/codingclubbordeaux.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "plu/plu.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "blackbone/blackbone.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ronhedwigzape/migration-guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Cao007/blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sieadev/docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "XiaoPeng03182/blogs-vitepress",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pgnwr/pgnwr.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Astrian/datenel-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AFall121/afall",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chaosll/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hengistchan/tech-press",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wookminkang/wookminkang.github.io",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zdev0x/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yuzheng14/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "alaric8/docs-docker",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "damusix/atomic-claude",
+   "path": ".vitepress/theme/atom/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "laplacetw/vitepress-theme-trigger",
+   "path": ".vitepress/theme/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "logica0419/coding-kubernetes",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mineadmin/doc-v3",
+   "path": ".vitepress/src/ja/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pioneerspacesim/pioneer-developer-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "luoyue712/api-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fishxcode/fishxcode",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JanboMikan/h-life",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "stafiprotocol/developer",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GudupaoSpark/Haaaash",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Linyuqiz/iknow-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cangzihan/knolls-think-tank",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yaiks/vite-docs-pt-br",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "navyblue9/TaiyiBook",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TheNorthMemory/wechatpay.js.org",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "binbatlab/neo-developer",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DaktaDeo/multipass-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jf652366/jf652366.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "type-editor/type",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sandbaseai/sandbase-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "idrawjs/idrawjs.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "oeyoews/neotw-tiddlers",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yatori-dev/yatori-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "community-sourced-minecraft/csmc-website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cworld1/osp-learning",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xoriin/netmap-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hn2/palexplorer-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ZhiXin-College/RMMT-Doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ycs77/headlessui-float-docs",
+   "path": ".vitepress/theme/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "iXORTech/vitepress-theme-arch",
+   "path": ".vitepress/theme/assets/themeConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "0h7z/0h7z.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lucas5g/dpmg-vagas",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "neonpixels-studio/neonpixels",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "impossible98/make-documentation",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ares-17/portfolio",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "i-z-j/galavi-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "brc-dd/celestia",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rod/rod",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "evan-hsiao/evan-hsiao.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dungdinhmanh/dungdinhmanh",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JuckyLee668/xihan-boke",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "longlong-2002/vitepress-demo",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "779259529/zenchyn",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bigzhu/EnTubeDoc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AliubYiero/AliubYiero.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "inviti8/oroboros_site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "qianmo2233/kamitsubaki_city",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vikbert/frageai",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yjw8459/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CodeTreatise/Build-Deploy-The-React-App",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chanlk9527/Beyond-Crud--",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nasena21/mahjong",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gyulanemeth/mester4044",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dayu-sec/rest-api",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "remapthai/remapthai.github.io",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yee338024/line-contact-card-bot",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mameikagou/vitepress-template",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "teylabs/mod-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "veloce-ailab/veloce-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PikaNova/novora-vitepress-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mulingyuer/docs-template",
+   "path": ".vitepress/config/themeConfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nfd-parser/nfd-parser.github.io",
+   "path": ".vitepress/config-manager.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "machinacanis/machinacanis.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ArtisanCloud/MediaXDoc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jackhman/zhenk-blog",
+   "path": ".vitepress/config.mts.bak",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "brain-hol/notes",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Curitis-TK/code-lab",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Aspasht/aspasht.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Wankupi/Wankupi.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dmoyadev/lnx",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "belay-dotnet/belay-dotnet.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ekatmoz88-alt/territory-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Nico0713520/agent-hub",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "he5050/book",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gakerteam/gakerteam.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "KosRud/KosRud.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Vasak-Group/website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "arnarfjodur/fieri-leidarvisar",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "eveningwater/undergraduate-course",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "XiaoPeng03182/blogs-vitepress",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pgnwr/pgnwr.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "VBotDevTeam/vbot-documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wlpnz/planktonic-life",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "notflybird/study-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Sysyz-itcom/docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yuzheng14/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "alaric8/docs-docker",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TangBinQiang/demo",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TangBinQiang/demo",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Comelia/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Comelia/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "buicorporation/doc-novasend",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "baidauletov/nuxt-documentation",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Oahgnoh/stardust-doc",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "onmax/nimiq-frankenstein",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "joppehoekstra/democratischverzet",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "trilogo-lordee/trilogo-lordee.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Xelo-Client/Xelo-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NYSkyfox/nyskyfox.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "0xhmza/washmachine-docs",
+   "path": ".vitepress/config.sync-conflict-20260927-121357-N4A5472.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kwhitley/itty.dev",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "godothub/gdscript-tutorial",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "damusix/atomic-claude",
+   "path": ".vitepress/theme/atom/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GibbonEdu/docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "laplacetw/vitepress-theme-trigger",
+   "path": ".vitepress/theme/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jbloomlab/bench-to-byte",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mineadmin/doc-v3",
+   "path": ".vitepress/src/ja/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pgonzaleznetwork/awaf.dev",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pioneerspacesim/pioneer-developer-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fishxcode/fishxcode",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jackson-ling/vitepress",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zammad/zammad-org",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Linyuqiz/iknow-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cangzihan/knolls-think-tank",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "recallwei/code-snippets",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Arch-Network/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TheNorthMemory/wechatpay.js.org",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "L1nJIayu/jeffnex",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jf652366/jf652366.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sandbaseai/sandbase-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "idrawjs/idrawjs.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JCCDex/jcc_document",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yatori-dev/yatori-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sev-2/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "community-sourced-minecraft/csmc-website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xoriin/netmap-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hn2/palexplorer-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ZhiXin-College/RMMT-Doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "roukaixin/blog-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AmurS/amurs.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "One-Punch-Superman/vitePress-template",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ares-17/portfolio",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "i-z-j/galavi-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "brc-dd/celestia",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "iamyb/SnapPoint",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "SitinCloud/owlyshield-doc",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rod/rod",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "evan-hsiao/evan-hsiao.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "longlong-2002/vitepress-demo",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "779259529/zenchyn",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bigzhu/EnTubeDoc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "caocaoDeng/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "C-4-C-4/xcloudx-wiki",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dayu-sec/rest-api",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "remapthai/remapthai.github.io",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yee338024/line-contact-card-bot",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mameikagou/vitepress-template",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "teylabs/mod-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "veloce-ailab/veloce-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PikaNova/novora-vitepress-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GEOLYTIX/xyz-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pixelpippy/sturdy-octo-disco",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kegongteng/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hp-trackpoint/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mulingyuer/docs-template",
+   "path": ".vitepress/config/themeConfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nfd-parser/nfd-parser.github.io",
+   "path": ".vitepress/config-manager.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lrsm21427/Personal-Blog",
+   "path": ".vitepress/theme/assets/themeConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gerardroche/gerardroche.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ANO-ID-AS-Center/ideadocs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "EverSeenTOTOTO/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cyans-nya/koishi-extras",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jackhman/zhenk-blog",
+   "path": ".vitepress/config.mts.bak",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "brain-hol/notes",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "tolauwae/ars-factum",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wujue0115/blog",
+   "path": ".vitepress/configOptions/theme.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Curitis-TK/code-lab",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Aspasht/aspasht.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Nico0713520/agent-hub",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "he5050/book",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gakerteam/gakerteam.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "unaLoo/unaLoo.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "brc-dd/vitepress-unocss-emojis",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lixingg/myBlog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "notflybird/study-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Sysyz-itcom/docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nguyenvanduocit/steiner-collection",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "net-thunder/net-thunder.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "stepbystepcode/lzy",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Oahgnoh/stardust-doc",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "onmax/nimiq-frankenstein",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "joppehoekstra/democratischverzet",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "trilogo-lordee/trilogo-lordee.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Xelo-Client/Xelo-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NYSkyfox/nyskyfox.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "real-lu/RealLu_vitePress",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "real-lu/RealLu_vitePress",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "adawset/adawset.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "adawset/adawset.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JairusSW/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pgm-2425-itexploration/trends-en-innovaties-1-pgm-meesakveld",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "New-Fei/Scene",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lieonlion/wiki.dev",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "RiderLty/pico-hid-mapper-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dmocnik/test-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kreuzsmp/wiki",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "openstone/documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "2479717811dht-code/social-practice-site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "tonyliuzj/rodev",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jontever/cyberassure-wiki",
+   "path": ".vitepress/config.ts.timestamp-1780935356518-0f7c659160f04.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mihail-izumov/woodled-studio",
+   "path": ".vitepress/customizer/store/configurator.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xxxily/hello-ai",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Adamant-im/developers",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jiabingyang01/llm-paper-notes",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "KGScottCode/Grog",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "InYvn/win-mac-deskbridge",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "imec-int/ldes-registry",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "slidevjs/docs-ja",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bagisto/user-guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Certseeds/awesome-exams-page",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Visnalize/.com",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zivenyang/vitepress-material3",
+   "path": ".vitepress/theme/types/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "peterkmg/treasure-box",
+   "path": ".vitepress/uno.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "soramitsu/bokolo-pg-help",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "LuYifei2011/spinward-website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wujunze/cat",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "typlog/ui",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "IBPEofHUST/public-website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "official-stockfish/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pgexporter/pgexporter.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "snowy2002/snowy2002.github.io",
+   "path": ".vitepress/theme/utils/markdownConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "open-snail/snailjob-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Mtillmann/mtillmann.github.io",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "haovei/site",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bimobject/prodikt.prodikt-public-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zlon101/zlon101.github.io",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "limesty/knowledge",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "book-study-club/2022-book-study",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pedronastasi/manychat-ai-agent",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "KyrnDev/Luaris",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ITISFoundation/ti-planning-tool-manual",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TheFaik/QXORY-NETWORK-Website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kubakubakuba/wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CXPhoenix/crypto-challenge",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AloisSeckar/WBSC-Scoring-Guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Antarikchya-Prathisthan-Nepal/E-Cube",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "krislorem/vue3-ts-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yzbtdiy/yzbtdiy.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "franciscoBSalgueiro/encroissant-site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ooley42/ooley.ru",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "proweb/ru-vitepress-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mengxiaocheng520/sweet-home",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HPD-Finance/Rhodium",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mugglehouse/muggle-ui-thin",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "grekt-labs/docs-dev",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zim0xy/docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FfmpegZZZ/vitepress-theme-curve",
+   "path": ".vitepress/theme/utils/markdownConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Bluemangoo/VCLight-Docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "RafaelGreenblatt/Mat-SB-2024",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MashiroSaber03/saber-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fffffffee/silenceroad",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "revosurge-org/revo-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "graingo/maltose-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cjbind/cjbind-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NoorChasib/agent-factory",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "smaurier/react-autotraining",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "UniMC-Dev/UniMC-Docs-L1",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rd070672/arxiv-review",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mqzpmwxo/soapie.vitepress.blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pandermatt/scientific-publications-widget",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "think-active-labs/thinkactive-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zuowendong/zwd",
+   "path": ".vitepress/html.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "LAMMUpro/micro-admin-template-docs",
+   "path": ".vitepress/themeConfig.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "KevinDeBenedetti/kevindebenedetti.github.io",
+   "path": ".vitepress/config.generated.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "godsboy404/godsboy404.github.io",
+   "path": ".vitepress/theme/utils/markdownConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Augenstein10/vitepress-blog",
+   "path": ".vitepress/theme/utils/markdownConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "RSEGordon/ClawBlog",
+   "path": ".vitepress/theme/utils/markdownConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Heart-Fire-Project/hfpro.dev",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dluxio/dlux-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "samuelb30/appweb-trpr02-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "quasar-army/ts-generator-monorepo",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HelloTools-Studio/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zhinjs/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TEPE2044/ReKindlersNote",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FrankBevr/CC-Zonkeys",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nax2orbit/vitepress-blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "semantic-api/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "georgethomas111/georgeagain",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wangxin-tian/dhx-note",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dgmx/www",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "clspd/clspd-website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ksassnowski/vueclid-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JeffryGonzalez/site-services",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Dontplay0112/BJTUMC-web",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dx2331lxz/IAWIKI",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ypt-1024/this0-theme-vitepress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kroikie/kroikie-blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "r8vnhill/mateo",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xqsit94/zed-vim-cheatsheet",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "devliqht/tutorial-dcism",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Howyc/document",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gustawdaniel/lexidrift-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sanguogege/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Eisenprogrammierer/Freyrsgarten",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "highlayer-team/hl-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Bytewer/code-note",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wangx7/frontend-architect-academy",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bingxin666/baka-ink-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hotaru-conny/VitePressPagesTest",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Liberty-liu/Everright-doc",
+   "path": ".vitepress/theme/components/formEditorConfig.vue",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HakuaRi/ORGANXY-LAB",
+   "path": ".vitepress/config.mjs.timestamp-1783442911965-2451e3271e1018.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "facebookresearch/spider",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "octobercms/docs",
+   "path": ".vitepress/lib/config-loader.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "toss/react-simplikit",
+   "path": ".vitepress/libs/buildLocaleConfig.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "it-at-m/opensource.muenchen.de",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "SigmaHQ/sigmahq.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "selwynpolit/studyguide",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "tangueros/ttwis",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GXDE-OS/gxde-os.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "changweihua/changweihua.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mad-center/imitate-cyan-sora",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "LKM-lkm/Likems-nolebase",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ceccec/millennium-solutions",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jetsung/awesome-compose",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xArm-Developer/ufactory_docs",
+   "path": ".vitepress/vitepress-pdf.config_en.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fairdataihub/posters-science-dev-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "charlzyx/boom",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ZongaoHuang/ObsidianGitPage",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "XxPoggyisLitxX/better-on-bedrock-wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Linho1219/LinhoNotes",
+   "path": ".vitepress/tsconfig.node.json",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "qinsong77/qinsong77.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wayliuguo/blog",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "aidc-toolkit/aidc-toolkit.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "viell-dev/viell.dev",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "canxium/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "WebRobot-Ltd/portal",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "honestjs/website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Cinoma/cinoma.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "imvkmark/poppy-js-util",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Zadigo/vue-axios-manager",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "acmu/vitepress-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zhcndoc/hono",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zymbth/ymzhao-blogs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rjt-rockx/hexage-wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Vouchrun/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "patppuccin/patppuccin-website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sunpm/sunpm-utils",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kvynlim/industry-research",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "otisdub/gtagfangamewiki",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "studio-206/development-guidelines",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "simular/authman-site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "upmwiki/wiki",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zymbth/ymzhao-blogs",
+   "path": ".vitepress/config-default.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kahnwong/vercel-multi-branch-deployment",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "flaribbit/flaribbit.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PATRICKNDIZEYE/impactmel-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "elissonalvesilva/torukr-doc",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "uupsie-com/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HachGo/BLog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zdimaz/devbox",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "alibaihaqi/javascript-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CRBroughton/forager-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "thinban/thinban.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "computerqwq/school-win7",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ETS2LA-CN/ets2la-cn-wiki-re-vitepress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "oddmeta/xiaoluo-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lyzhihs/my-vitepress-blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jasenc7/jasenc7.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gogomusic/gogo-web-knowledge-store",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Bigpawn/personalBlog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Ray-D-Song/note",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kesepain-KE/kemo-agent-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "1996fanrui/docs_theme",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zhou2k/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jeffreyruoss/sound-79-online-marketing-guide",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Maxiviper117/composer-quarantine",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "katastr0phix/website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "patrickoleary/vtk-innovation",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "happyphper/blog",
+   "path": ".vitepress/theme/assets/themeConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xiaoshihou514/xiaoshihou514.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "meters-on-demand/docs.rainmeter.skin",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "takoserver/takos-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "akib1689/notes",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "BetterGUI-MC/Docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "BioSignalML/website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "baidubuqing/baidubuqing.github.io",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GrassBlock1/42",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MGTown/MGTownWiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Triumph-light/Blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PranabZz/S-PHP-Docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lee6583/my-blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "tamrazcode/manimaDocs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jsTHISCHIP/doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fedired/docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "YieldRay/rfc4918",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "shaokeyibb/NeraBBS-Docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PhilippeGlessmer/VitePress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DreamVoid/UPU-Website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "shiwuqi/shiwuqi.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "java-css/code-moments",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Phhofm/upscale_vitepress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "upnodedev/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gerrykf/note-site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HatanoKawa/game-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DignitySAMP/best-laravel-practices",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nikolagp/nikolag-portfolio",
+   "path": ".vitepress/theme/firebase/firebaseConfig.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "liujunxiang0076/liu-site",
+   "path": ".vitepress/theme/config/friendChainConfig.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zammad/zammad-org",
+   "path": ".vitepress/config.en.yaml.json",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "SidVerson/shadcn-extended",
+   "path": ".vitepress/theme/components/CodeConfigCustomizer.vue",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "LectWolf/mcloli-doc",
+   "path": ".vitepress/tsconfig.json",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mengjoy/mengjoy.github.io",
+   "path": ".vitepress/config.mts.timestamp-1792117940803-22b9fbb4fa982.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "honojs/website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "themagicalmammal/howtolinux",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "areyoubugcoder/Mp2RSS",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "deepflowio/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "slidevjs/docs-fr",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Ares-Chang/notes",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Octobug/blog",
+   "path": ".vitepress/config.utils.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "KaringX/clashmi-docu",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "geo-embeddings/geo-embeddings-site",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nazarepiedady/vue-router-docs-pt",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CMB2/Wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "intlify/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hengqianfan/vitepress-theme-fans-boke",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ana52070/chuiyu_Wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "elecmonkey/elecmonkey-notebook",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "minsion/apecode",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mlzzen/blog",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "urssivar/urssivar",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "littlewrite/FaiTerm_doc",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ffeeng/docs-main",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wisemen-digital/flutter-playbook",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Sergo706/auth-H3Client",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zeffon/nickname-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Biological-Sovereignty-Protocol/bsp-website",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xialio/xialioNote",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "curb-ui/curb-ui-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rpathdev/rpath-www",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "logon-tracer/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "idrawjs/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rytsh/wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "oneone666/oneone666.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rbackrock/my-notes",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lin0learning/liclo-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TheStalwart/tips-website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xiuxiumomo/learn-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ConstasJ/novel-site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cxplay/join.nostr.moe",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fishstiz/minecraft-cursor-wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TeaHeart/teaheart-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "konfidence-project/konfidence-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Artiqlate/alexandria",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "plsankar/awesome-bookmarklets",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hengqianfan/vitepress-theme-fans-instructions",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "polarcow285/spider",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CXPhoenix/wxl",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "opstack-kit/web-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "anonystick/shopdev",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "markhoney/mark.honeychurch.org",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dinomatic/docs.dinomatic.com",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sic-web/sic-util",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Liu-Jinshuai/printeaseDocs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ayrbox/ayrbox",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "walt7870/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CentralCorp/centralcorp.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "SergPerep/sergperep.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wen-hsiu-hsu/the-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "crzidea/cybervisor-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "clice-io/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "finance-xc/finance-xc.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "BINGWU2003/bingwu-prompt",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FindAllTeam/findallteam.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rim-wood/AI-ALL-MD",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "apibrain/typescript-tutorial",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pverhaert/wt-web-essentials",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dstgo/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mengbuluo222/web3-notes",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "firstmed/firstmed-documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "throw-if-null/coral",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kristoferlund/ostt-web",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ryuever/x-oasis",
+   "path": ".vitepress/vite.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fxbsujay/Sujay-Docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "rubickCenter/docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "shibare-framework/shibare-framework.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "truonghoangnguyen/2brain",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "brc-dd/vp-dynamic-routes-injection",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "britescript/site",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "johncch/axle-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yutaroadachi/vitepress-example",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "coili/coili.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wanghuayao/wanghuayao.github.com",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "elitdr/elitdr.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zygg1512/myBlog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sroxck/offer",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Asplla/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AminGtt/ViteAmin",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dingyaguang117/co-ding.com",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NotElementImport/nuxoblivius-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bii811/laos-party-book-web",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GepengCn/TaleCraftDoc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gardner/vibe-athon",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xrf-9527/ecu",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ice-coca/docs-demo",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ice-coca/Education",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "tangxiaoyi97/p2",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "luoxding/vitepress-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "manongguai/myblog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "warmcoat/Roverly-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dengjing34/vitepress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bedrock-stdhub/stdhub-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Triumph-light/Blog",
+   "path": ".vitepress/doc-config/nav-configs.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "deusyu/harness-engineering",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gardener/documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ThaiProgrammer/tpa-path",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chanzuckerberg/idetik",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sora-xor/sora-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Next-Flip/v2.momentum-fw.dev",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wxx9248/CPP-Primer-5th-Edition",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sifted-network/sifted-awesome-ai-agents",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "komari-monitor/komari-document",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yff111/dndrxjs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "57Darling02/VitePress_butterfly",
+   "path": ".vitepress/theme/types/ThemeConfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wan0705/wan-space",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vite-pwa/unplugin-pwa-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nbtca/documents",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JuliaLangJa/julialangja2025",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Tecdiary/sma-guide",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FAUltier-IndySCC25/hpc-wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Pinegrow/pg-vitepress-tailwindcss-custom",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yyong008/weekly",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gianlocc/press-portfolio",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JBmanu/SPE-WEB-DIS",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "belyas/pubsub-mfe-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JustLikeCheese/NexLua-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jonathanMelly/msig24",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Createya-ai/createya-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ctlinker/thinkering",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zenithrobo/ddocc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ETML-INF/ict-320-poo",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MathewKJ2048/Wang-cube-circuit-simulator-user-manual",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "beclab/TestDocs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hengqianfan/vitepress-theme-fans-boke-mini-demo",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "y3nd/docs.centipede-rtk.org",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chenyanxun/chenyanxun.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wess09/alas-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ForkbombEu/zencode-vc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wangshiyulin/my-blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "SymbolNotFound/ggpdojo",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Ruy5/ru-blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "theQRL/test-zond",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nadi-pro/docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "josip2312/jivancic-blog",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "WPManageNinja/azonpress-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ColeWang/admin-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Aylur/astal-legacy-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DesbravadorSoftware/DesbravadorDocs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ggsky/CookLikeHOC",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mlzhe/tov-learn",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "aditiapratama/deep_paint_docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "crestudio/crestudio.github.io",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HNIST-ACM/HNIST-ACM",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MorganMarshall/MorganMarshall",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mihye0924/mangb",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zhMoody/steamworks-rs-doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Mossworks-Labs/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Dalaoyuan2020/study-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "alfredhuang211/wiki.tflow.online",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CCNU-LogicLab/CCNU-LogicLab.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NEKO-Daze/NEKO.app",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "okohlbacher/mzpeak.org",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "earthaYan/interview-blog",
+   "path": ".vitepress/navConfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "RSEGordon/ClawBlog",
+   "path": ".vitepress/theme/assets/themeConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "drl990114/drl990114.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MikeCZ23/mikecz23.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "apkqiu/apkqiu.github.io",
+   "path": ".vitepress/config.template.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hefung/hefung.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xihale/LinkSheetDocs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CXPhoenix/ctf-tutorial",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ylw1997/ylw1997.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zhuangdagg/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ProjektCommunity/PJKT-DOCS",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "k88936/blogs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "majoson-chen/sui-move-practical-guide",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "NoozAbooz/blog.nooz.dev",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "35Tim/35Tim.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Savory/docs",
+   "path": ".vitepress/locales/fr.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "adfinis/timed-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wang-jiaolong/EventLine-help",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yukineko-works/vpm.yukineko.dev",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Karalix/karalix-page",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Cairry/Cairry.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lleiwang/project-j",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ArushYadlapati/WCI-Website",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "liuyichens/vpc_blog",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "molbal/cozyui-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Scoheart/netlify-vitepress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "opauopa/NexusDrv-Doc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "littlepaddy03/littlepaddy03.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Gaoshu705/LevelLoaderDoc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "abid365/KC-X37",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "snowowowo/snowowowo",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "StructoPy/developer-guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wiseqingyang/vitepress-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "OSpoon/ospoon.cn",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mucunQAQ/docs-demo",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HoshiiMei/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ThLanglois/appweb-trpr02-tl-ob-documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "icancodefyi/basecompose-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chinjiaqing/chinjiaqing.github.io",
+   "path": ".vitepress/vite.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Sorceresssis/MyNote",
+   "path": ".vitepress/tsconfig.node.json",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HydenLiu/type-challenges-docs",
+   "path": ".vitepress/theme/typeChallenges/tsconfig.json",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AniList/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sombriks/node-libgpiod",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "iconify/website",
+   "path": ".vitepress/markdown/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AzenAnn/DSA-Mastery",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "slidevjs/docs-es",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Chem-Aether/MomoWiki",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "horilla/horilla-docs",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DeanChugall/nadstresnica.info",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "openevnt/evnt",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fefeding/design-editor",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yaolunmao/maotu-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yumengjh/vitepress-blog",
+   "path": ".vitepress/config/zh.config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "unopim/unopim-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "x-eks-fusion/xf_docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Linho1219/LinhoNotes",
+   "path": ".vitepress/tsconfig.json",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ResetPower26/intro-computer-science",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Sakhnovkrg/Scyllascope-Docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bgever/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Pinegrow/pizzeria-vitepress",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "therealironduck/Ducktion-Documentation",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Ms-150/ms-150.github.io",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CrazyMrYan/blog-v2",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wisemen-digital/vue-playbook",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xeitojs/blog.xeito.dev",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "logon-tracer/docs-cn",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "tanaabased/theme",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xomda/xomda.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "khoiphan21/workout-routines",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Class-Widgets/cw-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "directormac/docs-vitepress-template",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xenon-pl/Gorilla-Tag-Modding-Guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "EastLakeFish/Frederick-Blog-v2",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Sovernly/sovernly.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Maxiviper117/Laraprep",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "UmafanFR/umaguide-fr",
+   "path": ".vitepress/markdownConfig.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "demetrescu-guenego/archi-2024",
+   "path": ".vitepress/siteconfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "llwodexue/vitepress-blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sardul3/technical-docs",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cabinet-fe/ultra-ui-doc",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "TechAkayy/pg-vitepress-vuetify",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "eas4ai/swatwizzle",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Fisherd99/Fisherd99.github.io",
+   "path": ".vitepress/analytics-config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "GordonSmith/spin-vitepress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "arpcjs/odoc",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "web-dev-sam/vscl-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "picardjs/picardjs.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "morauszkia/coding-notes",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "YurierDept/yuriboat.ink",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "administer-org/documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "WillHannon-MCB/website",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "keeyeon058/alteron",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "desmond8500/DashTutos",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "guothion/vitepress-doc",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "iotames/easywork",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "127px/wolf-sence.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FuturPanda/vellum-community-guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Inparsian/gray-meadows-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "LiuYuLu/xmyy",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xdragoncomputers/Journal-of-Seljuk-Studies-Translation-Project",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Vanuan/mydocs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Akl48/my-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zhs-bj/igem_2026_wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xiaobiG/android-custom-view-mastery",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "somebyteorg/emos_wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "radarnull/radarnull.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "innoboxrr/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kasugamirai/vitePress",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Frexuz/solidimage.dev-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "welldoer/knowledge-base",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "David-Lzy/Introduction-of-foundation.game",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "super-clipboard/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JimmyZzMm/vitepress-notes",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "redsanjin-1/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "may-sherry/may-sherry.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "awg2024/jsc_nestml_amat",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Yanai1005/jyogi-scratch",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bagisto/bagisto-api-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zuowendong/zwd",
+   "path": ".vitepress/vueSource.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "minterjia/Blog-imssy",
+   "path": ".vitepress/theme/utils/markdownConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lanbinleo/MercurySQL-Docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wenonly/kit",
+   "path": ".vitepress/plugins/resolveConfigVitePlugin.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "arghunter/personalwebsite",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "naremloa/blog_vitepress",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "dotDocType/vite-doc",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "YourTongji/YourTJ-Doc",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Termindev/Way-to-Russia",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "liuls2002/Note",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "r23qw/r23qw.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AApoLLoo/LSPD-Oldschool",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "squareface27/BTS-SIO-E5",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "gitgundam/vitepress-cv",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vc-update/chatgpt-cn-recharge",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AdamBD/vite-press-falcon",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chinavane/chinavanes",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "CLongT/my-vitepress",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yllhwa/dn42-homepage",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "WHULUG/whulug-website",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "HSinghHira/MC.Hira.im",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "caocaoDeng/docs",
+   "path": ".vitepress/config.mts.timestamp-1710664307140-c85b92cd528d7.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Frigate-CN/docs",
+   "path": ".vitepress/theme/DockerComposeGenerator/components/NetworkConfig.vue",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xianyunyh/PHP-Interview",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hyperledger-iroha/iroha-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "PCL-Community/PCL2CE-web",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "wamich/personal-vocabulary",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "itsfatduck/optimizerDuck-web",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "SVWS-NRW/SVWS-Dokumentation",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Octobug/blog",
+   "path": ".vitepress/config.theme.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "VTubing-on-Linux/linux-vtubing-guide",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Laserfiche/lf-form-builder",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "OksmaWarez/icloud",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vadolasi/refluxo-engine",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "frg2089/frg2089.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "vuejs-translations/docs-cs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "inference-gateway/registry",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "artdev-hash/bicol_translate",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pinokiocomputer/docs.pinokio.computer",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "flessan/thio.cc.cd",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "scruffaluff/picoware",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xing403/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sheepzh/timer-page",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mfs409/cse216",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Mintimate/DocVitePressOMR",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "ntnui-darts/ntnuidarts.no",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jiangjiji/jiangjiji.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "jycoast/java-tutorial",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "spectre-org/spectre-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Cnily03/learn",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "adiroiban/vitepress-test",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "pzq123456/EVChargerSite",
+   "path": ".vitepress/themeConfig.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "parsajiravand/vue-client-recaptcha-doc",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cybzzz/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MCMetrics/mcmetrics-documentation",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "cgcgldemo2-cmyk/DocuSoftware",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "matsidor1975/docs-1",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "xixiangzheng/Deepsight",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "VuejsBerlin/new.vuejs.berlin",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "steveadams/steve-adams.me",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Penify-dev/penify-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JordanDalton/tackle-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "3suji3/QA_study_inflearn",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "qerenny/nowmeowpage",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "grass-ahoo/vitepress-docs-template",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "reonokiy/simple-backup",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FuntrySun/funtry-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "squid-Xu/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FrozenLemonTee/LunarUnits-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "OGS-GmbH/ngx-keycloak",
+   "path": ".vitepress/.vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kapinote/documents",
+   "path": ".vitepress/config.mts0",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "bd-dxg/bd-dxg.github.io",
+   "path": ".vitepress/theme/gitalk/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JunLiangWangX/HTTP-Explanation",
+   "path": ".vitepress/config.mts.timestamp-1697678877536-6acf24a515981.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Duchaoqian/note",
+   "path": ".vitepress/pathConfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zuowendong/zwd",
+   "path": ".vitepress/work.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Clementtang/multivac42",
+   "path": ".vitepress/site.config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "too1-666/docsx",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Lw2964709499/note",
+   "path": ".vitepress/theme/config/teekConfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "FisherMS/magicnote",
+   "path": ".vitepress/config.sidebar.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "sendevia/website",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "lengran57/blog",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "790395245/790395245.github.io",
+   "path": ".vitepress/theme/utils/markdownConfig.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "zettle/note",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "AsakuraMizu/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "henrybit/private-blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "mariofdezzz/toruk-docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "imgsplit/docs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Blontern/KnowledgeBase",
+   "path": ".vitepress/utils/configLoader.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fhsh-tp/fhsh.py-dojo",
+   "path": ".vitepress/theme/composables/editorConfig.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "knightdreams6/knightdreams6.github.io",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "yuetsh/book",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kamaslau/manual",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Adachi-Framework/Adachi-Docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "LeonhardtHUST/LeonhardtHUST",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kauanhindlmayer/mirai-docs",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Tasnimetr/tp2-documentation",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "DadeHubs/my-vnote",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "SSiertsema/architectonische-bouwblokken",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "laruiss/dsfr-demo",
+   "path": ".vitepress/config.js",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "JianyueLab/documentation",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "worthman/th-ui",
+   "path": ".vitepress/config.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "flexqmadness/wiki",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "XJTU-IPDC/Lab_Handbook",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "kieuminhcanh/kieuminhcanh.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Seroliya/Seroliya.github.io",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MEILIN-CN/meilin-document",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "caigq99/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "T-Q-T/t-q-t.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "1Laggy1/hytale-site",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chow5566/ruoyi-app-best-doc",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "hnnazm/logspace",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "LinHeMa/awsome",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "charlzyx/boom.lit",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Noah-hope/Noah-hope.github.io",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Hanzzkj652/Docs-XueTongAuto",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "fc221/kle-transcodingDocs",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "Stream1998/blog",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "MM125JD/new",
+   "path": ".vitepress/config.mjs",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "chengxuyaya/midlifecoder",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "litojs/litojs-documentation",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "haibing3344/mihomoparty",
+   "path": ".vitepress/config.mts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "neonpixels-studio/danholloran",
+   "path": ".vitepress/theme/utils/configureMarkdown.ts",
+   "query": "filename:config path:.vitepress"
+  },
+  {
+   "repo": "nfd-parser/nfd-parser.github.io",
+   "path": ".vitepress/components/ConfigManager.vue",
+   "query": "filename:config path:.vitepress"
+  }
+ ]
+}

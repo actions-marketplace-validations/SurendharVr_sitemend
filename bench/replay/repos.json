@@ -1,0 +1,137 @@
+[
+  {
+    "repo": "Juniors017/docux-blog",
+    "stack": "docusaurus",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "build",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "DevAdmin-Riu/boss-dashboard-guide",
+    "stack": "docusaurus",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "build",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "jhipster/jhipster.github.io",
+    "stack": "docusaurus",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "build",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "dergigi/learn-fips",
+    "stack": "astro",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "dist",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "mj3622/mj3622.github.io",
+    "stack": "astro",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "pnpm install --frozen-lockfile && pnpm run build",
+    "site_dir": "dist",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "GoWorkshopConference/2025",
+    "stack": "astro",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "pnpm install --frozen-lockfile && pnpm run build",
+    "site_dir": "dist",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "taoli-tools/taoli-tools-docs",
+    "stack": "vitepress",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": ".vitepress/dist",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "vuejs-translations/docs-zh-cn",
+    "stack": "vitepress",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "pnpm install --frozen-lockfile && pnpm run build",
+    "site_dir": ".vitepress/dist",
+    "node_version": "22",
+    "commits": 40
+  },
+  {
+    "repo": "fishxcode/fishxcode",
+    "stack": "vitepress",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "corepack pnpm@9.15.9 install --frozen-lockfile && corepack pnpm@9.15.9 run build",
+    "site_dir": ".vitepress/dist",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "benbjohnson/litestream.io",
+    "stack": "hugo",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "public",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "layer5io/exoscale-academy",
+    "stack": "hugo",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "public",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "layer5io/docs",
+    "stack": "hugo",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "public",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "rgcsekaraa/brows3",
+    "stack": "nextjs",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "pnpm install --frozen-lockfile && pnpm run build",
+    "site_dir": "out",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "CertisBio-RC/certis_agroute_app",
+    "stack": "nextjs",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "npm ci && npm run build",
+    "site_dir": "out",
+    "node_version": "24",
+    "commits": 40
+  },
+  {
+    "repo": "TeoConference/TEOConf-FE",
+    "stack": "nextjs",
+    "ref_cutoff": "2026-10-01T00:00:00Z",
+    "build_command": "corepack pnpm@9.15.9 install --frozen-lockfile && corepack pnpm@9.15.9 run build",
+    "site_dir": "out",
+    "node_version": "24",
+    "commits": 40
+  }
+]

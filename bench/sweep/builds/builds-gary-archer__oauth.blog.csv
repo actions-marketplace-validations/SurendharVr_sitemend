@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+gary-archer/oauth.blog,bda3f3a2cb04d10586b3288e4586161fe8cbd2dc,build_failed,54.3,,v24.21.0,●  (SSG)     prerendered as static HTML (uses getStaticProps)

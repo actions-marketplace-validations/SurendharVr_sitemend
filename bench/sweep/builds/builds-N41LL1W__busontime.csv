@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+N41LL1W/busontime,1704bea0ed9402bb863ab34f6e640549df2c8554,build_failed,29.4,,v24.21.0,[Error: Failed to collect page data for /rota/[slug]] { type: 'Error' }

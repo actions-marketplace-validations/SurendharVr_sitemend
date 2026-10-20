@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+chanzuckerberg/idetik,b2c4419fd7124883f26cffde042fbfd8452426c8,build_failed,17.2,,v24.21.0,created dist/index.d.ts in 213ms

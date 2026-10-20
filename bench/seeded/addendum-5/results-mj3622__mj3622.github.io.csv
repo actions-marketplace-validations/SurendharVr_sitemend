@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+mj3622/mj3622.github.io,control,,,,,n
+mj3622/mj3622.github.io,canonical-removed,S1-CANONICAL-MISSING,medium,/2/,y,n
+mj3622/mj3622.github.io,noindex-added,S1-INDEX-CONTRADICTION,critical,/2/,y,y
+mj3622/mj3622.github.io,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,/2/,y,y
+mj3622/mj3622.github.io,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap-0.xml,y,y
+mj3622/mj3622.github.io,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,/robots.txt,y,y
+mj3622/mj3622.github.io,linked-page-deleted,S1-BROKEN-LINK,high,/2/,y,y
+mj3622/mj3622.github.io,title-removed,S3-TITLE-MISSING,critical,/2/,y,y
+mj3622/mj3622.github.io,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/2/,y,y
+mj3622/mj3622.github.io,title-duplicated,S3-TITLE-DUPLICATE,high,/posts/学习笔记/java/垃圾收集器/,y,y
+mj3622/mj3622.github.io,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/2/,n,n

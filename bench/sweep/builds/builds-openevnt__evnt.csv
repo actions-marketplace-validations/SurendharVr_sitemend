@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+openevnt/evnt,6f5678bd1c15988f0aae62e68fdd8e85a509b4a7,build_failed,2.5,,v24.21.0,"* 3 dependencies were removed: schema-dts@^1.1.5, zod@^4.3.6, googleapis@^171.4.0"

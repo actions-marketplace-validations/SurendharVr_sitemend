@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+Die-KoMa/die-koma.org,978fb3b7ddd0a4f8b9622a44e88a64b23842d99c,build_failed,1.1,,v24.21.0,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-18T18_02_51_940Z-debug-0.log

@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+HarounMinhas/harounminhas.github.io,3317ea9a70266f2f2c4a2e188822567a6ff642ba,build_failed,83.6,,v24.21.0,sh: 1: next: not found

@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+vorausrobotik/vdoc,fab99146d00b74a2662f4563b0b28b724ccdc619,build_failed,26.5,,v24.21.0,sh: 1: docusaurus: not found

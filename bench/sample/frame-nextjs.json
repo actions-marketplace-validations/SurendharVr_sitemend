@@ -1,0 +1,5008 @@
+{
+ "taken_at": "2026-10-18T14:41:06Z",
+ "queries": [
+  "output export filename:next.config"
+ ],
+ "items": [
+  {
+   "repo": "abedzantout/nextjs-blog-starter-kit",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kaancelik05/evimsistemleri",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gary-archer/oauth.blog",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "simula/datasets.simula.no",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Bullas/girls-in-tech-brazil",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BEKO2210/My_Dash",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "happykhan/qualibact",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "carbon-mapper/data.carbonmapper.org",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Minodevs/SlotjackMain",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TeoConference/TEOConf-FE",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "veloci11/globe",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "drewsephski/split",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RABINNSON/Rabinnson-Offcial-Website",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nelwincatalogo/todo-app",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dimang12/pos_nextjs",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MarshallEriksen-Neura/pi-agent-desktop",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gksander/pokemon",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Maikuh/unapec-pensum-tracker",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Reggio-Digital/wishlist",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nishant-Tiwari24/infinitus2024",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "pekkis/hardcore-react-training",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "craeftgame/craeft",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DjedAlliance/StablePay-MerchantWebsiteDemo",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ndexbio/ndex3",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Vishnuanand77/resume-website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ghostbyt3/ghostbyt3.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tezza1971/mcp-midi",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "advaith1/bluesky-followers",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "u4078974/NotionNext",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "domdomegg/google-client-id-lookup",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rafaeltedesco/blog-post-koru-next",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sean0x42/seanbailey.dev",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Nusab19/Toph-Leaderboard",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "juliomalves/juliomalves.dev",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AjayLiu/ajayliu.com",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jannesrudnick/n8n-chat-frontend",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "aloxe/ebt-36860",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Nuxion-Dev/app",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "athNdev/bettaresume",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "logreg-n-coffee/good-spark.com",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shwetra/homestay",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MesatArslan/priviasecurityproject",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ohbm/hackathon2026",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "njwright92/comedify",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hankliu62/toolkits",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jaameypr/aethera-next",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "FabLrc/blog",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Zilong-L/gpt",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dimitriwalters/blog",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kmfrick/orario-sync_react",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ksuzu46/blog",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Eriza-Z/Eriza-Z.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "basmilius/website",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MinhOmega/MinhOmega.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dstsuser/dsts-client",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TavoGLC/tlahui",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TyYan03/TyYan03.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ammar2k/ammar2k.github.io-old",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lalewis7/lalewis7.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RealDevSquad/skill-tree-frontend",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sukawasatoru/nextjs-template",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Trusted-Studios/Trusted-Studios.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "wuchendi/skuPathFinder",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lks-hrsch/YouFinance",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "j0zsef/josephfnevin",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "cochumo/resume",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "longlanepasture/longlanepasture.org",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "daphne-dev/daphne-dev.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "uthistran/game-town-stage",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ot-nemoto/combine-pdf-files",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tomlin7/notebooklm-clone",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nileshXrana/OptiSense-AI",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "N41LL1W/busontime",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Hyper-Sales/Landing-old",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "StricaHQ/tx-studio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "codefug/codefug.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Life-Experimentalist/the-pensive-index",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Rand0m0User1/Fintelligent",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AnitusA/porttfolio-v2",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "pipelineorbit/githubreportsvisualizer",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nadimtuhin/scrapers-toolkit",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "akhadeli/portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HokutoFes26/HokutoFes26.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shirlyyang-tcc/saas-boilerplate",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "StephanieGuimaraes/NovaWealth-Frontend",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "locmaymo/locmaymo.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Berdugo1994/revoducate",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "aave-dao/aave-governance-interface",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "IkuoShige/nextjs-tauri-desktop",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "emee-dev/getpostlad",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TortoiseWolfe/grand-daze",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RandomGamingDev/ChessELOle",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "halfhandorg/halfhand.org",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AtaCanYmc/hesapli-izin",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Tonspay/Hyperliquid-TMA",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rubenOrtz/rubenortz.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SkillUpp/Workflos",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "fuhayho/tinaTest",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "EzioMercer/EzioMercer.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "morganwang010/websiteclone",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nitrocloudofficial/nitrostack",
+   "path": "sample-apps/SCM/src/widgets/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LittleLittleCloud/StepWise",
+   "path": "stepwise-studio/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "isanclagunzad/next14-tailwind-shadcn",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "simula/challenge.simula.no",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "simula/code.simula.no",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ajitashwath/slideflow",
+   "path": "client/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MinhOmega/minhvo",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "frederickboyd/infinitus2024",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "fantiyun/NotionNextBlog",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kirk7785/ljsg",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "icco/roderick",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jackhric/storganizer",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Raj-Kliff/Homestay2",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "L1ttleWizard/nyan-react",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zhenguet/JL",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "GeniusAI-Healthtech/LandingPage_GeniusAI",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Deva0813/portfolio",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MoonMatrix/portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gimpoco1/travel-app",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "maugus0/replicast-ai-hero-ui",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Wholiver/metis_web",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Astha167/learn-connect.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "peeter240960/todo",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "miettal/wx-quiz",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Joyin2/afrujas-kitchen",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LianggLiew/reactapp",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kj002/Lizard-Global-Assessment",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AyushKshitij45/esummit-frontend",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "grassclaw/grassclaw.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shanemcfadden/data-structures-visualizer",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CertisBio-RC/certis_agroute_app",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "workbuoy/workbuoy-suite",
+   "path": "desktop/ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tuananhhusc/Vang-Phuc-Trong-Linh-Dao-I-Nha",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "inhaan/office-bgm",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nakschou/hardware-accelerators-site",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dannyInfras/devops-practices",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tahmidxp96/CropPred",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "WON-Q/merchant-client",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "EloyNunayalle/hackaton",
+   "path": "front/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nsbarr/caracola",
+   "path": "next.config.prod.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "XconTechnology/XCon-Technologies",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HarounMinhas/harounminhas.github.io",
+   "path": "Backup/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "iamasocial/data-analytics",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Profiletestai/mindcanvas-brain",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Reformer01/Resume-Parser",
+   "path": "nextSetup/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Caerii/Identicon-Generator-Site",
+   "path": "identicon-frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hayato-shino05/hayato-shino05.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "chrisohalloran/startup-factory",
+   "path": "claimstack/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SanjaySrc5489/AdminPlan",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zaxcoraider/confide",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "arunrajiah/coworker",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "randreu28/infrastructure-mastery",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DepressedFoxx/Kanado-Japanese-Learner",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MSOR03/SIPREH",
+   "path": "drought-frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "karaklefos/vscode-intro",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "moniiiica-mf/monicafang123.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tychesbd/shivareact",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "snthz/lumen-ems",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mijsu/Syntra",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "diasfusuy/Erc1155-App",
+   "path": "erc1155-app/packages/nextjs/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "haenlonns/ramp-socratica-bakery",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gabriell211/Seven-Network-Manager",
+   "path": "apps/frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CQsugar/class-tool",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hakanurtimur/practice-designer-office-project",
+   "path": "practice-designer-office-project/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "akunlainfiqi/tafe",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "regybean/Trellis",
+   "path": "apps/nextjs/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SM-Obstacle/Website",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Gaurav310M/figuring-oUtt",
+   "path": "raj-shamani-web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "qmicon/ai-video-editor",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "raimundoalvesstb/EducAdmin",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nikutek/sklepSzkola",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "maelacudini/FastifyNextjsSetup",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hlmr-travel/mira-learn-hackathon",
+   "path": "group-c-learn/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Priyanshuraj-gopi/SentinelAI-XDR",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kazuya-Sakashita/Hana",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HIATK/AWS24-front",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SCClifton/ai-sector-watch",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sanjaymaverick-cmd/clawSW",
+   "path": "website/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "numberdepot/numberdepot",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Deltax2016/mada_education",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "IsaacGtzGz/pemex-sistema-v2-pwa",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "JJCorsiF/perfect-numbers",
+   "path": "web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MocicaRazvan/MicroReactiveAWBD",
+   "path": "client-micro/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Amir3629/Melaniejazz",
+   "path": "melvocal-coaching-main/clean_restore/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Wizely99/kasa-africa",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Control-B/Questions",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Laszlo23/xrpbaby",
+   "path": "b3/apps/places/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "modhanami/arsahub",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Himanshusolanki24/autonomous-dark-pattern-detection-and-consumer-protection-agent",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shrivatsav-0/sitewright",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ktss1234/nextjs",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hoangjump/vunven.vn",
+   "path": "events-portal/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Speed-Jobs/frontend",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AlexeykaMigos/Test",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sharbel0022/YEHABIBI",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ioanniskon12/full-stack-AI",
+   "path": "ai-travel-planner/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Lucasalb11/NexusFi",
+   "path": "apps/frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Eduv4814711/Plethora",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "App-netizen-arch/special-octo-chainsaw",
+   "path": "composio-next/docs/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mujunyoung/study-mate-ai-project",
+   "path": "studymate-ai-backup-20250904_222850/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CopilotKit/CopilotKit",
+   "path": "examples/showcases/reskinnable-demo/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nitrocloudofficial/nitrostack",
+   "path": "sample-apps/code-atlas/src/widgets/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dotnetdreamer/open-screenshot-generator",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "OpenCerts/opencerts-website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "yiyd1004/nextjs_face_object_detection",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hoavdc/CodexKit",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "caio-overmind-ventures/designkit",
+   "path": "styleguides/cal.com/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AkseliManninen/lunssi",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MaayanLab/Knowledge-Graph-UI",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RBND-studio/flows.sh",
+   "path": "examples/modal/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TienNHM/di-dau-day",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AlphaIsYour/enopix",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shiva-shivanibokka/Core-algorithms-for-Leetcode",
+   "path": "web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jiwangyihao/lab_system",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "t-kunou/araisan",
+   "path": "front/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Abhik555/Abhik555.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "anvett/anvetcard_landingPage",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "WETTENTLLC/Hustle-Planner",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "anvett/Likeate_Website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Blenemy/katVR",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "adza8/green",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "syedzahidsaleem/arthora",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "calculus610/calculus610.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tau0-vla/tau0-vla.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "umuo/yayiya",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kunjp74/kunjp74.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ghostsf/NuoTarot",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "anvett/anvetcard_veronicaCano",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "anvett/webSiteTemplate_Nextjs14_Tailwind",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "anvett/anvetcard_erickaVeintimilla",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ghaithbenothmen/pyxis-website",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shenal-maker/shenal-maker.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Vyttle-LLC/vyttle.com",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "divopsor/div.homes-writer",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "UnknownWiz/The-Silk-Lady",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ravin1100/AI_Engineer_Portfolio_V2",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "salimlounis/salimlounis.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "harivmasoor/dadstodaddies",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "prakhar-5447/airmeal",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "one-commit/example-ios-chat-next",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "yuuchang/rockonyu.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gauravshokhanda/topplacedfinal",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "waleedtaj-cmd/kushticket",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "clydedsouza/clydedsouza-monorepo",
+   "path": "website/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hafiznaveedchuhan-ctrl/CYBERSECURITY-WORKER-AGENT",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gharibPlatform/gharib-web",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jackwellerreal/website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TOOL2U/Application-2---Sia-Moon-",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vinayrv-sigmato/two-app-test",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "GuiFrantz/ResearchersDiary",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Unluckymichell/hz-web-next",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Harriethw/queer-net",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MikheiliChkhvirkia/ChemiFasi",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SujalGour/Portfolio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dilaouid/vaporwaver-app",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Jagashira/home-dashboard",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "flolec31/inkvite-front",
+   "path": "i18next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ranzxx/nexus",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rafinkang/pocamarket_web",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sango-neo/ma-00",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "waqarshakeel29/swift-resume",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ingamartinez/personal-financial-dashboard",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "FacileStudio/vitrine",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "linwangboi/perdash",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Arlesvold/stba-ai-accreditation",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "adarshx01/Samanvay",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DebojyotiMishra/atlas",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TomasPalsson/worklog",
+   "path": "web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Varmanli/shemirani-portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Jiaye-DF/Agents-Memory-System",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "talocode/tradia",
+   "path": "cipher/src/app/ui/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sowiroar/Edutech",
+   "path": "agent-starter-react/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RachitMittal-20/Atrium",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SadikMahi213/Lumina-luxury-furniture",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AyhamJo7/moin",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "topcheer/ggid",
+   "path": "console/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "JayC0603/SoftSync",
+   "path": "SoftSync-main/SoftSync.Next/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mergedeyes/Klar-Stack",
+   "path": "klar-web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mateusnetcs/Protagonimos_feminino",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "golfdesu/thai-advisor-match",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "wamimi/BlinkTip",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tatoGi/Tbilisistyl21-v2",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "pareshpandit819/FinVerse",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "radawson/finance",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "radawson/informejo",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "StakiAutomation/di-tender-2025",
+   "path": "web/apps/rsk/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "blutonium-de/blutonium-core-v2",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "EbrahimAbdelwahed/stemAI",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "UniqBrio/UniqBrio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "chiragkwadhwani/udemy-reactjs-tutorial",
+   "path": "0. REFERENCE ultimate-react-course-main/21-the-wild-oasis-website/final-4-after-interactions/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ViniBLK24/tech-challenge",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ygsorianochiukim/marketing-project",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "itayost/garden-of-eden-website",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "impulsatec-dev/flfgpools-dev",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "YGLF/AnXin_Contract_Manage_v1",
+   "path": "reimbursement-system/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ADTrauts/Vssyl",
+   "path": "web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LouisP14/portfolio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KaloyanYordanov/cal.com.4.7.8",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "retailbox-automation/recurring-buy",
+   "path": "packages/nextjs/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "erenyeger719-jpg/YBuilt",
+   "path": "public/previews/forks/mh0jivda-fpa2-import-next.js/test/production/standalone-mode/ipv6/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BoundaryML/baml",
+   "path": "typescript2/app-website/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rgcsekaraa/brows3",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "thesysdev/openui",
+   "path": "examples/app-frameworks/react-native/backend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ContextFort-AI/ContextFort",
+   "path": "contextfort-dashboard/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sparrowzoo/sparrow-js",
+   "path": "react-next-14/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "iCpplus/space",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shuaihaoV/tabby-sync-unofficial",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hemantyb/hemantyb.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "muratumutlu/muum-repo-explorer-public",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "muhammadtalha242/csinsight_frontend",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "armand1m/golinks",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "elliotttmiller/foodtruck",
+   "path": "website/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "usv240/bellwether",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "karaarora/karaarora.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Amir-Mirfallahi/Amir-Mirfallahi.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "barabba9174/vr-tools",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Dotunbey/neurograph",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ShindouMihou/Nexus.Web",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Alexandre-Saudemont/WebDev",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Lelefs/mfsupport",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "devrus91/log-viewer",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "marcokappa/provaqr",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lazy-dinosaur/lazy-dinosaur.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Adonis278/ACEMOBILITY",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "wolfgangh/ExamGrading",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "GdayRui/tetris-web",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DarunoKdv/inventory-manager",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kaa75/Kaa75.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sadab-Munshi/sadabmunshi",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ejeoxlac/Ejeoxlac-Portafolio",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rdwaynedehoedt/indian_hut_t3x",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nevermyuk/nevermyuk.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "brendanciccone/tempotuner",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SomeshSaini-1/Profile",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nikunj3011/AIAPI-Agent-NextJS-Landing",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shauryak890/la-site",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "alimuratumutlu/github-repo-discovery-triage",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "denisCazz/meteo-bitora",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "varunloni23/Cement-Nexus-AI",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TorresAbonceLuis/TT1",
+   "path": "FrontEnd/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Tushar-Surti/sih-26091-taana-baana",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "schjonhaug/canary",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "akashpersetti/wingman",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Janszczyrek/pensjonat",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "danishistired/Markr",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "m-abdullah-codes/website-gymFrontendPWA",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Leop250/projet_file_orange",
+   "path": "SRC/web_app/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hunelii/Hotel-Inventory-Management-Chat-System",
+   "path": "trial-1/next.config.cjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MyagmarsurenMike/thanksgiving-web",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DiandraFrza/frontend-educare",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shlawgathon/tactile",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "urielpaul/trading-chart",
+   "path": "TradingChartFrontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "iamarjunm/SatQuery",
+   "path": "fronted/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "muhammedhanii/Testing-System",
+   "path": "Project/frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AIU-SoftWave/AIU-Trips-And-Events",
+   "path": "Project/frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AbdullahMalik17/Voice-Assistant17",
+   "path": "web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kevincruz2005/LaunchProof",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "briancks/testimonial-uploader",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Anfind/Chill_Cine",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "samyak-1021/LensRag",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ykidnwg/ppl",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Waylo2016/WayloTech",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "robertying/gpu-covid-visualization",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hungerbk/web09-dopamine-personal-refactoring",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ait-saad/Aji_Tnje7",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HiroDev-lab/regadoces-site",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nbvhung/SmartCampusPay",
+   "path": "fe/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "thutahw/SPACE-App",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kolobov-dev/amulex-mini-app",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SvZol/bg-tbilisi",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sandrixman/first-Next.js-project",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "markspolakovs/nextjs-53579-repro",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jx1114/CodeQuest",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MaddoxSciuchetti/MealPrep-Deal",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nshejwalkar/speculative-rag",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jorginskn/fc-code-client",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AdityaSadewale/My_Portfolio_",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dragoscv/AIDE",
+   "path": "apps/aide-control/next.config.ts.new",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "codai-ecosystem/codai",
+   "path": "apps/aide-control/next.config.ts.new",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "artpromedia/aivo-platform",
+   "path": "apps/web-teacher/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "carlosbaraza/lostdock",
+   "path": "apps/docs/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Harshini-projex/Sahayak",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "6chHenry/DreamCup",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "riyaz-ahamed-07/Stride",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "semilogopaul/Space",
+   "path": "client/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zagrajmy/bachanalia",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ducksss/tenjo",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "raghub-github/expo_app",
+   "path": "partnersite/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dtn-cntt-sgu/sv5t-sgu",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Lyzr-Apps/dynamic-bright-edge",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "FutureStack446/future-stack.dev",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RoutinizeWellness/fitness-app",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "csirona/example-docker-nextjs",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Jud-e1/smaul-tour",
+   "path": "packages/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DhruvGodambe/pyre-frontend",
+   "path": "pyre-app/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Mankid1-1/ZenBeasts",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gianpaj/gta",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "k9yuw/BCC_sugang",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gnydy/Matrix",
+   "path": "Projects/ecommerce-stores-batch-02-V2-BUNDLE/ecommerce-stores-batch-02-V2/digitalforge-products/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "evgeshniyzik-dev/nextjs",
+   "path": "test/production/app-dir/hash-salt/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "PrathamX595/GupShup",
+   "path": "gupshup/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "saglacio/saglac.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nextvestment/nextvestment-transfer",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "NJUPT-SAST/sast-link-frontend-v2",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MightyTMZ/periscope",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AlexanderGureev/lite-fsm",
+   "path": "apps/playground/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hikaru7719/hc",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Zeinab-sattarian/My-Portfolio",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "EduardoAlvesNeto/natalsmartphones.com",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MOF-MAL/circuit-simulator",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Bkhamilton/hamilton-portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ouweiya/next-page",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MadeByRed/chronic-haven",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sobaansaeed/portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mohammadridwandev/bizbee-agency",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "miyasinarafat/artisandojo.com",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AbhishekSinghDev/portfolio-2.0",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mehulshekhada96/shreeji-jwellery",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zedkooky/zoac",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AaronPatrick562004/Puravankara-Activity-Tracker",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "bloom721-cyber/Yellow-dzambala-14",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kexec-run/kexec.run",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "arisha-anwar/nexcis-assignment",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lakshaniranaweera/Sustagen",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ridanit-ruma/kubitor",
+   "path": "client/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ahmedmaaloul/autotwin-de",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "abhishek-pandey7/Smart-Scan-strategy-for-Electronic-Warfare",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "celtrix-os/Celtrix-website",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "caolthanhdai/todo-frontend",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vevcom/project-next",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jothamsl/SUPER-RGAN-NEXTJS",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ripper-jc/chessSchoolWebsite",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "georghans/voty",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jacar/Dise-o-de-Bobinas",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kizoukun/information-management-next",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "luishfbr/pokeonlineapp",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ckckckcz/mbkm-lahankosong-v2",
+   "path": "client/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Cubiczan/metacomp-visionx-dashboard",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "byteom/Reportify-Medical-Report-Rag-chatbot",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Rvl08/Doculens-Ocr-Smart-Reader",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "victoriancode/vespa-search",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "withchris-kavia/vv-search",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "1lck/open-frontend-pages",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ring9834/WeeklyMeals",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Anish932-hash/Jarvis-incomplete-",
+   "path": "JARVIS_GUI/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rohanvemula279-star/veda-ai",
+   "path": "homescreen background/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Akinori123/Ultron",
+   "path": "homescreen background/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "yatharthchopra2424/HRMS",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Maull09/Maull09.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kitty-Inu-DAO/Website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "itamarmar3-max/ai-agent",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "amanm-sudo/Expense-tracker-app",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "thisisniagahub/OPENPROJECT-1",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "amnanadeem08-commits/ai-analytics-saas-mvp",
+   "path": "khaldun-ai-website/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "khirayama/cloudflare-supabase",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "alxcost/alxcost.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ndra969/trading-bot",
+   "path": "apps/dashboard/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mohithkumarss/Brain-Neural-Network.THREE-ForceGraph3D.NextJS",
+   "path": "my-project/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hjs0410hc/www-thxx-xyz",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CIS31/Next_Assemblee",
+   "path": "sentiment-frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "XZANATOL-Projects-Archive/hos-eld-simulator",
+   "path": "hos-eld-trip-visualizer/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Dougal-McGuire/retirement-simulator",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ayushmodi001/v-card_page",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "immanuel-peter/grok-review",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RavLyr/portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gcb/react_test_case_useActionState",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Eatosin/lexpertz-axiom-engine",
+   "path": "client/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "saschaheinl/tvr-bundesliga-apps",
+   "path": "entry-drop/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Carl-Johnsons/tastopia",
+   "path": "app/client/website/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "woolfich/weld_04_30",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HeyDataDude/HeyAgents",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "papykabukanyi/hellobluelender",
+   "path": ".history/next.config_20250616210513.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RMoor-Industries-Ltd-Co/Cappo_Meridian",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vibhaassingh/linkapitech",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ilgon0110/goldhand",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ayesha-Siddiqa-khan/Crochelia",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "YuCheng1122/sensel-base-platform",
+   "path": "templates/project/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "QuantumTechBr/AlfaFront",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "GxJohan/portafolio-sistemas",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mathissdupont/heptapusgroup",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SRM-IST-KTR/gcsrm-rec26",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "elric-cpu/benson-home-solutions-web",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Wasif-Ansari/Skill-Steps",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Albaraazain/energy-dataset-grad-project",
+   "path": ".lh/next.config.js.json",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dwestland/next-auth-prisma-blog",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dwestland/next-13-blog",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Anil-reddy-1/peernova",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KaseyCantu/turborepo-react-starter",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Aris-Kata26/parkeasy",
+   "path": "web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mithun9421/eazytable",
+   "path": "docs/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DeeJayChina/excellency",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shrutu0929/Job-Scheduling",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "omsherikar/Job-Scheduling",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "bongs20/tulus",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tcaccava/42",
+   "path": "VALUTAZIONI/fcarlucctrans/apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CloudCompile/vetraaiapi",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kvnang/videocast",
+   "path": "app/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sandy-ms/financebot",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SohailGidwani/next-portfolio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "subhranshudash13-dotcom/GSOC-contributor-hub",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ag2ai/ag2studio",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hiero-ledger/hiero-sdk-js",
+   "path": "examples/frontend-examples/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "liveloveapp/hashbrown",
+   "path": "www/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sharathchenna/kubesim",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "davipm/next-expense-tracker",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zhou1323/chaiGO-frontend",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ablancq95/spectercoproducer",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "echo-anik/rigcheck-website",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ahmedissamramadan/AIR",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "miketypson/privacy_website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SAM11012/test_demo_website",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nitesh-jobvite/juscleanit-website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "teamhlx/executive-dashboard",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sajidhamdard/java-full-stack-dev",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KukimiCan/spotify-stats-dashboard",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Osea263/base_meme",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "oseno/cedarsky",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lorenzkipp/lorenzkipp.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Hamza6387/nexcis-webapp",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MuhammadSohaibRiaz/ryde5",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MosheRW/fast-ends",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Divyansh0404/hospital-management",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "FahadNafeesAhmed/periscope",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CrawlerCode/redmine-api-client",
+   "path": "docs/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DanyloUserGit/sites-generator",
+   "path": "client/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vibedeckx/vibedeckx",
+   "path": "apps/vibedeckx-ui/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "FalseGenius/dApp-chat-app",
+   "path": "chatapp/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "NgoQuocTinh/personal-knowledge-assistant",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KashNash69/tierlist",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gma201011/donate",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Eddiebm/mfs-project",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SOL4R1S/VBInvest",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Pombaa/SaldoZen-Web",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "karan19/LLMCouncil",
+   "path": "frontend-v2/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Aryankr31/Project_Devoracle",
+   "path": "devoracle-ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Bruno-BRG/rpg_solo",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Eric-Wahl/iBoard-Intervenants",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ilovecoffeeandwine/wsc-web",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mubeendevelops/dispatch-go",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "yao-creative/lemma-one-launch",
+   "path": ".git-rewrite/t/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "johnmayugaph/Deliveryapp",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "november-saiful/provatferi",
+   "path": "apps/recruitment/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "noghte/socratic_chatbot",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Mathiyass/wenasa-driving-web",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jeckxploit/wa-business-auto-reply-studio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "thedittya471/portfolio-v1",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "condetodo/post-venta",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tamagokakedon/watashiradio",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hussainahmad17/audioSonic",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ghanshyam-du/ToDo-app-electronjs",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nolanpeterson07/safewalk",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gab-cat/merchtrack",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ChoirunnisaSafaFayzalmi/PolinesCare",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "guferreira1/observai-web",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Arunodhai/IncidentForge",
+   "path": "apps/incidentforge-web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kirazul/Vaultgate-Agent",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "winsznx/neurodegen",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "bluewhales28/SE2025-17.1",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "EstebanQui/MoodShot",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "aimanzarif/portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "martinpetrdev/Cadaide",
+   "path": "repos/frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DJeison-DVT/render-form-page",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Saalim-Adesina/baseerahwebapp",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "calebngakinono/Vault_resource_app",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "solidstatecc/solidstate.cc",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "parthkansal823/CodeChatter",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mbarnes-code/expert-dollop",
+   "path": "apps/productivity/notes/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "blackcatphil/checkitdown",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sukumar-Manivel/Micky",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "pi1814/oauth-aal2-demo",
+   "path": "identity-provider/self-service-ui-nextjs/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Azuma86/project_uchi",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "amanullahmd/course-frontend",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MustangClaw/OracleClaw",
+   "path": "services/web-app/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "riveo/payload-packages",
+   "path": "dev/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sakilanwar9531/Nursingmock",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "br4ndonlo0/capstone",
+   "path": "module1-frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shaxb/questpath",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KnockOut0101/Agent",
+   "path": "AutoGPT-master/autogpt_platform/frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Mobyus1-Org/SWUniversity",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "bhoga01ai/my-copilotchat-agent",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kanwar-mana/face-recognition-system",
+   "path": "module1-frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dexue67/SC3099_Capstone",
+   "path": "module1-frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "universokobana/kobana-web-ai",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gdf9029/SIT313--Full-Stack-Development--Secure-Frontend-services-",
+   "path": "ultimate_react_course/21-the-wild-oasis-website/final-3-after-data/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Jianxuan-Li/freeyeti-frontend-nextjs",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kohlex/service-template",
+   "path": "web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Codenuclei/thumbnail-generator",
+   "path": "web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ssarthaks/ai-marketing-suite",
+   "path": "aiagent/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "paulogdm/chartcomposer",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SGKolibri/BRUT",
+   "path": "brutFrontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Randol-79/Randols-Social-Platform-vfinal",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "balatechn/it-support-portal",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CaptainPhantasy/LAIAS",
+   "path": "frontend/studio-ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shreyvijayvargiya/freelanceCRM",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shreyvijayvargiya/HopeCRM",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shreyvijayvargiya/EstateOS-CRM",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shreyvijayvargiya/WoolCraft",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shreyvijayvargiya/inkgest-saas-admin",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Heretek-AI/Heretek-ProxmoxVE",
+   "path": "standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/standalone/frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "UniPat-AI/Terminal-X",
+   "path": "data/RoadmapBench/prm-5.15.0-roadmap/environment/repo/packages/client/tests/e2e/nextjs-schema-not-found/14_monorepo-serverComponents-customOutput-reExportDirect/packages/service/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "faisalthaheem/open-lpr",
+   "path": "single-page-ui/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "trovesfi/troves-client",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "WebDevPeterGriffin/The-VibeCode-Bible",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tianzongxinyu/miniBill",
+   "path": "web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BIS-Standards-AI-Assistant/BIS",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "seandonn-boston/helm",
+   "path": "logbooks/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RiteshS1/vidzart-app",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "miruomoo/miruolin",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gabriel-wan/gabriel-wan.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Spidey120703/resume-dog",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dwang5460/banzhaf-shapley",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "chungo05/umbral",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kevinho71/link-roots",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hritesh94/the-wild-oasis-website",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ahmedfarghally1988/mycv",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KitsuneDaro/test_of_three_js",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ackerm0n/myblog",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "alboom4ick/animation-addon",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "alaner652/Agora-AI",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "youssefx99/ProdLevel-RAG-Task-Manager-Front",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rafaeltauran/jet-assignment",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "50ki-1706/next-template",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lucasA27/teste-frontend",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Glitzypanic/specialty-coffe-shop",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tantunholdings/medicare-tantun-web",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vasi2904k/Portfolio-Website",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ahmetabdullahgultekin/Mizan",
+   "path": "website/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sivanesh1909/Web-Scrap-RAG",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dimamorar/hatkom",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "JSBHernandez/inegollaw",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "baolinyang1/roamlii",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rmzi/malco",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "themrzmaster/augurms",
+   "path": "dashboard/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Drek003/bella-rosa-tickets",
+   "path": "apps/tickets/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "brunoravanhani/weekly-offers",
+   "path": "web/catalog/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Hema6-ai/BUAIP-Bharat-Unified-AI-Platform",
+   "path": "BUAIP/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mbarryyy/agent-shield",
+   "path": "console/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "PrasanthYT/sknr",
+   "path": "web/dashboard/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AvagHovhannisyann/System",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "maceip/neo",
+   "path": "evilcharts/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LTDakin/sample-portal",
+   "path": "sample-portal-ui/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nabeelali0707/getPoint",
+   "path": "getPoint/apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TaeSeungRyu/mono-repo",
+   "path": "apps/client/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "PranjalYadav33/MusicTyping",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "IbrahimMohamedAbouHalima/IbrahimMohamedAbouHalima.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Syedaashnaghazanfar/todo-app",
+   "path": "phase-5/frontend/todo-app/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kylev202/2026Portfolio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DkXenos/Oweek-2026",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "cathleenYJ/medtex-client",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gdragonlee/care-team-duty",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BOSTONE069/SentinelAlpha",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "maxmaxim27/ultralighthome",
+   "path": "open-next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Bissmella/meeting_assistant",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "misfarsiddeek95/healthcare-sample-debug",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Atul-Shivnani/venture-bridge",
+   "path": "apps/investor-portal/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "floraws/solupyme-app",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Cookie-CoDeRR/ORCA",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MattPoetker/nec_vector_search",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Yanbellq/Yanbellq_projects",
+   "path": "play/layer_unzip/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MusfiqDehan/Agentic-Email-Campaign-Management-Platform",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "student-srijit/cosmos_IITP",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jhossuarodriguez/administrador-de-licencias",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tp02ga/poker-night",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "luisgon-dev/Transcendence",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Memory555/contract-analyzer",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BIma-Creative-Tech/bct-website",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MakaiView/SpectraForge",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LouisMuriuki/porfolio-next-js",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ruthwikg-create/RadAssist-3D",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Alibadvi/dania-commerce",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kkirby/wanfw",
+   "path": "packages/tier1/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "fgbs/escuela-turborepo",
+   "path": "apps/escuela/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TinkerTanked/tinkertank-market",
+   "path": "next.config.prod.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "flaviendelangle/undertrained",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BardhMustafa/hm-home",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "santimarquez/TheLastOfSnack",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AnassEhab33/DevOps-for-Ecommerce-Website",
+   "path": "services/frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ranesh31dhanush-bot/backend-roadmap-platform",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Unknowns-007/savetheplate-frontend",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BrandonLYS/CS3216-Assignment-3",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "realqijun/jira-pro-max",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TheLaughingGod1986/split-save",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "officialridzuan3rd-crypto/EFM-Intelligence-Workspace",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hudaprs/udemy-next-property-pulse",
+   "path": "02-03-fundamentals-and-project-start/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ishan-agarwal-05/portfolio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "pasindu-jayasena/KaprukaAgentChallenge",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KucherMaksym/Cofa",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sumit-2028/SS-Construction-And-Engineering",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rushi2212/Nexgensis-Product-Dashboard",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rulecms/use_rulecms_nextjs_tailwind",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "TimBlome/blome.eu-frontend",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rickyMelida/nextjs-cognito-auth",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LanceKitL/PomoKit",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "k1ngsterr1/spark-admin",
+   "path": "client/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "WooYoungSang/base-mev-inspector",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Perseus9999/UniswapV2-BSC",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jsoehner/restful-booker-platform-trunk",
+   "path": "assets/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "javapoet55/Harbour",
+   "path": "admin/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Shelbyb/sonalyze",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CrossiCafe/croissant",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Mrinank-Bhowmick/python-beginner-projects",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "yishan-io/yishan-mono",
+   "path": "apps/landing/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "disfordave/provence",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shreyanshio/BrainyAi",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "redshadow912/ReceiptBot",
+   "path": "apps/viewer/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tecsoc/sourcecode-shakyo-sourcecode",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "benbendesigner/benbendesigner.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "IrfanCatovic/bambi-colors",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "timoshinoleg-eng/chatbot24-widget",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rokukoo/trmenu-editor",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "facsert/react-example",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Fobertree/fobertree.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "owowagency/gsap-motion",
+   "path": "docs/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CodingSantaCo/MoneyDuck",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "aryapras22/belajar-nextJS",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nitintf/nullmail",
+   "path": "client/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Onako2/projekatiOS",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "geraldman/project-guardian",
+   "path": "dashboard/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sahiruw/medicare-insurance-web",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Longlom/consierge",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LATAMFILTERS/world-catalogue",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RMMichael/ecomm",
+   "path": "ecommerce/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HossamEldinx/Recipe-Ai-Detective",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "cvteuai9/yamin_final_v2",
+   "path": "next-bs5-main/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Chainscore/ajanta",
+   "path": "web-ide/frontend-next/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DamianZamolski/party-games",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jzoccali/headshot-studio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rimshadpcs/portfoliostore",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "m-abdullah-codes/website-maybach",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sameerdewan/hackerhouse-2023",
+   "path": "ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Saikushal185/SupplyIQ",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "bennjoy/weddings",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "drsamame/portfolio.next",
+   "path": ".history/next.config_20240705210511.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sudhanshu-Mantys/aster-clinic-for-vercel",
+   "path": "renderer/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tritonminingco/BlueTrace",
+   "path": "docs/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "giovannivitale4722/Greenprint",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SplinterSword/passwuts",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Zayelion/business-agent",
+   "path": "interface/server/ui/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "novruzov9/TaskFlow-Front",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AndrewL1698/pickleball-ai",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SDSU-CompE-561-Fall-2025/aztec-list",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ankitbiswal141/Ops-Control-Portal",
+   "path": "services/frontend/main-page/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Mr-spiky/VidyaKhojo",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mlger/seg7lab",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "justcgh9/Portfolio",
+   "path": "portfolio/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "abdulahad139/Todoapp-HackathonII",
+   "path": "phase-5/frontend/todo-app/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "touwaeriol/newapi-keyload",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "smallletters/everzon",
+   "path": "everzon-web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "anoop-1/atlantis-reimagined1",
+   "path": "backlink-sites/ndt-knowledge-hub/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "chuchu61/SpartacusEcom",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ashish-Panwar/genesis",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Robin-Alexis/local-event",
+   "path": "local-event-front/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BintangDiLangit/pkbm-swastika",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ss04pp1-dotcom/Bug-Fixertv2",
+   "path": "artifacts/admin/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "schmrdty/SoapBox",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "frobobbo/sps-suresend",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "oaknational/Oak-Web-Application",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zistica/korveo",
+   "path": "packages/dashboard/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sternmate2/pyramid-strategy",
+   "path": "services/admin-ui/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "glowzaq/lggmi-app",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "d0zingcat/kairos",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "0xcuy/adexto",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ofri-peretz/eslint",
+   "path": "apps/docs/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "PANHAVORN22/Web-RTC-frontend",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SproutMarketplace/sproutdevupdates",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "khosbilegt/tokotoko-app",
+   "path": "kotahi-app/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hiktan44/shoes",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "abhra92/lets-code",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zhakasov-bm/simply",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gustavocotalima/gastos-apto",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gogetrekt/certiva",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hamidrezaramzani/keyboom",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jona1502/flaggcount",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "coffee2307/econith",
+   "path": "dashboard/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ridho-arachman/portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Muhammad-Sharjeel-Asif/The_Evolution_of_Todos_Hackathon-II",
+   "path": "phase2-fullstack-web/frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "prolayp7/clinicops",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "thanhphonggitrepo/IPT-preview",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "takaiba/ta-2025-zenn-and-google-ai-hackathon",
+   "path": "ta-frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "idanmann10/persona-onboarding",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Dan6erbond/portfolio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "higirobruce/1govmail-mono-repo",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Faizanmal/presentation_generator",
+   "path": "frontend/next.config.production.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kaushik2210/tapwire",
+   "path": "apps/dashboard/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DexerMatters/dexerblog",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lakshyatyagi24/flower-ecommerce-platform",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kaykayfourier/clbipp",
+   "path": "apps/admin/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "VersoriumX/Official-EthereumX",
+   "path": "ethereum-x-platform(5)(1)/frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "gauthambinoy/global-signal",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "fmahin7-ship-it/Uddoktahut",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ldcr6/Skat",
+   "path": "web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dome-systems/examples",
+   "path": "demo-chess/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lucianok-2/TreeTracker-front",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "maniranjan2023/wiki-sync-modern-beam-37q6",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vm-x-ai/vm-x-ai-file-processing",
+   "path": "packages/apps/ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kingkeysshop-ai/store-mas-server",
+   "path": "storefront/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kingkeysshop-ai/BACKEND-V1-MEDUSA",
+   "path": "storefront/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ibugithub/PortFolio",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nguyennhutien/csszyx",
+   "path": "playground/nextjs-16/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hiromitz/starter",
+   "path": "nextjs/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ErTasselli/OpenTerminal",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "LazyAGI/LazyCraft",
+   "path": "front/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kunaldhongade/MemeLauncher",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ancilis/heel",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "1226085293/1226085293.github.io",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "wolram/VotoData",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Andres-Holivin/Andres-Holivin.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "paocarvajal/EXPENSES",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Trishaneww/hgc-construction",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "irvanshandika/next-pwa",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "obfuscatedgenerated/rangle",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Hasan9955/old-furniture",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sandrarampal/tkorp-part2-front",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "benjaminxiaa/portfolio-cv",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Fouda-M/petty_cash",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "akdl911215/memo-jaychis-front",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shivamklr/kaltq",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Fasith-23/Fasith-23.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "leos213/The-wild-oasis",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ItamiForge/itamiforge",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "WeridFire/WeridFire.github.io",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "emb417/metaforiq-next",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "alephramos/aleph-registry",
+   "path": "site/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vitaliiznak/test-guess-the-country-game",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mkizka/shorttv",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "navikt/aap-paw-patrol",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mongodb-partners/aws-mongodb-atlas-offline-first-app",
+   "path": "web_portal/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hasenali7770-jpg/esraa-alnoor-fullstack-v3",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sunenyi/nebigproject",
+   "path": "next-bs5-main/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DominikGorecki/vulcanlab",
+   "path": "vulcanlab_ui/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SachinthanaK/lankarescue-app",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "EngFrenzy/CV",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "J0hn316/TheWildOasisWithNextjs",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mindulle/WorkExperience_1953",
+   "path": "src/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "WebForks/juicenet-webui",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "NileCochenInc/fitnessaiapp",
+   "path": "front-and-back-end/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "OpenG2P/registry-platform",
+   "path": "ui/agent-ui/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kevin36524/AI-storybook-creator",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "moiz-habib/devops_todo",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MayankSen09/SentinelAI",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "vimzh/LingoPie",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dmhernandez2525/FocusFlow",
+   "path": "services/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "akshattyagi03/Stock-Exchange-",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Turing-Recruitment/recruiting-analytics-platform",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "maggit/littleRSVP",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Jingasan/nextjs_tutorials",
+   "path": "14_docker/frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "akshhkaushik/veritas",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "EngKARANGWA/homelinkRwa",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Hermeneumata/payload-website",
+   "path": "src/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "bkf777/ck",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Aniket-Subudh1/LMS-CUTM",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ahmed-M-Aboutaleb/uctp-workspace",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rishi-raj-jain/next.rishi.app",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "avbdev/agent.tools.config-manager",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sachinrajawat/FixItNow",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Warlockus-prod/regatta",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lewi0231/work-rate-calculator",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HAAHIT/HisaabKitaab",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "netoncn/portfolio-finances",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "adrputra/resume-generator",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Planettalk-Limited/AgentPortal",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "lelettricaleoni/lelettricaleoni.com",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kichies/smart-collab",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "FORCU27/fooding-frontend",
+   "path": "apps/user-front/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "alisariaslan/E-Commerce-Task",
+   "path": "product-client/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "qBioTurin/slurm-interface",
+   "path": "interface/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jsceoz/goo",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "darterss/top24",
+   "path": "web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "PatelYash7/vibechat",
+   "path": "apps/onlychat/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SergiomFM/Transcendence",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "pvcordeiro/ft_transcendence",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "rajanchand/multistore",
+   "path": "apps/storefront/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "52zov52/VEGA",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Farechiga/growth-conversations-consultative-lending",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ZarghamAli-65/school_management_system",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "manjeet26164/captions",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zyadhajaji/saly",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Ali-RJA/uruk-mocap",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "khiwniti/bitebase-v2",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "P-nguin/Instravel",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "latifaKey/coffee-shop",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "shariprmm/mpv",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "grace2riku/ai-chat",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "SagedaJaffrenSK/Next.js-Blog",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KanishkThakar/metrology-scanner",
+   "path": "apps/web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tbscode/tims-stack-v2",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "williskipsjr/Distributed-Spark-Based-Real-Time-Drift-Detection-Self-Healing-ML-System",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "qpig0218/headache-diary",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "NabilTouri/agent-trading",
+   "path": "dashboard/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "xuwenjun2001/wolfBot",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "joelklabo/markdowntown",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "erfanbanaei/erfanbanaei_ir",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "beingofexistence13/dx-frontend",
+   "path": "core/nextjs/examples/remove-console/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "davidburgett/siggy-integrated-storytelling",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Krishnav1237/social-desk",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "krystian2077/prokom-system",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Pagnarith-Pit/Python-AI-Tutor",
+   "path": "supabase/apps/docs/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HannahChen955/MarketPro",
+   "path": "frontend/next.config.optimized.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HassanAfzal123/agent-world",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "KyleBurger/next-apollo-graphql-bare",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CherryHQ/cherry-studio",
+   "path": "i18next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nitrocloudofficial/nitrostack",
+   "path": "sample-apps/seizure-monitor/converge/sample-apps/Zerogravity/src/widgets/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "minorcell/memo-code",
+   "path": "site/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ruvnet/sparc",
+   "path": "ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DarkHighness/coi-public",
+   "path": "src/i18next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ingoau/links",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "sztanko/elucidario_madeirense",
+   "path": "app/elucidario/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "STORM-IRIT/pcloud-differential-estimation-benchmark-website",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jcd1991/crypto-research-console",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "xiaolhua605783973-droid/resume-ai-assistant",
+   "path": "web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "zntb/nextjs-template",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "apexlawncompany/apexlawn-website",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "R0tten0x/r0tten0x.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "damianperreira/DAP",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "OpenMined/syft-simple-runner",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Artamenos/podlesniyeditor",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Yousaf03448307585/blog_demo_site",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "amedeirosg/car-catalog",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "MehtaNandini/MehtaNandini.github.io",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "pedrodfato/qr-code",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Arvid-pku/worldofphysics",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Chintan5942/dao-meme",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "AnsonHui6040/thumap",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kavindunimesh/angel_vodka",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "iammarkps/eqapo-gui",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hrWong/BandHub",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "neilei/synthesis-maw",
+   "path": "apps/dashboard/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "persev03/IICA",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "code-geek/ai-project-template",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Omerserruya/Gotcha",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dangelo352/fortnite-ai-map-pipeline",
+   "path": "web/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "David-Lazaro-Fernandez/matine",
+   "path": "dashboard/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "smartha2003/portfolio",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "BergFilip/plugincs",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Sai-Pone-Kha-Aung/gym_management_system",
+   "path": "backend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "prtm1908/agentic-arango-financial-knowledge-graph-system",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "DucQuyen199/FeatAI",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "fengwuxp/fengwuxp-typescript-spring",
+   "path": "feign/feign/rollup.esnext.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "HosikYOON/caffeine",
+   "path": "21_frontend_admin/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Prisha-star-16/Hire-Equipment-Demand-Return-Forecasting-System",
+   "path": "hire-dashboard/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "j-miller-dev/dingobet-master",
+   "path": "dingobet-web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ayaanoski/meme-go",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Lithiumwow/tranceradio",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ithungphuoc-ops/HPCons-dauthau",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hkladoi/Car-Advisor",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "skypto/AlphaDesk",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "leszeq/all-saints",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "enayat-h-jaun123/last_assignment",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "aliyanalisamnani/todo_new_work",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "waliyasuleman/exam-practice",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "abdulsami-khan/cicd_task",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dymaptic/accessible-map-agent",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "btraintinger/studylink",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "skpr/examples",
+   "path": "payload/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nicollasacruz/tennis-management-saas",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "stcapo/hai-ddf",
+   "path": "haiddf/components/ui/react_ui/ddf-dashboard/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "CoryLawsonxMortgageAI/shadowbroker",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "stuff/piccy",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ly-schneider/bless2n-food-system",
+   "path": "bfs-web-app/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "fxcl/shroute",
+   "path": "OmniRoute/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Edge-Academy-UFAL/student-manager",
+   "path": "client/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Cael1107/VansRouter",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Xihaixin/openwiki",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "naaa-G/react-responsive-easy",
+   "path": "apps/docs/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "hmcts/dtsse-github-metrics",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mrtemroztrk/psikoloji-example-website",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "janvobora2-beep/vobora-ai-complex",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "dustinwalkup/hoador-web",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ohadfefer/stockmind-ai",
+   "path": "frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "kngnkg/tunetrail-proto",
+   "path": "webapp/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mayankbytes/pdf-biz",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Kevin737866/stellar-cross-border-payments-sdk",
+   "path": "ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "INdrajit88/grow2stellar",
+   "path": "frontend/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RNDev666/old-ban-chess",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "patemi/SkripsiUMKM-frontend-",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "aarohb1507/nexusfeed",
+   "path": "ui/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "guddii/DSWS",
+   "path": "apps/car-insurance-company/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "aquamarine3236/Police_Visit",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "nurmandev/Fortress",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Shrikant-Dapke/AHC-Visual-Intelligence-project",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "matiasportugau-ui/fightgym-os",
+   "path": "apps/admin/next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "leticiadiasdacosta01-lgtm/Orbit",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Shivangi-Sharma06/aven",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Anthonyb403/sb1-xifbkj3gg",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ghostmode25/ghostl-stack",
+   "path": "apps/ghostx/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "yangjrun/anomaly-atlas",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "NofaBC/magazinify-ai",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Henrygreat/oldschool",
+   "path": "next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "mhdiasforex-ops/OpenBusinessOS",
+   "path": "apps/web/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "tulasiram2005/orbit",
+   "path": "apps/web/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "ahmadrazi0077-maker/whatsapp_saas",
+   "path": "client/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "klaachkinggit/miso",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "NisargDedakiya/SIH-2026-167",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "elementa-systems/elementa_dialer",
+   "path": "elementa-frontend/next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "PoorvaJawale/amazon-clone",
+   "path": "frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "RangeAreaScent/doie-website",
+   "path": "next.config.mjs",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "viniciussucupira/marktmorgen",
+   "path": "next.config.ts",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "jrza/family",
+   "path": "my-next-app/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Nelvb/lhc-legal-consulting",
+   "path": "src/frontend/next.config.js",
+   "query": "output export filename:next.config"
+  },
+  {
+   "repo": "Administrator-Lucid-Programming/Javascript",
+   "path": "next.js-canary/next.js-canary/test/production/standalone-mode/no-app-routes/next.config.js",
+   "query": "output export filename:next.config"
+  }
+ ]
+}

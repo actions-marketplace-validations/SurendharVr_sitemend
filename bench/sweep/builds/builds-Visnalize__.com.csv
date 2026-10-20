@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+Visnalize/.com,cc3d346665a52da3607c8c44b39ef0d5f9b22107,build_failed,17.8,,v24.21.0,ELIFECYCLE  Command failed with exit code 1.

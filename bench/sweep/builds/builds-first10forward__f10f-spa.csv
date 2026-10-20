@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+first10forward/f10f-spa,af0943048b5529ab97a119b64c4010609d404f87,audit_failed,70.7,0.3,v24.21.0,ERROR: crawled 0 pages from /home/runner/work/sitemend/sitemend/bench/replay/work/first10forward__f10f-spa/public (no HTML pages found). Nothing to audit.

@@ -2,6 +2,147 @@
 
 ## Unreleased
 
+- **The benchmark report: `docs/benchmark-2026-11-replay.md`.** 600 real commits replayed
+  through the frozen 1.7.0 gate on a reproducible 15-repository sample. Precision failed
+  its pre-registered threshold (76 of 1,442 blocking findings, 5.3%; nearly all false
+  positives come from #69 and #73), while frequency (20 of 517 commits, 3.9%) and seeded
+  recall (73 of 75, 97.3%) met theirs. As pre-registered: outreach stops, the rules are
+  fixed under the stability policy, and each confirmed false positive becomes a test.
+- **The full replay on the Addendum 5 sample.** 15 repositories, 615 builds, 600
+  comparisons on sitemend 1.7.0 (GitHub Actions run 39183739377): 517 compared, 34 failed
+  the gate, 44 skipped for builds that failed and 39 for audits sitemend did not finish.
+  `bench/ledger.csv` holds the 1,442 blocking findings, all awaiting B's verdicts; most
+  come from two systematic patterns (a base-path site, #69, and percent-encoded non-ASCII
+  URLs). layer5io/exoscale-academy took about 2.5 hours per audit (#71), so its 39
+  unaudited commits are tool failures (Addendum 8). The 1.7.0 pilot's verdicts move to
+  `bench/replay/pilot-1.7.0/ledger.csv`, since that sample was superseded. No behaviour
+  changed.
+- **Seeded recall and the robustness sweep on the Addendum 5 sample.** Seeded recall on the
+  15 (`bench/seeded/addendum-5/`): 73 of 75 critical and high mutations caught (97.3%),
+  controls 15 of 15; the rating mutation, reported apart, 10 of 13. The sweep
+  (`bench/sweep/`, not pre-registered): 91 repositories drawn after the sample, 37 built,
+  sitemend crashed on none, one had no HTML pages; 9 sites flagged, most of them sites
+  served from a base path, whose links and canonicals a folder audit reads as broken. The
+  benchmark workflows now upload only each job's own result files: the seeded run's
+  artifacts had carried the old sample's committed results too. `bench/sweep/report.py`
+  reads the page count from `report-data.json` (an antivirus quarantined the `crawl.json`
+  of a SQL-injection knowledge base) and labels an output with no pages apart from a crash.
+  No behaviour changed.
+- **The replay sample, drawn by Addendum 5.** From a code-search frame saved on
+  2026-10-18 (each stack at GitHub's 1,000-result cap), the seed-20261017 draw looked at
+  2,528 repositories and build-checked 54 candidates at their cutoff commits on Ubuntu. The
+  first 3 per stack that built are `bench/replay/repos.json`: Juniors017/docux-blog,
+  DevAdmin-Riu/boss-dashboard-guide, jhipster/jhipster.github.io (Docusaurus);
+  dergigi/learn-fips, mj3622/mj3622.github.io, GoWorkshopConference/2025 (Astro);
+  taoli-tools/taoli-tools-docs, vuejs-translations/docs-zh-cn, fishxcode/fishxcode
+  (VitePress); benbjohnson/litestream.io, layer5io/exoscale-academy, layer5io/docs (Hugo);
+  rgcsekaraa/brows3, CertisBio-RC/certis_agroute_app, TeoConference/TEOConf-FE (Next.js).
+  Two rules were corrected along the way, each in a dated addendum decided by B before any
+  measurement: Node from `.nvmrc` or 24, not the `engines` floor (Addendum 6, after it
+  failed four Docusaurus builds), and an output with no HTML pages counts as missing
+  (Addendum 7). `draw.csv` and `selection.csv` record every repository's outcome.
+  No behaviour changed.
+- **A reproducible sample for the benchmark (Addendum 5, signed by SurendharVr).** The replay
+  repositories were Claude's picks from memory; they are replaced by a procedure anyone can
+  rerun: a saved GitHub code-search frame per stack, a shuffle with seed 20261017, recorded
+  eligibility checks, a mechanical build-command rule and a build check at the cutoff
+  commit, taking the first 3 repositories per stack that build (15 in all, 40 commits each).
+  Every repository used in the plan so far is excluded. The full run of the old sample was
+  cancelled and its data is not used. No behaviour changed.
+- **Sampling and sweep tooling for Addendum 5.** `bench/sample/sample.py` implements the
+  reproducible draw: `frame` saves each stack's code-search results once, `draw` walks them
+  in the seed-20261017 order through the eligibility rules and the mechanical build-command
+  rule (recording every repository in `draw.csv`), and `select` takes the first 3 per
+  stack that built. `bench/sweep/report.py` reports the robustness sweep: crashes, slow
+  audits and site-wide high findings, flagged for review. The replay workflow gains a
+  `config` input so either candidate list can be build-checked at one commit. Nothing is
+  drawn until Addendum 5 is signed. No behaviour changed.
+- **First verdicts in the evidence ledger.** B judged the 14 blocking findings from the
+  1.7.0 pilot (electron/website `273491c35a`, a new page whose language links and hreflang
+  alternates point to translations that 404 on the live site) `true_regression`, by a live
+  site check. `bench/summary.md` from the pilot now reads frequency 1 of 40 commits and
+  precision 14 of 14, still inconclusive under the pre-registered 20 verdicts; all 14 come
+  from one commit. No behaviour changed.
+- **Seeded recall on 1.7.0, both runs.** `bench/seeded/first-run-1.7.0/` is the first run
+  (31 of 33 critical and high mutations caught, 93.9%), `bench/seeded/` the re-run after the
+  duplicate-title targeting fix (33 of 33, 100%). The harness changed between them, after the
+  first run's data was seen, so both are kept. Controls passed 5 of 5 in each. The rating
+  mutation, reported apart, was caught 3 of 5 times in both: "4.7" appears as a version
+  number on the two sites where it was missed. The first run's files were committed by
+  mistake in #61 at `bench/seeded/`; they move to their own folder here.
+- **Replay pilot on 1.7.0, and one ledger row per blocking finding.** The 2-repository
+  pilot re-ran on the frozen 1.7.0 (`bench/replay/pilot-1.7.0/`): all 42 commits built and
+  were audited, 40 comparisons, one electron/website commit failed the gate with 14 blocking
+  findings (7 `S1-BROKEN-LINK`, 7 `S1-HREFLANG-BROKEN`, all language versions of a new page),
+  which now await a verdict in `bench/ledger.csv`. `verify_helper.py` keyed ledger rows by
+  rule and page, so those 14 became 2; the key now includes the evidence. `bench/summary.md`
+  is regenerated from the 1.7.0 pilot. No behaviour changed.
+- **Seeded recall: the duplicate-title mutation only adds a duplicate.** The page given a
+  copied title must now have a unique title itself. In the 1.7.0 seeded run it twice
+  landed on a page already in a duplicate group, so the mutation ended one pair while
+  making another, and the gate read that as the old finding changed (#60, logged rather
+  than fixed while 1.7.0 is frozen). Changed after that run, so the re-run's recall is
+  reported next to the first one. No behaviour changed.
+- **The benchmark is re-frozen on 1.7.0 (Addendum 3, signed by SurendharVr).** The replay and
+  seeded harnesses and their workflows now require sitemend 1.7.0, and data from 1.6.0 is
+  superseded. facebook/relay and typescript-eslint/typescript-eslint replace ionic-docs and
+  trpc, whose builds could not be fixed within Addendum 2's rules; unocss keeps its fixed
+  build command. Addendum 3 records the pick rule and every candidate's outcome. The seeded
+  rating mutation is reported apart from the pooled recall, because its rule was fixed
+  after the test showed it missed. No behaviour changed.
+
+## 1.7.0 - 2026-10-17
+
+The example workflows and README pin `@v1.7.0`. A minor release under the stability policy,
+because one rule changes which findings it emits: `S5-SCHEMA-UNSUPPORTED-CLAIM` (decimals
+in a claim, below). The rest are a crash fix (#51) and benchmark tooling outside the package.
+
+- **An audit no longer crashes on a malformed URL (#51).** A URL whose host starts with
+  `[` but is not a valid IPv6 literal (`http://[x`, common in minified CSS and JS) made
+  `urlsplit` raise and stopped the whole audit. The replay benchmark hit it on
+  electron/website, typescript-eslint and react-navigation. Such a URL is now treated as
+  unresolvable: not a page of the site, and an hreflang alternate that names one is
+  reported as broken, as any unresolvable alternate is.
+- **`S5-SCHEMA-UNSUPPORTED-CLAIM` no longer corroborates a decimal from stray digits.** A
+  rating of `"4.7"` was split into `4` and `7`, which every site contains, so a rating the
+  site never shows passed. Decimal and grouped numbers now stay whole and must appear as
+  that number in the page's visible text. Found by the seeded recall test. This changes
+  which findings are emitted, so it ships in a minor release.
+- **Seeded recall harness fixes.** A repository whose build fails is now recorded as
+  `build_failed` with its own column in `recall.md`, not as a sitemend tool failure, which
+  Addendum 1 reserves for audits sitemend cannot complete. Mutations no longer target
+  404, error or thank-you pages (sitemend's own `is_utility` test): the first seeded run
+  put the rating mutation on `/404.html`. No behaviour changed.
+- **Seeded-regression recall for the benchmark.** `bench/seeded/seeded.py` builds each of
+  the first 5 pre-registered repositories once, applies 10 known regressions one at a time
+  to a copy of the built output (canonical removed, noindex added, canonical and sitemap on
+  a preview host, `Disallow: /`, a linked page deleted, title removed, one-way hreflang,
+  duplicate title, unsupported rating markup), each declaring the rule it must trigger,
+  and checks the gate against the unmutated build. An unmutated control must pass. Writes
+  `results.csv` and a recall table by mutation type; the manual `seeded` workflow runs it
+  on Ubuntu. No behaviour changed.
+- **Evidence ledger and summary for the benchmark.** `bench/verify_helper.py` adds one
+  `bench/ledger.csv` row per blocking finding from the replay and prints its evidence (the
+  finding, how each page's crawl record changed from base to head, robots.txt and sitemap
+  state, and the GitHub compare link); it never writes a verdict. `bench/summarize.py`
+  writes `bench/summary.md`: frequency per commit and precision per finding, kept apart,
+  precision by rule, tool failures with their reasons, and runtime median and 90th
+  percentile. `replay.py` now also writes `builds.csv`, one row per commit with the reason
+  for any failure. `bench/summary.md` is generated from the pilot. No behaviour changed.
+- **Replay pilot results and a tool-failure rule.** `bench/replay/pilot/` holds the Ubuntu
+  pilot (2 repositories x 20 commits): vuejs/docs built and audited all 21 commits and all
+  20 comparisons passed; electron/website built all 21 but sitemend 1.6.0 crashed auditing
+  each one (#51). The pre-registration gains a dated addendum, decided before the full run:
+  1.6.0 stays frozen, #51 waits until the benchmark report is published, and failed audits
+  are reported as tool failures. No behaviour changed.
+- **Replay harness for the benchmark.** `bench/replay/replay.py` builds each pre-registered
+  repository's last N first-parent commits before the cutoff, audits every build with the
+  frozen sitemend (it refuses any version but 1.6.0) and runs the gate on each consecutive
+  pair, writing `bench/replay/results.csv`. Builds are cached per commit, a failed build is
+  recorded as skipped rather than as a pass or a fail, and `--pilot` runs 2 repositories x
+  20 commits. `bench/replay/repos.json` holds the 11 repositories from the pre-registration.
+  The manual `replay` workflow runs it on Ubuntu, one repository per job, and uploads each
+  job's results and audits. Not part of the package. No behaviour changed.
 - **Pre-registration for the replay benchmark.** `bench/PREREGISTRATION.md` fixes, before any
   data exists, the frozen version (1.6.0, `badbb38`), the 11 repositories, the commit range
   (last 50 commits before 2026-10-01), the pass/fail thresholds and the decision rules.

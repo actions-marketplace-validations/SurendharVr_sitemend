@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+WebsecLabs/sql-injection-knowledge-base,204f91dcbaaf76ad401b627c2760d173069db8f6,ok,13.7,12.2,v24.21.0,

@@ -1,0 +1,2 @@
+repo,sha,status,build_seconds,audit_seconds,node,error
+the-codegen-project/cli,5e69b2c16920de1402404e8a4b275d338174b63a,build_failed,92.4,,v24.21.0,sh: 1: ./website/node_modules/.bin/typedoc: not found
