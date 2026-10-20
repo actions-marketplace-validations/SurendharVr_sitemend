@@ -34,7 +34,9 @@ def key(f):
 # The same rule on the same page with different evidence is a different defect, so
 # fixing href="/a" while adding href="/b" is one closed and one new, never one changed.
 EVIDENCE_IS_IDENTITY = {"S1-CANONICAL-OFFSITE", "S1-CANONICAL-BROKEN", "S1-CANONICAL-CROSS",
-                        "S1-HREFLANG-BROKEN"}
+                        "S1-HREFLANG-BROKEN",
+                        # The shared text: another title on an overlapping page is a new pair (#60).
+                        "S3-TITLE-DUPLICATE", "S3-DESC-DUPLICATE"}
 
 
 def identity(f):

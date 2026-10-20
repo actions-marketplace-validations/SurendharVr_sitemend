@@ -225,7 +225,9 @@ def build_index(doc):
         for a in p.get("aliases") or [p["url"]]:
             alias.setdefault(S.norm_path(a), p["url"])
         alias.setdefault(S.norm_path(p["url"]), p["url"])
-    assets = {S.norm_path("/" + a["path"]): a for a in doc.get("assets", [])}
+    # Under a base path an asset is served, and referenced, at <base>/<file> (#69).
+    base_path = doc["meta"].get("base_path") or ""
+    assets = {S.norm_path(base_path + "/" + a["path"]): a for a in doc.get("assets", [])}
     return alias, assets
 
 
@@ -248,7 +250,9 @@ def audit(doc, vitals=None, schema_findings=None):
             reasons.append("X-Robots-Tag noindex")
         indexable[p["url"]] = (not reasons, reasons)
 
-    home = "/" if "/" in by_url else (pages[0]["url"] if pages else None)
+    # The site's own root: / , or the base path a folder build is served under (#69).
+    root = (doc["meta"].get("base_path") or "") + "/"
+    home = root if root in by_url else (pages[0]["url"] if pages else None)
 
     # ---------------------------------------------------------- STAGE 1: index
     if not doc["robots"]["found"]:
@@ -374,13 +378,16 @@ def audit(doc, vitals=None, schema_findings=None):
     if is_placeholder_host(base_host) or base_host.endswith(PREVIEW_HOSTS):
         base_host = ""
     seen_hosts = defaultdict(lambda: defaultdict(int))     # source -> host -> count
+    placeholder_hosts = defaultdict(lambda: defaultdict(int))
     off_pages = set()
     for label, getter in (("canonical", lambda p: p.get("canonical")),
                           ("og:url", lambda p: (p.get("og") or {}).get("og:url"))):
         for p in pages:
             v = getter(p) or ""
             h = urlsplit(v).hostname if v.startswith("http") else None
-            if h and not is_placeholder_host(h):
+            if h and is_placeholder_host(h):
+                placeholder_hosts[label][h] += 1
+            elif h:
                 seen_hosts[label][h] += 1
                 if base_host and h != base_host:
                     off_pages.add(p["url"])
@@ -388,8 +395,18 @@ def audit(doc, vitals=None, schema_findings=None):
                         ("robots.txt Sitemap line", doc["robots"]["sitemaps"])):
         for u in urls:
             h = urlsplit(u).hostname if u.startswith("http") else None
-            if h and not is_placeholder_host(h):
+            if h and is_placeholder_host(h):
+                placeholder_hosts[label][h] += 1
+            elif h:
                 seen_hosts[label][h] += 1
+    if placeholder_hosts and any(h.endswith(PREVIEW_HOSTS) for hs in seen_hosts.values() for h in hs):
+        # A site built for localhost with one preview URL leaked in (#70): the preview is
+        # the only real host, so count the dev-server hosts it differs from.
+        # Loopback only: example.com and its kin stay with S1-PLACEHOLDER-DOMAIN.
+        for label, hs in placeholder_hosts.items():
+            for h, n in hs.items():
+                if h in LOOPBACK_HOSTS or h.endswith(".localhost"):
+                    seen_hosts[label][h] += n
     all_hosts = {h for hs in seen_hosts.values() for h in hs} | ({base_host} if base_host else set())
     # Canonicals alone on another origin are already S1-CANONICAL-OFFSITE, page by page.
     canonical_only = base_host and all(set(hs) <= {base_host}
@@ -590,7 +607,7 @@ def audit(doc, vitals=None, schema_findings=None):
     conventions = set()
     for p in pages:
         u = p["url"]
-        if u == "/" or is_utility(u):
+        if u == root or is_utility(u):
             continue
         conventions.add("flat" if u.endswith(".html") else "clean")
         bad = []
@@ -607,7 +624,7 @@ def audit(doc, vitals=None, schema_findings=None):
     if len(conventions) > 1:
         out.append(finding("S1-URL-MIXED-CONVENTION", 1, "medium",
                            "Site mixes clean-URL and .html URL conventions.",
-                           sorted(p["url"] for p in pages if p["url"] != "/" and not is_utility(p["url"])),
+                           sorted(p["url"] for p in pages if p["url"] != root and not is_utility(p["url"])),
                            evidence=", ".join(sorted(conventions)), recipe="url-normalize",
                            confidence="medium"))
 
@@ -859,8 +876,9 @@ def audit(doc, vitals=None, schema_findings=None):
             r"og-|twitter-|logo|manifest|browserconfig|sitemap|robots)"
             r"|/(favicon|apple-touch-icon|site\.webmanifest))", re.I)
         unused = []
+        base_path = doc["meta"].get("base_path") or ""
         for a in doc.get("assets", []):
-            path = S.norm_path("/" + a["path"])
+            path = S.norm_path(base_path + "/" + a["path"])
             if (not media_re.search(path) or path in refs
                     or path.rsplit("/", 1)[-1].lower() in names
                     or conventional.search(path)):

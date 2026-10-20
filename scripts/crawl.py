@@ -39,11 +39,14 @@ def infer_base_url(sm_urls, pages, robots_sitemaps):
                          next((p["canonical"] for p in pages if p.get("canonical")), None),
                          robots_sitemaps[0] if robots_sitemaps else None)
              if u and u.startswith("http")]
-    real = [u for u in cands if not audit.is_placeholder_host(urlsplit(u).hostname)
-            and not (urlsplit(u).hostname or "").endswith(audit.PREVIEW_HOSTS)]
-    if not (real or cands):
+    preview = lambda u: (urlsplit(u).hostname or "").endswith(audit.PREVIEW_HOSTS)
+    real = [u for u in cands if not audit.is_placeholder_host(urlsplit(u).hostname) and not preview(u)]
+    # Next a placeholder (a site built for localhost), so one leaked preview URL is
+    # compared against it instead of becoming the base (#70); a preview-only site keeps its host.
+    best = real or [u for u in cands if not preview(u)] or cands
+    if not best:
         return None
-    sp = urlsplit((real or cands)[0])
+    sp = urlsplit(best[0])
     return "{0}://{1}".format(sp.scheme, sp.netloc)
 
 
@@ -344,8 +347,10 @@ def srcset_urls(value):
 ASSET_REF_RE = re.compile(r"url\(\s*['\"]?([^'\")]+)", re.I)
 
 
-MEDIA_NAME_RE = re.compile(
-    r"[\w\-.]+\.(?:png|jpe?g|webp|avif|gif|svg|ico|mp4|webm|pdf|woff2?)", re.I)
+# Two linear passes instead of [\w\-.]+\.(?:ext), which rescans a long run that has no
+# extension from every start position (#71). A name is a run cut at its last extension.
+NAME_RUN_RE = re.compile(r"[\w\-.]+")
+MEDIA_EXT_RE = re.compile(r"\.(?:png|jpe?g|webp|avif|gif|svg|ico|mp4|webm|pdf|woff2?)", re.I)
 
 
 def referenced_basenames(text):
@@ -356,7 +361,12 @@ def referenced_basenames(text):
     path resolver misses -- and it can only ever suppress an unused-asset finding,
     never create one.
     """
-    return {m.lower() for m in MEDIA_NAME_RE.findall(text or "")}
+    names = set()
+    for run in NAME_RUN_RE.findall(text or ""):
+        end = max((m.end() for m in MEDIA_EXT_RE.finditer(run) if m.start()), default=0)
+        if end:
+            names.add(run[:end].lower())
+    return names
 
 
 def referenced_assets(soup, page_url, extra_text=""):
@@ -421,8 +431,52 @@ def _types_of(block):
 
 # ------------------------------------------------------------------- fs mode
 
+def infer_base_path(root):
+    """The path a built site is served under ('/handbook' for a GitHub Pages project
+    site), or '' for a site served from the host root.
+
+    A site under a base path writes its links, canonicals and sitemap under that path,
+    while its build folder starts at /; audited as if served from /, every one of them
+    read as broken (#69). Inferred conservatively from the home page, all three needed:
+    its canonical (or og:url) names a folder other than /; that folder's first segment
+    is not a real top-level entry of the build; and most of the home page's root-relative
+    links start with it. Anything else is treated as a site served from /."""
+    idx = os.path.join(root, "index.html")
+    if not os.path.isfile(idx):
+        return ""
+    html = read_text(idx)
+    href = None
+    for tag in re.findall(r"<link\b[^>]*>", html, re.I):
+        if re.search(r"\brel=[\"']?canonical\b", tag, re.I):
+            m = re.search(r"\bhref=[\"']?([^\"'\s>]+)", tag, re.I)
+            href = m.group(1) if m else None
+            break
+    if not href:
+        for tag in re.findall(r"<meta\b[^>]*>", html, re.I):
+            if re.search(r"\bproperty=[\"']?og:url\b", tag, re.I):
+                m = re.search(r"\bcontent=[\"']?([^\"'\s>]+)", tag, re.I)
+                href = m.group(1) if m else None
+                break
+    if not href:
+        return ""
+    path = S.canonical_http_path(urlsplit(href).path or "/")
+    base = path.rstrip("/")
+    if not base or not path.endswith("/"):
+        return ""                           # served from /, or the home names a page
+    first = base.lstrip("/").split("/")[0].lower()
+    entries = os.listdir(root)
+    if first in {e.lower() for e in entries} | {os.path.splitext(e)[0].lower() for e in entries}:
+        return ""                           # a real folder of this build, not a base path
+    rooted = [S.norm_path(h) for h in re.findall(r"\bhref=[\"']([^\"']+)", html, re.I)
+              if h.startswith("/") and not h.startswith("//")]
+    if rooted and 2 * sum(1 for h in rooted if h == base or h.startswith(base + "/")) <= len(rooted):
+        return ""                           # its own links do not follow it
+    return base
+
+
 def crawl_fs(root, base_url=None):
     root = os.path.abspath(root)
+    base_path = infer_base_path(root)
     pages, assets = [], []
     skipped = []
     stubs = []   # (file, its aliases, the path its meta refresh sends visitors to)
@@ -437,6 +491,10 @@ def crawl_fs(root, base_url=None):
             full = os.path.join(dirpath, fn)
             if fn.lower().endswith(S.HTML_EXT):
                 url, aliases = S.file_to_urls(rel)
+                if base_path:
+                    # Named as served, so links, canonicals and sitemaps match as written.
+                    aliases = [base_path + a for a in aliases] + ([base_path] if url == "/" else [])
+                    url = base_path + url
                 try:
                     html = read_text(full)
                 except Exception as e:
@@ -490,6 +548,8 @@ def crawl_fs(root, base_url=None):
     def read_site_file(path):
         # The path comes from the site's own robots.txt. On Windows /C:/x or /..\x would
         # otherwise resolve outside the folder being audited.
+        if base_path and S.norm_path(path).startswith(base_path + "/"):
+            path = S.norm_path(path)[len(base_path):]      # served under the base path
         fp = os.path.realpath(os.path.join(root, path.lstrip("/").replace("/", os.sep)))
         try:
             inside = os.path.commonpath([fp, real_root]) == real_root
@@ -517,7 +577,7 @@ def crawl_fs(root, base_url=None):
             text = read_text(os.path.join(root, a["path"].replace("/", os.sep)))
         except Exception:
             continue
-        base = "/" + a["path"].rsplit("/", 1)[0] + "/" if "/" in a["path"] else "/"
+        base = base_path + ("/" + a["path"].rsplit("/", 1)[0] + "/" if "/" in a["path"] else "/")
         for m in ASSET_REF_RE.findall(text):
             kind, resolved = S.resolve_href(base, m.strip())
             if kind == "internal":
@@ -526,7 +586,7 @@ def crawl_fs(root, base_url=None):
         basenames.update(referenced_basenames(text))
 
     return (pages, assets, robots_txt, sitemap_xml, extras, excluded_present,
-            skipped, sorted(refs), sorted(basenames))
+            skipped, sorted(refs), sorted(basenames), base_path)
 
 
 # ----------------------------------------------------------------- http mode
@@ -846,11 +906,12 @@ def main():
         if not args.root:
             ap.error("--root is required in fs mode")
         (pages, assets, robots_txt, sitemap_xml, extras, excluded,
-         skipped, refs, names) = crawl_fs(args.root, args.base_url)
+         skipped, refs, names, base_path) = crawl_fs(args.root, args.base_url)
         source = os.path.abspath(args.root)
     else:
         if not args.start:
             ap.error("--start is required in http mode")
+        base_path = ""      # a live site is crawled where it is served
         (pages, assets, robots_txt, sitemap_xml, extras, excluded,
          skipped, refs, names) = crawl_http(args.start, args.max_pages, render=args.render,
                                   render_limit=args.render_limit)
@@ -886,6 +947,7 @@ def main():
             "mode": args.mode,
             "source": source,
             "base_url": base_url,
+            "base_path": base_path,
             "crawled_at": datetime.datetime.now().isoformat(timespec="seconds"),
             "page_count": len(pages),
             "render": args.render,

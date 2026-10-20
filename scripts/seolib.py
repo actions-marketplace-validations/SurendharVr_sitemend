@@ -12,6 +12,7 @@ import shutil
 import signal
 import subprocess
 import tempfile
+import unicodedata
 from urllib.parse import urlsplit as _urlsplit, urljoin
 
 
@@ -133,11 +134,33 @@ def file_to_urls(relpath):
     return url, sorted(a for a in aliases if a)
 
 
+_ESCAPES = re.compile(r"(?:%[0-9A-Fa-f]{2})+")
+# Characters whose escape means something different from the character: an encoded
+# slash is not a path separator, an encoded # or ? is part of the name, not a fragment.
+_KEEP_ESCAPED = set("/?#%")
+
+
+def _unescape(run):
+    """Decode one run of %XX escapes as UTF-8, keeping the meaningful ones escaped."""
+    try:
+        text = bytes.fromhex(run.replace("%", "")).decode("utf-8")
+    except UnicodeDecodeError:
+        return run.upper()
+    return "".join("%{0:02X}".format(ord(c)) if c in _KEEP_ESCAPED or not c.isprintable() else c
+                   for c in text)
+
+
 def norm_path(path):
-    """Normalize a URL path for lookup: strip query/fragment, collapse slashes."""
+    """Normalize a URL path for lookup: strip query/fragment, collapse slashes, and put
+    it in one form: percent-escapes decoded, then NFC. A folder crawl names a page from
+    its file (/archive/tag/监控/) while sitemaps and canonicals publish the same path
+    encoded (/archive/tag/%E7%9B%91%E6%8E%A7/), and macOS saves file names decomposed;
+    compared as written, existing pages read as missing (#73)."""
     if not path:
         return "/"
     path = path.split("#")[0].split("?")[0]
+    path = _ESCAPES.sub(lambda m: _unescape(m.group(0)), path)
+    path = unicodedata.normalize("NFC", path)
     path = re.sub(r"/{2,}", "/", path)
     if not path.startswith("/"):
         path = "/" + path

@@ -1,7 +1,62 @@
 # Changelog
 
-## Unreleased
+## 1.8.0 - 2026-10-20
 
+The example workflows and README pin `@v1.8.0`. A minor release under the stability policy,
+because it fixes the false positives and misses that the 1.7.0 benchmark found, and those
+fixes change findings:
+- base-path sites (#69) and percent-encoded URLs (#73) change the link, canonical,
+  hreflang, sitemap, orphan and asset rules named in their entries;
+- a preview URL on a localhost site (#70) now fires `S1-HOST-MISMATCH` instead of
+  `S1-MIXED-CONTENT`;
+- in `verify`, `S3-TITLE-DUPLICATE` and `S3-DESC-DUPLICATE` now pair by their shared
+  text (#60).
+
+#71 is a performance fix that leaves findings unchanged. The benchmark itself stays on
+1.7.0; re-measuring on 1.8.0 needs a new dated addendum.
+
+- **A site served from a base path is audited as served (#69).** A GitHub Pages project
+  site at `/<repo>/` (Docusaurus `baseUrl`, VitePress `base`, Astro `base`) writes every
+  link, canonical and sitemap URL under that path, while its build folder starts at `/`.
+  A folder audit now infers the base path from the home page, when its canonical (or
+  `og:url`) names a folder that is not a real top-level entry of the build and most of
+  its root-relative links follow it, and names every page, asset and robots-declared
+  sitemap as served. A link that forgets the base path is still reported broken. The
+  replay benchmark found 1,193 false positives from this on one site. Affected rules:
+  `S1-BROKEN-LINK`, `S1-CANONICAL-BROKEN`, `S1-CANONICAL-CROSS`, `S1-HREFLANG-BROKEN`,
+  `S1-SITEMAP-ORPHAN`, `S1-SITEMAP-GAP`, `S1-SITEMAP-MISSING`, `S2-ORPHAN`,
+  `S2-UNREACHABLE`, `S2-DEEP`, `S3-ASSET-UNUSED`, `S3-IMG-HEAVY`. The crawl records the
+  inferred path as `meta.base_path`.
+- **Percent-encoded and non-ASCII URLs match the pages they name (#73).** Paths are
+  compared in one form, percent-escapes decoded and NFC-normalized, so a sitemap or
+  canonical that publishes `/archive/tag/%E7%9B%91%E6%8E%A7/` finds the page built at
+  `archive/tag/监控/`, and a decomposed (macOS) file name matches its composed URL.
+  Escapes that change a path's meaning (`%2F`, `%23`, `%3F`, `%25`) stay escaped. The
+  replay benchmark found 173 findings from this on one site. Affected rules:
+  `S1-SITEMAP-ORPHAN`, `S1-SITEMAP-GAP`, `S1-CANONICAL-BROKEN`, `S1-CANONICAL-CROSS`,
+  `S1-BROKEN-LINK`, `S1-HREFLANG-BROKEN`, `S2-ORPHAN`, `S2-UNREACHABLE`. Both change which
+  findings are emitted, so they ship in a minor release.
+- **Large JS bundles no longer stall the crawl (#71).** The scan for media file names in
+  CSS, JS and pages was quadratic on a long run of word characters and dots without a
+  media extension (a 40,000-character run took 91 s; one site's 45 MB of minified JS took
+  about 2.5 hours per commit). It is now linear and finds the same names. Findings are
+  unchanged.
+- **A preview URL leaked into a site built for localhost is reported (#70).** When
+  every URL a site publishes names a dev server (`http://localhost:9876`) and one names a
+  preview deploy (`*.vercel.app`), the preview no longer becomes the inferred base URL,
+  and the host check counts the loopback host it differs from. Before, the leak raised no
+  `S1-HOST-MISMATCH`, and the `https` preview base turned the site's own `http://localhost`
+  scripts into `S1-MIXED-CONTENT`. Found by the seeded recall test. Affected rules:
+  `S1-HOST-MISMATCH` (now fires), `S1-MIXED-CONTENT` (no longer fires there), and any
+  rule that compares against the base URL on such a site.
+- **A new duplicate title or description that overlaps an old one fails the gate (#60).**
+  `verify` paired a head duplicate group with any base group of the same rule that
+  shared a page, so a change that ended one pair and created another on the same page
+  (`/apps/` moving from "Electron" to "10 years of Electron") read as the old finding
+  changed and passed. The shared text is now part of the finding's identity: a group
+  under different text is new, and a group that grows or shrinks under the same text
+  is still changed. Found by the seeded recall test. Affected rules (in `verify` only):
+  `S3-TITLE-DUPLICATE`, `S3-DESC-DUPLICATE`.
 - **The benchmark report: `docs/benchmark-2026-11-replay.md`.** 600 real commits replayed
   through the frozen 1.7.0 gate on a reproducible 15-repository sample. Precision failed
   its pre-registered threshold (76 of 1,442 blocking findings, 5.3%; nearly all false
