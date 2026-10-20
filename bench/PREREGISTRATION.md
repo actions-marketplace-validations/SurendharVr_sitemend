@@ -421,3 +421,65 @@ toward neither frequency nor precision and are reported per repository with the 
 The repository is not re-run, which would take about four days of runner time.
 
 Decided by (B): SurendharVr. Date: 2026-10-19.
+
+## Addendum 9: re-measurement on 1.8.0 (2026-10-20, before any data from 1.8.0)
+
+**Why.** The report (`docs/benchmark-2026-11-replay.md`) applied section 5 as written:
+precision failed (76 of 1,442 blocking findings, 5.3%), so outreach stopped and the rules
+were fixed under the stability policy. Every confirmed false positive and miss became a
+permanent test, and the fixes shipped as the minor release 1.8.0:
+- #69: base-path sites;
+- #73: percent-encoded and non-ASCII URLs;
+- #70: a preview URL on a site built for localhost;
+- #60: duplicate-title pairing in `verify`;
+- #71: a quadratic regex, which leaves findings unchanged.
+
+This addendum fixes how 1.8.0 is measured, before any 1.8.0 data exists.
+
+**1. Frozen version (supersedes Addendum 3, part 1, for this run).**
+
+- Package: `sitemend==1.8.0`
+- Tag: `v1.8.0`
+- Commit: `1f0a77d3e240401c363c1157ec9109a34bd673da`
+
+`FROZEN` in `bench/replay/replay.py` and both benchmark workflows pin it. No rule,
+threshold or severity changes until this run's report is published. A bug found from here
+on is logged and gets an issue.
+
+**2. Sample: unchanged.** The same 15 repositories, drawn under Addendum 5 and listed in
+`bench/sample/selection.csv`, and the same N = 40 first-parent commits of each before the
+same cutoff (2026-10-01T00:00:00Z). The build commands are unchanged (Addenda 2, 5, 6 and 7).
+The comparisons are the same 600 as the 1.7.0 run.
+
+**3. Thresholds, decision rules and tool failures: unchanged** (sections 4 and 5, and
+Addendum 1). `unclear` still counts as `false_positive`. Addendum 8 does not carry over:
+with #71 fixed, layer5io/exoscale-academy is replayed on all of its commits. Any audit that
+still doesn't finish within the job's time limit is a tool failure under Addendum 1.
+
+**4. Verdicts.** A 1.8.0 blocking finding whose ledger key (repo, head_sha, rule_id, url,
+evidence_excerpt) matches a 1.7.0 finding B already judged keeps that verdict. Every other
+blocking finding is judged fresh by B, with the same evidence and procedure as the 1.7.0
+run. The 1.8.0 ledger is a separate file (`bench/ledger-1.8.0.csv`), and the 1.7.0 ledger
+is not edited.
+
+**5. Seeded recall** is re-run on all 15 repositories with 1.8.0. Three mutation types are
+reported apart, not pooled, because a rule was changed after the seeded test showed that
+type being missed, so its 1.8.0 result is not independent evidence (the same logic as
+Addendum 3, part 3):
+- `rating-unsupported` (Addendum 3);
+- `sitemap-preview-host` (#70);
+- `title-duplicated` (#60).
+
+**6. Output.** The 1.8.0 results go to `bench/replay/1.8.0/` and `bench/seeded/1.8.0/`, so
+they never overwrite the 1.7.0 record. The report states both runs side by side.
+
+**7. Limitation, stated in the report.** Four of the five fixes came from sites in this
+sample: #69 (DevAdmin-Riu/boss-dashboard-guide), #73 (mj3622/mj3622.github.io), and #71
+and #70 (layer5io/exoscale-academy). #60 came from electron/website and
+typescript-eslint in the earlier seeded run. So 1.8.0's precision here measures whether the fixed rules
+stop misfiring on the data that exposed them. It does not measure how they behave on
+sites they have never seen, and it is expected to be optimistic. The prospective run
+(Task 9) is the evidence for unseen sites. A pass here does not on its own reopen
+outreach (section 5): it makes Task 9 eligible to start.
+
+Decided by (B): SurendharVr. Date: 2026-10-20.

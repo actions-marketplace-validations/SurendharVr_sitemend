@@ -39,9 +39,12 @@ import replay  # noqa: E402
 # The frozen sitemend's own test for 404/error/thank-you pages (audit.is_utility), set in
 # main(): those are never mutation targets, because the audit rightly treats them apart.
 is_utility = None
-# Run and reported, but left out of the pooled recall: its rule was fixed after the seeded
-# test showed this mutation being missed, so its result is not independent (Addendum 3).
-REPORTED_APART = {"rating-unsupported"}
+# Run and reported, but left out of the pooled recall: each one's rule was fixed after the
+# seeded test showed that mutation being missed, so its result is not independent
+# (Addendum 3: rating; Addendum 9: preview host #70, duplicate title #60).
+# ponytail: one set for the current frozen version; the committed 1.7.0 recall.md files
+# were written with only rating-unsupported apart, so regenerate those from git history.
+REPORTED_APART = {"rating-unsupported", "sitemap-preview-host", "title-duplicated"}
 FIELDS = ["repo", "mutation", "expected_rule", "expected_severity", "target", "fired", "gate_failed"]
 PREVIEW = "https://seeded-git-preview.vercel.app"
 CANONICAL_TAG = re.compile(r"<link\b(?=[^>]*\brel=[\"']?canonical\b)[^>]*>", re.I)

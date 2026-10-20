@@ -3832,7 +3832,10 @@ class TestSeededRecall(unittest.TestCase):
         self.assertEqual({m for m, x in rows.items() if x["gate_failed"] == "n"}, {"canonical-removed"})
         with open(os.path.join(self.d, "recall.md"), encoding="utf-8") as fh:
             md = fh.read()
-        self.assertIn("**Recall, critical and high mutation types: 8 of 8 (100.0%)**", md)
+        # Three of the nine critical/high types are reported apart (Addenda 3 and 9), not pooled.
+        self.assertIn("**Recall, critical and high mutation types: 6 of 6 (100.0%)**", md)
+        for name in ("rating-unsupported", "sitemap-preview-host", "title-duplicated"):
+            self.assertIn("| {0} (apart) |".format(name), md)
         self.assertIn("Build failures, not counted in recall: t/broken.", md)
         self.assertNotIn("Tool failures (sitemend", md)
 

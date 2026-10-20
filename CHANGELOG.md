@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+- **Re-measurement on 1.8.0 (Addendum 9, signed by SurendharVr on 2026-10-20).** Replay and
+  seeded recall are re-run on the same 15 repositories and 600 comparisons with
+  `sitemend==1.8.0`. The thresholds and decision rules are unchanged, and the results
+  are kept apart from the 1.7.0 record. A 1.7.0 verdict carries over only to an
+  identical finding. The `sitemap-preview-host` and `title-duplicated` mutations join
+  `rating-unsupported` in being reported apart. The fixes came from this sample, so the
+  result is stated as optimistic, and a pass makes the prospective run (Task 9) eligible
+  to start rather than reopening outreach.
+
 ## 1.8.0 - 2026-10-20
 
 The example workflows and README pin `@v1.8.0`. A minor release under the stability policy,
