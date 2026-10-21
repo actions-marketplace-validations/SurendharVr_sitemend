@@ -93,13 +93,17 @@ def minhash_similarity(sig_a, sig_b):
 
 
 def claim_norm(s):
-    """Collapse text to lowercase alphanumerics for claim corroboration.
+    """Collapse text to casefolded letters and digits, in any script, for claim
+    corroboration.
 
     Structured data legitimately reformats what a page renders ("St" vs "Street",
     an address split across elements), so claims are matched against this squashed
-    form rather than the raw text.
+    form rather than the raw text. [a-z0-9] only emptied a page written in Korean or
+    Chinese, which skipped its claim checks entirely (#81).
     """
-    return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
+    # Accents dropped on both sides: markup says "Cafe" where the page shows "Café".
+    s = "".join(c for c in unicodedata.normalize("NFKD", s or "") if not unicodedata.combining(c))
+    return re.sub(r"[\W_]+", "", s.casefold())
 
 
 def normalize_text(s):

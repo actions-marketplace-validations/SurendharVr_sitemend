@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- **Structured-data claims are checked on pages in any script (#81).** Claim text was
+  reduced to `[a-z0-9]`, so a page written entirely in Korean, Chinese, Arabic and the like
+  came out empty and its claim checks were skipped: a fabricated 4.7-star rating there
+  raised nothing (found by the 1.8.0 seeded run). Text is now casefolded letters and digits
+  in any script, accents ignored on both sides. Claim tokens are whole words in any script
+  (3+ letters where the script has case, 2+ where it does not, as in 北京), and words in a
+  caseless script count as identifying terms. Affected rules: `S5-SCHEMA-UNSUPPORTED-CLAIM`
+  and `S5-SCHEMA-CLAIM-OFFPAGE`.
 - **A duplicate group whose shared text is reworded is the same finding (#82).** Since #60
   `verify` identifies a duplicate-title or duplicate-description group by its text, so
   translating the title 108 archive pages already shared read as a new duplicate and

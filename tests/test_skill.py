@@ -1110,6 +1110,33 @@ class TestSchemaClaims(unittest.TestCase):
                                        site_numbers=schema_check.numbers(site.casefold()))
         return [x for x in f if x["id"] == "S5-SCHEMA-UNSUPPORTED-CLAIM"]
 
+    def test_a_rating_on_a_page_with_only_non_latin_text_is_checked(self):
+        """REGRESSION #81, a permanent test from the 1.8.0 seeded run (boss-dashboard-guide):
+        a fabricated 4.7-star rating on a page whose only text is Korean raised nothing,
+        because claim text kept only [a-z0-9] and an empty page skips the check."""
+        self.assertTrue(self._rating("이용 가이드"))
+        self.assertTrue(self._rating("监控 系统 文章"))
+
+    def test_a_non_latin_rating_shown_on_the_page_is_supported(self):
+        self.assertFalse(self._rating("평점 4.7 · 리뷰 86413개"))
+        self.assertFalse(self._rating("评分 4.7，86413 条评价"))
+
+    def test_a_non_latin_address_shown_on_the_page_is_supported(self):
+        biz = {"@type": "LocalBusiness", "name": "포장보스",
+               "address": {"@type": "PostalAddress", "streetAddress": "테헤란로 152",
+                           "addressLocality": "서울특별시 강남구"}}
+        for text, fires in (("본사: 서울특별시 강남구 테헤란로 152", False),
+                            ("포장보스 이용 가이드", True)):
+            with self.subTest(text=text):
+                page = {"url": "/", "jsonld": [biz], "jsonld_errors": [],
+                        "claim_text": S.claim_norm(text), "visible_text": text.casefold()}
+                f, _ = schema_check.check_page(page, page["claim_text"])
+                self.assertEqual(bool([x for x in f if x["id"] == "S5-SCHEMA-UNSUPPORTED-CLAIM"]), fires)
+
+    def test_an_accented_name_matches_either_way(self):
+        self.assertEqual(S.claim_norm("Café Zürich"), S.claim_norm("Cafe Zurich"))
+        self.assertEqual(S.claim_norm("서울특별시 강남구"), S.claim_norm("서울특별시강남구"))
+
     def test_a_rating_is_not_corroborated_by_stray_digits(self):
         """REGRESSION found by the seeded recall run (2026-10-17): ratingValue "4.7" was
         split into "4" and "7", which every site contains, so a rating the site never

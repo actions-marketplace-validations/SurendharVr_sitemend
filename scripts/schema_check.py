@@ -87,8 +87,7 @@ def flatten_strings(node):
     return out
 
 
-def norm(s):
-    return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
+norm = S.claim_norm
 
 
 def known_props(pages):
@@ -220,7 +219,9 @@ def check_page(page, site_text_norm="", known_ids=None, site_numbers=None):
                 # on words like "order" and "short". The identifying terms -- proper
                 # nouns and numbers -- are what actually corroborate a claim, so judge
                 # on those when the claim has any.
-                dist = [t for t in toks if t[:1].isupper() or t[:1].isdigit()]
+                # A script without case (Hangul, Han, Arabic) has no proper-noun signal, so
+                # its words count as identifying, as a capitalized Latin word does.
+                dist = [t for t in toks if t[:1].isupper() or t[:1].isdigit() or caseless(t)]
                 dist_site = coverage(dist, site_text_norm, site_numbers) if dist else 1.0
                 missing = [t for t in (dist or toks)
                            if not coverage([t], site_text_norm, site_numbers)][:5]
@@ -245,6 +246,11 @@ def check_page(page, site_text_norm="", known_ids=None, site_numbers=None):
     return findings, sorted(seen_types)
 
 
+def caseless(word):
+    """A word in a script without letter case (Hangul, Han, Arabic, Thai)."""
+    return word[:1].isalpha() and word[:1].lower() == word[:1].upper()
+
+
 def claim_tokens(value):
     """Significant tokens from a claim value: words of 3+ chars and any number. A decimal
     or grouped number ("4.7", "86,413") stays one token: split into "4" and "7", it was
@@ -253,7 +259,11 @@ def claim_tokens(value):
     for v in flatten_strings(value):
         if v.lower() in ("true", "false"):
             continue
-        for tok in re.findall(r"[A-Za-z]{3,}|\d+(?:[.,]\d+)*", v):
+        # Words in any script (Zürich, 서울, 北京) and numbers. A word in a script with case
+        # needs 3+ letters, as before; a caseless script packs a word into 2 (北京).
+        for tok in re.findall(r"[^\W\d_]+|\d+(?:[.,]\d+)*", v):
+            if not tok[0].isdigit() and len(tok) < (2 if caseless(tok) else 3):
+                continue
             if tok.lower() not in ("the", "and", "for", "with", "http", "https", "www", "com"):
                 out.append(tok)
     seen, uniq = set(), []
