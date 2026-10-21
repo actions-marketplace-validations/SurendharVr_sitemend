@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+taoli-tools/taoli-tools-docs,control,,,,,n
+taoli-tools/taoli-tools-docs,canonical-removed,S1-CANONICAL-MISSING,medium,/basics.html,y,n
+taoli-tools/taoli-tools-docs,noindex-added,S1-INDEX-CONTRADICTION,critical,/basics.html,y,y
+taoli-tools/taoli-tools-docs,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,/basics.html,y,y
+taoli-tools/taoli-tools-docs,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap.xml,y,y
+taoli-tools/taoli-tools-docs,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,/robots.txt,y,y
+taoli-tools/taoli-tools-docs,linked-page-deleted,S1-BROKEN-LINK,high,/basics.html,y,y
+taoli-tools/taoli-tools-docs,title-removed,S3-TITLE-MISSING,critical,/basics.html,y,y
+taoli-tools/taoli-tools-docs,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/basics.html,y,y
+taoli-tools/taoli-tools-docs,title-duplicated,S3-TITLE-DUPLICATE,high,/data-collection-and-multi-instance-limits.html,y,y
+taoli-tools/taoli-tools-docs,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/basics.html,y,y

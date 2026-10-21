@@ -2,6 +2,31 @@
 
 ## Unreleased
 
+- **A duplicate group whose shared text is reworded is the same finding (#82).** Since #60
+  `verify` identifies a duplicate-title or duplicate-description group by its text, so
+  translating the title 108 archive pages already shared read as a new duplicate and
+  failed the gate. A group on exactly the same pages now pairs as changed whatever its
+  text; a new pair on an overlapping page under different text (#60) is still new.
+  Affected rules (in `verify` only): `S3-TITLE-DUPLICATE`, `S3-DESC-DUPLICATE`.
+- **Pages in folders named `vendor`, `out`, `build` or `tmp` are crawled when the site
+  uses them (#82).** A folder audit skipped every such folder at any depth, which is right
+  for dependencies in a source tree but wrong for a built site whose routes use those
+  names (a Docusaurus page at `b2b/stats/purchases/vendor/`). Those folders are now
+  walked. A page in one is kept only when a page of the site links to it or its sitemap
+  lists it, so a library's bundled HTML still stays out. `node_modules`, virtualenvs and
+  sitemend's own output are never walked. The 1.8.0 replay found 13 false positives from
+  this on one site. Affected rules: `S1-BROKEN-LINK`, `S1-SITEMAP-ORPHAN`, and any rule
+  that now sees those pages (`S2-*`, `S3-*`, `S5-*`).
+- **The 1.8.0 benchmark: `docs/benchmark-1.8.0-replay.md`.** The same 600 commits
+  replayed through 1.8.0 (Addendum 9):
+  - **Precision** rose from 5.3% to 82.0% (82 of 100 blocking findings) and still fails
+    its 95% threshold, so outreach stays stopped and Task 9 does not start.
+  - **Frequency** (21 of 549 commits, 3.8%) and **seeded recall** (57 of 58, 98.3%)
+    met theirs.
+  - **The shortfall:** 13 of the 18 findings that did not count come from one cause,
+    `crawl.py` skipping folders named `vendor` (and `out`, `build`, `tmp`) inside a
+    built site.
+  - **Data:** `bench/replay/1.8.0/`, `bench/ledger-1.8.0.csv` and `bench/seeded/1.8.0/`.
 - **Re-measurement on 1.8.0 (Addendum 9, signed by SurendharVr on 2026-10-20).** Replay and
   seeded recall are re-run on the same 15 repositories and 600 comparisons with
   `sitemend==1.8.0`. The thresholds and decision rules are unchanged, and the results

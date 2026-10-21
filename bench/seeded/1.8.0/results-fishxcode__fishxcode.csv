@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+fishxcode/fishxcode,control,,,,,n
+fishxcode/fishxcode,canonical-removed,S1-CANONICAL-MISSING,medium,/CLAUDE.html,y,n
+fishxcode/fishxcode,noindex-added,S1-INDEX-CONTRADICTION,critical,/account.html,y,y
+fishxcode/fishxcode,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,/CLAUDE.html,y,y
+fishxcode/fishxcode,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap.xml,y,y
+fishxcode/fishxcode,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,/robots.txt,y,y
+fishxcode/fishxcode,linked-page-deleted,S1-BROKEN-LINK,high,/CLAUDE.html,y,y
+fishxcode/fishxcode,title-removed,S3-TITLE-MISSING,critical,/CLAUDE.html,y,y
+fishxcode/fishxcode,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,,n/a,
+fishxcode/fishxcode,title-duplicated,S3-TITLE-DUPLICATE,high,/README.html,y,y
+fishxcode/fishxcode,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/CLAUDE.html,n,n

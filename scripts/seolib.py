@@ -37,6 +37,10 @@ EXCLUDE_DIRS = {
     "sitemend-out",   # this tool's own default output, so a re-run never audits its last report
     "seo-repair-out", # the same, from before the rename to sitemend
 }
+# Never a site's pages, so never walked. The rest of EXCLUDE_DIRS can be real routes in
+# a built site (Docusaurus pages under .../vendor/, #82): those folders are walked, and a
+# page in them is kept only when the site links to it or its sitemap lists it.
+NEVER_PAGE_DIRS = {"node_modules", "__pycache__", ".venv", "venv", "sitemend-out", "seo-repair-out"}
 
 HTML_EXT = (".html", ".htm")
 

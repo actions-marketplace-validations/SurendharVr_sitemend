@@ -277,7 +277,7 @@ def recall_md(rows, sources):
     out += ["", "**Recall, critical and high mutation types: {0} of {1} ({2})**".format(
         pool_fired, pool_runs, "{0:.1f}%".format(100.0 * pool_fired / pool_runs) if pool_runs else "n/a"),
             "", "Mutations marked (apart) are reported but not pooled: the rule they test was fixed "
-                "after the seeded test showed them missed (Addendum 3)."]
+                "after the seeded test showed them missed (Addenda 3 and 9)."]
     controls = [r for r in rows if r["mutation"] == "control" and r["gate_failed"] in ("y", "n")]
     out += ["", "Controls (base against an unmutated copy): {0} run, {1} passed the gate.".format(
         len(controls), sum(r["gate_failed"] == "n" for r in controls))]

@@ -38,6 +38,8 @@ EVIDENCE_IS_IDENTITY = {"S1-CANONICAL-OFFSITE", "S1-CANONICAL-BROKEN", "S1-CANON
                         # The shared text: another title on an overlapping page is a new pair (#60).
                         "S3-TITLE-DUPLICATE", "S3-DESC-DUPLICATE"}
 
+DUPLICATE_GROUPS = {"S3-TITLE-DUPLICATE", "S3-DESC-DUPLICATE"}
+
 
 def identity(f):
     """What makes this finding the defect it is, beyond its rule and pages. None for
@@ -56,8 +58,11 @@ def related(a, b):
     finding's page list shrinks as pages get fixed or removed. Without this, every
     partial fix reports as one finding closed plus one brand-new finding, which is
     both wrong and alarming."""
-    return (a["id"] == b["id"] and bool(set(a.get("pages", [])) & set(b.get("pages", [])))
-            and identity(a) == identity(b))
+    pa, pb = set(a.get("pages", [])), set(b.get("pages", []))
+    if a["id"] != b["id"] or not pa & pb:
+        return False
+    # The same duplicate group with its shared text reworded is still that group (#82).
+    return identity(a) == identity(b) or (a["id"] in DUPLICATE_GROUPS and pa == pb)
 
 
 def worse(f, than):

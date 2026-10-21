@@ -928,6 +928,59 @@ class TestBasePath(Base):
         self.assertNotIn("S1-BROKEN-LINK", self.fx.ids())
 
 
+class TestPageFoldersWithToolingNames(Base):
+    """REGRESSION #82, a permanent test from the 1.8.0 replay: a built Docusaurus site had
+    content pages under folders named vendor (b2b/stats/purchases/vendor/index.html). The
+    crawl skipped every folder named vendor, out, build or tmp at any depth, so links and
+    sitemap entries for real pages read as broken: 13 false positives on one site."""
+
+    def _site(self):
+        self.fx.write("index.html", page_html(
+            body='<h1>Guide</h1><p><a href="/b2b/stats/purchases/vendor">Monthly purchases</a> '
+                 '<a href="/b2b/">B2B</a> ' + "word " * 300 + "</p>"))
+        self.fx.write("b2b/index.html", page_html(title="B2B Section Of The Admin Guide Here"))
+        self.fx.write("b2b/stats/purchases/vendor/index.html",
+                      page_html(title="B2B Monthly Purchases By Vendor In The Guide"))
+        self.fx.write("refund-question/vendor/all/index.html",
+                      page_html(title="Refund Questions From Every Vendor In One List"))
+        self.fx.write("sitemap.xml",
+                      '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                      "<url><loc>https://guide.dev/</loc></url><url><loc>https://guide.dev/b2b/</loc></url>"
+                      "<url><loc>https://guide.dev/b2b/stats/purchases/vendor</loc></url>"
+                      "<url><loc>https://guide.dev/refund-question/vendor/all/</loc></url></urlset>")
+
+    def test_linked_and_sitemapped_pages_in_a_vendor_folder_are_crawled(self):
+        self._site()
+        urls = {p["url"] for p in self.fx.crawl()["pages"]}
+        self.assertIn("/b2b/stats/purchases/vendor/", urls)          # linked
+        self.assertIn("/refund-question/vendor/all/", urls)          # only in the sitemap
+        ids = set(self.fx.ids())
+        for rule in ("S1-BROKEN-LINK", "S1-SITEMAP-ORPHAN"):
+            with self.subTest(rule=rule):
+                self.assertNotIn(rule, ids)
+
+    def test_unreferenced_html_in_a_vendor_folder_is_still_skipped(self):
+        """A library's bundled docs (vendor/lib/docs/) are not the site's pages; crawling
+        them would turn every one into an orphan."""
+        self._site()
+        self.fx.write("vendor/lib/docs/index.html", page_html(title="Library Documentation Bundled Here"))
+        self.fx.write("node_modules/pkg/index.html", page_html(title="A Package Readme Rendered As HTML"))
+        urls = {p["url"] for p in self.fx.crawl()["pages"]}
+        self.assertFalse({u for u in urls if u.startswith(("/vendor/", "/node_modules/"))})
+        orphans = {u for f in self.fx.audit()["findings"] if f["id"] == "S2-ORPHAN" for u in f["pages"]}
+        self.assertFalse({u for u in orphans if u.startswith(("/vendor/", "/node_modules/"))})
+
+    def test_a_page_reached_only_through_another_vendor_page_is_crawled(self):
+        self._site()
+        self.fx.write("b2b/stats/purchases/vendor/index.html", page_html(
+            title="B2B Monthly Purchases By Vendor In The Guide",
+            body='<h1>V</h1><a href="/b2b/stats/purchases/vendor/detail/">Detail</a>'))
+        self.fx.write("b2b/stats/purchases/vendor/detail/index.html",
+                      page_html(title="Vendor Purchase Detail For One Month Here"))
+        self.assertIn("/b2b/stats/purchases/vendor/detail/", {p["url"] for p in self.fx.crawl()["pages"]})
+        self.assertNotIn("S1-BROKEN-LINK", self.fx.ids())
+
+
 class TestNonAsciiUrls(Base):
     """REGRESSION #73, a permanent test from the replay benchmark: a page whose path is
     not ASCII is named from its file (/archive/tag/监控/), while the sitemap and canonical
@@ -1172,6 +1225,26 @@ class TestVerify(unittest.TestCase):
         self.assertEqual(r.returncode, 1)
         with open(os.path.join(d, "v.json"), encoding="utf-8") as fh:
             self.assertEqual([f["id"] for f in json.load(fh)["new"]], ["S3-TITLE-DUPLICATE"])
+
+    def test_a_duplicate_group_renamed_on_the_same_pages_is_changed_not_new(self):
+        """REGRESSION #82, a permanent test from the 1.8.0 replay (mj3622.github.io): 108
+        archive pages already shared "Archive - Minjer"; a commit translated it to
+        "文章 - Minjer". Keyed by text alone (#60), the same duplicate read as new and
+        blocked."""
+        d = tempfile.mkdtemp(prefix="sitemend-verify-")
+        self.addCleanup(shutil.rmtree, d, True)
+        pages = ["/archive/"] + ["/archive/tag/t{0}/".format(i) for i in range(107)]
+        paths = {}
+        for name, title in (("b", "Archive - Minjer"), ("c", "文章 - Minjer")):
+            paths[name] = os.path.join(d, name + ".json")
+            with open(paths[name], "w", encoding="utf-8") as fh:
+                json.dump({"findings": [self.f("S3-TITLE-DUPLICATE", pages, evidence=title)]}, fh)
+        r = sitemend.run("verify.py", "--baseline", paths["b"], "--current", paths["c"],
+                         "--out", os.path.join(d, "v.json"), ok=(0, 1))
+        self.assertEqual(r.returncode, 0, r.stdout[-2000:])
+        with open(os.path.join(d, "v.json"), encoding="utf-8") as fh:
+            v = json.load(fh)
+        self.assertEqual(v["new"], [])
 
     def test_a_duplicate_group_that_grows_under_the_same_text_is_changed(self):
         for rule in ("S3-TITLE-DUPLICATE", "S3-DESC-DUPLICATE"):

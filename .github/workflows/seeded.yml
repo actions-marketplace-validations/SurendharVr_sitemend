@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: Comma-separated owner/name list (empty means the first 5 in repos.json)
+        description: Comma-separated owner/name list (empty means every repository in repos.json)
         default: ""
 
 # Other projects' build scripts run here, so the token can only read this repository.

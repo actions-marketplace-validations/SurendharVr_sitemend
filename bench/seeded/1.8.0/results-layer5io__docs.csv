@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+layer5io/docs,control,,,,,n
+layer5io/docs,canonical-removed,S1-CANONICAL-MISSING,medium,,n/a,
+layer5io/docs,noindex-added,S1-INDEX-CONTRADICTION,critical,,n/a,
+layer5io/docs,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,,n/a,
+layer5io/docs,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap.xml,y,y
+layer5io/docs,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,,n/a,
+layer5io/docs,linked-page-deleted,S1-BROKEN-LINK,high,,n/a,
+layer5io/docs,title-removed,S3-TITLE-MISSING,critical,,n/a,
+layer5io/docs,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,,n/a,
+layer5io/docs,title-duplicated,S3-TITLE-DUPLICATE,high,,n/a,
+layer5io/docs,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,,n/a,

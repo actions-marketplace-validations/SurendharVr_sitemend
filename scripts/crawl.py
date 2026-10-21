@@ -480,12 +480,14 @@ def crawl_fs(root, base_url=None):
     pages, assets = [], []
     skipped = []
     stubs = []   # (file, its aliases, the path its meta refresh sends visitors to)
+    held = []    # pages in an EXCLUDE_DIRS folder, kept only if the site refers to them
 
     for dirpath, dirnames, filenames in os.walk(root):
-        dirnames[:] = [d for d in dirnames if d not in S.EXCLUDE_DIRS and not d.startswith(".")]
+        dirnames[:] = [d for d in dirnames if d not in S.NEVER_PAGE_DIRS and not d.startswith(".")]
         rel_dir = os.path.relpath(dirpath, root).replace("\\", "/")
         if rel_dir == ".":
             rel_dir = ""
+        hold = any(part in S.EXCLUDE_DIRS for part in rel_dir.split("/"))
         for fn in filenames:
             rel = (rel_dir + "/" + fn if rel_dir else fn)
             full = os.path.join(dirpath, fn)
@@ -501,6 +503,8 @@ def crawl_fs(root, base_url=None):
                     skipped.append({"file": rel, "reason": str(e)[:200]})
                     continue
                 target = refresh_target(html)
+                if target and hold:
+                    continue
                 if target:
                     kind, resolved = S.resolve_href(url, target)
                     if kind == "absolute" and base_url and urlsplit(target).netloc == urlsplit(base_url).netloc:
@@ -515,7 +519,9 @@ def crawl_fs(root, base_url=None):
                 rec["aliases"] = aliases
                 rec["status"] = 200
                 rec["bytes"] = os.path.getsize(full)
-                pages.append(rec)
+                (held if hold else pages).append(rec)
+            elif hold:
+                continue
             else:
                 try:
                     assets.append({"path": rel, "bytes": os.path.getsize(full)})
@@ -558,6 +564,15 @@ def crawl_fs(root, base_url=None):
         return read_text(fp) if inside and os.path.isfile(fp) else ""
 
     sitemap_xml = discover_sitemap(robots_txt, read_site_file)
+
+    # A held page joins the site once a kept page links to it or the sitemap lists it.
+    wanted = {S.norm_path(urlsplit(u).path) for u in re.findall(r"<loc>\s*([^<\s]+)", sitemap_xml or "")}
+    new = pages
+    while held and new:
+        wanted |= {S.norm_path(l["resolved"]) for p in new for l in p["links"] if l["kind"] == "internal"}
+        new = [p for p in held if wanted & set(p["aliases"])]
+        held = [p for p in held if p not in new]
+        pages.extend(new)
 
     extras = {}
     for name in ("llms.txt", "_headers", "_redirects", "netlify.toml", "vercel.json", ".htaccess"):
