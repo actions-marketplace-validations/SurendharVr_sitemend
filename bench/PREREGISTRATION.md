@@ -483,3 +483,64 @@ sites they have never seen, and it is expected to be optimistic. The prospective
 outreach (section 5): it makes Task 9 eligible to start.
 
 Decided by (B): SurendharVr. Date: 2026-10-20.
+
+## Addendum 10: re-measurement on 1.9.0 (2026-10-21, before any data from 1.9.0)
+
+**Why.** The 1.8.0 report (`docs/benchmark-1.8.0-replay.md`) applied section 5 as written:
+precision failed again (82 of 100 blocking findings, 82.0%), so the rules were fixed under
+the stability policy. The fixes shipped as the minor release 1.9.0:
+- #82, part 1 (#84): pages in folders named `vendor`, `out`, `build` or `tmp`, which
+  accounted for 13 of the 18 findings that did not count;
+- #82, part 2 (#85): a duplicate group reworded on the same pages, 1 of the 18;
+- #81 (#86): claim checks on pages whose text is not Latin script, found by the seeded run.
+
+This addendum fixes how 1.9.0 is measured, before any 1.9.0 data exists.
+
+**1. Frozen version (supersedes Addendum 9, part 1, for this run).**
+
+- Package: `sitemend==1.9.0`
+- Tag: `v1.9.0`
+- Commit: `507367ca62f341e0925dd82b2674d17731d93158`
+
+`FROZEN` in `bench/replay/replay.py` and both benchmark workflows pin it. No rule,
+threshold or severity changes until this run's report is published. A bug found from here
+on is logged and gets an issue.
+
+**2. Unchanged from Addendum 9:**
+- the sample: the same 15 repositories, 40 commits each, cutoff 2026-10-01T00:00:00Z,
+  and build commands, so the same 600 comparisons;
+- the thresholds, decision rules and tool failures (sections 4 and 5, Addendum 1);
+- `unclear` still counts as `false_positive`.
+
+**3. Verdicts.** A 1.9.0 blocking finding whose ledger key (repo, head_sha, rule_id, url,
+evidence_excerpt) matches a judged finding keeps that verdict. The 1.8.0 ledger is checked
+first, then the 1.7.0 ledger. Every other blocking finding is judged fresh by B, as in
+Addendum 9. The ledger is `bench/ledger-1.9.0.csv`, and earlier ledgers are not edited.
+
+**4. Seeded recall** is re-run on all 15 repositories with 1.9.0. Two mutation types are
+reported apart, not pooled, because their rules were changed after the seeded test showed
+them missed:
+- `rating-unsupported` (Addendum 3, and again in #81);
+- `sitemap-preview-host` (#70).
+
+`title-duplicated` is pooled again. Its 1.8.0 miss came from a flaw in the harness, not in
+sitemend (#81): the harness checked a title for uniqueness without counting the 404 page.
+Before this run, the harness counts titles over every crawled page, as the audit does, and
+still picks its target from the indexable pages. That is a correction to the harness,
+decided here before any 1.9.0 data exists, not a change to sitemend.
+
+**5. Output.** The results go to `bench/replay/1.9.0/` and `bench/seeded/1.9.0/`, beside the
+1.7.0 and 1.8.0 records.
+
+**6. Limitation, stated in the report.** This is the third measurement on the same sample,
+and every fix in 1.8.0 and 1.9.0 came from it. A pass here measures whether the fixed rules
+stop misfiring on the data that exposed them, and is more optimistic than the 1.8.0 result
+was. As in Addendum 9, a pass makes the prospective run (Task 9) eligible to start; it
+does not reopen outreach on its own.
+
+**7. If precision fails again,** the next measurement uses a fresh sample, not this one. It
+is drawn by Addendum 5's procedure (same frame, seed and eligibility rules), taking the
+next 3 eligible repositories per stack in draw order after the 15 already used. Fixing
+the rules on the same sample again would only fit them more closely to it.
+
+Decided by (B): SurendharVr. Date: 2026-10-21.

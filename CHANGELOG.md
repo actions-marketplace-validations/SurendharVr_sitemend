@@ -2,6 +2,33 @@
 
 ## Unreleased
 
+- **Re-measurement on 1.9.0 (Addendum 10, signed by SurendharVr on 2026-10-21).** Replay and
+  seeded recall re-run on the same 15 repositories with `sitemend==1.9.0`.
+  - Verdicts carry over only to identical findings, from the 1.8.0 ledger first, then
+    1.7.0.
+  - The seeded harness counts title duplicates over every crawled page, fixing its 1.8.0
+    `title-duplicated` miss (#81). That type is pooled again, and `rating-unsupported`
+    and `sitemap-preview-host` stay apart.
+  - The limitation is stated more strongly: this is the third measurement on the sample
+    every fix came from.
+  - If precision fails again, the next measurement uses a fresh sample, drawn by
+    Addendum 5's procedure.
+
+## 1.9.0 - 2026-10-21
+
+The example workflows and README pin `@v1.9.0`. A minor release under the stability policy:
+it fixes the false positives and the recall gap that the 1.8.0 benchmark found, and those
+fixes change findings:
+- pages in folders named `vendor`, `out`, `build` or `tmp` (#82) change `S1-BROKEN-LINK`,
+  `S1-SITEMAP-ORPHAN` and any rule that now sees those pages;
+- in `verify`, a duplicate group reworded on the same pages pairs as changed (#82):
+  `S3-TITLE-DUPLICATE` and `S3-DESC-DUPLICATE`;
+- claims on pages in any script (#81): `S5-SCHEMA-UNSUPPORTED-CLAIM` and
+  `S5-SCHEMA-CLAIM-OFFPAGE`.
+
+The benchmark workflows stay on 1.8.0, the version its published report measured.
+Measuring 1.9.0 needs a new dated addendum.
+
 - **Structured-data claims are checked on pages in any script (#81).** Claim text was
   reduced to `[a-z0-9]`, so a page written entirely in Korean, Chinese, Arabic and the like
   came out empty and its claim checks were skipped: a fabricated 4.7-star rating there

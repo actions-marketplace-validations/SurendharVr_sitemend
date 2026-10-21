@@ -41,10 +41,11 @@ import replay  # noqa: E402
 is_utility = None
 # Run and reported, but left out of the pooled recall: each one's rule was fixed after the
 # seeded test showed that mutation being missed, so its result is not independent
-# (Addendum 3: rating; Addendum 9: preview host #70, duplicate title #60).
+# (Addendum 3: rating; Addendum 9: preview host #70). The duplicate-title mutation was apart
+# on 1.8.0 and is pooled again from Addendum 10, its 1.8.0 miss being a harness flaw.
 # ponytail: one set for the current frozen version; the committed 1.7.0 recall.md files
 # were written with only rating-unsupported apart, so regenerate those from git history.
-REPORTED_APART = {"rating-unsupported", "sitemap-preview-host", "title-duplicated"}
+REPORTED_APART = {"rating-unsupported", "sitemap-preview-host"}
 FIELDS = ["repo", "mutation", "expected_rule", "expected_severity", "target", "fired", "gate_failed"]
 PREVIEW = "https://seeded-git-preview.vercel.app"
 CANONICAL_TAG = re.compile(r"<link\b(?=[^>]*\brel=[\"']?canonical\b)[^>]*>", re.I)
@@ -158,8 +159,11 @@ def hreflang_no_return(site, crawl):
 def title_duplicated(site, crawl):
     pages = [p for p in indexable(crawl) if p.get("title")]
     counts = {}
-    for p in pages:
-        counts[p["title"]] = counts.get(p["title"], 0) + 1
+    # Counted over every crawled page, as the audit counts them: a title shared only with
+    # the 404 page is already a duplicate (Addendum 10).
+    for p in crawl["pages"]:
+        if p.get("title"):
+            counts[p["title"]] = counts.get(p["title"], 0) + 1
     # Both titles unique, so the mutation only adds a duplicate. A page already in a
     # duplicate group would end that pair while making a new one (#60).
     unique = [p for p in pages if counts[p["title"]] == 1]
@@ -277,7 +281,7 @@ def recall_md(rows, sources):
     out += ["", "**Recall, critical and high mutation types: {0} of {1} ({2})**".format(
         pool_fired, pool_runs, "{0:.1f}%".format(100.0 * pool_fired / pool_runs) if pool_runs else "n/a"),
             "", "Mutations marked (apart) are reported but not pooled: the rule they test was fixed "
-                "after the seeded test showed them missed (Addenda 3 and 9)."]
+                "after the seeded test showed them missed (Addenda 3, 9 and 10)."]
     controls = [r for r in rows if r["mutation"] == "control" and r["gate_failed"] in ("y", "n")]
     out += ["", "Controls (base against an unmutated copy): {0} run, {1} passed the gate.".format(
         len(controls), sum(r["gate_failed"] == "n" for r in controls))]

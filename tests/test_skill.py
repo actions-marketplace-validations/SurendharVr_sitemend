@@ -3932,12 +3932,34 @@ class TestSeededRecall(unittest.TestCase):
         self.assertEqual({m for m, x in rows.items() if x["gate_failed"] == "n"}, {"canonical-removed"})
         with open(os.path.join(self.d, "recall.md"), encoding="utf-8") as fh:
             md = fh.read()
-        # Three of the nine critical/high types are reported apart (Addenda 3 and 9), not pooled.
-        self.assertIn("**Recall, critical and high mutation types: 6 of 6 (100.0%)**", md)
-        for name in ("rating-unsupported", "sitemap-preview-host", "title-duplicated"):
+        # Two of the nine critical/high types are reported apart (Addenda 3, 9 and 10), not pooled.
+        self.assertIn("**Recall, critical and high mutation types: 7 of 7 (100.0%)**", md)
+        for name in ("rating-unsupported", "sitemap-preview-host"):
             self.assertIn("| {0} (apart) |".format(name), md)
+        self.assertIn("| title-duplicated |", md)
         self.assertIn("Build failures, not counted in recall: t/broken.", md)
         self.assertNotIn("Tool failures (sitemend", md)
+
+    def test_the_duplicate_title_mutation_skips_a_title_shared_with_the_404_page(self):
+        """REGRESSION from the 1.8.0 seeded run (#81): the home page shared its title with
+        404.html, which is not indexable, so the harness took it for unique and the
+        mutation only grew an existing duplicate group (Addendum 10)."""
+        seeded = _bench_module("seeded", "seeded.py")
+        if seeded is None:
+            self.skipTest("bench/ is not shipped in the sdist")
+        seeded.is_utility = audit.is_utility
+        page = lambda url, title, f: {"url": url, "title": title, "file": f, "noindex": False,
+                                      "robots_allowed": True}
+        # A base-path site: its home is /hb/, not /, so it sorts first and was the pick.
+        crawl = {"pages": [page("/hb/", "Guide", "index.html"), page("/hb/404.html", "Guide", "404.html"),
+                           page("/hb/a/", "Alpha", "a/index.html"), page("/hb/b/", "Beta", "b/index.html")]}
+        for d, title in (("a", "Alpha"), ("b", "Beta")):
+            os.makedirs(os.path.join(self.d, d), exist_ok=True)
+            with open(os.path.join(self.d, d, "index.html"), "w", encoding="utf-8") as fh:
+                fh.write("<html><head><title>{0}</title></head><body></body></html>".format(title))
+        seeded.title_duplicated(self.d, crawl)
+        with open(os.path.join(self.d, "b", "index.html"), encoding="utf-8") as fh:
+            self.assertIn("<title>Alpha</title>", fh.read())     # a new pair, Alpha + Alpha
 
 
 def _bench_module(*parts):
