@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+CertisBio-RC/certis_agroute_app,control,,,,,n
+CertisBio-RC/certis_agroute_app,canonical-removed,S1-CANONICAL-MISSING,medium,,n/a,
+CertisBio-RC/certis_agroute_app,noindex-added,S1-INDEX-CONTRADICTION,critical,,n/a,
+CertisBio-RC/certis_agroute_app,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,,n/a,
+CertisBio-RC/certis_agroute_app,sitemap-preview-host,S1-HOST-MISMATCH,critical,,n/a,
+CertisBio-RC/certis_agroute_app,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,,n/a,
+CertisBio-RC/certis_agroute_app,linked-page-deleted,S1-BROKEN-LINK,high,,n/a,
+CertisBio-RC/certis_agroute_app,title-removed,S3-TITLE-MISSING,critical,/print/,y,y
+CertisBio-RC/certis_agroute_app,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/print/,y,y
+CertisBio-RC/certis_agroute_app,title-duplicated,S3-TITLE-DUPLICATE,high,,n/a,
+CertisBio-RC/certis_agroute_app,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/print/,y,y

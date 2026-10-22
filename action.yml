@@ -57,18 +57,22 @@ runs:
       shell: bash
       run: python -m pip install --quiet "$GITHUB_ACTION_PATH"
 
-    # Head and base go in their own folders, so neither audit crawls the other.
+    # Head and base go in their own folders, so neither audit crawls the other. Neither
+    # keeps the token in .git/config: the build that runs next is the PR's code and every
+    # install script it pulls in, and nothing after this step needs git credentials.
     - name: Check out the pull request
       if: inputs.url == ''
       uses: actions/checkout@v4
       with:
         path: _sitemend/head
+        persist-credentials: false
     - name: Check out its base branch
       if: inputs.url == '' && github.event.pull_request.base.sha != ''
       uses: actions/checkout@v4
       with:
         ref: ${{ github.event.pull_request.base.sha }}
         path: _sitemend/base
+        persist-credentials: false
 
     - name: Build both
       if: inputs.url == '' && inputs.build-command != ''

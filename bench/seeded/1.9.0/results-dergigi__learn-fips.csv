@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+dergigi/learn-fips,control,,,,,n
+dergigi/learn-fips,canonical-removed,S1-CANONICAL-MISSING,medium,/glossary/,y,n
+dergigi/learn-fips,noindex-added,S1-INDEX-CONTRADICTION,critical,/glossary/,y,y
+dergigi/learn-fips,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,/glossary/,n,y
+dergigi/learn-fips,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap-0.xml,y,y
+dergigi/learn-fips,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,/robots.txt,y,y
+dergigi/learn-fips,linked-page-deleted,S1-BROKEN-LINK,high,/glossary/,y,y
+dergigi/learn-fips,title-removed,S3-TITLE-MISSING,critical,/glossary/,y,y
+dergigi/learn-fips,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/glossary/,y,y
+dergigi/learn-fips,title-duplicated,S3-TITLE-DUPLICATE,high,/interactive/,y,y
+dergigi/learn-fips,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/glossary/,y,y

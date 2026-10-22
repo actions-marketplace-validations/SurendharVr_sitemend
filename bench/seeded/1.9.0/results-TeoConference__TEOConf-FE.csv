@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+TeoConference/TEOConf-FE,control,,,,,n
+TeoConference/TEOConf-FE,canonical-removed,S1-CANONICAL-MISSING,medium,,n/a,
+TeoConference/TEOConf-FE,noindex-added,S1-INDEX-CONTRADICTION,critical,,n/a,
+TeoConference/TEOConf-FE,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,,n/a,
+TeoConference/TEOConf-FE,sitemap-preview-host,S1-HOST-MISMATCH,critical,,n/a,
+TeoConference/TEOConf-FE,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,,n/a,
+TeoConference/TEOConf-FE,linked-page-deleted,S1-BROKEN-LINK,high,/first.html,y,y
+TeoConference/TEOConf-FE,title-removed,S3-TITLE-MISSING,critical,/2025.html,y,y
+TeoConference/TEOConf-FE,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/2025.html,y,y
+TeoConference/TEOConf-FE,title-duplicated,S3-TITLE-DUPLICATE,high,,n/a,
+TeoConference/TEOConf-FE,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/2025.html,y,y

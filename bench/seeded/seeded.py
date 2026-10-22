@@ -264,7 +264,7 @@ def recall_md(rows, sources):
            "| Mutation | Expected rule | Severity | Runs | Fired | Recall | Gate failed | Not applicable "
            "| Build failures | Tool failures |",
            "|---|---|---|---|---|---|---|---|---|---|"]
-    pool_runs = pool_fired = 0
+    pool_runs = pool_fired = pool_gate = pool_both = 0
     for name, _, rule, sev in MUTATIONS:
         mine = [r for r in rows if r["mutation"] == name]
         runs = [r for r in mine if r["fired"] in ("y", "n")]
@@ -272,14 +272,21 @@ def recall_md(rows, sources):
         if sev in ("critical", "high") and name not in REPORTED_APART:
             pool_runs += len(runs)
             pool_fired += fired
+            pool_gate += sum(r["gate_failed"] == "y" for r in runs)
+            pool_both += sum(r["fired"] == "y" and r["gate_failed"] == "y" for r in runs)
         out.append("| {0} | {1} | {2} | {3} | {4} | {5} | {6} | {7} | {8} | {9} |".format(
             name + (" (apart)" if name in REPORTED_APART else ""), rule, sev, len(runs), fired,
             "{0:.1f}%".format(100.0 * fired / len(runs)) if runs else "n/a",
             sum(r["gate_failed"] == "y" for r in runs),
             sum(r["fired"] == "n/a" for r in mine), sum(r["fired"] == "build_failed" for r in mine),
             sum(r["fired"] == "tool_failure" for r in mine)))
-    out += ["", "**Recall, critical and high mutation types: {0} of {1} ({2})**".format(
-        pool_fired, pool_runs, "{0:.1f}%".format(100.0 * pool_fired / pool_runs) if pool_runs else "n/a"),
+    share = lambda n: "{0} of {1} ({2})".format(
+        n, pool_runs, "{0:.1f}%".format(100.0 * n / pool_runs) if pool_runs else "n/a")
+    # Fired alone is the pre-registered measure, but it does not say the gate blocked: the
+    # rule can fire below high confidence, or another rule can be what fails the check.
+    out += ["", "**Recall, critical and high mutation types: {0}**".format(share(pool_fired)),
+            "", "The same runs, by what the gate did: it failed the check on {0}; it failed "
+                "it and the expected rule fired on {1}.".format(share(pool_gate), share(pool_both)),
             "", "Mutations marked (apart) are reported but not pooled: the rule they test was fixed "
                 "after the seeded test showed them missed (Addenda 3, 9 and 10)."]
     controls = [r for r in rows if r["mutation"] == "control" and r["gate_failed"] in ("y", "n")]

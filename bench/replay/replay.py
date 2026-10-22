@@ -12,7 +12,8 @@ base of the next, so N comparisons cost N+1 builds.
 
 Writes bench/replay/results.csv, one row per comparison, and builds.csv beside it, one row
 per commit built, with the reason for any failed build or audit. Each commit's build and audit are
-cached under --out by SHA, so a re-run only does what is missing. A failed build is never a
+cached under --out by SHA and by the sitemend that audited it, so a re-run only does what is
+missing, and a re-run on another sitemend never reuses an old audit. A failed build is never a
 pass or a fail: both comparisons that touch it are recorded as skipped. Stopping a run
 mid-build records that commit as build_failed too; delete its folder under --out before
 re-running.
@@ -24,6 +25,7 @@ This runs each repository's own build command, which runs that repository's code
 """
 import argparse
 import csv
+import hashlib
 import json
 import os
 import re
@@ -108,16 +110,35 @@ def audit(py, scripts, site, outdir, env):
     return r.returncode == 0, round(time.monotonic() - start, 1)
 
 
+def sitemend_id(scripts):
+    """Which sitemend audited a commit: a hash of its scripts. The cache is keyed by it, so
+    an audit made by another version, or by an edited source tree, is never reused."""
+    h = hashlib.sha256()
+    for name in sorted(os.listdir(scripts)):
+        if name.endswith(".py"):
+            with open(os.path.join(scripts, name), "rb") as fh:
+                h.update(name.encode() + b"\0" + fh.read() + b"\0")
+    return h.hexdigest()[:16]
+
+
 def build_and_audit(entry, path, sha, outdir, py, scripts, env, timeout):
     """Build one commit and audit its output, recorded in <outdir>/build.json. A commit
-    that already has one is not built again."""
+    that already has one from the same sitemend is not built again; one from another
+    sitemend (or from before the record named it) is built and audited afresh."""
     record = os.path.join(outdir, "build.json")
+    ident = sitemend_id(scripts)
     if os.path.exists(record):
         with open(record, encoding="utf-8") as fh:
-            return json.load(fh)
+            rec = json.load(fh)
+        if rec.get("sitemend") == ident:
+            return rec
+        print("{0}: cached audit is from sitemend {1}, not {2}; rebuilding".format(
+            sha[:10], rec.get("sitemend") or "unknown", ident), file=sys.stderr)
+        # Leave nothing of the old audit behind for this one to be mistaken for.
+        shutil.rmtree(outdir)
     os.makedirs(outdir, exist_ok=True)
     rec = {"sha": sha, "status": "ok", "build_seconds": None, "audit_seconds": None,
-           "node": env.get("REPLAY_NODE")}
+           "node": env.get("REPLAY_NODE"), "sitemend": ident}
     site, rec["build_seconds"] = build(entry, path, sha, os.path.join(outdir, "build.log"), env, timeout)
     if site is None:
         rec["status"] = "build_failed"

@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+rgcsekaraa/brows3,control,,,,,n
+rgcsekaraa/brows3,canonical-removed,S1-CANONICAL-MISSING,medium,,n/a,
+rgcsekaraa/brows3,noindex-added,S1-INDEX-CONTRADICTION,critical,,n/a,
+rgcsekaraa/brows3,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,,n/a,
+rgcsekaraa/brows3,sitemap-preview-host,S1-HOST-MISMATCH,critical,,n/a,
+rgcsekaraa/brows3,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,,n/a,
+rgcsekaraa/brows3,linked-page-deleted,S1-BROKEN-LINK,high,,n/a,
+rgcsekaraa/brows3,title-removed,S3-TITLE-MISSING,critical,/bucket.html,y,y
+rgcsekaraa/brows3,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/bucket.html,y,y
+rgcsekaraa/brows3,title-duplicated,S3-TITLE-DUPLICATE,high,,n/a,
+rgcsekaraa/brows3,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/bucket.html,y,y

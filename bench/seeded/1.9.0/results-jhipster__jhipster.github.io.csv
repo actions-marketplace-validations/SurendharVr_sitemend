@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+jhipster/jhipster.github.io,control,,,,,n
+jhipster/jhipster.github.io,canonical-removed,S1-CANONICAL-MISSING,medium,/2013/11/29/jhipster-release-0.0.28.html,y,n
+jhipster/jhipster.github.io,noindex-added,S1-INDEX-CONTRADICTION,critical,/2013/11/29/jhipster-release-0.0.28.html,y,y
+jhipster/jhipster.github.io,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,/2013/11/29/jhipster-release-0.0.28.html,y,y
+jhipster/jhipster.github.io,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap.xml,y,y
+jhipster/jhipster.github.io,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,/robots.txt,y,y
+jhipster/jhipster.github.io,linked-page-deleted,S1-BROKEN-LINK,high,/2013/11/29/jhipster-release-0.0.28.html,y,y
+jhipster/jhipster.github.io,title-removed,S3-TITLE-MISSING,critical,/2013/11/29/jhipster-release-0.0.28.html,y,y
+jhipster/jhipster.github.io,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,,n/a,
+jhipster/jhipster.github.io,title-duplicated,S3-TITLE-DUPLICATE,high,,n/a,
+jhipster/jhipster.github.io,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/2013/11/29/jhipster-release-0.0.28.html,y,y

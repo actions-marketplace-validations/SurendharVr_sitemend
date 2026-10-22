@@ -17,6 +17,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 import sys
 from fnmatch import fnmatchcase
 
@@ -165,12 +166,32 @@ def waiver_lines(waived, unused_, expired):
 MARKER = "<!-- sitemend-verify -->"
 
 
-def cell(v, limit=200):
-    """One markdown table cell, quoting the value as-is apart from what breaks a table
-    or would render as HTML (evidence is often markup, like `<source>`)."""
+def _clip(v, limit):
     t = " ".join(str(v if v is not None else "").split())
-    t = t.replace("&", "&amp;").replace("<", "&lt;").replace("|", "\\|")
     return t if len(t) <= limit else t[:limit - 1] + "…"
+
+
+def cell(v, limit=200):
+    """One markdown table cell of prose (a finding's message, a waiver's reason). It quotes
+    text the audited site or the PR wrote, and the comment is posted with the workflow's
+    token, so nothing in it may act as markup: no HTML, no link or image, no @mention that
+    notifies someone. A word joiner after @ keeps it readable but stops the mention."""
+    t = _clip(v, limit).replace("\\", "\\\\").replace("&", "&amp;").replace("<", "&lt;")
+    for ch in "[]!`*_~":
+        t = t.replace(ch, "\\" + ch)
+    return t.replace("@", "@⁠").replace("|", "\\|")
+
+
+def code_cell(v, limit=200):
+    """One table cell quoted literally as a code span: evidence and page paths are raw
+    site data, and inside a code span nothing renders, links or mentions. The fence is
+    one backtick longer than any run inside; a pipe still needs its backslash in a table."""
+    t = _clip(v, limit)
+    if not t:
+        return ""
+    fence = "`" * (max((len(r) for r in re.findall(r"`+", t)), default=0) + 1)
+    pad = " " if t.startswith("`") or t.endswith("`") else ""
+    return fence + pad + t.replace("|", "\\|") + pad + fence
 
 
 def markdown(doc, rows=50):
@@ -195,8 +216,8 @@ def markdown(doc, rows=50):
             sev = f["severity"] + (" (advisory)" if f in doc.get("advisory", ()) else
                                    " (waived)" if key(f) in waived else "")
             out.append("| {0} | {1} | {2} | {3} |".format(
-                sev, cell(f["id"] + ": " + f.get("message", "")), cell(p),
-                cell(f.get("evidence"))))
+                sev, cell(f["id"] + ": " + f.get("message", "")), code_cell(p),
+                code_cell(f.get("evidence"))))
         if len(items) > rows:
             out.append("\n...and {0} more in verify.json.".format(len(items) - rows))
 
@@ -212,7 +233,7 @@ def markdown(doc, rows=50):
         for f in doc["waived"]:
             out.append("| {0} | {1} | {2} | {3} |".format(
                 f["severity"], cell(f["id"] + ": " + f.get("message", "")),
-                cell(", ".join(f.get("pages", []))), cell(f["waiver"]["reason"])))
+                code_cell(", ".join(f.get("pages", []))), cell(f["waiver"]["reason"])))
     for title, ws in (("Unused waivers (they cover no finding)", doc.get("unused_waivers")),
                       ("Expired waivers (no longer applied)", doc.get("expired_waivers"))):
         if ws:

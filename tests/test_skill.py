@@ -1315,10 +1315,32 @@ class TestVerify(unittest.TestCase):
         self.assertTrue(md.startswith(V.MARKER))
         self.assertIn("regression gate FAIL", md)
         self.assertIn("1 new, 1 closed, 0 changed, 7 unchanged", md)
-        self.assertIn("| critical | S1-NOT-INDEXABLE: S1-NOT-INDEXABLE | / | "
-                      "&lt;meta> noindex \\| nofollow |", md)
+        self.assertIn("| critical | S1-NOT-INDEXABLE: S1-NOT-INDEXABLE | `/` | "
+                      "`<meta> noindex \\| nofollow` |", md)
         self.assertIn("### Closed", md)
         self.assertNotIn("### New (critical", V.markdown(dict(doc, regressions=[])))
+
+    def test_markdown_lets_no_site_text_act_as_markup(self):
+        """SECURITY: the comment quotes text the audited site wrote, and in the preview
+        workflow that site is the PR's own deploy. Posted with the workflow's token, an
+        @mention would notify whoever it names and a link or image would render as the
+        bot's own. Evidence and pages are literal code spans; prose is escaped."""
+        evil = "@octocat ![x](https://evil.test/p.png) [click](https://evil.test) <img src=x>"
+        self.assertEqual(V.cell(evil),
+                         "@⁠octocat \\!\\[x\\](https://evil.test/p.png) "
+                         "\\[click\\](https://evil.test) &lt;img src=x>")
+        # Code spans: a fence longer than any backtick run inside, padded when the text
+        # starts or ends with one, and the pipe still escaped for the table.
+        self.assertEqual(V.code_cell("a ``b`` | c"), "```a ``b`` \\| c```")
+        self.assertEqual(V.code_cell("`x"), "`` `x ``")
+        self.assertEqual(V.code_cell(""), "")
+        new = self.f("S1-BROKEN-LINK", ["/a"], evidence=evil, severity="high")
+        new["message"] = "Title is " + evil
+        md = V.markdown({"gate": "FAIL", "counts": {"closed": 0, "new": 1, "changed": 0, "persisting": 0},
+                         "new": [new], "closed": [], "changed": [], "regressions": [new]})
+        # The only bare "@octocat" left is inside the evidence's code span, where it is text.
+        self.assertIn("| high | S1-BROKEN-LINK: Title is " + V.cell(evil) + " | `/a` | `" + evil + "` |", md)
+        self.assertEqual(md.count("@octocat"), 1)
 
 
 # --------------------------------------------------------------- determinism
@@ -1917,6 +1939,24 @@ class TestSitemapLastmod(Base):
     def test_invalid_dates_are_flagged(self):
         for bad in ("2026-13-45", "2026-05-01 10:00", "yesterday", "01/05/2026"):
             self.assertEqual(self._ids(["2026-01-01", bad]), ["S1-SITEMAP-LASTMOD-INVALID"], bad)
+
+    def test_sitemap_parsing_is_linear_on_unclosed_tags(self):
+        """SECURITY: "<loc>(.*?)</loc>" let every unclosed <loc> scan to the end of the
+        file, so a crafted 48 KB sitemap took 10 s and 1 MB would hold a CI job for hours.
+        The audited site controls the file; in the preview workflow it is a PR's deploy."""
+        start = time.time()
+        S.parse_sitemap("<urlset>" + "<loc>a" * 80000)
+        S.parse_sitemap_lastmods("<urlset>" + "<url><loc>a<lastmod>b" * 80000)
+        self.assertLess(time.time() - start, 2.0)
+        # Well-formed sitemaps read as before: whitespace around a value, a CDATA value
+        # kept as written, a lastmod per <url>.
+        xml = ("<urlset><url><loc> https://a.test/p </loc><lastmod>2026-01-01</lastmod></url>"
+               "<url><loc><![CDATA[https://a.test/q]]></loc></url>\n<url>\n<LOC>\nhttps://a.test/r\n</LOC>\n</url></urlset>")
+        self.assertEqual(S.parse_sitemap(xml),
+                         (["https://a.test/p", "<![CDATA[https://a.test/q]]>", "https://a.test/r"], []))
+        self.assertEqual(S.parse_sitemap_lastmods(xml),
+                         [("https://a.test/p", "2026-01-01"), ("<![CDATA[https://a.test/q]]>", None),
+                          ("https://a.test/r", None)])
 
 
 class TestSecurityHeaders(Base):
@@ -3473,16 +3513,130 @@ class TestExtraHeaders(unittest.TestCase):
         self.addCleanup(srv.shutdown)
         base = "http://127.0.0.1:%d/" % srv.server_address[1]
         self.assertEqual(crawl.crawl_http(base)[0], [])
+        self._with_header(lambda: self.assertEqual([p["url"] for p in crawl.crawl_http(base)[0]], ["/"]))
+
+    def _with_header(self, fn):
         old = os.environ.get("SITEMEND_HTTP_HEADERS")
         os.environ["SITEMEND_HTTP_HEADERS"] = "x-vercel-protection-bypass: s3cret"
         try:
-            self.assertEqual([p["url"] for p in crawl.crawl_http(base)[0]], ["/"])
+            fn()
         finally:
             if old is None:
                 os.environ.pop("SITEMEND_HTTP_HEADERS")
             else:
                 os.environ["SITEMEND_HTTP_HEADERS"] = old
 
+    def _requests(self):
+        try:
+            import requests
+        except ImportError:
+            raise unittest.SkipTest("requests not installed (http mode is optional)")
+        return requests
+
+    def _server(self, seen, name, handle):
+        """A local server whose every request records the bypass header it carried."""
+        import http.server
+        import threading
+
+        class H(http.server.BaseHTTPRequestHandler):
+            def do_GET(self):
+                seen.setdefault(name, []).append(self.headers.get("x-vercel-protection-bypass"))
+                handle(self)
+
+            def log_message(self, *a):
+                pass
+        srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), H)
+        threading.Thread(target=srv.serve_forever, daemon=True).start()
+        self.addCleanup(srv.server_close)
+        self.addCleanup(srv.shutdown)
+        return "http://127.0.0.1:%d" % srv.server_address[1]
+
+    @staticmethod
+    def _send(h, status, body=b"", headers=()):
+        h.send_response(status)
+        for k, v in headers:
+            h.send_header(k, v)
+        h.send_header("Content-Length", str(len(body)))
+        h.end_headers()
+        h.wfile.write(body)
+
+    def test_the_header_never_follows_a_redirect_to_another_host(self):
+        """SECURITY: requests keeps custom headers on a redirect to another host, so a
+        preview page that redirected off-site (a fork PR's _redirects rule, say) handed the
+        bypass token to that host. Here every path but / on the crawled origin redirects to
+        a second server, which must never see the header: not from the walk, not from the
+        sitemap or robots.txt fetch, not from the soft-404 probe."""
+        self._requests()
+        seen, send, html = {}, self._send, [("Content-Type", "text/html")]
+        other = self._server(seen, "other", lambda h: send(h, 200, page_html().encode(), html))
+        home_page = page_html(body='<h1>H</h1><p><a href="/away/">away</a> ' + "word " * 300 + "</p>").encode()
+        home = self._server(seen, "home", lambda h: send(h, 200, home_page, html)
+                            if h.path == "/" else send(h, 302, headers=[("Location", other + h.path)]))
+
+        def run():
+            crawl.crawl_http(home + "/")
+            crawl.probe_soft404(home + "/")
+        self._with_header(run)
+        self.assertIn("s3cret", seen["home"], "the crawled origin must still get the header")
+        self.assertTrue(seen.get("other"), "the fixture's redirects were never followed")
+        self.assertEqual(set(seen["other"]), {None}, "the bypass header reached another host")
+
+    def test_a_redirect_within_the_site_keeps_the_header(self):
+        """The other half: a protected preview redirects /docs to /docs/ (Vercel and
+        Netlify both add the slash), and the page behind it answers only with the header.
+        Stripping it on that hop would leave every such page out of the crawl."""
+        self._requests()
+        seen, send, html = {}, self._send, [("Content-Type", "text/html")]
+        home_page = page_html(body='<h1>H</h1><p><a href="/docs">docs</a> ' + "word " * 300 + "</p>").encode()
+        docs = page_html(title="The Documentation Page Of This Site").encode()
+
+        def handle(h):
+            ok = h.headers.get("x-vercel-protection-bypass") == "s3cret"
+            if h.path == "/docs":
+                send(h, 302, headers=[("Location", "/docs/")])
+            elif not ok:
+                send(h, 401, b"nope", html)
+            else:
+                send(h, 200, {"/": home_page, "/docs/": docs}.get(h.path, b"missing"), html)
+        home = self._server(seen, "home", handle)
+        pages = []
+        self._with_header(lambda: pages.extend(p["url"] for p in crawl.crawl_http(home + "/")[0]))
+        self.assertIn("/docs/", pages)
+
+    def test_the_site_is_requests_own_rule_for_authorization(self):
+        """http -> https on the same host (a start URL that lands on https) and an explicit
+        default port are the same site and keep the header; another host or port does not,
+        and a redirect chain that leaves and comes back gets it again on the way back."""
+        requests = self._requests()
+
+        def sent(trusted, url):
+            sess = crawl.http_session(trusted)
+            return sess.prepare_request(requests.Request("GET", url)).headers.get(
+                "x-vercel-protection-bypass")
+        cases = [("http://site.test/", "https://site.test/docs/", "s3cret"),
+                 ("https://site.test/", "https://site.test:443/docs/", "s3cret"),
+                 ("http://site.test/", "http://site.test:80/", "s3cret"),
+                 ("https://site.test/", "https://www.site.test/", None),
+                 ("https://site.test/", "https://site.test:8443/", None),
+                 ("https://site.test/", "https://evil.test/", None)]
+        got = []
+        self._with_header(lambda: got.extend(sent(t, u) for t, u, _ in cases))
+        self.assertEqual(got, [want for _, _, want in cases])
+
+        def hops():
+            sess = crawl.http_session("https://site.test/")
+            prep = sess.prepare_request(requests.Request("GET", "https://site.test/a"))
+            out = []
+            for url in ("https://evil.test/b", "https://site.test/c"):
+                resp = requests.Response()
+                resp.request = prep.copy()
+                prep.url = url
+                sess.rebuild_auth(prep, resp)
+                out.append(prep.headers.get("x-vercel-protection-bypass"))
+            return out
+        chain = []
+        self._with_header(lambda: chain.extend(hops()))
+        self.assertEqual(chain, [None, "s3cret"])
 
 class TestGithubAction(unittest.TestCase):
     """action.yml is the product's front door. CI's `action` job runs it for real on every
@@ -3512,6 +3666,15 @@ class TestGithubAction(unittest.TestCase):
         with open(os.path.join(self.ROOT, "action.yml"), encoding="utf-8") as fh:
             used = set(re.findall(r"inputs\.([a-z-]+)", fh.read()))
         self.assertLessEqual(used, set(a["inputs"]))
+
+    def test_no_checkout_leaves_the_token_on_disk(self):
+        """SECURITY: actions/checkout writes the job's token into .git/config unless told
+        not to, and the build that follows runs the PR's code and its install scripts,
+        which could read it and act with the workflow's pull-requests: write."""
+        steps = [s for s in self._action()["runs"]["steps"] if "actions/checkout" in s.get("uses", "")]
+        self.assertTrue(steps)
+        for s in steps:
+            self.assertIs((s.get("with") or {}).get("persist-credentials"), False, s["name"])
 
     @staticmethod
     def _bash():
@@ -3692,6 +3855,19 @@ class TestReplay(unittest.TestCase):
         again, _, _ = self._again(d)
         self.assertEqual(os.path.getmtime(marker), before)
         self.assertEqual(again, rows)
+
+        # Another sitemend never reuses those audits: every commit is audited again.
+        other = os.path.join(d, "other", "scripts")
+        shutil.copytree(sitemend.HERE, other, ignore=shutil.ignore_patterns("__pycache__"))
+        shutil.copytree(os.path.join(sitemend.HERE, "..", "assets"), os.path.join(d, "other", "assets"))
+        with open(os.path.join(other, "audit.py"), "a", encoding="utf-8") as fh:
+            fh.write("\n# another version\n")
+        with open(marker, encoding="utf-8") as fh:
+            old = json.load(fh)["sitemend"]
+        third, _, _ = self._again(d, "--scripts", other)
+        with open(marker, encoding="utf-8") as fh:
+            self.assertNotEqual(json.load(fh)["sitemend"], old)
+        self.assertEqual([r["gate_result"] for r in third], [r["gate_result"] for r in rows])
 
     def test_pilot_runs_two_repositories_at_twenty_commits(self):
         """commits: 0 would compare nothing. The pilot asks for 20, and b has only two
@@ -3939,6 +4115,22 @@ class TestSeededRecall(unittest.TestCase):
         self.assertIn("| title-duplicated |", md)
         self.assertIn("Build failures, not counted in recall: t/broken.", md)
         self.assertNotIn("Tool failures (sitemend", md)
+        self.assertIn("it failed the check on 7 of 7 (100.0%); it failed it and the expected "
+                      "rule fired on 7 of 7 (100.0%).", md)
+
+    def test_recall_also_counts_what_the_gate_did(self):
+        """The 1.9.0 run's one pooled miss (learn-fips, canonical-preview-host): the expected
+        rule did not fire, but another one failed the gate. Fired alone hid that; a rule
+        firing while the gate passes must not read as caught by the gate either."""
+        seeded = _bench_module("seeded", "seeded.py")
+        if seeded is None:
+            raise unittest.SkipTest("bench/ is not shipped in the sdist")
+        row = lambda m, fired, gate: dict(repo="t/a", mutation=m, fired=fired, gate_failed=gate)
+        md = seeded.recall_md([row("canonical-preview-host", "n", "y"), row("noindex-added", "y", "y"),
+                               row("title-removed", "y", "n"), row("canonical-removed", "y", "n")], ["x"])
+        self.assertIn("**Recall, critical and high mutation types: 2 of 3 (66.7%)**", md)
+        self.assertIn("it failed the check on 2 of 3 (66.7%); it failed it and the expected "
+                      "rule fired on 1 of 3 (33.3%).", md)
 
     def test_the_duplicate_title_mutation_skips_a_title_shared_with_the_404_page(self):
         """REGRESSION from the 1.8.0 seeded run (#81): the home page shared its title with

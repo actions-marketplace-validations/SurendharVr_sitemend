@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+DevAdmin-Riu/boss-dashboard-guide,control,,,,,n
+DevAdmin-Riu/boss-dashboard-guide,canonical-removed,S1-CANONICAL-MISSING,medium,/boss-dashboard-guide/,y,n
+DevAdmin-Riu/boss-dashboard-guide,noindex-added,S1-INDEX-CONTRADICTION,critical,/boss-dashboard-guide/,y,y
+DevAdmin-Riu/boss-dashboard-guide,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,/boss-dashboard-guide/,y,y
+DevAdmin-Riu/boss-dashboard-guide,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap.xml,y,y
+DevAdmin-Riu/boss-dashboard-guide,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,/robots.txt,y,y
+DevAdmin-Riu/boss-dashboard-guide,linked-page-deleted,S1-BROKEN-LINK,high,/boss-dashboard-guide/,y,y
+DevAdmin-Riu/boss-dashboard-guide,title-removed,S3-TITLE-MISSING,critical,/boss-dashboard-guide/,y,y
+DevAdmin-Riu/boss-dashboard-guide,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,,n/a,
+DevAdmin-Riu/boss-dashboard-guide,title-duplicated,S3-TITLE-DUPLICATE,high,/boss-dashboard-guide/admin-popups/,y,y
+DevAdmin-Riu/boss-dashboard-guide,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/boss-dashboard-guide/,y,y

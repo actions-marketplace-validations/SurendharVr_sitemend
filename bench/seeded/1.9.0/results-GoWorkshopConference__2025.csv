@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+GoWorkshopConference/2025,control,,,,,n
+GoWorkshopConference/2025,canonical-removed,S1-CANONICAL-MISSING,medium,,n/a,
+GoWorkshopConference/2025,noindex-added,S1-INDEX-CONTRADICTION,critical,,n/a,
+GoWorkshopConference/2025,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,,n/a,
+GoWorkshopConference/2025,sitemap-preview-host,S1-HOST-MISMATCH,critical,,n/a,
+GoWorkshopConference/2025,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,,n/a,
+GoWorkshopConference/2025,linked-page-deleted,S1-BROKEN-LINK,high,,n/a,
+GoWorkshopConference/2025,title-removed,S3-TITLE-MISSING,critical,/booths/,y,y
+GoWorkshopConference/2025,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/booths/,y,y
+GoWorkshopConference/2025,title-duplicated,S3-TITLE-DUPLICATE,high,/booths/01_tinygo_keeb/,y,y
+GoWorkshopConference/2025,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/booths/,y,y

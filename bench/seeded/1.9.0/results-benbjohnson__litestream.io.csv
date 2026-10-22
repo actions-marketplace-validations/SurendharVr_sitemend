@@ -1,0 +1,12 @@
+repo,mutation,expected_rule,expected_severity,target,fired,gate_failed
+benbjohnson/litestream.io,control,,,,,n
+benbjohnson/litestream.io,canonical-removed,S1-CANONICAL-MISSING,medium,/alternatives/,y,n
+benbjohnson/litestream.io,noindex-added,S1-INDEX-CONTRADICTION,critical,/alternatives/,y,y
+benbjohnson/litestream.io,canonical-preview-host,S1-CANONICAL-OFFSITE,critical,/alternatives/,y,y
+benbjohnson/litestream.io,sitemap-preview-host,S1-HOST-MISMATCH,critical,/sitemap.xml,y,y
+benbjohnson/litestream.io,robots-disallow-all,S1-INDEX-CONTRADICTION,critical,/robots.txt,y,y
+benbjohnson/litestream.io,linked-page-deleted,S1-BROKEN-LINK,high,/alternatives/cron/,y,y
+benbjohnson/litestream.io,title-removed,S3-TITLE-MISSING,critical,/alternatives/,y,y
+benbjohnson/litestream.io,hreflang-no-return,S1-HREFLANG-NO-RETURN,high,/alternatives/,y,y
+benbjohnson/litestream.io,title-duplicated,S3-TITLE-DUPLICATE,high,/alternatives/cron/,y,y
+benbjohnson/litestream.io,rating-unsupported,S5-SCHEMA-UNSUPPORTED-CLAIM,high,/alternatives/,y,y

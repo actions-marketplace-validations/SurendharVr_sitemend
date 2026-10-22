@@ -296,11 +296,19 @@ class Robots:
         return best[1], ("Allow: " if best[1] else "Disallow: ") + best[2]
 
 
+# A value runs to the next tag, or is one CDATA section. ".*?" let one unclosed <loc>
+# scan to the end of the file, once per <loc>: a crafted 48 KB sitemap took 10 s, and the
+# audited site (in the preview workflow, a PR's own deploy) controls the file.
+_LOC = re.compile(r"<loc>\s*(<!\[CDATA\[[^\]]*\]\]>|[^<]*?)\s*</loc>", re.I)
+_LASTMOD = re.compile(r"<lastmod>\s*([^<]*?)\s*</lastmod>", re.I)
+_URL_BLOCK = re.compile(r"<url>((?:(?!</?url>).)*)</url>", re.I | re.S)
+
+
 def parse_sitemap(xml_text):
     """Extract <loc> values. Handles urlset and sitemapindex alike."""
     if not xml_text:
         return [], ["not found"]
-    locs = re.findall(r"<loc>\s*(.*?)\s*</loc>", xml_text, re.I | re.S)
+    locs = _LOC.findall(xml_text)
     errs = []
     if "<sitemapindex" in xml_text.lower():
         errs.append("sitemapindex")
@@ -313,9 +321,9 @@ def parse_sitemap_lastmods(xml_text):
     """[(loc, lastmod_or_None)] for every <url> block. Kept apart from parse_sitemap so
     the many callers of that function keep their shape."""
     out = []
-    for block in re.findall(r"<url>(.*?)</url>", xml_text or "", re.I | re.S):
-        loc = re.search(r"<loc>\s*(.*?)\s*</loc>", block, re.I | re.S)
-        lm = re.search(r"<lastmod>\s*(.*?)\s*</lastmod>", block, re.I | re.S)
+    for block in _URL_BLOCK.findall(xml_text or ""):
+        loc = _LOC.search(block)
+        lm = _LASTMOD.search(block)
         if loc:
             out.append((loc.group(1).strip(), lm.group(1).strip() if lm else None))
     return out
