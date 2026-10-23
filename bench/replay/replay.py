@@ -48,17 +48,17 @@ def git(cwd, *args):
                           text=True).stdout.strip()
 
 
-def installed_scripts():
-    """The installed sitemend's folder, refusing any version but the frozen one: a replay
-    measured on a moving version measures nothing."""
+def installed_scripts(frozen=FROZEN):
+    """The installed sitemend's folder, refusing any version but the frozen one: a run
+    measured on a moving version measures nothing. Task 9 passes its own."""
     from importlib import metadata, util
     try:
         version = metadata.version("sitemend")
     except metadata.PackageNotFoundError:
         version = None
-    if version != FROZEN:
-        sys.exit("the replay is frozen on sitemend {0}; this Python has {1}. "
-                 "pip install sitemend=={0}".format(FROZEN, version or "none"))
+    if version != frozen:
+        sys.exit("this run is frozen on sitemend {0}; this Python has {1}. "
+                 "pip install sitemend=={0}".format(frozen, version or "none"))
     return list(util.find_spec("sitemend").submodule_search_locations)[0]
 
 
@@ -100,14 +100,21 @@ def build(entry, path, sha, log_path, env, timeout):
     return (site if ok and os.path.isdir(site) else None), round(time.monotonic() - start, 1)
 
 
-def audit(py, scripts, site, outdir, env):
-    """sitemend audit of a built folder into outdir; returns (ok, seconds). Output in audit.log."""
+def audit(py, scripts, site, outdir, env, timeout=None):
+    """sitemend audit of a built folder (or a URL) into outdir; returns (ok, seconds).
+    Output in audit.log. An audit that runs past timeout seconds is not ok."""
     start = time.monotonic()
-    r = subprocess.run([py, os.path.join(scripts, "sitemend.py"), "audit", site, "--out", outdir],
-                       capture_output=True, text=True, encoding="utf-8", errors="replace", env=env)
+    os.makedirs(outdir, exist_ok=True)
+    try:
+        r = subprocess.run([py, os.path.join(scripts, "sitemend.py"), "audit", site, "--out", outdir],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace",
+                           env=env, timeout=timeout)
+        text, ok = r.stdout + r.stderr, r.returncode == 0
+    except subprocess.TimeoutExpired:
+        text, ok = "[replay] audit did not finish within {0} s\n".format(timeout), False
     with open(os.path.join(outdir, "audit.log"), "w", encoding="utf-8") as log:
-        log.write(r.stdout + r.stderr)
-    return r.returncode == 0, round(time.monotonic() - start, 1)
+        log.write(text)
+    return ok, round(time.monotonic() - start, 1)
 
 
 def sitemend_id(scripts):

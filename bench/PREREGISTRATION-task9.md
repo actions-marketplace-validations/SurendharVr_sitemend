@@ -357,3 +357,103 @@ Where a site's sitemap is malformed, the two versions can read it differently. T
 states how many drawn sites that applies to.
 
 Decided by (B): SurendharVr. Date: 2026-10-22.
+
+## Addendum 2: the frame runs short, a sibling site, production on preview hosts (2026-10-23, before the build check)
+
+**Status:** signed by SurendharVr on 2026-10-23. Written by Claude on 2026-10-23; every
+choice below was proposed by Claude and accepted as written.
+
+**When.** After the draw ran, before any build check and before any data from the window.
+The candidate list below is known, so each choice here is made knowing it. That is stated
+in the report.
+
+**The draw, as run.** History and eligibility are as of the draw date, 2026-10-22, as
+section 2.2 and Addendum 1 fix it. The draw was run on 2026-10-23, three times:
+- **First run, from `8739619`, stopped:** 61 requests failed and were cached as empty
+  answers, wrongly ruling out 26 readable repositories. Fixed in #99, so that a failed
+  request is never cached and the draw stops instead.
+- **Second run, from `586b3ff`, at 11:33 UTC:** completed.
+- **Third run, from `1ed15f3`, at 15:12 UTC:** completed after #100, which stopped
+  non-preview deployments (a PyPI release, GitHub Pages) counting as previews. It found the
+  same 32 candidates as the second run; only rtl-buddy/rtl_buddy lost a false preview flag.
+
+Three readings were not as of the draw date:
+- the homepage and preview checks were read on the day the draw ran;
+- some repository metadata (public, fork, archived) came from answers cached on 2026-10-17,
+  during the Addendum 5 draw;
+- `draw.csv` holds every repository looked at, with its outcome.
+
+| Stack | Frame | Ranks used before (sample, sweep) | Looked at | Candidates | With a preview |
+|---|---|---|---|---|---|
+| Docusaurus | 612 | 208 | 246 | 12 | 1 |
+| Astro | 707 | 200 | 301 | 12 | 4 |
+| VitePress | 846 | 356 | 490, the rest of the frame | 4 | 1 |
+| Hugo | 1,550 | 1,550, all of it | 0 | 0 | 0 |
+| Next.js | 984 | 511 | 473, the rest of the frame | 4 | 2 |
+
+Section 2.2 takes the first 6 per stack that build, and `select` refuses a shorter sample.
+Three stacks cannot reach 6 even before the build check, so 2.2 cannot be applied as
+written.
+
+**1. The short stacks.** Decided: (a).
+- **(a) Fill from the other stacks** (accepted). Per stack, take every candidate that
+  builds, up to 6. Fill the places left, up to 30, with the next candidates that built from
+  the stacks that still have some, one stack at a time in the table's order (Docusaurus,
+  then Astro), in draw order. Then apply 2.2's preview top-up as written: 10 flagged, at
+  most 40 in all.
+  - **For it:** it needs no new search and no new judgement, and continues the order
+    already fixed in 2026.
+  - **Against it:** the sample leans toward Docusaurus and Astro, and Hugo is absent. The
+    report says so, and gives every measure per stack.
+- **(b) A new frame for the short stacks.** Run Addendum 5's code searches again for
+  VitePress, Hugo and Next.js, dated and saved before any filtering. Leave out every
+  repository already in the old frame, shuffle with `random.Random(20261017)`, and continue
+  the draw in that order.
+  - **For it:** it keeps 6 per stack where the new frame allows.
+  - **Against it:** it means a second frame with its own date, and Hugo will likely still
+    fall short, since most Hugo sites have no npm `build` script.
+- **(c) A smaller sample.** Take what builds, with no fill. Precision and frequency then
+  rest on fewer sites, and the extension rule (3.1) is more likely to apply.
+
+**2. vuejs-translations/docs-ja.** It is the Japanese twin of
+vuejs-translations/docs-zh-cn, one of the 15 benchmark repositories that every 1.8.0 and
+1.9.0 fix came from. It is built from the same Vue docs template. Section 2.1 excludes
+exact repositories only, so it passes. Decided: (a).
+- **(a) Exclude it** (accepted). Add to 2.1: any repository whose owner also owns a
+  benchmark repository. Checked on the draw: it applies to docs-ja and to no other
+  candidate, and no candidate shares an owner with a sweep repository. A translation of the
+  same docs is, for this run, a site the rules were tuned on. Its place goes to the next
+  candidate by part 1.
+- **(b) Keep it.** The report names it as a sibling of a benchmark site and gives its
+  results apart.
+
+**3. Production on a preview platform's host.** For four candidates the production site
+itself is on a per-deploy host:
+- algolia/api-clients-automation: `api-clients-automation.netlify.app`;
+- nuthatch-org/nuthatch-frontend: `nuthatch-frontend.vercel.app`;
+- area44/SYWYKE: `sywyke.vercel.app`;
+- LATAMFILTERS/world-catalogue: `world-catalogue.vercel.app`.
+
+Preview-host leak detection has a known blind spot on such a site: the one pooled seeded
+miss, on learn-fips, was on a `vercel.app` production host. Their previews are still
+recognised, since #100 never takes the production host for a preview. Decided: (a).
+- **(a) Keep them, and report apart** (accepted). Precision and frequency are unaffected.
+  The preview-host measure (section 5) is given with and without these sites, and the
+  blind spot is stated.
+- **(b) Exclude them.** That drops 4 of 32 candidates, all of them small sites.
+
+**4. Homepages stored as http.** Two candidates' GitHub homepages are `http://` (mia-platform/documentation and nsc-de/JsTools). The build check already reads them over
+https (2.2). Decided: the production URL in `repos.json` is the https form, so production audits and
+url checks crawl what 2.2 checked.
+
+**5. Unchanged:** everything else in this file and Addendum 1, including the frozen
+version (1.9.1), the draw date, the window, verdicts, thresholds and decision rules.
+
+**Code that follows if this is signed,** in a PR merged before the build check:
+- `select` takes part 1's rule;
+- the draw applies part 2's exclusion;
+- `select` writes https homepages (part 4).
+
+None of it changes which repositories were looked at, or their order.
+
+Decided by (B): SurendharVr. Date: 2026-10-23.

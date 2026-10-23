@@ -29,6 +29,11 @@ bench/seeded/work/
 bench/seeded/out/
 bench/sample/cache/
 bench/sweep/work/
+# Task 9: clones, audits and the data branch checkout. The data lives on task9-data.
+bench/task9/work/
+bench/task9/plan/
+bench/task9/result/
+bench/task9/data/
 
 # Editors / OS
 .DS_Store

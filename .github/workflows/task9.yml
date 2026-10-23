@@ -1,0 +1,190 @@
+name: task9
+
+# Task 9 of the evidence plan (bench/PREREGISTRATION-task9.md, bench/task9/task9.py): the
+# prospective run. Every 15 minutes, poll files the results of earlier runs' finished
+# checks, polls the drawn repositories' pull requests, pushes the state to the task9-data
+# branch and schedules this run's checks; check runs one job per PR head or production
+# audit. It posts nothing to any drawn repository (section 2.3).
+#
+# A poll never waits for checks: only poll jobs queue behind each other, so a check that
+# takes three hours delays its own result, never the next poll (3.3).
+#
+# Until bench/task9/repos.json and window.json are on main, poll finds nothing to do. The
+# build check for the draw runs by hand: Run workflow, step build-check.
+#
+# Trust: check builds and crawls code that strangers wrote (a drawn repository's PRs, and
+# their previews), so it runs with a read-only token, no secrets and no saved credentials.
+# Only poll, which runs this repository's own code, sees TASK9_TOKEN or may push; it reads
+# check artifacts as data, one known file from each, never extracting them.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      step:
+        description: poll runs one poll now; build-check builds every candidate in bench/task9/candidates.json
+        type: choice
+        options: [poll, build-check]
+        default: poll
+
+permissions:
+  contents: read
+
+jobs:
+  poll:
+    if: github.event_name == 'schedule' || inputs.step == 'poll'
+    runs-on: ubuntu-latest
+    # One poll at a time, each reading the state the last one pushed. Checks are not in
+    # this group.
+    concurrency:
+      group: task9-poll
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      jobs: ${{ steps.poll.outputs.jobs }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check out the data branch
+        id: data
+        continue-on-error: true      # absent until the first poll creates it
+        uses: actions/checkout@v4
+        with:
+          ref: task9-data
+          path: data
+      - name: Start the data branch
+        if: steps.data.outcome != 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rm -rf data && mkdir data && cd data
+          git init -q -b task9-data
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --quiet requests
+      - id: poll
+        env:
+          # A read-only token with its own rate limit for the drawn repositories: polling 30
+          # of them every 15 minutes outruns GITHUB_TOKEN's 1,000 requests an hour. Falls
+          # back to it. This repository's own run artifacts are read with the job's token.
+          GH_TOKEN: ${{ secrets.TASK9_TOKEN || github.token }}
+          TASK9_ACTIONS_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p plan
+          echo "jobs=$(python bench/task9/task9.py poll --data data --out plan)" >> "$GITHUB_OUTPUT"
+      # Before any check starts: a check cannot upload an artifact by this name first.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: task9-plan
+          path: plan/jobs.json
+      - name: Push the data branch
+        working-directory: data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -q -m "task9: poll $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q origin HEAD:task9-data
+
+  check:
+    needs: poll
+    if: needs.poll.outputs.jobs != '[]' && needs.poll.outputs.jobs != ''
+    name: ${{ matrix.kind }} ${{ matrix.repo }} ${{ matrix.pr }}
+    runs-on: ubuntu-latest
+    # A folder check's worst case: two builds of up to 30 minutes and two audits of up to
+    # 60 (3.5), plus the clone and installs. Shorter, a slow but valid check would be killed
+    # and counted as a tool failure.
+    timeout-minutes: 200
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJSON(needs.poll.outputs.jobs) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check out the data branch (read-only, for the last production audit)
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: task9-data
+          path: data
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_version }}
+      # The frozen version (Addendum 1); task9.py refuses any other.
+      - run: python -m pip install --quiet "sitemend==1.9.1"
+      - name: Check
+        env:
+          JOB: ${{ toJSON(matrix) }}
+        run: |
+          mkdir -p data result
+          python bench/task9/task9.py check --data data --job "$JOB" --work "$RUNNER_TEMP/task9" --out result
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: task9-result-${{ matrix.id }}
+          path: result/
+          if-no-files-found: ignore
+
+  build-check-plan:
+    if: github.event_name == 'workflow_dispatch' && inputs.step == 'build-check'
+    runs-on: ubuntu-latest
+    outputs:
+      repos: ${{ steps.list.outputs.repos }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: list
+        shell: python
+        run: |
+          import json, os
+          cands = json.load(open("bench/task9/candidates.json"))
+          repos = [{"repo": c["repo"], "slug": c["repo"].replace("/", "__"),
+                    "node_version": str(c.get("node_version", "24"))} for c in cands]
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write("repos=" + json.dumps(repos) + "\n")
+
+  build-check:
+    needs: build-check-plan
+    name: build ${{ matrix.repo }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.build-check-plan.outputs.repos) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_version }}
+      - run: python -m pip install --quiet requests
+      - env:
+          REPO: ${{ matrix.repo }}
+          SLUG: ${{ matrix.slug }}
+        run: python bench/task9/task9.py build-check --repo "$REPO" --work "$RUNNER_TEMP/task9" --out "builds-$SLUG.csv"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: task9-build-${{ matrix.slug }}
+          path: builds-${{ matrix.slug }}.csv
+          if-no-files-found: ignore
