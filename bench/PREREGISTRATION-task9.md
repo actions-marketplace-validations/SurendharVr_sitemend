@@ -693,3 +693,42 @@ widened after the first selection, and why.
 - `report`: each frame's figures beside the pooled ones (part 7).
 
 Decided by (B): SurendharVr. Date: 2026-10-24.
+
+## Addendum 5 (Task 9): the second frame's splitting rule (2026-10-24, before the search)
+
+**Status:** signed by SurendharVr on 2026-10-24. Written by Claude on 2026-10-24; every
+choice below was proposed by Claude and accepted as written.
+
+**Name.** This is the fifth addendum to this file. Everywhere else in this file, "Addendum
+5" means Addendum 5 of `bench/PREREGISTRATION.md`, which drew the replay sample and saved
+the first frame. This one is always called "Task 9 Addendum 5".
+
+**When.** After Addendum 4 was signed (#108), before the second frame's code is written or
+any search runs.
+
+**Why.** Addendum 4, part 2 splits each code search by file size, but leaves three things
+open, each of which decides which repositories enter the frame.
+
+**1. The open range.** `size:>10000` has no upper end, so it cannot be halved. Decided:
+it becomes `size:10001..384000`. GitHub's code search indexes only files smaller than 384 KB,
+so no file above that can be found in any case.
+
+**2. When a slice is split.** Decided: by the response's `total_count`. A
+slice `size:lo..hi` with a `total_count` of 1,000 or more is split into `lo..mid` and
+`mid+1..hi`, with `mid = (lo + hi) // 2`, and each half is searched again. The number of
+results returned is not the test. Every slice's `total_count` and `incomplete_results` are
+saved with the frame.
+
+**3. A one-byte slice still at the cap.** Many sites keep a starter config untouched, so
+thousands of files can share one exact size, and a slice `size:n..n` can still hold 1,000 or
+more. It cannot be split by size. Decided: (a).
+- **(a) Keep what GitHub returns** (accepted). The slice's results, up to GitHub's 1,000, are
+  kept as returned, and the slice is marked capped in `frame2-<stack>.json` with its
+  `total_count`. The report states how many slices were capped, and how many files they
+  held beyond the 1,000 kept.
+- **(b) Split it further by path,** for example the repository root against everything
+  else. This adds a rule chosen for these files, and may still leave a capped slice.
+
+**4. Unchanged:** everything else in Addendum 4 and before.
+
+Decided by (B): SurendharVr. Date: 2026-10-24.

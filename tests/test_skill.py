@@ -4330,7 +4330,7 @@ class TestTask9(unittest.TestCase):
         t9.cmd_ledger(argparse.Namespace(data=data, second_look=False))
         self.assertEqual(t9.read_csv(os.path.join(data, "ledger-task9.csv"))[0]["verdict"], "true_regression")
 
-        t9.cmd_report(argparse.Namespace(data=data))
+        t9.cmd_report(argparse.Namespace(data=data, repos=os.path.join(self.d, "no-repos.json")))
         with open(os.path.join(data, "summary.md"), encoding="utf-8") as fh:
             md = fh.read()
         self.assertIn("| Blocking precision | 1 of 1 (100.0%) | 1 of 1 (100.0%) |", md)
@@ -4354,6 +4354,15 @@ class TestTask9(unittest.TestCase):
         self.assertIn("- Without the 1 site(s) whose production is on a preview platform's host (o/r): "
                       "0 gate finding(s), 0 from production audits, 0 true_regression; "
                       "upper bound 3 / 0 merged PRs = n/a.", md)
+
+        # Addendum 4, part 7: each frame's sites beside the pooled figures.
+        t9.write_json(repos, [{"repo": "o/r", "homepage": "https://o.test", "frame": 2},
+                              {"repo": "q/s", "homepage": "https://q.test", "frame": 1}])
+        t9.cmd_report(argparse.Namespace(data=data, repos=repos))
+        with open(os.path.join(data, "summary.md"), encoding="utf-8") as fh:
+            md = fh.read()
+        self.assertIn("- Frame 1 sites (1): precision 0 of 0 (n/a); frequency 0 of 0 (n/a)", md)
+        self.assertIn("- Frame 2 sites (1): precision 1 of 1 (100.0%); frequency 1 of 1 (100.0%)", md)
 
         t9.cmd_ledger(argparse.Namespace(data=data, second_look=True))
         look = t9.read_csv(os.path.join(data, "second-look.csv"))
@@ -4663,6 +4672,70 @@ class TestTask9(unittest.TestCase):
         self.assertIn("B's own", why("SurendharVr/x", set(), owners))
         self.assertIn("the sweep", why("o/swept", {"o/swept"}, owners))
         self.assertIsNone(why("honojs/website", set(), owners))
+
+    def test_the_second_frame_splits_each_search_below_the_cap(self):
+        """Addendum 4, part 2, with Task 9 Addendum 5: slices start at 0..1000, 1001..3000,
+        3001..10000 and 10001..384000; one with a total_count of 1,000 or more is halved; a
+        one-byte slice still at the cap keeps what GitHub returns and is marked capped."""
+        from urllib.parse import unquote
+        # 3,000 untouched starter configs of exactly 500 bytes, 1,500 spread over 1001..3000,
+        # 200 in 3001..10000 and 50 large ones.
+        files = ([500] * 3000 + [1001 + i % 2000 for i in range(1500)] + [5000] * 200 + [50000] * 50)
+        files = [(size, "o/r{0}".format(n)) for n, size in enumerate(files)]
+        calls = []
+
+        def get(path):
+            q = unquote(path.split("q=")[1].split("&")[0])
+            lo, hi = (int(x) for x in q.rsplit("size:", 1)[1].split(".."))
+            page = int(path.rsplit("page=", 1)[1])
+            calls.append((lo, hi, page))
+            hits = [r for size, r in files if lo <= size <= hi]
+            got = hits[(page - 1) * 100:page * 100] if page <= 10 else []
+            return {"total_count": len(hits), "incomplete_results": False,
+                    "items": [{"repository": {"full_name": r}, "path": "docusaurus.config.js"} for r in got]}
+        items, slices = self.t9.search_slices(get, "filename:docusaurus.config")
+        self.assertEqual(max(r["hi"] for r in slices), 384000, "the open range has an upper end")
+        capped = [(r["lo"], r["hi"]) for r in slices if r["capped"]]
+        self.assertEqual(capped, [(500, 500)])
+        self.assertTrue(all(r["split"] for r in slices if r["total_count"] >= 1000 and r["lo"] < r["hi"]))
+        self.assertTrue(all(r["total_count"] < 1000 for r in slices if not r["split"] and not r["capped"]))
+        self.assertEqual(len(items), 1000 + 1500 + 200 + 50, "every uncapped slice is read whole")
+        self.assertEqual(len({i["repo"] for i in items if i["slice"] == "500..500"}), 1000)
+        self.assertTrue(all(page <= 10 for _, _, page in calls))
+
+    def test_the_second_draw_leaves_out_the_first_frame(self):
+        t9 = self.t9
+        frame = {"a/one": "x", "B/Two": "x", "c/three": "x", "d/four": "x"}
+        order = t9.frame2_order(frame, {"b/two", "z/other"})
+        self.assertNotIn("B/Two", order)
+        self.assertEqual(order, t9.sample.draw_order(["a/one", "c/three", "d/four"]))
+
+    def test_a_widened_sample_keeps_the_16_and_adds_new_sites_by_stack(self):
+        """Addendum 4, part 4: all 16 stay (Astro has 8); new candidates fill each stack up
+        to 6 counting the 16, then 30, then the preview top-up from new ones only."""
+        t9 = self.t9
+        keep = ([{"repo": "d/k{0}".format(i), "stack": "docusaurus", "rank": i, "preview": ""} for i in range(6)]
+                + [{"repo": "a/k{0}".format(i), "stack": "astro", "rank": i, "preview": "https://p" if i < 3 else ""}
+                   for i in range(8)]
+                + [{"repo": "v/k0", "stack": "vitepress", "rank": 0, "preview": ""},
+                   {"repo": "n/k0", "stack": "nextjs", "rank": 0, "preview": "https://p"}])
+        sizes = {"docusaurus": 5, "astro": 5, "vitepress": 4, "hugo": 3, "nextjs": 6}
+        cands = [{"repo": "{0}/n{1}".format(s[0], i), "stack": s, "rank": i,
+                  "preview": "https://p" if (s, i) in {("docusaurus", 2), ("astro", 1), ("nextjs", 5)} else ""}
+                 for s, n in sizes.items() for i in range(1, n + 1)]
+        built = {c["repo"]: "ok" for c in cands}
+        taken = t9.select_widened(keep, cands, built)
+        repos = [c["repo"] for c in taken]
+        self.assertEqual(repos[:16], [c["repo"] for c in keep], "the 16 come first and stay")
+        self.assertTrue(all(c["frame"] == 1 for c in taken[:16]) and all(c["frame"] == 2 for c in taken[16:]))
+        # Room: VitePress 5 (4 there), Hugo 6 (3 there), Next.js 5 of 6: 12 new, 28 in all.
+        self.assertEqual(repos[16:28], ["v/n1", "v/n2", "v/n3", "v/n4", "h/n1", "h/n2", "h/n3",
+                                        "n/n1", "n/n2", "n/n3", "n/n4", "n/n5"])
+        self.assertEqual(repos[28:30], ["d/n1", "a/n1"], "the fill takes the next new ones, one stack at a time")
+        # Flagged so far: 3 kept Astro, 1 kept Next.js, n/n5 (per stack) and a/n1 (fill): 6.
+        # The top-up takes the one flagged new candidate left, d/n2, and stops there.
+        self.assertEqual(repos[30:], ["d/n2"])
+        self.assertEqual(len(set(repos)), len(repos))
 
     def test_the_workflow_keeps_strangers_code_away_from_tokens(self):
         """SECURITY: check builds drawn repositories' PRs and crawls their previews, code

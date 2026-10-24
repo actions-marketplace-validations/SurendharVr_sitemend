@@ -27,6 +27,9 @@ on:
         type: choice
         options: [poll, build-check]
         default: poll
+      config:
+        description: build-check only, the candidates file (bench/task9/candidates2.json for the second draw)
+        default: bench/task9/candidates.json
 
 permissions:
   contents: read
@@ -150,9 +153,11 @@ jobs:
           persist-credentials: false
       - id: list
         shell: python
+        env:
+          CONFIG: ${{ inputs.config }}
         run: |
           import json, os
-          cands = json.load(open("bench/task9/candidates.json"))
+          cands = json.load(open(os.environ["CONFIG"]))
           repos = [{"repo": c["repo"], "slug": c["repo"].replace("/", "__"),
                     "node_version": str(c.get("node_version", "24"))} for c in cands]
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
@@ -181,7 +186,8 @@ jobs:
       - env:
           REPO: ${{ matrix.repo }}
           SLUG: ${{ matrix.slug }}
-        run: python bench/task9/task9.py build-check --repo "$REPO" --work "$RUNNER_TEMP/task9" --out "builds-$SLUG.csv"
+          CONFIG: ${{ inputs.config }}
+        run: python bench/task9/task9.py build-check --repo "$REPO" --config "$CONFIG" --work "$RUNNER_TEMP/task9" --out "builds-$SLUG.csv"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

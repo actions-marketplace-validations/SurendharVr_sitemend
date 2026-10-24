@@ -259,17 +259,104 @@ def preview_flag(repo, numbers, home=None):
     return None
 
 
+# Task 9 Addendum 5: the size slices a second-frame search starts from, in bytes. GitHub's
+# code search indexes files under 384 KB, so the last slice ends there.
+SLICES = ((0, 1000), (1001, 3000), (3001, 10000), (10001, 384000))
+CAP = 1000                             # the most results GitHub returns for one query
+
+
+def search_slices(get, query, slices=SLICES):
+    """Addendum 4, part 2, with Task 9 Addendum 5: one code search split by file size so
+    that no slice reaches the cap. A slice whose total_count is CAP or more is halved at its
+    midpoint and searched again; a one-byte slice still at the cap keeps what GitHub returns
+    and is marked capped. Returns (items, slices), every slice recorded with its
+    total_count and incomplete_results, the split ones included."""
+    todo, items, recs = list(slices), [], []
+    while todo:
+        lo, hi = todo.pop(0)
+        q = "{0} size:{1}..{2}".format(query, lo, hi)
+        path = lambda page: "search/code?q={0}&per_page=100&page={1}".format(quote(q), page)
+        first = get(path(1))
+        if first is None:
+            raise RuntimeError("code search refused: " + q)
+        total = first.get("total_count", 0)
+        rec = {"query": query, "lo": lo, "hi": hi, "total_count": total,
+               "incomplete_results": first.get("incomplete_results"), "split": False, "capped": False}
+        if total >= CAP and lo < hi:
+            mid = (lo + hi) // 2
+            todo[:0] = [(lo, mid), (mid + 1, hi)]
+            recs.append(dict(rec, split=True))
+            continue
+        got, page, last = list(first.get("items", [])), 2, first.get("items", [])
+        while len(last) == 100 and page <= CAP // 100 and len(got) < total:
+            last = (get(path(page)) or {}).get("items", [])
+            got += last
+            page += 1
+        recs.append(dict(rec, capped=total >= CAP))
+        items += [{"repo": i["repository"]["full_name"], "path": i["path"], "query": query,
+                   "slice": "{0}..{1}".format(lo, hi)} for i in got]
+    return items, recs
+
+
+def paced(path):
+    """sample.gh for code search, paced under its 10 requests a minute."""
+    import time
+    time.sleep(7)
+    return sample.gh(path)
+
+
+def cmd_frame2(args):
+    """Addendum 4, part 2: the second frame, taken once and saved before any filtering."""
+    get = getattr(args, "get", None) or paced
+    for stack, queries, _, _ in sample.STACKS:
+        path = os.path.join(getattr(args, "out", None) or HERE, "frame2-{0}.json".format(stack))
+        if os.path.exists(path):
+            print("kept", path, "(the frame is taken once)")
+            continue
+        items, slices = [], []
+        for q in queries:
+            got, recs = search_slices(get, q)
+            items += got
+            slices += recs
+        write_json(path, {"taken_at": stamp(now()), "queries": queries, "slices": slices, "items": items})
+        print(stack, len(items), "results,", sum(r["capped"] for r in slices), "capped slice(s) ->", path)
+    return 0
+
+
+def first_frame_repos():
+    """Every repository in the first frame, any stack (Addendum 4, part 3)."""
+    out = set()
+    for stack, _, _, _ in sample.STACKS:
+        with open(os.path.join(BENCH, "sample", "frame-{0}.json".format(stack)), encoding="utf-8") as fh:
+            out |= {i["repo"].lower() for i in json.load(fh)["items"]}
+    return out
+
+
+def frame2_order(frame, first):
+    """Addendum 4, part 3: the first frame's repositories left out, then sorted by name and
+    shuffled with a fresh random.Random(SEED)."""
+    return sample.draw_order([r for r in frame if r.lower() not in first])
+
+
 def cmd_draw(args):
     # Addendum 5's rules with the draw date in place of the cutoff (2.2).
     sample.SINCE, sample.CUTOFF = SINCE, UNTIL
-    after, extra, owners = prior_ranks(), excluded_here(), benchmark_owners()
+    second = getattr(args, "frame", 1) == 2
+    after, extra, owners = ({} if second else prior_ranks()), excluded_here(), benchmark_owners()
+    first = first_frame_repos() if second else set()
     rows, cands = [], []
     fields = sample.DRAW_FIELDS + ["merged_prs", "preview", "homepage"]
     for stack, _, pattern, out_dir in sample.STACKS:
-        with open(os.path.join(BENCH, "sample", "frame-{0}.json".format(stack)), encoding="utf-8") as fh:
-            frame = sample.reduce_frame(json.load(fh)["items"], pattern)
-        with open(os.path.join(BENCH, "sample", "order-{0}.json".format(stack)), encoding="utf-8") as fh:
-            order = json.load(fh)
+        if second:
+            with open(os.path.join(HERE, "frame2-{0}.json".format(stack)), encoding="utf-8") as fh:
+                frame = sample.reduce_frame(json.load(fh)["items"], pattern)
+            order = frame2_order(frame, first)
+            write_json(os.path.join(HERE, "order2-{0}.json".format(stack)), order)
+        else:
+            with open(os.path.join(BENCH, "sample", "frame-{0}.json".format(stack)), encoding="utf-8") as fh:
+                frame = sample.reduce_frame(json.load(fh)["items"], pattern)
+            with open(os.path.join(BENCH, "sample", "order-{0}.json".format(stack)), encoding="utf-8") as fh:
+                order = json.load(fh)
         found = 0
         for rank, repo in enumerate(order, 1):
             if rank <= after.get(stack, 0):
@@ -295,12 +382,14 @@ def cmd_draw(args):
                     found += 1
                     cands.append(dict({k: row[k] for k in ("repo", "stack", "rank", "build_command", "site_dir",
                                                             "node_version", "homepage", "preview")},
-                                      ref_cutoff=UNTIL, commits=0, default_branch=meta.get("default_branch")))
+                                      ref_cutoff=UNTIL, commits=0, default_branch=meta.get("default_branch"),
+                                      frame=2 if second else 1))
             rows.append(row)
             print(stack, rank, repo, row["outcome"], row.get("reason", ""), flush=True)
-    write_json(os.path.join(HERE, "candidates.json"), cands)
-    write_csv(os.path.join(HERE, "draw.csv"), fields, rows)
-    print("{0} candidates -> candidates.json; every repository looked at -> draw.csv".format(len(cands)))
+    names = ("candidates2.json", "draw2.csv") if second else ("candidates.json", "draw.csv")
+    write_json(os.path.join(HERE, names[0]), cands)
+    write_csv(os.path.join(HERE, names[1]), fields, rows)
+    print("{0} candidates -> {1}; every repository looked at -> {2}".format(len(cands), *names))
     return 0
 
 
@@ -397,14 +486,44 @@ def select(cands, built):
     return taken, short
 
 
+def select_widened(keep, cands, built):
+    """Addendum 4, part 4. The sites already selected first, all of them, whatever their
+    stack; then only new candidates that built, in draw order: each stack up to PER_STACK
+    counting those kept, then the places left up to SAMPLE one stack at a time in the
+    table's order, then the preview top-up to MIN_FLAGGED, at most MAX_TOTAL. Fewer than
+    SAMPLE available means everyone who built (part 5). Every site records its frame."""
+    stacks = [s for s, _, _, _ in sample.STACKS]
+    taken = [dict(c, frame=c.get("frame", 1)) for c in keep]
+    kept = {c["repo"] for c in taken}
+    new = {s: sorted((dict(c, frame=c.get("frame", 2)) for c in cands
+                      if c["stack"] == s and built.get(c["repo"]) == "ok" and c["repo"] not in kept),
+                     key=lambda c: c["rank"]) for s in stacks}
+    for s in stacks:
+        room = max(0, PER_STACK - sum(c["stack"] == s for c in taken))
+        taken += new[s][:room]
+        new[s] = new[s][room:]
+    fill = round_robin(new, stacks)[:max(0, SAMPLE - len(taken))]
+    taken += fill
+    rest = {s: [c for c in new[s] if c not in fill and c.get("preview")] for s in stacks}
+    for c in round_robin(rest, stacks):
+        if sum(bool(c.get("preview")) for c in taken) >= MIN_FLAGGED or len(taken) >= MAX_TOTAL:
+            break
+        taken.append(c)
+    return taken
+
+
 def cmd_select(args):
     out = getattr(args, "out", None) or HERE
-    cands = read_json(os.path.join(out, "candidates.json"), [])
+    cands = read_json(getattr(args, "candidates", None) or os.path.join(out, "candidates.json"), [])
     built = {}
     for p in args.builds:
         for b in read_csv(p):
             built[b["repo"]] = b["status"]
-    taken, short = select(cands, built)
+    if getattr(args, "keep", None):
+        # Addendum 4: the sample already selected is kept, and new candidates are added.
+        taken, short = select_widened(read_json(args.keep, []), cands, built), []
+    else:
+        taken, short = select(cands, built)
     for s in short:
         print("{0}: fewer than {1} built; its places are filled from the other stacks (Addendum 2)".format(
             s, PER_STACK))
@@ -418,8 +537,10 @@ def cmd_select(args):
     write_json(os.path.join(out, "repos.json"), taken)
     opens = (now() + datetime.timedelta(days=1)).strftime("%Y-%m-%dT00:00:00Z")
     write_json(os.path.join(out, "window.json"), {"opens": opens, "weeks": 8})
-    print("{0} repositories ({1} with a preview) -> repos.json; window opens {2}".format(
-        len(taken), sum(bool(c.get("preview")) for c in taken), opens))
+    print("{0} repositories ({1} with a preview{2}) -> repos.json; window opens {3}".format(
+        len(taken), sum(bool(c.get("preview")) for c in taken),
+        "; {0} from the second frame".format(sum(c.get("frame") == 2 for c in taken)) if getattr(args, "keep", None) else "",
+        opens))
     return 0
 
 
@@ -931,7 +1052,9 @@ def preview_hosted(repos):
 
 def cmd_report(args):
     state = read_json(os.path.join(args.data, "state.json"), {})
-    hosted = preview_hosted(read_json(getattr(args, "repos", None) or os.path.join(HERE, "repos.json"), []))
+    repos = read_json(getattr(args, "repos", None) or os.path.join(HERE, "repos.json"), [])
+    hosted = preview_hosted(repos)
+    frames = {e["repo"]: e.get("frame", 1) for e in repos}
     gate_rows = read_csv(os.path.join(args.data, "ledger-task9.csv"))
     prod_rows = read_csv(os.path.join(args.data, "ledger-task9-production.csv"))
     # Addendum 3, part 4: the thresholds count PRs by people; all PRs and bot PRs are given
@@ -971,6 +1094,12 @@ def cmd_report(args):
         out += ["", "- Without {0}, the site with the most PRs compared: precision {1}; frequency {2}; "
                     "tool failures {3}.".format(busiest, pct(w["true"], w["judged"]), pct(w["hit"], w["compared"]),
                                                 pct(w["tool"], w["prs"]))]
+    if 2 in frames.values():
+        # Addendum 4, part 7: each frame's sites beside the pooled figures.
+        for fr in (1, 2):
+            m = measures(state, gate_rows, "folder", False, skip=tuple(r for r, x in frames.items() if x != fr))
+            out.append("- Frame {0} sites ({1}): precision {2}; frequency {3}".format(
+                fr, sum(x == fr for x in frames.values()), pct(m["true"], m["judged"]), pct(m["hit"], m["compared"])))
     pending = sum(1 for r in gate_rows + prod_rows if not r["verdict"])
     if f["findings"] < 20:
         out += ["", "**{0} blocking findings in folder mode: fewer than 20, so the window is extended "
@@ -1029,6 +1158,8 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
     d = sub.add_parser("draw")
     d.add_argument("--per-stack", type=int, default=12, help="eligible candidates to find per stack")
+    d.add_argument("--frame", type=int, choices=(1, 2), default=1, help="2: the second frame (Addendum 4)")
+    sub.add_parser("frame2", help="take the second frame once (Addendum 4, Task 9 Addendum 5)")
     b = sub.add_parser("build-check")
     b.add_argument("--repo", required=True)
     b.add_argument("--config", default=os.path.join(HERE, "candidates.json"))
@@ -1036,6 +1167,8 @@ def main(argv=None):
     b.add_argument("--out")
     s = sub.add_parser("select")
     s.add_argument("--builds", nargs="+", required=True)
+    s.add_argument("--candidates", help="candidates file (default candidates.json)")
+    s.add_argument("--keep", help="the sample already selected, kept whole (Addendum 4), e.g. repos.json")
     for name in ("poll", "check", "ledger", "report"):
         p = sub.add_parser(name)
         p.add_argument("--data", default=os.path.join(HERE, "data"), help="a checkout of the data branch")
@@ -1046,7 +1179,8 @@ def main(argv=None):
     sub.choices["check"].add_argument("--scripts", help="sitemend's scripts folder (default: the installed 1.9.1)")
     sub.choices["ledger"].add_argument("--second-look", action="store_true")
     args = ap.parse_args(argv)
-    return {"draw": cmd_draw, "build-check": cmd_build_check, "select": cmd_select, "poll": cmd_poll,
+    return {"draw": cmd_draw, "frame2": cmd_frame2, "build-check": cmd_build_check, "select": cmd_select,
+            "poll": cmd_poll,
             "check": cmd_check, "ledger": cmd_ledger, "report": cmd_report}[args.cmd](args)
 
 
