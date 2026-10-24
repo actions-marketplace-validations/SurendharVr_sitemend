@@ -1,0 +1,42 @@
+stack,rank,repo,sha,status,reason,build_seconds
+docusaurus,209,Cytooxien/Realms-Docs,1baca62c03a13505cab2752ca5b0f52291c55def,build_failed,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-24T01_50_52_693Z-debug-0.log,49.7
+docusaurus,211,mia-platform/documentation,b857ea9b0b8508b7d73533cee95dbf679512f725,ok,,201.7
+docusaurus,302,DialmasterOrg/Youtarr,18ebb1803263631ccdeccdc3fde3034239aa99f1,build_failed,Node.js v24.21.0,12.5
+docusaurus,309,sdkman/sdkman.github.io,77aca35e79def0c9d4871f77001ff00ab1f927a9,ok,,81.3
+docusaurus,322,nsc-de/JsTools,8e918560bae5707f00ee8f135800be4fe4f5da17,build_failed,sh: 1: docusaurus: not found,8.9
+docusaurus,325,rtl-buddy/rtl_buddy,2fbdc552502b01ef84a6a8149978e27014582245,build_failed,sh: 1: uv: not found,33.5
+docusaurus,342,apache/cloudstack-www,bc7bbe997226279a8a94478eef7a120c0d503e8b,ok,,92.4
+docusaurus,358,Nick2bad4u/stylelint-plugin-css-performance-budget,8eb6ad58b7759f0af52bcea503b6338cf3f97de4,build_failed,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-24T01_49_20_270Z-debug-0.log,0.3
+docusaurus,391,clearml/clearml-docs,d61f0fd1ef048e66d4e7f0c63cef9206913dd13a,build_failed,Node version: v24.21.0,49.5
+docusaurus,395,actix/actix-website,e9b5b34b6781eabe50b94583ec8572f046f655e2,ok,,48.0
+docusaurus,434,nalmeth/opengarlic.site,9de27b443b4e9924934e9f5b84c9469bdf8d2e42,homepage_failed,"homepage unreachable: HTTPSConnectionPool(host='opengarlic.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='opengarl",56.4
+docusaurus,454,algolia/api-clients-automation,d0597cd0e323879dd2769a737b56479b440424e0,build_failed,"$ yarn run [--inspect] [--inspect-brk] [-T,--top-level] [-B,--binaries-only] [--require #0] <scriptName> ...",41.6
+docusaurus,479,Nick2bad4u/eslint-plugin-copilot,3ff989d7418b05d89a6d77ab718486802b4ac5b6,build_failed,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-24T01_49_17_872Z-debug-0.log,0.2
+docusaurus,504,qmBase/docs,d91097c988748fb64681bc0564503b6f9ef47e17,ok,,83.2
+docusaurus,526,knorrlabs/ignition-guides,3500f8cfa2b320174367439bda25344bc311f017,ok,,70.6
+docusaurus,599,rjsf-team/react-jsonschema-form,14cab6f31d09d85b6ec6a4cbe030044c403576fc,homepage_failed,homepage title 'react-jsonschema-form playground' is not the build's 'Introduction | react-jsonschema-form',45.4
+docusaurus,601,highfivve/moli-ad-tag,fa0f0091730c7d16d5eb8a570906b8015fb5631f,build_failed,Node.js v26.12.1,94.1
+astro,219,bringbackourneighbours/bringbackourneighbours,b8768396555e9f8be845e60c061c8f96bdac4af5,build_failed,at async cli (/home/runner/work/_temp/task9/bringbackourneighbours__bringbackourneighbours/node_modules/astro/dist/cli/index.js:222:5),31.5
+astro,246,nf-core/website,faa90869154701266a6664a6124d6549322e2986,homepage_failed,homepage title 'nf-core' is not the build's None,73.2
+astro,247,SigureMo/nyakku.moe,c49e8509aeed64a19b710468a5fbdc20b6bf1850,build_failed,[ELIFECYCLE] Command failed with exit code 1.,12.9
+astro,253,AurinExperience/AurinWebsite,95349b0eee88c4d9b43faef08240df06e2f77822,no_pages,the output holds no HTML pages (Addendum 7),16.8
+astro,304,jonathanbell/jonathanbell.github.io,c835b86998be2c06978e412a66e0d48eef07b1e9,ok,,12.4
+astro,349,emish89/italiapersonalfinance,383a3f81305e53abda70617302fb6c30d4ca3b47,ok,,25.5
+astro,354,tdrayson/wp-wireframe,781f7d2e59a8a9e8de3eec227b9dc2e8a9f2a7af,build_failed,sh: 1: astro: not found,99.0
+astro,376,r4ai/r4ai.dev,e77635ab9d5249aacbdd832d4c28f3eb96820c6e,ok,,48.6
+astro,452,platzhersh/openehr-explorer,3fbfa4a0e7756c98efb733e18d0f3ff2b931996e,build_failed,sh: 1: astro: not found,22.3
+astro,480,nx-academy/nx-academy.github.io,473f434ad805760b25ca49b3c70a62b78cb76377,ok,,18.9
+astro,500,nuthatch-org/nuthatch-frontend,fcb5d16302758f998d478fee315e351eb1f87aa5,ok,,15.9
+astro,501,area44/SYWYKE,d35c161543dd2eaf7b4b13470124cc4748e21758,ok,,8.9
+astro,525,shlinkio/shlink.io,705517fbe3b905f897fdaec8ff84d03c7fc8182e,build_failed,01:50:20 [build] Complete!,19.7
+astro,538,maxswinkels/busybar-apps,26b19ba9ce2ba192c45b4c0eadcfad53df42b153,ok,,16.9
+astro,576,qazuor/hospeda,c52c57b58749267adf1f2de519574f14571b4125,build_failed,[ELIFECYCLE] Command failed with exit code 1.,150.0
+astro,630,Metakip/metakip,bc221449a667977be7373f09791c708ccd9eb26e,homepage_failed,homepage title 'Metakip' is not the build's 'Documentation | Metakip Docs',18.0
+astro,674,zelavis/zelavis,610818dc690ba5bf37b7bd80ba1085e4f1c450c4,ok,,15.5
+vitepress,398,honojs/website,2dd2952ea79dd1c622c9ba7df5a794201ea0e7ac,ok,,41.3
+vitepress,615,pedronastasi/manychat-ai-agent,1793c569f8c90178535d926a5fd5db856164e157,build_failed,$ tsc --project tsconfig.build.json,9.8
+vitepress,785,myissue-studio/vue-website-page-builder,390e8a9ca1ba5515b2ec9251fb42dee7e51c3eb6,build_failed,✓ built in 21.72s,45.0
+nextjs,655,athNdev/bettaresume,34b9a02a2a29970d7cb36dc076643e9b463e0bf9,build_failed,npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-24T01_50_25_164Z-debug-0.log,2.1
+nextjs,774,LATAMFILTERS/world-catalogue,c9a369a2f6ece8096678734a762da0f936ec5fb8,homepage_failed,homepage answered 404,123.8
+nextjs,866,disfordave/provence,e2a9cfdcf5e41748795de3d8b3ed3c1a31db32fb,ok,,29.1
+nextjs,927,ot-nemoto/combine-pdf-files,77bcc93e6980ea2b921939243e2db1953be89b04,build_failed,○ (Static) prerendered as static content,21.5
