@@ -4334,7 +4334,9 @@ class TestTask9(unittest.TestCase):
         with open(os.path.join(data, "summary.md"), encoding="utf-8") as fh:
             md = fh.read()
         self.assertIn("| Blocking precision | 1 of 1 (100.0%) | 1 of 1 (100.0%) |", md)
-        self.assertIn("| Frequency (per PR) | 1 of 1 (100.0%) |", md)
+        self.assertIn("| Frequency (per PR by people) | 1 of 1 (100.0%) |", md)
+        self.assertIn("| o/r | 1 | 1 | 1 | 1 | 0 |", md)
+        self.assertIn("- Without o/r, the site with the most PRs compared:", md)
         self.assertIn("fewer than 20, so the window is extended", md)
         self.assertIn("1 from production audits, 1 true_regression", md)
         self.assertIn("Soft 404s** (S1-SOFT-404 at high): 0 gate finding(s)", md)
@@ -4607,7 +4609,7 @@ class TestTask9(unittest.TestCase):
                           get=self._api([], c("b")), hash_home=lambda u: "h")
         self.assertEqual(jobs, [], "a change first seen after the end is not audited")
 
-    def test_select_writes_nothing_while_a_stack_is_short(self):
+    def test_select_takes_every_one_that_built_when_fewer_than_30_did(self):
         t9, out = self.t9, os.path.join(self.d, "draw")
         cands = [{"repo": "{0}/r{1}".format(s, i), "stack": s, "rank": i, "preview": "",
                   "homepage": "http://{0}{1}.example".format(s, i)}
@@ -4616,8 +4618,13 @@ class TestTask9(unittest.TestCase):
         builds = os.path.join(out, "builds.csv")
         t9.write_csv(builds, ["repo", "status"], [{"repo": c["repo"], "status": "build_failed" if c["repo"] == "hugo/r3" else "ok"}
                                                   for c in cands])
+        # Addendum 3: with every frame read to its end, the sample is every one that built.
+        self.assertEqual(t9.cmd_select(argparse.Namespace(builds=[builds], out=out)), 0)
+        self.assertEqual(len(t9.read_json(os.path.join(out, "repos.json"))), 29)
+        os.remove(os.path.join(out, "repos.json"))
+        t9.write_csv(builds, ["repo", "status"], [{"repo": c["repo"], "status": "build_failed"} for c in cands])
         self.assertEqual(t9.cmd_select(argparse.Namespace(builds=[builds], out=out)), 1)
-        self.assertFalse(os.path.exists(os.path.join(out, "repos.json")))
+        self.assertFalse(os.path.exists(os.path.join(out, "repos.json")), "nothing built: nothing written")
         t9.write_csv(builds, ["repo", "status"], [{"repo": c["repo"], "status": "ok"} for c in cands])
         self.assertEqual(t9.cmd_select(argparse.Namespace(builds=[builds], out=out)), 0)
         taken = t9.read_json(os.path.join(out, "repos.json"))
@@ -4679,6 +4686,26 @@ class TestTask9(unittest.TestCase):
             for step in job["steps"]:
                 if "actions/checkout" in step.get("uses", ""):
                     self.assertIs(step["with"]["persist-credentials"], False, name)
+
+    def test_thresholds_count_prs_by_people_and_precision_every_finding(self):
+        """Addendum 3, part 4: frequency and tool failures count PRs by people; all PRs and
+        bot PRs are given beside them. Precision counts every blocking finding, a bot PR's
+        included."""
+        t9 = self.t9
+        head = lambda c: c * 40
+        pr = lambda n, bot, out: {"repo": "o/r", "number": n, "bot": bot, "final_head": head(str(n)),
+                                  "heads": {head(str(n)): {"folder": out, "url": None, "draft": False}}}
+        state = {"prs": {"o/r#1": pr(1, False, "fail"), "o/r#2": pr(2, False, "pass"),
+                         "o/r#3": pr(3, True, "fail"), "o/r#4": pr(4, True, "tool_failure")}}
+        row = lambda n, verdict: {"repo": "o/r", "head_sha": head(str(n)), "rule_id": "S1-BROKEN-LINK",
+                                  "verdict": verdict, "notes": "mode: folder"}
+        ledger = [row(1, "true_regression"), row(3, "false_positive")]
+        people, everyone, bots = (t9.measures(state, ledger, "folder", b) for b in (False, None, True))
+        self.assertEqual((people["hit"], people["compared"], people["tool"], people["prs"]), (1, 2, 0, 2))
+        self.assertEqual((everyone["hit"], everyone["compared"], everyone["tool"], everyone["prs"]), (1, 3, 1, 4))
+        self.assertEqual((bots["hit"], bots["compared"], bots["tool"], bots["prs"]), (0, 1, 1, 2))
+        self.assertEqual((people["true"], people["judged"]), (1, 2), "precision counts the bot PR's finding too")
+        self.assertEqual(t9.measures(state, ledger, "folder", False, skip=("o/r",))["prs"], 0)
 
     def test_decision_rules_follow_section_6(self):
         d = self.t9.decide
