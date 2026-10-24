@@ -596,3 +596,100 @@ length, verdicts, thresholds and decision rules.
   all PRs and bot PRs beside them.
 
 Decided by (B): SurendharVr. Date: 2026-10-24.
+
+## Addendum 4: postpone the window and widen the sample (2026-10-24, before the window)
+
+**Status:** signed by SurendharVr on 2026-10-24. Written by Claude on 2026-10-24; every
+choice below was proposed by Claude and accepted as written.
+
+**When.** After `select` wrote the 16-site sample and `window.json` (#107, merged at 04:54
+UTC on 2026-10-24), and before the window opens at 00:00 UTC on 2026-10-25. No PR has been
+checked.
+
+**Why.** 16 sites is a thin sample (Addendum 3, parts 3 and 6). The frame it came from was
+cut short by GitHub, not used up. Each of Addendum 5's code searches returned exactly 1,000
+results, the most GitHub returns for one query: Docusaurus, Astro, VitePress and Next.js
+1,000 each, and Hugo 1,000 for each of its two queries. So repositories that search
+could find were never in the frame. A frame that gets past the cap can supply more sites by
+the same rules.
+
+**1. Postpone the window.** Decided: the window does not open on
+2026-10-25. It opens at 00:00 UTC on the day after the widened sample's `repos.json` and
+`window.json` are committed, and runs 8 weeks from then. `window.json` is removed until
+then, so the task9 workflow's polls do nothing.
+
+This takes effect only if it is on `main` before 2026-10-25T00:00:00Z. If it is merged
+later, the window has already opened with the 16: this addendum then records only the
+finding about the first frame, parts 1 to 5 lapse, and the 16 are the sample as Addendum 3
+says. Adding sites after that would need a further addendum, as a separate group.
+
+**2. A second frame.** Decided: the same five stacks and code searches as Addendum 5, each
+split by file size so that no slice reaches the cap.
+- **Splitting:** each search runs over size ranges in bytes, starting at `size:0..1000`,
+  `size:1001..3000`, `size:3001..10000` and `size:>10000`. A slice that returns 1,000 results
+  is halved and searched again, until every slice returns fewer.
+- **Saving:** every result is saved, with the date it was taken and the slices used, to
+  `bench/task9/frame2-<stack>.json`, before any filtering. It is taken once.
+- **Speed:** code search allows 10 requests a minute, and a slice takes up to 10 pages of
+  100, so the second frame may take tens of minutes per stack.
+- **Limitation:** code search still returns only what GitHub has indexed and ranks, so the
+  frame is still not every site. That is stated in the report, as for the first frame.
+
+**3. The draw from it.** Decided: by the same rules, with these differences.
+- **Leave out first:** every repository in the first frame, in any stack, so that no
+  repository is looked at twice.
+- **Order:** sorted by `owner/name`, then shuffled with a fresh `random.Random(20261017)` per
+  stack, in the table's order, and saved to `bench/task9/order2-<stack>.json`.
+- **Eligibility:** as before. 2.1 with Addendum 2's same-owner rule, Addendum 5's rules 4
+  and 5 with Addendum 6, at least 8 merged PRs in the 8 weeks before the draw date, and a
+  homepage.
+- **The draw date stays 2026-10-22,** so every site meets the same history. Homepage and
+  preview checks are read on the day the draw runs, as before.
+- **Recorded in** `bench/task9/draw2.csv` and `candidates2.json`.
+
+**4. Build check and selection.** Decided: the second draw's candidates are
+build-checked as 2.2 says. Then `select` works in this order:
+- **The 16 first.** All 16 already selected stay in the sample, whatever their stack:
+  Docusaurus 6, Astro 8, VitePress 1, Next.js 1.
+- **New candidates up to 6 per stack.** Only the second draw's candidates that built are
+  added, in draw order, each stack up to 6, counting the 16 toward it. Docusaurus and Astro
+  are already full, so new ones go to VitePress, Hugo and Next.js first.
+- **Fill to 30.** The places left, up to 30, come from the new candidates left, one stack at
+  a time in the table's order.
+- **Preview top-up:** to 10 flagged, at most 40 in all, from new candidates only.
+
+No site of the 16 is ever dropped.
+
+**5. If the second frame still falls short of 30.** Decided: once every slice of the second
+frame has been drawn to its end, the sample is everyone who built, as in Addendum 3, and the
+window opens. No third frame.
+
+**6. What this replaces, and what it keeps:**
+- **Replaces Addendum 3, part 1:** "the sample is the 16". The sample is the 16 plus part
+  4's additions, or everyone who built under part 5.
+- **Replaces Addendum 3, part 2:** "no preview top-up". Part 4's top-up applies to the new
+  candidates.
+- **Keeps Addendum 3, parts 3 to 7:**
+  - the 20-finding precision minimum;
+  - thresholds on PRs by people;
+  - the extension rule;
+  - every measure per site and without the busiest site;
+  - what the report states.
+- **Keeps Addendum 2,** apart from its fill being applied here only to new candidates.
+- **Unchanged:** the frozen version (1.9.1), the draw date (2026-10-22), the window's length
+  (8 weeks), verdicts, thresholds and decision rules.
+
+**7. Each site's frame.** `repos.json` records for every site which frame it came from, 1 or
+2. The second frame comes from results below what GitHub ranked first, so its sites may
+differ, for example newer or smaller projects. The report gives the precision and
+frequency of each frame's sites beside the pooled figures, and states that the sample was
+widened after the first selection, and why.
+
+**Code that follows if this is signed,** in a PR merged before the second draw:
+- `task9.py frame2`: the sliced searches, saved before filtering;
+- `task9.py draw --frame 2`: the first frame left out, the new order, the same rules;
+- `select`: the 16 kept, and the second draw's candidates that built added by part 4's rule,
+  each site marked with its frame;
+- `report`: each frame's figures beside the pooled ones (part 7).
+
+Decided by (B): SurendharVr. Date: 2026-10-24.
