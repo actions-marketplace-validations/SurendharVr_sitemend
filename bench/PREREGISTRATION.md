@@ -544,3 +544,30 @@ next 3 eligible repositories per stack in draw order after the 15 already used. 
 the rules on the same sample again would only fit them more closely to it.
 
 Decided by (B): SurendharVr. Date: 2026-10-21.
+
+## Addendum 11: outreach reopens, Task 9 decoupled (2026-10-24)
+
+**Status:** signed by SurendharVr on 2026-10-24. Written by Claude on 2026-10-24. The full text is Task 9
+Addendum 6, at the end of `bench/PREREGISTRATION-task9.md`.
+
+**1. Outreach reopens now.** This overrides the last lines of Addendum 9, part 7 and
+Addendum 10, part 6, which say a pass "does not reopen outreach on its own". Why: the 1.9.0
+replay met every threshold in section 4 (`docs/benchmark-1.9.0-replay.md`):
+- blocking precision 82 of 86 (95.3%), against at least 95%;
+- frequency 21 of 556 commits (3.8%), against at least 1 per 100;
+- seeded recall 66 of 67 (98.5%), against at least 90%.
+
+Evidence on sites sitemend has never seen will come from real installs as well as from
+Task 9.
+
+**2. Task 9 continues unchanged,** pinned to `sitemend==1.9.1`, and its result will be
+published as planned. Its freeze applies to the version it measures, not to `main`: `main`
+may ship rule changes as minor releases under `RELEASING.md`.
+
+**3. The claims rule** in section 6 of `bench/PREREGISTRATION-task9.md` stays in force and
+applies to all public material.
+
+**4. No further addenda or pre-registration documents for product decisions.** The replay
+and seeded benchmarks continue as release checks.
+
+Decided by (B): SurendharVr. Date: 2026-10-24.

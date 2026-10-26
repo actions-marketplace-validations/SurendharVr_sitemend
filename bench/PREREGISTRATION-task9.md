@@ -732,3 +732,52 @@ more. It cannot be split by size. Decided: (a).
 **4. Unchanged:** everything else in Addendum 4 and before.
 
 Decided by (B): SurendharVr. Date: 2026-10-24.
+
+## Addendum 6 (Task 9): Task 9 is decoupled from the product (2026-10-24, before the window)
+
+**Status:** signed by SurendharVr on 2026-10-24. Written by Claude on 2026-10-24.
+
+**Name.** This is always called "Task 9 Addendum 6". Addendum 6 of
+`bench/PREREGISTRATION.md` is the Node version rule.
+
+**1. Task 9 continues unchanged.** It stays pinned to `sitemend==1.9.1` (Addendum 1), with
+the same sample, window, contact rule (section 2.3) and decision rules. Its result will be
+published as planned.
+
+**2. The freeze is on the version Task 9 measures, not on `main`.** "No rule, threshold or
+severity changes until this run's report is published" (section 1, Addendum 1) applies to
+1.9.1 as Task 9 runs it. `main` may ship rule changes as minor releases under
+`RELEASING.md`. Every pull request Task 9 checks is still checked with 1.9.1.
+
+**3. Outreach reopens now.** This overrides the lines in Addenda 9 and 10 of
+`bench/PREREGISTRATION.md` that say a replay pass "does not reopen outreach on its own".
+Why: the 1.9.0 replay met every threshold set before it ran
+(`docs/benchmark-1.9.0-replay.md`):
+- blocking precision 82 of 86 (95.3%), against at least 95%;
+- frequency 21 of 556 commits (3.8%), against at least 1 per 100;
+- seeded recall 66 of 67 (98.5%), against at least 90%.
+
+Evidence on sites sitemend has never seen will come from real installs as well as from
+Task 9.
+
+**4. The claims rule stays.** Section 6's rule on preview-host leaks and soft 404s stays in
+force, and applies to all public material: `README.md`, `SKILL.md`, `action.yml`, the
+package description and the Marketplace listing.
+
+**5. No further addenda for product decisions.** This is the last addendum or
+pre-registration document that decides anything about the product. The replay and seeded
+benchmarks continue as release checks.
+
+**6. Section 6, with outreach already open.** Section 6's first rule ("all met: reopen
+outreach ... the only result that reopens it") is superseded by part 3: outreach is
+already open. Every other rule in section 6 stays in force, as a brake on that outreach:
+- precision fails: outreach stops, and the rules are fixed under `RELEASING.md`;
+- tool failures above the threshold: outreach stops until they are fixed and re-measured;
+- frequency fails: sitemend is repositioned as a pre-launch audit;
+- the claims rule (preview-host leaks, soft 404s) applies to all public material.
+
+Section 2.3's no-contact rule stays. In addition, there is no outreach to any repository
+in `bench/task9/repos.json`, or to the next repositories in draw order that a fresh draw
+would use (`bench/sample/order-*.json`), so a future prospective run stays uncontaminated.
+
+Decided by (B): SurendharVr. Date: 2026-10-24.

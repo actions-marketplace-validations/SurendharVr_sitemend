@@ -3309,6 +3309,102 @@ class TestCheckCommand(unittest.TestCase):
         self.assertEqual(sitemend.check(preview, prod, out, 50), 0)
 
 
+def host_site(test, host):
+    """Three pages whose canonicals, og:url, sitemap and robots Sitemap line all name host."""
+    fx = Fixture()
+    test.addCleanup(fx.cleanup)
+    for f, body in host_routes(host).values():
+        fx.write(f, body)
+    return fx.root
+
+
+def host_routes(host):
+    """{url path: (file, body)} for host_site, also served over http by the url-mode test."""
+    h = "https://" + host
+    nav = '<nav><a href="/">Home</a> <a href="/about.html">About</a> <a href="/pricing.html">Pricing</a></nav>'
+    routes = {}
+    for name, path in (("index", "/"), ("about", "/about.html"), ("pricing", "/pricing.html")):
+        url = h + path
+        routes[path] = (name + ".html", page_html(
+            title="Acme {0} page with a fine long title".format(name),
+            head_extra='<link rel="canonical" href="{0}"><meta property="og:url" content="{0}">'.format(url),
+            body="<h1>{0}</h1>{1}<p>{2}</p>".format(name, nav, ("unique {0} text ".format(name)) * 150)))
+    routes["/robots.txt"] = ("robots.txt", "User-agent: *\nAllow: /\nSitemap: {0}/sitemap.xml\n".format(h))
+    routes["/sitemap.xml"] = ("sitemap.xml", '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                              + "".join("<url><loc>{0}{1}</loc></url>".format(h, p)
+                                        for p in ("/", "/about.html", "/pricing.html")) + "</urlset>")
+    return routes
+
+
+class TestPublishedHostDrift(unittest.TestCase):
+    """REGRESSION (#115): a build whose site-URL env var fell back to the preview URL puts
+    every canonical, og:url, sitemap and robots URL on *.vercel.app. One build alone agrees
+    with itself, so S1-HOST-MISMATCH stays quiet; only the base build says where production
+    is. S1-HOST-DRIFT compares the hosts the two builds publish."""
+
+    _out = TestCheckCommand._out
+
+    def _verify(self, out):
+        with open(os.path.join(out, "verify.json"), encoding="utf-8") as fh:
+            return json.load(fh)
+
+    def _drift(self, doc):
+        return [f for f in doc["new"] if f["id"] == "S1-HOST-DRIFT"]
+
+    def test_moving_every_url_to_a_preview_host_fails_critical(self):
+        out = self._out()
+        code = sitemend.check(host_site(self, "acme-git-feat-x.vercel.app"),
+                              host_site(self, "www.acmedocs.io"), out, 200)
+        self.assertEqual(code, 1)
+        doc = self._verify(out)
+        [f] = self._drift(doc)
+        self.assertEqual(f["severity"], "critical")
+        self.assertIn(f, doc["regressions"])
+        for text in ("www.acmedocs.io", "acme-git-feat-x.vercel.app"):
+            self.assertIn(text, f["message"])
+        for where in ("base: canonical www.acmedocs.io (3)", "og:url www.acmedocs.io (3)",
+                      "sitemap.xml www.acmedocs.io (3)", "robots.txt Sitemap line www.acmedocs.io (1)",
+                      "head: canonical acme-git-feat-x.vercel.app (3)"):
+            self.assertIn(where, f["evidence"])
+
+    def test_the_same_production_host_passes(self):
+        out = self._out()
+        self.assertEqual(sitemend.check(host_site(self, "www.acmedocs.io"),
+                                        host_site(self, "www.acmedocs.io"), out, 200), 0)
+        self.assertEqual(self._drift(self._verify(out)), [])
+
+    def test_a_move_to_another_real_domain_is_reported_but_advisory(self):
+        """A domain move is usually deliberate, so it never fails the gate, but it is in
+        the PR comment as an advisory finding in case it was not."""
+        out = self._out()
+        self.assertEqual(sitemend.check(host_site(self, "new-prod.com"),
+                                        host_site(self, "old-prod.com"), out, 200), 0)
+        doc = self._verify(out)
+        [f] = self._drift(doc)
+        self.assertEqual((f["severity"], f["confidence"]), ("high", "medium"))
+        self.assertIn(f, doc["advisory"])
+        with open(os.path.join(out, "verify.md"), encoding="utf-8") as fh:
+            self.assertIn("S1-HOST-DRIFT", fh.read())
+
+    def test_a_site_that_lives_on_a_preview_style_host_passes(self):
+        """Production on a per-deploy host (Addendum 2, part 3 of the Task 9 plan)."""
+        out = self._out()
+        self.assertEqual(sitemend.check(host_site(self, "sywyke.vercel.app"),
+                                        host_site(self, "sywyke.vercel.app"), out, 200), 0)
+        self.assertEqual(self._drift(self._verify(out)), [])
+
+    def test_a_preview_url_with_production_canonicals_passes(self):
+        """preview.yml: the head is crawled on its preview URL, and its correct production
+        URLs must not read as a move away from production."""
+        routes = {path: (200, "application/xml" if f.endswith(".xml") else
+                         "text/plain" if f.endswith(".txt") else "text/html", body, {})
+                  for path, (f, body) in host_routes("www.acmedocs.io").items()}
+        prod, preview = serve(self, routes), serve(self, routes)
+        out = self._out()
+        self.assertEqual(sitemend.check(preview, prod, out, 50), 0)
+        self.assertEqual(self._drift(self._verify(out)), [])
+
+
 class TestWaivers(unittest.TestCase):
     """.sitemend-waivers.json is the gate's escape hatch for a deliberate exception, such as
     a draft page that is noindex on purpose. Without one, the only way past an unwanted
@@ -5060,6 +5156,68 @@ class TestSweepReport(unittest.TestCase):
         self.assertIn("| o/a | slow (700 s); site-wide S1-X (10 of 10 pages) |", md)
         self.assertIn("| o/b | crash | ValueError: Invalid IPv6 URL |", md)
         self.assertNotIn("S3-Y", md)
+
+
+class TestBlocksColumn(unittest.TestCase):
+    """docs/blocks.py generates the README's Blocks? column. It once read S4-CWV-POOR's
+    severity, which comes from a loop tuple, as nothing and reported "no", though LCP and
+    CLS are high and block. A value it cannot read must stop it, not become "no"."""
+
+    def setUp(self):
+        import importlib.util
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs", "blocks.py")
+        if not os.path.isfile(path):
+            self.skipTest("docs/ is not in the sdist")
+        spec = importlib.util.spec_from_file_location("blocks", path)
+        self.B = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.B)
+
+    def test_every_rule_resolves(self):
+        import re
+        ids = set()
+        for name, pat in (("audit.py", r'finding\(\s*"(S\d-[A-Z0-9-]+)"'),
+                          ("schema_check.py", r'"id":\s*"(S\d-[A-Z0-9-]+)"')):
+            with open(os.path.join(self.B.SCRIPTS, name), encoding="utf-8") as fh:
+                ids |= set(re.findall(pat, fh.read()))
+        v = self.B.variants()
+        self.assertGreater(len(ids), 50)
+        self.assertEqual(sorted(ids - set(v)), [])
+
+    def test_every_rule_in_the_readme_tables_resolves(self):
+        """A rule in "What breaks" that blocks.py cannot see has a Blocks? cell nobody can
+        regenerate. S1-HOST-DRIFT, built in verify.py, was one."""
+        import re
+        with open(os.path.join(self.B.SCRIPTS, "..", "README.md"), encoding="utf-8") as fh:
+            text = fh.read()
+        section = text.split("## What breaks", 1)[1].split("\n## ", 1)[0]
+        ids = set(re.findall(r"`(S\d-[A-Z0-9-]+)`", section))
+        self.assertIn("S1-HOST-DRIFT", ids)
+        self.assertEqual(sorted(ids - set(self.B.variants())), [])
+
+    def test_paired_ternaries_are_not_crossed(self):
+        v = self.B.variants()
+        self.assertEqual(v["S1-HOST-DRIFT"], {("critical", "high"), ("high", "medium")})
+        self.assertEqual(self.B.row(v["S1-HOST-DRIFT"]),
+                         ("critical, high (yes); high, medium (no)", "depends on severity"))
+
+    def test_loop_tuple_severity(self):
+        v = self.B.variants()
+        self.assertEqual(v["S4-CWV-POOR"], {("high", "high"), ("medium", "high")})
+        self.assertEqual(self.B.row(v["S4-CWV-POOR"]),
+                         ("high, high (yes); medium, high (no)", "depends on severity"))
+
+    def test_unresolvable_exits(self):
+        d = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, d)
+        with open(os.path.join(d, "audit.py"), "w", encoding="utf-8") as fh:
+            fh.write('sev = pick()\nfinding("S9-X", 1, sev, "m", [])\n')
+        for empty in ("schema_check.py", "verify.py"):
+            with open(os.path.join(d, empty), "w", encoding="utf-8") as fh:
+                fh.write("")
+        self.B.SCRIPTS = d
+        with self.assertRaises(SystemExit) as cm:
+            self.B.variants()
+        self.assertIn("audit.py:2: S9-X", str(cm.exception.code))
 
 
 if __name__ == "__main__":

@@ -1,7 +1,28 @@
 # Changelog
 
-## Unreleased
+## 1.10.0 - 2026-10-24
 
+The example workflows and README pin `@v1.10.0`. A minor release: one new rule,
+`S1-HOST-DRIFT`. Task 9 stays pinned to 1.9.1 (Task 9 Addendum 6, signed in #114).
+
+- **New rule: `S1-HOST-DRIFT` (#115).** `sitemend check --base`
+  passed a build whose site-URL variable fell back to the preview URL, so every canonical,
+  `og:url`, sitemap URL and robots `Sitemap:` line named `*.vercel.app`. One build that
+  agrees with itself is not `S1-HOST-MISMATCH`, and the comparison never looked at hosts.
+  The comparison (`verify.py`) now compares the hosts each build publishes, read from the
+  `crawl.json` beside each `findings.json`, as `sitemend check` leaves them. When the head
+  publishes none of the base's hosts, it reports `S1-HOST-DRIFT` with both hosts and where
+  each appears:
+  - **critical**, blocking, when a new host is a preview host (`PREVIEW_HOSTS`);
+  - **high, confidence medium** otherwise (a domain move, usually deliberate): advisory in
+    the PR comment, never fails the gate.
+
+  The crawled origin is not a published host, so the preview workflow (production
+  canonicals on a preview URL) and a site whose production lives on a `*.vercel.app` host
+  pass as before. A head that mixes both hosts is still `S1-HOST-MISMATCH` alone. A
+  `verify` run without both crawls (`sitemend verify --baseline`) skips the check. No
+  single-build audit changes: `examples/demo-site` and `examples/demo-site-intl` give the
+  same 24 and 11 findings. No other rule, threshold or severity changes.
 - **Task 9 harness (`bench/task9/task9.py`, `.github/workflows/task9.yml`).** The prospective
   run as pre-registered: the draw (eligibility, build check, the size rule), a poll every 15
   minutes that checks each new PR head in folder and url mode, production audits after

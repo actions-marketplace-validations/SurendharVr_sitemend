@@ -9,9 +9,10 @@
 SEO regression tests for Next.js, Astro and docs sites.
 
 Your site lives in a repo, ships every week, and more of its code is written by AI
-tools. Any one of those changes can drop a canonical tag, leak a `*.vercel.app` preview
-URL into the sitemap, orphan a page, or hide its content behind JavaScript. Usually you
-find out weeks later, in Search Console.
+tools. Any one of those changes can add a page nothing links to, link to a path the
+build doesn't have, stamp out duplicate pages from a template, ship pages with no H1 or
+a title another page already uses, or break hreflang. Those are the regressions [our benchmark](docs/benchmark-1.9.0-replay.md)
+found on real commits. Usually you find out weeks later, in Search Console.
 
 sitemend crawls your build on every pull request, fails the check when a change breaks
 crawling or indexing, and cites the exact page and string that caused it. In
@@ -27,7 +28,8 @@ Free and MIT-licensed. No account and no API key; on a folder it makes no networ
 calls, so your site never leaves your machine.
 
 **See it work:** a [live demo PR](https://github.com/SurendharVr/sitemend-demo/pull/2)
-that leaks a preview URL and drops a canonical, failed by the Action with its comment.
+with planted defects: it leaks a preview URL, which fails the check, and drops a
+canonical, which the Action's comment reports without failing it.
 **Proof:** a [hand-verified benchmark on 20 open-source sites](docs/benchmark-2026-10.md),
 including the false positives it found in sitemend itself.
 
@@ -41,19 +43,43 @@ Formerly `seo-repair`; the old GitHub URL redirects here.
 
 ## What breaks, and what sitemend reports
 
-| What went wrong | Finding |
-| --- | --- |
-| The canonical or sitemap points at `localhost`, `example.com` or another page | `S1-PLACEHOLDER-DOMAIN`, `S1-CANONICAL-CROSS`, `S1-CANONICAL-OFFSITE` |
-| A preview deploy's host (`*.vercel.app`, `*.netlify.app`) leaked into the production canonicals, `og:url` or sitemap | `S1-HOST-MISMATCH` (critical) |
-| Missing URLs answer 200 instead of 404 (an SPA catch-all, a redirect to home) | `S1-SOFT-404` (http mode) |
-| Navigation became `javascript:` or an `onclick` with no link a crawler can follow, or text links became `href="#"` | `S2-UNCRAWLABLE-LINK` |
-| A page is listed in the sitemap but blocked by `noindex` or `robots.txt` | `S1-INDEX-CONTRADICTION` (critical) |
-| Content only appears after JavaScript runs, so crawlers that don't render it see an empty page | `S1-JS-SHELL`; with `--render`, `S1-JS-DEPENDENT` and `S1-JS-HEAD-MISMATCH` |
-| A redesign orphaned pages or broke internal links | `S2-ORPHAN`, `S1-BROKEN-LINK` |
-| A template produces duplicate or near-duplicate pages | `S3-DUPLICATE-EXACT`, `S3-NEAR-DUPLICATE` |
-| Structured data claims ratings or reviews the page never shows | `S5-SCHEMA-UNSUPPORTED-CLAIM` |
+**Seen on real commits or production sites.** Real-commit counts are true regressions
+checked by hand in the [replay benchmark](docs/benchmark-1.9.0-replay.md), from
+[`bench/ledger-1.8.0.csv`](bench/ledger-1.8.0.csv). Seeded numbers are planted defects
+caught, from [`bench/seeded/1.9.0/recall.md`](bench/seeded/1.9.0/recall.md).
 
-The full list is under [What it finds](#what-it-finds).
+| What went wrong | Finding | Blocks? | Evidence |
+| --- | --- | --- | --- |
+| A new page has no links to it, or links to a path the build doesn't have | `S2-ORPHAN`, `S2-UNREACHABLE`, `S1-BROKEN-LINK` | yes | Real commits: [6](bench/ledger-1.8.0.csv) broken links, [1](bench/ledger-1.8.0.csv) orphaned page. Seeded: a linked page deleted, [10 of 10](bench/seeded/1.9.0/recall.md) |
+| A template produces duplicate pages or duplicate titles | `S3-DUPLICATE-EXACT`, `S3-TITLE-DUPLICATE` | yes | Real commits: [8](bench/ledger-1.8.0.csv) duplicate pages, [11](bench/ledger-1.8.0.csv) duplicate titles. Seeded: title duplicated, [9 of 9](bench/seeded/1.9.0/recall.md) |
+| Pages ship with no H1 | `S2-H1-MISSING` | yes | Real commits: [38](bench/ledger-1.8.0.csv) |
+| `hreflang` points at a page that doesn't exist | `S1-HREFLANG-BROKEN` | yes | Real commits: [16](bench/ledger-1.8.0.csv) |
+| A page is listed in the sitemap but blocked by `noindex` or `robots.txt` | `S1-INDEX-CONTRADICTION` (critical) | yes | Production: [1 of 20](docs/benchmark-2026-10.md) sites, [148](docs/benchmark-2026-10.md) URLs. Seeded: noindex added, [9 of 9](bench/seeded/1.9.0/recall.md); robots.txt disallows all, [9 of 9](bench/seeded/1.9.0/recall.md) |
+
+**Not yet observed on a real pull request in our benchmarks.**
+
+| What went wrong | Finding | Blocks? | Evidence |
+| --- | --- | --- | --- |
+| The canonical points off the site, such as at a preview deploy's host | `S1-CANONICAL-OFFSITE` (critical) | yes | Tested on planted defects; not yet observed on a real pull request in our benchmarks. Seeded: preview host in the canonical, [7 of 8](bench/seeded/1.9.0/recall.md) |
+| A preview deploy's host (`*.vercel.app`, `*.netlify.app`) leaked into `og:url`, the sitemap or robots.txt | `S1-HOST-MISMATCH` (critical for a preview host) | yes at critical or high; no at medium, when every URL deliberately names one other host | Tested on planted defects; not yet observed on a real pull request in our benchmarks. Seeded: preview host in the sitemap, [11 of 11](bench/seeded/1.9.0/recall.md). Production: [0 of 20](docs/benchmark-2026-10.md) sites |
+| The build's site URL fell back to the preview host, so every canonical, `og:url`, sitemap and robots URL moved off production at once | `S1-HOST-DRIFT` (critical for a preview host) | depends on severity | Critical (blocks) for a preview host; high, confidence medium (advisory, never blocks) for a move to another real domain. Needs a base to compare with (`check --base`). Unit-tested; not in the seeded benchmark; not yet observed on a real pull request in our benchmarks |
+| A page lost its canonical | `S1-CANONICAL-MISSING` (medium) | no | Reported in the PR comment; does not fail the check. Seeded: canonical removed, [8 of 8](bench/seeded/1.9.0/recall.md) detected, [0](bench/seeded/1.9.0/recall.md) gate failures by design |
+| A page lost its `<title>` | `S3-TITLE-MISSING` (critical) | yes | Tested on planted defects; not yet observed on a real pull request in our benchmarks. Seeded: title removed, [13 of 13](bench/seeded/1.9.0/recall.md) |
+| Missing URLs answer 200 instead of 404 (an SPA catch-all, a redirect to home) | `S1-SOFT-404` (high) | yes, on live URLs only | Blocks on live URLs only (the [preview workflow](examples/github-action/preview.yml), or `check` against URLs), never on a build folder. Unit-tested; not in the seeded benchmark; [0 of 20](docs/benchmark-2026-10.md) production sites served one |
+| Content or head tags only appear after JavaScript runs | `S1-JS-SHELL`, `S1-JS-DEPENDENT`, `S1-JS-HEAD-MISMATCH` | only `S1-JS-HEAD-MISMATCH`, with `--render` | In folder mode, an advisory `S1-JS-SHELL`. Blocking only with `--render` on a live URL (`sitemend audit` or `verify`; the Action does not render), and then only `S1-JS-HEAD-MISMATCH`, which covers canonical or robots directives that change when JavaScript runs. Content that appears only after JavaScript (`S1-JS-DEPENDENT`) never fails anywhere |
+
+**Other checks.**
+
+| What went wrong | Finding | Blocks? | Evidence |
+| --- | --- | --- | --- |
+| The canonical or sitemap points at `localhost`, `example.com` or another page | `S1-PLACEHOLDER-DOMAIN`, `S1-CANONICAL-CROSS` | yes | Production: [0 of 20](docs/benchmark-2026-10.md) sites published a placeholder domain. Not in the seeded benchmark |
+| Navigation became `javascript:` or an `onclick` with no link a crawler can follow, or text links became `href="#"` | `S2-UNCRAWLABLE-LINK` (medium) | no | Advisory / does not fail. Production: [2 of 20](docs/benchmark-2026-10.md) sites, both confirmed |
+| A template produces near-duplicate pages | `S3-NEAR-DUPLICATE` | no | Advisory / does not fail. Not measured in our benchmarks |
+| Structured data claims ratings or reviews the page never shows | `S5-SCHEMA-UNSUPPORTED-CLAIM` | yes | Seeded [10 of 13 (77%)](bench/seeded/1.9.0/recall.md), measured after the rule was fixed on these mutations |
+
+**Blocks?** is `verify.blocks()`: critical or high, at high confidence. It is generated
+from the rules by [`docs/blocks.py`](docs/blocks.py). A finding that does not block is
+still listed in the PR comment. The full list is under [What it finds](#what-it-finds).
 
 ## Fixes in the order that matters
 
@@ -135,7 +161,7 @@ from that:
 | **Structured data** | Required properties, if it checks at all | Required properties, and whether the markup claims things the page never shows, such as review authors |
 | **Applying fixes** | Suggestions | One approved batch at a time, then a re-crawl to confirm it worked. Nothing is edited without approval |
 | **In CI** | No | The example GitHub Action fails a PR only on findings it introduces, and comments the new and closed ones on the PR |
-| **Tested** | Not testable | 341 tests, many pinned to false positives found on real runs |
+| **Tested** | Not testable | 351 tests, many pinned to false positives found on real runs |
 
 **How big is the gap?** We measured it on the demo site (5 pages, 14 planted defects).
 Three plain "audit this site" runs by an AI agent with read-only file access found 14, 12
@@ -171,7 +197,7 @@ what stops a page being crawled and indexed first, then decide what it should sa
 [Marketplace listing](https://github.com/marketplace/actions/sitemend-seo-regression-check):
 
 ```yaml
-- uses: SurendharVr/sitemend@v1.9.1
+- uses: SurendharVr/sitemend@v1.10.0
   with:
     site-dir: out   # your build output; see Build recipes below
 ```
@@ -226,7 +252,7 @@ and quoted evidence; the full report and dashboard are attached to the run.
 - uses: actions/setup-node@v4
   with:
     node-version: 20
-- uses: SurendharVr/sitemend@v1.9.1
+- uses: SurendharVr/sitemend@v1.10.0
   with:
     build-command: npm ci && npm run build
     site-dir: out
@@ -275,7 +301,7 @@ the file from the pull request, so a new waiver is reviewed in the same diff; se
 `waivers` input to use another path. On the command line, pass `--waivers PATH` to
 `audit`, `verify` or `check`.
 
-Pin an exact version (`@v1.9.1`) to keep the gate's rules fixed. Patch releases only
+Pin an exact version (`@v1.10.0`) to keep the gate's rules fixed. Patch releases only
 fix bugs and never change which findings fire; any rule, threshold or severity change is
 a minor release that names the affected rule IDs; Action inputs, `findings.json` shape
 and CLI flags change only in a major release. See the
@@ -431,7 +457,7 @@ only requests your own site.
 python tests/test_skill.py
 ```
 
-341 tests (two are opt-in: real Lighthouse and real Chrome rendering), no fixture files — each builds a throwaway site in a temp directory. They pin
+351 tests (two are opt-in: real Lighthouse and real Chrome rendering), no fixture files — each builds a throwaway site in a temp directory. They pin
 down calibration decisions made after real false positives: build-directory exclusion,
 deliberate `noindex`, finding grouping, title thresholds, heading order, schema claim
 corroboration, gate boundaries. A failure means *"was this behaviour meant to change"*,

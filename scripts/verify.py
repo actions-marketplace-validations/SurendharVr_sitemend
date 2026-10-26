@@ -21,7 +21,9 @@ import re
 import sys
 from fnmatch import fnmatchcase
 
+import audit
 import seolib as S
+from seolib import urlsplit  # tolerant of malformed URLs (#51)
 
 SEV_ORDER = ["critical", "high", "medium", "low"]
 
@@ -163,6 +165,61 @@ def waiver_lines(waived, unused_, expired):
     return out
 
 
+def published_hosts(crawl):
+    """{where: {host: count}} for the URLs a build publishes about itself, placeholder
+    hosts left out (S1-PLACEHOLDER-DOMAIN has those). The crawled origin is not among them:
+    a preview crawled on its own URL with production canonicals publishes production."""
+    seen = {}
+
+    def add(label, url):
+        h = urlsplit(url).hostname if (url or "").startswith("http") else None
+        if h and not audit.is_placeholder_host(h):
+            seen.setdefault(label, {}).setdefault(h, 0)
+            seen[label][h] += 1
+    for p in crawl["pages"]:
+        add("canonical", p.get("canonical"))
+        add("og:url", (p.get("og") or {}).get("og:url"))
+    for u in crawl["sitemap"]["urls"]:
+        add("sitemap.xml", u)
+    for u in crawl["robots"]["sitemaps"]:
+        add("robots.txt Sitemap line", u)
+    return seen
+
+
+def host_drift(base_crawl, head_crawl):
+    """S1-HOST-DRIFT: the head publishes none of the hosts the base does. One build agrees
+    with itself, so S1-HOST-MISMATCH cannot see this; the base is the only reliable word on
+    where production is. A head that mixes the two hosts is already S1-HOST-MISMATCH."""
+    b, h = published_hosts(base_crawl), published_hosts(head_crawl)
+    bh, hh = {x for hs in b.values() for x in hs}, {x for hs in h.values() for x in hs}
+    if not bh or not hh or bh & hh:
+        return None
+    preview = sorted(x for x in hh if x.endswith(audit.PREVIEW_HOSTS))
+
+    def where(seen):
+        return ", ".join("{0} {1}".format(label, ", ".join("{0} ({1})".format(x, n)
+                                                          for x, n in sorted(hs.items())))
+                         for label, hs in seen.items())
+    names = lambda hosts: ", ".join(sorted(hosts))
+    pages = sorted(p["url"] for p in head_crawl["pages"]
+                   if any((urlsplit(v or "").hostname or "") in hh
+                          for v in (p.get("canonical"), (p.get("og") or {}).get("og:url"))))
+    # A move to another real domain is usually deliberate: reported, never blocking.
+    return audit.finding(
+        "S1-HOST-DRIFT", 1, "critical" if preview else "high",
+        "The base branch publishes {0}, but this change publishes only {1}{2}.".format(
+            names(bh), names(hh), " (a preview host)" if preview else ""),
+        pages or ["/"], evidence="base: {0}; head: {1}".format(where(b), where(h)),
+        recipe="domain-fix", confidence="high" if preview else "medium",
+        detail={"base_hosts": sorted(bh), "head_hosts": sorted(hh)})
+
+
+def sibling_crawl(findings_path):
+    """The crawl.json audit wrote next to a findings.json (sitemend check does), or None."""
+    path = os.path.join(os.path.dirname(os.path.abspath(findings_path)), "crawl.json")
+    return S.jload(path) if os.path.exists(path) else None
+
+
 MARKER = "<!-- sitemend-verify -->"
 
 
@@ -258,6 +315,11 @@ def main():
 
     base = S.jload(args.baseline)["findings"]
     cur = S.jload(args.current)["findings"]
+    # Only with both builds' crawls beside their findings, as sitemend check leaves them.
+    crawls = sibling_crawl(args.baseline), sibling_crawl(args.current)
+    drift = host_drift(*crawls) if all(crawls) else None
+    if drift:
+        cur.append(drift)
 
     bk = {key(f): f for f in base}
     ck = {key(f): f for f in cur}
