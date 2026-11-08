@@ -125,7 +125,8 @@ git tag -f v1 vX.Y.Z && git push -f origin v1
 ```
 
 `release.yml` only runs on `vX.Y.Z` tags, so moving `v1` publishes nothing. The example
-workflows pin `@vX.Y.Z`; a test fails until they name the version in `pyproject.toml`.
+workflows pin `@vX.Y.Z`. Between releases they stay on the last released version; in the
+release PR, move them to the new one. `release.yml` refuses to publish a tag the pins do not name.
 
 **Marketplace.** The first time: on the GitHub Release page for the tag, tick "Publish this
 Action to the GitHub Marketplace", accept the Marketplace Developer Agreement and pick a

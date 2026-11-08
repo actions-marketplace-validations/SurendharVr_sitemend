@@ -2257,15 +2257,23 @@ class TestPackaging(unittest.TestCase):
         skill = re.search(r"^version: (\S+)", self._read("SKILL.md"), re.M).group(1)
         self.assertEqual((py, plugin), (skill, skill))
 
-    def test_the_example_workflows_pin_this_version(self):
-        """The examples pin @vX.Y.Z so a release never changes a user's gate unasked;
-        they must name the version being released, not the last one."""
+    def test_the_example_workflows_pin_one_released_version(self):
+        """The examples pin @vX.Y.Z so a release never changes a user's gate unasked.
+        Between releases main may carry an unreleased version, and the pins must stay on
+        the last release, or copying the README gives a workflow that cannot resolve.
+        So: one pin everywhere, never ahead of pyproject. release.yml checks that the
+        pins equal the tag being released."""
         import re
+        ver = lambda v: tuple(int(x) for x in v.split("."))
         py = re.search(r'^version = "([^"]+)"', self._read("pyproject.toml"), re.M).group(1)
+        pins = set()
         for parts in (("examples", "github-action", "sitemend.yml"),
                       ("examples", "github-action", "preview.yml"), ("README.md",)):
-            pins = re.findall(r"SurendharVr/sitemend@v([0-9.]+)", self._read(*parts))
-            self.assertEqual(set(pins), {py}, "/".join(parts))
+            found = re.findall(r"SurendharVr/sitemend@v([0-9.]+)", self._read(*parts))
+            self.assertTrue(found, "/".join(parts))
+            pins.update(found)
+        self.assertEqual(len(pins), 1, pins)
+        self.assertLessEqual(ver(pins.pop()), ver(py))
 
     def test_the_readme_states_the_real_test_count(self):
         """The README said 189 tests when the suite ran 241. A tool sold on not inventing

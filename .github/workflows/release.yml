@@ -24,6 +24,10 @@ jobs:
         run: |
           v=$(sed -n 's/^version = "\(.*\)"/\1/p' pyproject.toml)
           test "v$v" = "$GITHUB_REF_NAME" || { echo "tag $GITHUB_REF_NAME != pyproject $v"; exit 1; }
+      - name: README and example workflows must pin this tag
+        run: |
+          pins=$(grep -ohE 'SurendharVr/sitemend@v[0-9.]+' README.md examples/github-action/*.yml | sort -u)
+          test "$pins" = "SurendharVr/sitemend@$GITHUB_REF_NAME" || { echo "pins: $pins, tag: $GITHUB_REF_NAME"; exit 1; }
       - name: Build
         run: python -m pip install build && python -m build
       - uses: pypa/gh-action-pypi-publish@release/v1

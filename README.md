@@ -62,7 +62,7 @@ caught, from [`bench/seeded/1.9.0/recall.md`](bench/seeded/1.9.0/recall.md).
 | --- | --- | --- | --- |
 | The canonical points off the site, such as at a preview deploy's host | `S1-CANONICAL-OFFSITE` (critical) | yes | Tested on planted defects; not yet observed on a real pull request in our benchmarks. Seeded: preview host in the canonical, [7 of 8](bench/seeded/1.9.0/recall.md) |
 | A preview deploy's host (`*.vercel.app`, `*.netlify.app`) leaked into `og:url`, the sitemap or robots.txt | `S1-HOST-MISMATCH` (critical for a preview host) | yes at critical or high; no at medium, when every URL deliberately names one other host | Tested on planted defects; not yet observed on a real pull request in our benchmarks. Seeded: preview host in the sitemap, [11 of 11](bench/seeded/1.9.0/recall.md). Production: [0 of 20](docs/benchmark-2026-10.md) sites |
-| The build's site URL fell back to the preview host, so every canonical, `og:url`, sitemap and robots URL moved off production at once | `S1-HOST-DRIFT` (critical for a preview host) | depends on severity | Critical (blocks) for a preview host; high, confidence medium (advisory, never blocks) for a move to another real domain. Needs a base to compare with (`check --base`). Unit-tested; not in the seeded benchmark; not yet observed on a real pull request in our benchmarks |
+| The build's site URL fell back to the preview host, so every canonical, `og:url`, sitemap and robots URL moved off production at once | `S1-HOST-DRIFT` (critical for a preview host) | depends on severity | Not in a release yet: on `main` only, until the next release. Critical (blocks) for a preview host; high, confidence medium (advisory, never blocks) for a move to another real domain. Needs a base to compare with (`check --base`). Unit-tested; not in the seeded benchmark; not yet observed on a real pull request in our benchmarks |
 | A page lost its canonical | `S1-CANONICAL-MISSING` (medium) | no | Reported in the PR comment; does not fail the check. Seeded: canonical removed, [8 of 8](bench/seeded/1.9.0/recall.md) detected, [0](bench/seeded/1.9.0/recall.md) gate failures by design |
 | A page lost its `<title>` | `S3-TITLE-MISSING` (critical) | yes | Tested on planted defects; not yet observed on a real pull request in our benchmarks. Seeded: title removed, [13 of 13](bench/seeded/1.9.0/recall.md) |
 | Missing URLs answer 200 instead of 404 (an SPA catch-all, a redirect to home) | `S1-SOFT-404` (high) | yes, on live URLs only | Blocks on live URLs only (the [preview workflow](examples/github-action/preview.yml), or `check` against URLs), never on a build folder. Unit-tested; not in the seeded benchmark; [0 of 20](docs/benchmark-2026-10.md) production sites served one |
@@ -197,7 +197,7 @@ what stops a page being crawled and indexed first, then decide what it should sa
 [Marketplace listing](https://github.com/marketplace/actions/sitemend-seo-regression-check):
 
 ```yaml
-- uses: SurendharVr/sitemend@v1.10.0
+- uses: SurendharVr/sitemend@v1.9.1
   with:
     site-dir: out   # your build output; see Build recipes below
 ```
@@ -252,7 +252,7 @@ and quoted evidence; the full report and dashboard are attached to the run.
 - uses: actions/setup-node@v4
   with:
     node-version: 20
-- uses: SurendharVr/sitemend@v1.10.0
+- uses: SurendharVr/sitemend@v1.9.1
   with:
     build-command: npm ci && npm run build
     site-dir: out
@@ -301,7 +301,7 @@ the file from the pull request, so a new waiver is reviewed in the same diff; se
 `waivers` input to use another path. On the command line, pass `--waivers PATH` to
 `audit`, `verify` or `check`.
 
-Pin an exact version (`@v1.10.0`) to keep the gate's rules fixed. Patch releases only
+Pin an exact version (`@v1.9.1`) to keep the gate's rules fixed. Patch releases only
 fix bugs and never change which findings fire; any rule, threshold or severity change is
 a minor release that names the affected rule IDs; Action inputs, `findings.json` shape
 and CLI flags change only in a major release. See the
